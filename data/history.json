@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T09:00:00+02:00",
+  "updated_at": "2026-10-04T16:45:00+02:00",
   "scale": {
     "bands": [
       {
@@ -83,6 +83,24 @@
         "G": 40.0
       },
       "headline": "Nowa metoda 0–1000: wynik 459 (Pęknięcia) – czerwone 10Y >5,25%, rekordowe CDS Oracle, premia neocloudów >500 pb, szersze spready ABS centrów danych i podwyżka Fed."
+    },
+    {
+      "date": "2026-10-04",
+      "kind": "short",
+      "score": 459,
+      "band": "Pęknięcia",
+      "band_en": "Cracks",
+      "categories": {
+        "A": 205,
+        "B": 50,
+        "C": 28.75,
+        "D": 10,
+        "E": 87.5,
+        "F": 37.5,
+        "G": 40.0
+      },
+      "headline": "Weekend: brak nowych odczytów, wynik bez zmian.",
+      "headline_en": "Weekend: no new readings, score unchanged."
     }
   ],
   "events": [

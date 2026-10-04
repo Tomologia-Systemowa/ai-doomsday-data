@@ -12,7 +12,7 @@ Adresy raw:
 - https://raw.githubusercontent.com/theluckyprogrammer/ai-doomsday-data/main/data/history.json
 
 ## latest.json
-`schema_version` ("1.0"), `date`, `report_type` (`full`|`short`), `score`, `band`, `change_vs_previous`, `headline`, `triggers[]`, `heavy_credit_event` (bool), `skipped_signals[]`, `signals[]`, `calendar[]` (`{date,title}`), `disclaimer`.
+`schema_version` ("1.1"; pola tekstowe mają odpowiedniki `_en`: headline, band, name, note, title, disclaimer), `date`, `report_type` (`full`|`short`), `score`, `band`, `change_vs_previous`, `headline`, `triggers[]`, `heavy_credit_event` (bool), `skipped_signals[]`, `signals[]`, `calendar[]` (`{date,title}`), `disclaimer`.
 
 Element `signals[]`: `id` (A1–G4), `category` (A–G), `name`, `value` (null dla danych licencjonowanych: ICE BofA, płatne indeksy), `unit`, `as_of`, `status`, `points`, `max_points` (z uwzględnieniem redystrybucji), `preliminary`, `source`, opcjonalnie `note`, `expires`, `conflict_of_interest`.
 
