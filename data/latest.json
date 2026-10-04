@@ -8,8 +8,8 @@
   "change_vs_previous": null,
   "headline": "Wynik 404/1000 bez zmian względem popołudniowego raportu z 4.10 – weekend bez nowych odczytów rynkowych; strefa „Pęknięcia”, na granicy z „Przegrzaniem”.",
   "headline_en": "Score 404/1000, unchanged from the afternoon report of 4 Oct – a weekend with no new market readings; the \"Cracks\" band, at the boundary with \"Overheating\".",
-  "summary": "Ponowny pełny raport z 4.10 (brak pliku stanu w pamięci) potwierdza 404/1000 – strefa „Pęknięcia”, na granicy z „Przegrzaniem”. W weekend nie ma nowych odczytów rynkowych, a przegląd wiadomości nie wykazał nowych zdarzeń kredytowych, wyzwalaczy ani zmian cenników. Ryzyko pozostaje skupione w koszcie pieniądza i makro: 10Y 5,28%, podwyżka Fed z 16.09 i ok. 70% szans na kolejną w grudniu, premia neocloudów ok. 580 pb, rekordowy CDS Oracle. Energia (PJM, moratoria, zawiadomienie Oracle o sile wyższej w Project Jupiter z 24.09) to druga oś napięć. Przeciwwaga: rosnący capex, przyspieszające chmury, niedobór CoWoS i HBM, rosnące ceny DRAM i adopcja. Do obserwacji: protokół FOMC (7.10), CPI (14.10), spread HY.",
-  "summary_en": "A repeat full report for 4 Oct (no state file in memory) confirms 404/1000 – the \"Cracks\" band, at the boundary with \"Overheating\". There are no new market readings over the weekend, and the news review found no new credit events, triggers or pricing changes. Risk remains concentrated in the cost of money and macro: the 10Y at 5.28%, the Fed hike of 16 Sep and about a 70% chance of another in December, a neocloud premium of about 580 bp, a record Oracle CDS. Power (PJM, moratoria, Oracle's force majeure notice on Project Jupiter of 24 Sep) is the second axis of strain. The counterweight: rising capex, accelerating cloud, CoWoS and HBM shortages, rising DRAM prices and adoption. To watch: the FOMC minutes (7 Oct), CPI (14 Oct), the HY spread.",
+  "summary": "Ponowny pełny raport z 4.10 (brak pliku stanu w pamięci) potwierdza 404/1000 – strefa „Pęknięcia”, na granicy z „Przegrzaniem”. W weekend nie ma nowych odczytów rynkowych, a przegląd wiadomości nie wykazał nowych zdarzeń kredytowych, wyzwalaczy ani zmian cenników. Ryzyko pozostaje skupione w koszcie pieniądza i makro: 10Y 5,28%, podwyżka Fed z 16.09 i ok. 70% szans na kolejną w grudniu, premia neocloudów ok. 580 pb, rekordowy CDS Oracle. Energia (PJM, moratoria) to druga oś napięć; zawiadomienie Oracle o sile wyższej w Project Jupiter (24.09) zaliczone do A8 jako zdarzenie lekkie. Przeciwwaga: rosnący capex, przyspieszające chmury, niedobór CoWoS i HBM, rosnące ceny DRAM i adopcja. Do obserwacji: protokół FOMC (7.10), CPI (14.10), spread HY.",
+  "summary_en": "A repeat full report for 4 Oct (no state file in memory) confirms 404/1000 – the \"Cracks\" band, at the boundary with \"Overheating\". There are no new market readings over the weekend, and the news review found no new credit events, triggers or pricing changes. Risk remains concentrated in the cost of money and macro: the 10Y at 5.28%, the Fed hike of 16 Sep and about a 70% chance of another in December, a neocloud premium of about 580 bp, a record Oracle CDS. Power (PJM, moratoria) is the second axis of strain; Oracle's force majeure notice on Project Jupiter (24 Sep) is counted in A8 as a light event. The counterweight: rising capex, accelerating cloud, CoWoS and HBM shortages, rising DRAM prices and adoption. To watch: the FOMC minutes (7 Oct), CPI (14 Oct), the HY spread.",
   "report_file": "history/history-04-10-2026.json",
   "triggers": [],
   "triggers_en": [],
@@ -134,17 +134,17 @@
       "category": "A",
       "name": "Zdarzenia kredytowe",
       "name_en": "Credit events",
-      "value": null,
+      "value": "2 lekkie",
       "unit": null,
-      "as_of": "2026-09-22",
+      "as_of": "2026-09-24",
       "status": "yellow",
       "points": 20.0,
       "max_points": 40.0,
       "preliminary": false,
-      "source": "https://www.semafor.com/article/09/22/2026/ai-related-ipos-postponed-as-investors-grow-cautious",
-      "note": "Lekkie: przełożone IPO SB Energy i Holtec (22.09). Brak zdarzeń ciężkich; limity wypłat w funduszach Cliffwater (4.09) i BCRED (3.09) bez potwierdzonej ekspozycji na AI/centra danych – nieliczone jako ciężkie. Zawiadomienie Oracle o sile wyższej wobec Blue Owl (Project Jupiter, 24.09) – ryzyko infrastruktury energetycznej, nie zdarzenie z listy A8; nieliczone.",
-      "note_en": "Light: SB Energy and Holtec IPOs postponed (22 Sep). No heavy events; redemption caps at Cliffwater (4 Sep) and BCRED (3 Sep) funds have no confirmed AI/data-center exposure – not counted as heavy. Oracle's force majeure notice to Blue Owl (Project Jupiter, 24 Sep) – a power-infrastructure risk, not an A8-listed event; not counted.",
-      "expires": "2026-10-22"
+      "source": "https://datacenterdynamics.com/en/news/oracle-issues-force-majeure-notice-to-blue-owl-following-series-of-setbacks-at-project-jupiter-data-center-campus-report",
+      "note": "Lekkie: przełożone IPO SB Energy i Holtec (22.09); zawiadomienie Oracle o sile wyższej wobec Blue Owl w Project Jupiter (24.09) – możliwe odroczenie czynszu o 3 lata w projekcie finansowanym długiem (ok. 18 mld USD); roszczenie nieuznane, czynsz jeszcze nienależny (start 2028) – zdarzenie lekkie. Brak zdarzeń ciężkich; limity wypłat w funduszach Cliffwater (4.09) i BCRED (3.09) bez potwierdzonej ekspozycji na AI/centra danych – nieliczone jako ciężkie.",
+      "note_en": "Light: SB Energy and Holtec IPOs postponed (22 Sep); Oracle's force majeure notice to Blue Owl on Project Jupiter (24 Sep) – a possible 3-year rent deferral on a debt-financed project (about USD 18bn); the claim is not accepted and rent is not yet due (start 2028) – a light event. No heavy events; redemption caps at Cliffwater (4 Sep) and BCRED (3 Sep) funds have no confirmed AI/data-center exposure – not counted as heavy.",
+      "expires": "2026-10-24"
     },
     {
       "id": "B1",
@@ -497,9 +497,9 @@
       "title_en": "TSMC Q3 results; ASML Q3 results"
     },
     {
-      "date": "2026-10-22",
-      "title": "Wygasa okno A8 (zdarzenie lekkie z 22.09)",
-      "title_en": "A8 window expires (light event of 22 Sep)"
+      "date": "2026-10-24",
+      "title": "Wygasa okno A8 (ostatnie zdarzenie lekkie z 24.09)",
+      "title_en": "A8 window expires (latest light event of 24 Sep)"
     },
     {
       "date": "2026-10-28",
