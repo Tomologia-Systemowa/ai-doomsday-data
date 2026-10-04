@@ -1,0 +1,144 @@
+{
+  "updated_at": "2026-10-04T09:00:00+02:00",
+  "scale": {
+    "bands": [
+      {
+        "min": 0,
+        "max": 200,
+        "name": "Zdrowy boom"
+      },
+      {
+        "min": 201,
+        "max": 400,
+        "name": "Przegrzanie"
+      },
+      {
+        "min": 401,
+        "max": 600,
+        "name": "Pęknięcia"
+      },
+      {
+        "min": 601,
+        "max": 800,
+        "name": "Korekta"
+      },
+      {
+        "min": 801,
+        "max": 1000,
+        "name": "Krach"
+      }
+    ],
+    "categories": {
+      "A": {
+        "name": "Dług",
+        "budget": 300
+      },
+      "B": {
+        "name": "Capex i przepływy",
+        "budget": 150
+      },
+      "C": {
+        "name": "Popyt i adopcja",
+        "budget": 150
+      },
+      "D": {
+        "name": "Sprzęt",
+        "budget": 150
+      },
+      "E": {
+        "name": "Makro",
+        "budget": 100
+      },
+      "F": {
+        "name": "Energia i infrastruktura",
+        "budget": 50
+      },
+      "G": {
+        "name": "Ceny tokenów i modele open-weight",
+        "budget": 100
+      }
+    }
+  },
+  "series": [
+    {
+      "date": "2026-10-04",
+      "kind": "baseline",
+      "score": 368,
+      "band": "Przegrzanie",
+      "categories": null,
+      "headline": "Punkt odniesienia nowej metody (0–1000)."
+    },
+    {
+      "date": "2026-10-04",
+      "kind": "full",
+      "score": 459,
+      "band": "Pęknięcia",
+      "categories": {
+        "A": 205,
+        "B": 50,
+        "C": 28.75,
+        "D": 10,
+        "E": 87.5,
+        "F": 37.5,
+        "G": 40.0
+      },
+      "headline": "Nowa metoda 0–1000: wynik 459 (Pęknięcia) – czerwone 10Y >5,25%, rekordowe CDS Oracle, premia neocloudów >500 pb, szersze spready ABS centrów danych i podwyżka Fed."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-09-16",
+      "type": "fed_hike",
+      "signal": "E3",
+      "severity": "medium",
+      "title": "Fed podnosi stopy o 25 pb do 3,75–4,00%",
+      "source": "https://www.federalreserve.gov/monetarypolicy/files/monetary20260916a1.pdf",
+      "expires": "2026-12-16"
+    },
+    {
+      "date": "2026-09-22",
+      "type": "credit_light",
+      "signal": "A8",
+      "severity": "light",
+      "title": "Przełożone IPO SoftBank energy i Holtec",
+      "source": "https://www.semafor.com/article/09/22/2026/ai-related-ipos-postponed-as-investors-grow-cautious",
+      "expires": "2026-10-22"
+    },
+    {
+      "date": "2026-09-24",
+      "type": "infra",
+      "signal": "F1",
+      "severity": "info",
+      "title": "Oracle wysyła zawiadomienie o sile wyższej ws. Project Jupiter (Nowy Meksyk)",
+      "source": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/",
+      "expires": "2026-10-24"
+    },
+    {
+      "date": "2026-09-25",
+      "type": "threshold_cross",
+      "signal": "A5",
+      "severity": "medium",
+      "title": "Rekordowy 5Y CDS Oracle (ok. 227 pb)",
+      "source": "https://gokhshtein.com/news/2026-09-28-oracle-cds-surge-to-227-bps-shows-fallen-angel-risk",
+      "expires": "2026-10-25"
+    },
+    {
+      "date": "2026-10-02",
+      "type": "financing",
+      "signal": "A6",
+      "severity": "info",
+      "title": "Amazon w rozmowach o SPV na GPU za ok. 8 mld USD (leaseback)",
+      "source": "https://www.gurufocus.com/news/9107218/amazon-amzn-plans-8-billion-nvidia-chip-divestiture-via-specialpurpose-vehicle",
+      "expires": "2026-12-31"
+    },
+    {
+      "date": "2026-10-02",
+      "type": "threshold_cross",
+      "signal": "A1",
+      "severity": "medium",
+      "title": "Rentowność 10Y USA powyżej 5,25% (5,28%)",
+      "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610",
+      "expires": "2026-11-02"
+    }
+  ]
+}
