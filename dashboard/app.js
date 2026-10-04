@@ -26,7 +26,7 @@
   const I18N = {
     pl: {
       locale: 'pl-PL',
-      skip: 'Przejdź do raportu', lastReport: 'Ostatni raport', today: 'Dzisiejszy wynik',
+      skip: 'Przejdź do raportu', judgmentDay: 'Dzień Sądu', lastReport: 'Ostatni raport', today: 'Dzisiejszy wynik',
       trend: 'Historia wyniku', fullReport: 'Pełny raport', loading: 'Ładowanie…',
       pickDay: 'Wybierz kropkę na wykresie (kliknięcie lub Enter), aby zobaczyć dany dzień.',
       repo: 'Repozytorium danych', updated: 'Aktualizacja danych', notAdvice: 'To nie jest porada inwestycyjna.',
@@ -57,7 +57,7 @@
     },
     en: {
       locale: 'en-GB',
-      skip: 'Skip to report', lastReport: 'Latest report', today: "Today's score",
+      skip: 'Skip to report', judgmentDay: 'Judgment Day', lastReport: 'Latest report', today: "Today's score",
       trend: 'Score history', fullReport: 'Full report', loading: 'Loading…',
       pickDay: 'Pick a dot on the chart (click or Enter) to see that day.',
       repo: 'Data repository', updated: 'Data updated', notAdvice: 'This is not investment advice.',
@@ -255,6 +255,25 @@
       ' L' + pt(r, a1) + ' A' + r + ' ' + r + ' 0 ' + large + ' 0 ' + pt(r, a0) + ' Z';
   }
 
+  // Flames along the filled part of the ring: the further the score goes round, the more fire,
+  // and the higher the score, the taller each flame.
+  function flames(heat) {
+    const count = Math.round(heat * 72);
+    const out = [];
+    for (let i = 0; i < count; i++) {
+      const r1 = frac(Math.sin(i * 12.9898) * 43758.5453);
+      const r2 = frac(Math.sin(i * 78.233) * 12345.678);
+      out.push({
+        deg: (((i + 0.5) / count) * heat * 360).toFixed(1),
+        scale: ((0.45 + heat * 1.4) * (0.7 + 0.6 * r1)).toFixed(2),
+        delay: (r2 * 1.6).toFixed(2),
+      });
+    }
+    return out;
+  }
+
+  function frac(x) { return x - Math.floor(x); }
+
   // ---- Views: JSON -> view model -> HTML ------------------------------------------------------
 
   const VIEWS = {
@@ -270,17 +289,22 @@
         const info = categoryInfo(k);
         const pts = sums[k];
         const label = k + ' · ' + info.name + ': ' + fmtNum(pts, 1) + ' / ' + (info.budget == null ? '—' : info.budget);
-        legend.push({ key: k, name: info.name, points: fmtNum(pts, 1), budget: info.budget == null ? '—' : info.budget, cls: 'cat-' + (i + 1) });
+        legend.push({
+          key: k, name: info.name, points: fmtNum(pts, 1), budget: info.budget == null ? '—' : info.budget, cls: 'cat-' + (i + 1),
+          pct: info.budget ? Math.round(Math.max(0, Math.min(1, pts / info.budget)) * 100) : 0,
+        });
         if (pts > 0) {
           const a1 = angle + (pts / 1000) * Math.PI * 2;
-          slices.push({ d: arcPath(120, 120, 112, 78, angle, a1), cls: 'cat-' + (i + 1), label: label });
+          slices.push({ d: arcPath(200, 200, 148, 104, angle, a1), cls: 'cat-' + (i + 1), label: label });
           angle = a1;
         }
         total += Math.max(0, pts);
       });
       if (total < 1000) {
-        slices.push({ d: arcPath(120, 120, 112, 78, angle, Math.PI * 2), cls: 'reserve', label: t().reserve + ': ' + fmtNum(1000 - total, 1) });
+        slices.push({ d: arcPath(200, 200, 148, 104, angle, Math.PI * 2), cls: 'reserve', label: t().reserve + ': ' + fmtNum(1000 - total, 1) });
       }
+      const heat = Math.max(0, Math.min(1, total / 1000));
+      document.documentElement.style.setProperty('--heat', heat.toFixed(3));
       const score = typeof latest.score === 'number' ? latest.score : null;
       const band = bandOf(latest, score);
       const triggers = pick(latest, 'triggers');
@@ -295,6 +319,7 @@
         band: band,
         change: changeInfo(latest.change_vs_previous),
         slices: slices,
+        flames: flames(heat),
         legend: legend,
         aria: aria,
         heavyCredit: latest.heavy_credit_event === true,
@@ -319,7 +344,7 @@
       const h = w < 520 ? 240 : 300;
       // Wide: band names to the right of the plot. Narrow: inside the plot, top-left of each band.
       const narrow = w < 520;
-      const m = { l: 40, r: narrow ? 10 : 92, t: 12, b: 30 };
+      const m = { l: 40, r: narrow ? 10 : 112, t: 12, b: 30 };
       const pw = w - m.l - m.r;
       const ph = h - m.t - m.b;
       const n = files.length;

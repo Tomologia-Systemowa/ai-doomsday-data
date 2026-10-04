@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI Doomsday</title>
   <meta name="description" content="Skala AI Doomsday (0–1000) – ryzyko pęknięcia bańki inwestycyjnej w AI. To nie jest porada inwestycyjna.">
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#050303">
   <!-- allowEval off: no hx-trigger filters / hx-on; Enter on chart dots is handled in app.js. -->
   <meta name="htmx-config" content='{"selfRequestsOnly": false, "allowEval": false, "allowScriptTags": false, "historyEnabled": false}'>
   <link rel="stylesheet" href="styles.css">
@@ -18,13 +19,195 @@
   <script defer src="app.js"></script>
 </head>
 <body hx-ext="json-view">
+  <!-- Background: comet, nuclear blast over a ruined skyline, a machine skull behind a fence. Decorative only. -->
+  <svg class="scene" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="sc-sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#020101"/>
+        <stop offset="0.5" stop-color="#140404"/>
+        <stop offset="0.75" stop-color="#3d0905"/>
+        <stop offset="1" stop-color="#6e1406"/>
+      </linearGradient>
+      <radialGradient id="sc-blast" cx="0.5" cy="0.5" r="0.5">
+        <stop offset="0" stop-color="#fff4c8"/>
+        <stop offset="0.12" stop-color="#ffbe55"/>
+        <stop offset="0.32" stop-color="#ff5a1f" stop-opacity="0.85"/>
+        <stop offset="0.6" stop-color="#9c1209" stop-opacity="0.45"/>
+        <stop offset="1" stop-color="#3a0503" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="sc-cap" cx="0.5" cy="0.65" r="0.6">
+        <stop offset="0" stop-color="#fff0b0"/>
+        <stop offset="0.3" stop-color="#ffa040"/>
+        <stop offset="0.65" stop-color="#d23a18"/>
+        <stop offset="1" stop-color="#4a0b05"/>
+      </radialGradient>
+      <linearGradient id="sc-stem" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#5a0e06"/>
+        <stop offset="0.5" stop-color="#ff8a30"/>
+        <stop offset="1" stop-color="#5a0e06"/>
+      </linearGradient>
+      <linearGradient id="sc-tail" gradientUnits="userSpaceOnUse" x1="330" y1="200" x2="-120" y2="-60">
+        <stop offset="0" stop-color="#fff6e8" stop-opacity="0.95"/>
+        <stop offset="0.25" stop-color="#ffb070" stop-opacity="0.55"/>
+        <stop offset="1" stop-color="#ff4020" stop-opacity="0"/>
+      </linearGradient>
+      <radialGradient id="sc-head" cx="0.5" cy="0.5" r="0.5">
+        <stop offset="0" stop-color="#ffffff"/>
+        <stop offset="0.25" stop-color="#ffe2b8"/>
+        <stop offset="0.6" stop-color="#ff7a3a" stop-opacity="0.35"/>
+        <stop offset="1" stop-color="#ff4020" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="sc-metal" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#d8d2c8"/>
+        <stop offset="0.45" stop-color="#7a746c"/>
+        <stop offset="1" stop-color="#26221f"/>
+      </linearGradient>
+      <radialGradient id="sc-eye" cx="0.5" cy="0.5" r="0.5">
+        <stop offset="0" stop-color="#ffd0c0"/>
+        <stop offset="0.25" stop-color="#ff2a1a"/>
+        <stop offset="1" stop-color="#ff0000" stop-opacity="0"/>
+      </radialGradient>
+      <pattern id="sc-mesh" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <path d="M0 0H34M0 0V34" fill="none" stroke="#9c958c" stroke-width="2.2"/>
+      </pattern>
+    </defs>
+
+    <rect width="1600" height="1000" fill="url(#sc-sky)"/>
+    <g fill="#f3e6d8" class="stars">
+      <circle cx="120" cy="80" r="1.4"/><circle cx="520" cy="60" r="1"/><circle cx="700" cy="140" r="1.6"/>
+      <circle cx="950" cy="50" r="1.2"/><circle cx="1100" cy="170" r="1"/><circle cx="1350" cy="90" r="1.5"/>
+      <circle cx="1500" cy="220" r="1"/><circle cx="260" cy="300" r="1"/><circle cx="1240" cy="300" r="1.2"/>
+      <circle cx="860" cy="250" r="0.9"/><circle cx="60" cy="400" r="1.1"/><circle cx="1560" cy="40" r="1.3"/>
+    </g>
+
+    <!-- Comet -->
+    <g class="comet">
+      <path d="M322 212 L-140 60 L-80 -120 L340 190 Z" fill="url(#sc-tail)" opacity="0.55"/>
+      <path d="M326 206 L-120 0 L-100 -60 L336 196 Z" fill="url(#sc-tail)"/>
+      <circle cx="332" cy="200" r="70" fill="url(#sc-head)"/>
+      <circle cx="332" cy="200" r="9" fill="#fffaf0"/>
+    </g>
+
+    <!-- Nuclear blast -->
+    <g class="blast">
+      <circle cx="800" cy="600" r="620" fill="url(#sc-blast)" opacity="0.75"/>
+      <ellipse cx="800" cy="790" rx="560" ry="46" fill="none" stroke="#ff9a50" stroke-width="3" opacity="0.45"/>
+      <ellipse cx="800" cy="790" rx="380" ry="28" fill="none" stroke="#ffd08a" stroke-width="2" opacity="0.5"/>
+      <path d="M760 790 C770 700 772 640 778 560 L822 560 C828 640 830 700 840 790 Z" fill="url(#sc-stem)"/>
+      <ellipse cx="800" cy="640" rx="120" ry="22" fill="#c4361a" opacity="0.9"/>
+      <ellipse cx="800" cy="636" rx="96" ry="14" fill="#ff9c48" opacity="0.7"/>
+      <g fill="url(#sc-cap)">
+        <ellipse cx="800" cy="500" rx="230" ry="105"/>
+        <circle cx="660" cy="480" r="80"/><circle cx="940" cy="480" r="80"/>
+        <circle cx="720" cy="430" r="85"/><circle cx="880" cy="430" r="85"/>
+        <circle cx="800" cy="410" r="95"/>
+      </g>
+      <ellipse cx="800" cy="545" rx="210" ry="40" fill="#5a0e06" opacity="0.55"/>
+    </g>
+
+    <!-- Ruined skyline -->
+    <path class="skyline" fill="#0a0505" d="M0 800 L0 742 L40 742 L40 700 L72 700 L80 718 L96 690 L120 690 L120 760 L150 760 L150 668 L186 668 L192 690 L210 690 L210 740 L248 740 L248 712 L280 712 L292 650 L318 650 L318 760 L360 760 L360 720 L392 702 L420 720 L420 770 L470 770 L470 735 L520 735 L520 780 L1080 780 L1080 728 L1120 728 L1128 700 L1150 700 L1150 760 L1190 760 L1190 680 L1230 680 L1236 706 L1262 706 L1262 750 L1300 750 L1310 690 L1344 690 L1344 740 L1380 740 L1380 700 L1420 700 L1432 726 L1460 726 L1460 664 L1500 664 L1500 760 L1540 760 L1540 712 L1600 712 L1600 800 Z"/>
+    <rect y="796" width="1600" height="204" fill="#070303"/>
+
+    <!-- Machine skull and arms behind the fence -->
+    <g class="skull" transform="translate(-110 0)">
+      <path d="M1282 712 L1280 820 M1300 714 L1300 820 M1318 712 L1320 820" stroke="#3f3a35" stroke-width="9"/>
+      <path d="M1206 566 C1198 486 1246 430 1300 430 C1354 430 1402 486 1394 566 L1388 604 L1212 604 Z" fill="url(#sc-metal)"/>
+      <path d="M1236 470 C1262 452 1338 452 1364 470" fill="none" stroke="#efe9df" stroke-width="2.5" opacity="0.45"/>
+      <path d="M1300 432 L1300 520" stroke="#2a2623" stroke-width="2" opacity="0.6"/>
+      <path d="M1206 566 L1212 604 L1228 646 L1240 600 Z" fill="#4a453f"/>
+      <path d="M1230 568 C1238 556 1282 556 1290 570 C1284 594 1240 596 1230 568 Z" fill="#040202"/>
+      <path d="M1222 594 L1266 604 L1256 632 L1232 630 Z" fill="url(#sc-metal)"/>
+      <path d="M1228 632 L1244 692" stroke="#8d877e" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="1228" cy="632" r="6" fill="#2a2623"/><circle cx="1244" cy="692" r="5" fill="#2a2623"/>
+      <path d="M1394 566 L1388 604 L1372 646 L1360 600 Z" fill="#4a453f"/>
+      <path d="M1370 568 C1362 556 1318 556 1310 570 C1316 594 1360 596 1370 568 Z" fill="#040202"/>
+      <path d="M1378 594 L1334 604 L1344 632 L1368 630 Z" fill="url(#sc-metal)"/>
+      <path d="M1372 632 L1356 692" stroke="#8d877e" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="1372" cy="632" r="6" fill="#2a2623"/><circle cx="1356" cy="692" r="5" fill="#2a2623"/>
+      <path d="M1220 556 C1248 540 1282 544 1298 560 L1302 560 C1318 544 1352 540 1380 556 L1376 568 C1350 556 1320 558 1302 570 L1298 570 C1280 558 1250 556 1224 568 Z" fill="#2f2b27"/>
+      <circle cx="1260" cy="577" r="20" fill="url(#sc-eye)" class="eye"/>
+      <circle cx="1260" cy="577" r="4.5" fill="#ff3b26"/>
+      <circle cx="1340" cy="577" r="20" fill="url(#sc-eye)" class="eye"/>
+      <circle cx="1340" cy="577" r="4.5" fill="#ff3b26"/>
+      <path d="M1300 592 L1287 622 C1294 628 1306 628 1313 622 Z" fill="#040202"/>
+      <path d="M1250 628 L1350 628 L1346 650 L1254 650 Z" fill="url(#sc-metal)"/>
+      <rect x="1252" y="648" width="96" height="26" fill="#050202"/>
+      <g fill="#e8e1d5"><rect x="1256" y="650" width="9" height="13" rx="2"/><rect x="1267" y="650" width="9" height="13" rx="2"/><rect x="1278" y="650" width="9" height="13" rx="2"/><rect x="1289" y="650" width="9" height="13" rx="2"/><rect x="1300" y="650" width="9" height="13" rx="2"/><rect x="1311" y="650" width="9" height="13" rx="2"/><rect x="1322" y="650" width="9" height="13" rx="2"/><rect x="1333" y="650" width="9" height="13" rx="2"/><rect x="1258" y="661" width="9" height="12" rx="2"/><rect x="1269" y="661" width="9" height="12" rx="2"/><rect x="1280" y="661" width="9" height="12" rx="2"/><rect x="1291" y="661" width="9" height="12" rx="2"/><rect x="1302" y="661" width="9" height="12" rx="2"/><rect x="1313" y="661" width="9" height="12" rx="2"/><rect x="1324" y="661" width="9" height="12" rx="2"/><rect x="1335" y="661" width="9" height="12" rx="2"/></g>
+      <path d="M1240 672 L1360 672 L1352 706 C1336 720 1264 720 1248 706 Z" fill="url(#sc-metal)"/>
+    </g>
+    <g class="arms" transform="translate(-110 0)">
+      <path d="M1141 840 L1144 664 M1159 840 L1156 664" stroke="#4f4a44" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="1150" cy="664" r="11" fill="#5f5a53"/>
+      <path d="M1144 660 L1126 584" stroke="#8a847b" stroke-width="6" stroke-linecap="round"/>
+      <path d="M1148 660 L1142 584" stroke="#8a847b" stroke-width="6" stroke-linecap="round"/>
+      <path d="M1152 660 L1158 584" stroke="#8a847b" stroke-width="6" stroke-linecap="round"/>
+      <path d="M1156 660 L1174 584" stroke="#8a847b" stroke-width="6" stroke-linecap="round"/>
+      <path d="M1441 840 L1444 664 M1459 840 L1456 664" stroke="#4f4a44" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="1450" cy="664" r="11" fill="#5f5a53"/>
+      <path d="M1444 660 L1426 584" stroke="#8a847b" stroke-width="6" stroke-linecap="round"/>
+      <path d="M1448 660 L1442 584" stroke="#8a847b" stroke-width="6" stroke-linecap="round"/>
+      <path d="M1452 660 L1458 584" stroke="#8a847b" stroke-width="6" stroke-linecap="round"/>
+      <path d="M1456 660 L1474 584" stroke="#8a847b" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <!-- Fence -->
+    <rect y="600" width="1600" height="400" fill="url(#sc-mesh)" opacity="0.5"/>
+    <rect y="594" width="1600" height="8" fill="#6f6a63"/>
+    <g fill="#3a3632"><rect x="300" y="590" width="16" height="410"/><rect x="900" y="590" width="16" height="410"/><rect x="1520" y="590" width="16" height="410"/></g>
+
+    <!-- Fingers wrapped over the top rail -->
+    <g class="hand" transform="translate(-110 0)">
+      <path d="M1126 584 L1127 600 L1126 614 L1125 626" fill="none" stroke="#141110" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1126 584 L1127 600 L1126 614 L1125 626" fill="none" stroke="#b7b0a6" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="1126" cy="584" r="6" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1127" cy="600" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1126" cy="614" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <path d="M1142 584 L1143 600 L1142 616 L1141 630" fill="none" stroke="#141110" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1142 584 L1143 600 L1142 616 L1141 630" fill="none" stroke="#b7b0a6" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="1142" cy="584" r="6" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1143" cy="600" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1142" cy="616" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <path d="M1158 584 L1159 600 L1158 616 L1157 630" fill="none" stroke="#141110" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1158 584 L1159 600 L1158 616 L1157 630" fill="none" stroke="#b7b0a6" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="1158" cy="584" r="6" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1159" cy="600" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1158" cy="616" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <path d="M1174 584 L1175 600 L1174 614 L1173 626" fill="none" stroke="#141110" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1174 584 L1175 600 L1174 614 L1173 626" fill="none" stroke="#b7b0a6" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="1174" cy="584" r="6" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1175" cy="600" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1174" cy="614" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <path d="M1426 584 L1427 600 L1426 614 L1425 626" fill="none" stroke="#141110" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1426 584 L1427 600 L1426 614 L1425 626" fill="none" stroke="#b7b0a6" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="1426" cy="584" r="6" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1427" cy="600" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1426" cy="614" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <path d="M1442 584 L1443 600 L1442 616 L1441 630" fill="none" stroke="#141110" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1442 584 L1443 600 L1442 616 L1441 630" fill="none" stroke="#b7b0a6" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="1442" cy="584" r="6" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1443" cy="600" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1442" cy="616" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <path d="M1458 584 L1459 600 L1458 616 L1457 630" fill="none" stroke="#141110" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1458 584 L1459 600 L1458 616 L1457 630" fill="none" stroke="#b7b0a6" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="1458" cy="584" r="6" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1459" cy="600" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1458" cy="616" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <path d="M1474 584 L1475 600 L1474 614 L1473 626" fill="none" stroke="#141110" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1474 584 L1475 600 L1474 614 L1473 626" fill="none" stroke="#b7b0a6" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="1474" cy="584" r="6" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1475" cy="600" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+      <circle cx="1474" cy="614" r="4.5" fill="#6f6962" stroke="#141110" stroke-width="1.5"/>
+    </g>
+  </svg>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="inferno" aria-hidden="true"></div>
   <a class="skip" href="#report" data-i18n="skip">Przejdź do raportu</a>
 
   <header class="site-header">
     <div class="wrap header-row">
-      <div>
+      <div class="brand">
         <h1>AI Doomsday</h1>
-        <p class="sub"><span data-i18n="lastReport">Ostatni raport</span>: <span id="report-date">…</span></p>
+        <p class="sub"><span class="jd" data-i18n="judgmentDay">Dzień Sądu</span> · <span data-i18n="lastReport">Ostatni raport</span>: <span id="report-date">…</span></p>
       </div>
       <div class="lang" role="group" aria-label="Język / Language">
         <button type="button" data-lang="pl" aria-pressed="true">PL</button>
@@ -36,8 +219,8 @@
   <main class="wrap">
     <noscript><p class="msg msg-error">Ta strona wymaga JavaScriptu. / This page requires JavaScript.</p></noscript>
 
-    <section class="card" aria-labelledby="h-today">
-      <h2 id="h-today" data-i18n="today">Dzisiejszy wynik</h2>
+    <section class="hero" aria-labelledby="h-today">
+      <h2 id="h-today" class="hero-title" data-i18n="today">Dzisiejszy wynik</h2>
       <div id="overview" data-view="overview" data-src="latest.json"
            hx-get="" hx-trigger="dataready from:body, langchange from:body">
         <p class="msg" role="status" data-i18n="loading">Ładowanie…</p>
@@ -96,10 +279,29 @@
     <span id="report-date" hx-swap-oob="true">{{dateLong}}</span>
     <div class="overview">
       <figure class="donut" role="img" aria-label="{{aria}}">
-        <svg viewBox="0 0 240 240" aria-hidden="true" focusable="false">
+        <svg viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="flame-grad" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0" stop-color="#fff3b0"/>
+              <stop offset="0.3" stop-color="#ffb02e"/>
+              <stop offset="0.65" stop-color="#ff4b1f"/>
+              <stop offset="1" stop-color="#a00a05" stop-opacity="0"/>
+            </linearGradient>
+            <radialGradient id="heat-grad" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0.55" stop-color="#ff3a14" stop-opacity="0"/>
+              <stop offset="0.72" stop-color="#ff3a14" stop-opacity="0.55"/>
+              <stop offset="1" stop-color="#ff3a14" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="200" cy="200" r="200" fill="url(#heat-grad)" class="heat-glow"/>
+          <g class="flames">
+            {{#flames}}<g transform="rotate({{deg}} 200 200)"><path class="flame" d="M200 58 C186 50 187 34 195 20 C196 30 201 32 203 24 C212 36 215 50 200 58 Z" style="--s: {{scale}}; --d: {{delay}}s"/></g>{{/flames}}
+          </g>
+          <circle cx="200" cy="200" r="148" class="donut-rim"/>
           {{#slices}}
           <path d="{{d}}" class="slice {{cls}}"><title>{{label}}</title></path>
           {{/slices}}
+          <circle cx="200" cy="200" r="102" class="donut-hole"/>
         </svg>
         <div class="donut-center">
           <div class="score"><span class="score-num">{{score}}</span><span class="score-max">/1000</span></div>
@@ -108,27 +310,23 @@
         </div>
       </figure>
 
-      <div class="legend-wrap">
-        <table class="legend">
-          <caption class="sr-only">{{t.categories}}</caption>
-          <thead><tr><th scope="col">{{t.category}}</th><th scope="col" class="num">{{t.pointsBudget}}</th></tr></thead>
-          <tbody>
-            <!--{{#legend}}-->
-            <tr>
-              <th scope="row"><span class="swatch {{cls}}" aria-hidden="true"></span> <span class="cat-id">{{key}}</span> {{name}}</th>
-              <td class="num">{{points}} / {{budget}}</td>
-            </tr>
-            <!--{{/legend}}-->
-          </tbody>
-        </table>
+      <ul class="flags">
+        <li id="boundary-flag" class="is-hidden"></li>
+        {{#heavyCredit}}<li class="badge badge-bad"><span aria-hidden="true">⚠</span> {{t.heavyCredit}}</li>{{/heavyCredit}}
+        {{#triggers}}<li class="badge badge-bad"><span aria-hidden="true">⚡</span> {{t.trigger}}: {{.}}</li>{{/triggers}}
+        {{#skipped.length}}<li class="badge"><span aria-hidden="true">⦸</span> {{t.skippedSignals}}: {{skippedText}}</li>{{/skipped.length}}
+      </ul>
 
-        <ul class="flags">
-          <li id="boundary-flag" class="is-hidden"></li>
-          {{#heavyCredit}}<li class="badge badge-bad"><span aria-hidden="true">⚠</span> {{t.heavyCredit}}</li>{{/heavyCredit}}
-          {{#triggers}}<li class="badge badge-bad"><span aria-hidden="true">⚡</span> {{t.trigger}}: {{.}}</li>{{/triggers}}
-          {{#skipped.length}}<li class="badge"><span aria-hidden="true">⦸</span> {{t.skippedSignals}}: {{skippedText}}</li>{{/skipped.length}}
-        </ul>
-      </div>
+      <h3 class="cats-title">{{t.categories}}</h3>
+      <ul class="cats">
+        {{#legend}}
+        <li class="cat {{cls}}">
+          <span class="cat-top"><span class="swatch" aria-hidden="true"></span><span class="cat-id">{{key}}</span> <span class="cat-name">{{name}}</span></span>
+          <span class="cat-val"><strong>{{points}}</strong> / {{budget}} {{t.pts}}</span>
+          <span class="cat-bar" aria-hidden="true"><span style="width: {{pct}}%"></span></span>
+        </li>
+        {{/legend}}
+      </ul>
     </div>
     <p class="headline">{{headline}}</p>
     {{#reportUrl}}
