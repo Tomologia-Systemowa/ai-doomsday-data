@@ -7,18 +7,19 @@
   <meta name="description" content="Skala AI Doomsday (0–1000) – ryzyko pęknięcia bańki inwestycyjnej w AI. To nie jest porada inwestycyjna.">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#050303">
-  <!-- allowEval off: no hx-trigger filters / hx-on; Enter on chart dots is handled in app.js. -->
-  <meta name="htmx-config" content='{"selfRequestsOnly": false, "allowEval": false, "allowScriptTags": false, "historyEnabled": false}'>
+  <!-- mode cors: data comes from raw.githubusercontent.com (hosts are checked in app.js). noSwap: error bodies are never shown.
+       No hx-trigger filters / hx-on / js: values; Enter on chart dots is handled in app.js. -->
+  <meta name="htmx-config" content='{"mode": "cors", "history": false, "noSwap": [204, 304, "4xx", "5xx"]}'>
   <link rel="stylesheet" href="styles.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js"
-          integrity="sha384-2OatzQy1H+Zd/IIrjr1TcuDGqLXeHhbooAyJY1KdQMKnr4LZ22k31GBLdYKHmVjg"
+  <script defer src="https://cdn.jsdelivr.net/npm/htmx.org@4.0.0/dist/htmx.min.js"
+          integrity="sha384-BvJpBiO8Kh31EqtJe5DRIeWrHWnCGkwytKs9NKFi86Hhw96dEqdEMzZDeK9iEGTc"
           crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"
           integrity="sha384-WASZCYHGuIg0bwkJEH65mhmbKS1x4/VKI2bzElPKmL5B3e0UaH45nIdqOm+BUuRA"
           crossorigin="anonymous"></script>
   <script defer src="app.js"></script>
 </head>
-<body hx-ext="json-view">
+<body>
   <!-- Background: comet, nuclear blast over a ruined skyline, a machine skull behind a fence. Decorative only. -->
   <svg class="scene" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
     <defs>
@@ -208,12 +209,14 @@
       <div class="brand">
         <h1>AI Doomsday</h1>
         <p class="slogan" data-i18n="slogan">Dzień Sądu: kiedy taniej jest skończyć z ludzkością, niż spłacić dług.</p>
-        <p class="tagline" data-i18n="tagline">Codzienna ocena ryzyka pęknięcia bańki inwestycyjnej w AI – skala 0–1000, 28 sygnałów rynkowych.</p>
-        <p class="sub"><span data-i18n="lastReport">Ostatni raport</span>: <span id="report-date">…</span></p>
+        <p class="tagline" data-i18n="tagline">Stan bańki AI na dziś</p>
       </div>
-      <div class="lang" role="group" aria-label="Język / Language">
-        <button type="button" data-lang="pl" aria-pressed="true">PL</button>
-        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <div class="header-side">
+        <div class="lang" role="group" aria-label="Język / Language">
+          <button type="button" data-lang="pl" aria-pressed="true">PL</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <p class="sub"><span data-i18n="lastReport">Ostatni raport</span>: <span id="report-date">…</span></p>
       </div>
     </div>
   </header>
@@ -221,8 +224,7 @@
   <main class="wrap">
     <noscript><p class="msg msg-error">Ta strona wymaga JavaScriptu. / This page requires JavaScript.</p></noscript>
 
-    <section class="hero" aria-labelledby="h-today">
-      <h2 id="h-today" class="hero-title" data-i18n="today">Dzisiejszy wynik</h2>
+    <section class="hero">
       <div id="overview" data-view="overview" data-src="latest.json"
            hx-get="" hx-trigger="dataready from:body, langchange from:body">
         <p class="msg" role="status" data-i18n="loading">Ładowanie…</p>

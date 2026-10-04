@@ -28,8 +28,8 @@
       locale: 'pl-PL',
       skip: 'Przejdź do raportu',
       slogan: 'Dzień Sądu: kiedy taniej jest skończyć z ludzkością, niż spłacić dług.',
-      tagline: 'Codzienna ocena ryzyka pęknięcia bańki inwestycyjnej w AI – skala 0–1000, 28 sygnałów rynkowych.',
-      lastReport: 'Ostatni raport', today: 'Dzisiejszy wynik',
+      tagline: 'Stan bańki AI na dziś',
+      lastReport: 'Ostatni raport',
       trend: 'Historia wyniku', fullReport: 'Pełny raport', loading: 'Ładowanie…',
       pickDay: 'Wybierz kropkę na wykresie (kliknięcie lub Enter), aby zobaczyć dany dzień.',
       repo: 'Repozytorium danych', updated: 'Aktualizacja danych', notAdvice: 'To nie jest porada inwestycyjna.',
@@ -62,8 +62,8 @@
       locale: 'en-GB',
       skip: 'Skip to report',
       slogan: 'Judgment Day: when ending humanity is cheaper than paying off the debt.',
-      tagline: 'Daily assessment of the risk of the AI investment bubble bursting – 0–1000 scale, 28 market signals.',
-      lastReport: 'Latest report', today: "Today's score",
+      tagline: 'State of the AI bubble today',
+      lastReport: 'Latest report',
       trend: 'Score history', fullReport: 'Full report', loading: 'Loading…',
       pickDay: 'Pick a dot on the chart (click or Enter) to see that day.',
       repo: 'Data repository', updated: 'Data updated', notAdvice: 'This is not investment advice.',
@@ -107,11 +107,14 @@
 
   function t() { return I18N[state.lang]; }
 
+  // A saved choice wins; otherwise Polish for a Polish browser, English for everyone else.
   function readLang() {
     try {
       const v = window.localStorage.getItem(LANG_KEY);
-      return v === 'en' ? 'en' : 'pl';
-    } catch (e) { return 'pl'; }
+      if (v === 'pl' || v === 'en') return v;
+    } catch (e) { /* storage unavailable */ }
+    const pref = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+    return /^pl(-|$)/i.test(pref) ? 'pl' : 'en';
   }
 
   function saveLang(lang) {
@@ -521,7 +524,7 @@
   // Render outside a request (fallbacks, errors). Still goes through htmx.swap, so oob parts work.
   function swapInto(target, html) {
     if (!target) return;
-    window.htmx.swap(target, html, { swapStyle: 'innerHTML' });
+    window.htmx.swap({ text: html, target: target, sourceElement: target, swap: 'innerHTML' });
   }
 
   // The report is built on latest.json, so it cannot be shown when that file fails.
@@ -536,74 +539,82 @@
 
   // ---- htmx extension ------------------------------------------------------------------------
 
-  window.htmx.defineExtension('json-view', {
-    transformResponse: function (text, xhr, elt) {
+  // Turns the JSON response into HTML before htmx swaps it in.
+  window.htmx.registerExtension('json-view', {
+    htmx_after_request: function (elt, detail) {
+      const ctx = detail.ctx;
+      if (ctx.response.status >= 400) return; // handled in htmx:response:error
       const view = elt.getAttribute('data-view');
-      if (!VIEWS[view]) return text;
+      if (!VIEWS[view]) return;
       try {
-        return VIEWS[view](JSON.parse(text), elt);
+        ctx.text = VIEWS[view](JSON.parse(ctx.text), elt);
       } catch (e) {
         console.error('[ai-doomsday]', view, e);
-        if (view === 'report') return reportHtml(null, true);
-        if (view === 'overview') reportFailed('parse', xhr.responseURL);
-        return errorHtml('parse', xhr.responseURL);
+        if (view === 'report') ctx.text = reportHtml(null, true);
+        else {
+          if (view === 'overview') reportFailed('parse', ctx.request.action);
+          ctx.text = errorHtml('parse', ctx.request.action);
+        }
       }
     },
   });
 
-  function requestUrl(evt) {
-    return (evt.detail.pathInfo && evt.detail.pathInfo.requestPath) || (evt.detail.xhr && evt.detail.xhr.responseURL) || '';
+  // The error body (e.g. GitHub's 404 page) is never shown: htmx swaps nothing for 4xx / 5xx.
+  function onRequestFailed(kind, ctx) {
+    const elt = ctx.sourceElement;
+    const url = ctx.request && ctx.request.action || '';
+    const view = elt && elt.getAttribute('data-view');
+    if (view === 'report') { showReport(null); return; }
+    if (view === 'overview') reportFailed(kind, url);
+    swapInto(ctx.target, errorHtml(kind, url));
   }
 
-  function onRequestFailed(kind) {
-    return function (evt) {
-      const elt = evt.detail.elt;
-      const view = elt && elt.getAttribute('data-view');
-      if (view === 'report') { showReport(null); return; }
-      if (view === 'overview') reportFailed(kind, requestUrl(evt));
-      swapInto(evt.detail.target, errorHtml(kind, requestUrl(evt)));
-    };
-  }
-
-  document.addEventListener('htmx:responseError', function (evt) {
-    const status = evt.detail.xhr ? evt.detail.xhr.status : 0;
-    onRequestFailed(status === 404 ? 'notfound' : 'network')(evt);
+  document.addEventListener('htmx:response:error', function (evt) {
+    evt.detail.ctx.text = ''; // otherwise htmx would take document.title from the error page
+    onRequestFailed(evt.detail.ctx.response.status === 404 ? 'notfound' : 'network', evt.detail.ctx);
   });
-  document.addEventListener('htmx:sendError', onRequestFailed('network'));
-  document.addEventListener('htmx:timeout', onRequestFailed('network'));
-
-  // Only same-origin requests and raw.githubusercontent.com are allowed.
-  document.addEventListener('htmx:validateUrl', function (evt) {
-    if (!evt.detail.sameHost && ALLOWED_HOSTS.indexOf(evt.detail.url.host) < 0) evt.preventDefault();
+  // Network failure, timeout or abort. Errors without a request (e.g. in a swap) are only logged by htmx.
+  document.addEventListener('htmx:error', function (evt) {
+    const ctx = evt.detail.ctx;
+    if (ctx && ctx.request && !ctx.response) onRequestFailed('network', ctx);
   });
 
-  // Cross-origin: drop htmx headers so the GET stays a simple CORS request (no preflight).
-  document.addEventListener('htmx:configRequest', function (evt) {
+  document.addEventListener('htmx:config:request', function (evt) {
+    const ctx = evt.detail.ctx;
+    let url;
     try {
-      if (new URL(evt.detail.path, document.baseURI).origin !== window.location.origin) {
-        Object.keys(evt.detail.headers).forEach(function (h) { delete evt.detail.headers[h]; });
-      }
-    } catch (e) { /* leave headers as they are */ }
+      url = new URL(ctx.request.action, document.baseURI);
+    } catch (e) {
+      evt.preventDefault();
+      return;
+    }
+    // Only same-origin requests and raw.githubusercontent.com are allowed.
+    if (url.origin !== window.location.origin && ALLOWED_HOSTS.indexOf(url.host) < 0) evt.preventDefault();
   });
 
-  document.addEventListener('htmx:beforeRequest', function (evt) {
-    const elt = evt.detail.elt;
+  document.addEventListener('htmx:before:request', function (evt) {
+    const ctx = evt.detail.ctx;
+    const elt = ctx.sourceElement;
+    // Cross-origin: drop htmx headers (HX-Request-Type is added after config:request), so the GET
+    // stays a simple CORS request without a preflight.
+    if (new URL(ctx.request.action, document.baseURI).origin !== window.location.origin) ctx.request.headers = {};
     if (elt && elt.getAttribute('data-view') === 'day') {
       state.selectedFile = elt.getAttribute('data-file');
       document.querySelectorAll('.dot.is-selected').forEach(function (d) { d.classList.remove('is-selected'); });
       elt.classList.add('is-selected');
-      evt.detail.target.setAttribute('aria-busy', 'true');
+      ctx.target.setAttribute('aria-busy', 'true');
     }
   });
 
-  document.addEventListener('htmx:afterSwap', function (evt) {
-    if (evt.detail.target) evt.detail.target.removeAttribute('aria-busy');
+  document.addEventListener('htmx:after:swap', function (evt) {
+    const target = evt.detail.ctx.target;
+    if (target) target.removeAttribute('aria-busy');
   });
 
   // After a re-render of the chart (language change, resize) reopen the selected day.
-  // afterSettle: by then htmx has attached its triggers to the new dots.
-  document.addEventListener('htmx:afterSettle', function (evt) {
-    const target = evt.detail.target;
+  // after:settle: by then htmx has attached its triggers to the new dots.
+  document.addEventListener('htmx:after:settle', function (evt) {
+    const target = evt.target;
     if (target && target.id === 'trend' && state.selectedFile) {
       const dot = target.querySelector('.dot[data-file="' + CSS.escape(state.selectedFile) + '"]');
       if (dot) window.htmx.trigger(dot, 'activate');
@@ -645,7 +656,7 @@
 
   // ---- Start ---------------------------------------------------------------------------------
 
-  // Data URLs are set here (one constant) before htmx processes the page on DOMContentLoaded.
+  // Data URLs are set here (one constant) before htmx processes the page (see start()).
   document.querySelectorAll('[data-src]').forEach(function (el) {
     el.setAttribute('hx-get', DATA_BASE + el.getAttribute('data-src'));
   });
@@ -678,6 +689,9 @@
       .then(function (scale) {
         if (!scale || !Array.isArray(scale.bands) || !scale.categories) throw new Error('parse');
         state.scale = scale;
+        // htmx 4 initializes itself from a setTimeout, which may run after DOMContentLoaded.
+        // process() is idempotent, so make sure the triggers exist before the event is fired.
+        window.htmx.process(document.body);
         window.htmx.trigger(document.body, 'dataready');
       })
       .catch(function (e) {
@@ -689,7 +703,6 @@
   }
 
   if (document.readyState === 'loading') {
-    // htmx registered its own DOMContentLoaded handler first, so the page is processed by then.
     document.addEventListener('DOMContentLoaded', start);
   } else {
     start();
