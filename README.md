@@ -1,0 +1,106 @@
+# ai-doomsday-data
+
+Dane skali **AI Doomsday** (0–1000) – ocena ryzyka pęknięcia bańki inwestycyjnej w AI.
+Aktualizowane automatycznie po każdym raporcie.
+Repozytorium: https://github.com/Tomologia-Systemowa/ai-doomsday-data
+
+*AI Doomsday scale data (0–1000) – an assessment of AI investment bubble risk, updated after
+every report. Every text field has an English counterpart with the `_en` suffix.*
+
+**To nie jest porada inwestycyjna. / This is not investment advice.**
+
+## Pliki / Files
+
+| Plik | Opis | Adres raw |
+|---|---|---|
+| `data/latest.json` | Ostatni raport (nadpisywany) | https://raw.githubusercontent.com/Tomologia-Systemowa/ai-doomsday-data/main/data/latest.json |
+| `data/scale.json` | Przedziały skali i budżety kategorii | https://raw.githubusercontent.com/Tomologia-Systemowa/ai-doomsday-data/main/data/scale.json |
+| `data/history/index.json` | Spis plików dziennych z wynikiem (do wykresu) | https://raw.githubusercontent.com/Tomologia-Systemowa/ai-doomsday-data/main/data/history/index.json |
+| `data/history/history-DD-MM-RRRR.json` | Jeden plik na dzień: wynik, zdarzenia i pełny tekst raportu | `https://raw.githubusercontent.com/Tomologia-Systemowa/ai-doomsday-data/main/data/history/<file z index.json>` |
+| `data/history.json` | Przestarzały, nieaktualizowany (jeśli jeszcze istnieje) | – |
+
+Kolejność chronologiczną wyznacza pole `date` w `index.json`, nie nazwa pliku
+(format DD-MM-RRRR nie sortuje się alfabetycznie).
+
+## Wspólne zasady
+
+- `schema_version`: `"1.2"` (1.1 = bez bloku `report`; pliki starszych wersji mogą
+  współistnieć z nowszymi).
+- Każde pole tekstowe ma odpowiednik `*_en` (angielski): `headline`, `summary`,
+  `curve_comment`, `weekly_analysis`, `title`, `name`, `note`, `band`, `reason`,
+  `comment`, `disclaimer`; lista `triggers` ma odpowiednik `triggers_en`. Starsze pliki mogą
+  nie mieć pól `_en` – wtedy użyj pola polskiego.
+- Daty: `RRRR-MM-DD`; `updated_at`: ISO 8601 ze strefą Europa/Warszawa.
+- Przedziały (`band` / `band_en`): Zdrowy boom / Healthy boom (0–200), Przegrzanie /
+  Overheating (201–400), Pęknięcia / Cracks (401–600), Korekta / Correction (601–800),
+  Krach / Crash (801–1000).
+
+## data/latest.json
+
+| Pole | Opis |
+|---|---|
+| `date`, `report_type` | Data raportu; `full` albo `short` |
+| `score`, `band`, `band_en` | Wynik 0–1000 i przedział |
+| `change_vs_previous` | Zmiana względem poprzedniego wpisu (`null`, jeśli brak) |
+| `headline`, `headline_en` | Najważniejsza zmiana, 1 zdanie |
+| `summary`, `summary_en` | Podsumowanie raportu |
+| `report_file` | Ścieżka pliku dziennego z pełnym tekstem raportu (względem `data/`) |
+| `triggers[]`, `triggers_en[]` | Nazwy aktywnych wyzwalaczy |
+| `heavy_credit_event` | Czy wystąpiło ciężkie zdarzenie kredytowe |
+| `skipped_signals[]` | Sygnały pominięte (brak odczytu lub starszy niż 90 dni) |
+| `adjustments[]` | Korekty kategorii do progu minimalnego: `{category, points, floor, reason, reason_en}`. `score` = suma `points` sygnałów + suma `adjustments[].points` |
+| `signals[]` | Sygnały A1–G4 (niżej) |
+| `calendar[]` | `{date, title, title_en}` – najbliższe 2 tygodnie |
+| `disclaimer`, `disclaimer_en` | Zastrzeżenie |
+
+Pola sygnału: `id`, `category` (A–G), `name`, `name_en`, `value` (`null` przy danych
+licencjonowanych, np. ICE BofA, i płatnych indeksach), `unit`, `as_of`, `status`,
+`points`, `max_points` (po redystrybucji punktów pominiętych sygnałów; suma = 1000),
+`preliminary`, `source`, opcjonalnie `note`/`note_en`, `expires`, `conflict_of_interest`.
+
+`status`: `green` | `yellow` | `red` | `skipped` | `q0` | `q25` | `q50` | `q75` | `q100`
+(q* – ocena jakościowa, odsetek budżetu sygnału).
+
+## data/history/index.json
+
+```json
+{"schema_version": "1.2", "updated_at": "...",
+ "files": [{"date": "RRRR-MM-DD", "file": "history-DD-MM-RRRR.json",
+            "kind": "full|short|baseline", "score": 368, "band": "Przegrzanie"}]}
+```
+
+## data/history/history-DD-MM-RRRR.json
+
+```json
+{"schema_version": "1.2", "date": "RRRR-MM-DD", "updated_at": "...",
+ "entry": {"kind": "full|short|baseline", "score": 368, "band": "...", "band_en": "...",
+           "categories": {"A": 0, "B": 0, "C": 0, "D": 0, "E": 0, "F": 0, "G": 0},
+           "headline": "...", "headline_en": "..."},
+ "events": [{"date": "RRRR-MM-DD", "type": "...", "signal": "A8", "severity": "...",
+             "title": "...", "title_en": "...", "source": "<url>", "expires": "RRRR-MM-DD"}],
+ "report": {
+   "summary": "...", "summary_en": "...",
+   "curve_comment": "...", "curve_comment_en": "...",
+   "category_comments": {"A": {"comment": "...", "comment_en": "..."}},
+   "top_signals": ["B3", "G4", "E1"],
+   "near_boundary": false,
+   "weekly_analysis": null, "weekly_analysis_en": null,
+   "adjustments": [],
+   "signals": [],
+   "calendar": []
+ }}
+```
+
+- `entry` może być `null` (dzień ze zdarzeniami bez raportu).
+- `report` – pełny tekst raportu z danego dnia. Brak w plikach zasianych z historii
+  i utworzonych przed wersją 1.2. W raporcie krótkim `curve_comment` i
+  `category_comments` mogą być `null`. `weekly_analysis` wypełniony tylko w piątki.
+  `signals` i `calendar` mają ten sam format co w `latest.json` (stan z danego dnia).
+- `type`: credit_light | credit_heavy | rating | fed_hike | fed_cut | infra | financing |
+  threshold_cross | trigger | pricing | model_release.
+- `severity`: info | light | medium | heavy | trigger.
+
+## data/scale.json
+
+Przedziały (`bands[]`: `min`, `max`, `band`, `band_en`) i kategorie
+(`categories`: `name`, `name_en`, `budget`). Suma budżetów = 1000.
