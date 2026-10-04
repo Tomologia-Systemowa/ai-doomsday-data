@@ -9,10 +9,14 @@
 
   // ---- Configuration -------------------------------------------------------------------------
 
-  // Relative path works locally (python3 -m http.server from the repo root, open /dashboard/)
-  // and on GitHub Pages. To read straight from GitHub instead, set DATA_BASE = RAW_BASE.
+  // Where the data comes from:
+  // - localhost and GitHub Pages serve the repo, so data/ sits next to dashboard/ ('../data/');
+  // - anywhere else (own hosting, a file opened from disk) reads straight from GitHub (RAW_BASE),
+  //   so the page stays current with the daily routine without copying data/.
+  // To force one source, replace the expression with '../data/' or RAW_BASE.
   const RAW_BASE = 'https://raw.githubusercontent.com/Tomologia-Systemowa/ai-doomsday-data/main/data/';
-  const DATA_BASE = '../data/';
+  const LOCAL_DATA_HOSTS = /^(localhost|127\.0\.0\.1|\[::1\])$|\.github\.io$/;
+  const DATA_BASE = LOCAL_DATA_HOSTS.test(window.location.hostname) ? '../data/' : RAW_BASE;
   const REPO_URL = 'https://github.com/Tomologia-Systemowa/ai-doomsday-data';
   const ALLOWED_HOSTS = [new URL(RAW_BASE).host];
   const LANG_KEY = 'ai-doomsday-lang';
