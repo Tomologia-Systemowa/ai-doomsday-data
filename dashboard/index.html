@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Doomsday</title>
+  <meta name="description" content="Skala AI Doomsday (0–1000) – ryzyko pęknięcia bańki inwestycyjnej w AI. To nie jest porada inwestycyjna.">
+  <meta name="color-scheme" content="light dark">
+  <!-- allowEval off: no hx-trigger filters / hx-on; Enter on chart dots is handled in app.js. -->
+  <meta name="htmx-config" content='{"selfRequestsOnly": false, "allowEval": false, "allowScriptTags": false, "historyEnabled": false}'>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js"
+          integrity="sha384-2OatzQy1H+Zd/IIrjr1TcuDGqLXeHhbooAyJY1KdQMKnr4LZ22k31GBLdYKHmVjg"
+          crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"
+          integrity="sha384-WASZCYHGuIg0bwkJEH65mhmbKS1x4/VKI2bzElPKmL5B3e0UaH45nIdqOm+BUuRA"
+          crossorigin="anonymous"></script>
+  <script defer src="app.js"></script>
+</head>
+<body hx-ext="json-view">
+  <a class="skip" href="#report" data-i18n="skip">Przejdź do raportu</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div>
+        <h1>AI Doomsday</h1>
+        <p class="sub"><span data-i18n="lastReport">Ostatni raport</span>: <span id="report-date">…</span></p>
+      </div>
+      <div class="lang" role="group" aria-label="Język / Language">
+        <button type="button" data-lang="pl" aria-pressed="true">PL</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <noscript><p class="msg msg-error">Ta strona wymaga JavaScriptu. / This page requires JavaScript.</p></noscript>
+
+    <section class="card" aria-labelledby="h-today">
+      <h2 id="h-today" data-i18n="today">Dzisiejszy wynik</h2>
+      <div id="overview" data-view="overview" data-src="latest.json"
+           hx-get="" hx-trigger="dataready from:body, langchange from:body">
+        <p class="msg" role="status" data-i18n="loading">Ładowanie…</p>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="h-trend">
+      <h2 id="h-trend" data-i18n="trend">Historia wyniku</h2>
+      <div id="trend" data-view="trend" data-src="history/index.json"
+           hx-get="" hx-trigger="dataready from:body, langchange from:body, redraw">
+        <p class="msg" role="status" data-i18n="loading">Ładowanie…</p>
+      </div>
+      <div id="day-panel" class="day-panel" aria-live="polite">
+        <p class="hint" data-i18n="pickDay">Wybierz kropkę na wykresie (kliknięcie lub Enter), aby zobaczyć dany dzień.</p>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="h-report">
+      <h2 id="h-report" data-i18n="fullReport">Pełny raport</h2>
+      <div id="report" tabindex="-1">
+        <p class="msg" role="status" data-i18n="loading">Ładowanie…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>
+        <a href="https://github.com/Tomologia-Systemowa/ai-doomsday-data" rel="noopener noreferrer" data-i18n="repo">Repozytorium danych</a>
+        · <a href="https://tomologia.eu" rel="noopener noreferrer">tomologia.eu</a>
+        · <span data-i18n="updated">Aktualizacja danych</span>: <span id="updated-at">…</span>
+      </p>
+      <p class="disclaimer-foot" data-i18n="notAdvice">To nie jest porada inwestycyjna.</p>
+    </div>
+  </footer>
+
+  <!--
+    Mustache templates. Every {{var}} is HTML-escaped by Mustache; there is no {{{triple}}} anywhere.
+    Inside <table> the section tags sit in HTML comments, because bare text between table rows
+    would be moved out of the table by the HTML parser.
+  -->
+
+  <template id="tpl-error">
+    <div class="msg msg-error" role="alert">
+      <p><strong>{{title}}</strong></p>
+      <p>{{detail}}</p>
+      {{#url}}<p class="small"><code>{{url}}</code></p>{{/url}}
+    </div>
+  </template>
+
+  <template id="tpl-loading">
+    <p class="msg" role="status">{{t.loading}}</p>
+  </template>
+
+  <template id="tpl-overview">
+    <span id="report-date" hx-swap-oob="true">{{dateLong}}</span>
+    <div class="overview">
+      <figure class="donut" role="img" aria-label="{{aria}}">
+        <svg viewBox="0 0 240 240" aria-hidden="true" focusable="false">
+          {{#slices}}
+          <path d="{{d}}" class="slice {{cls}}"><title>{{label}}</title></path>
+          {{/slices}}
+        </svg>
+        <div class="donut-center">
+          <div class="score"><span class="score-num">{{score}}</span><span class="score-max">/1000</span></div>
+          <div class="band-name">{{band}}</div>
+          <div class="chg {{change.cls}}"><span aria-hidden="true">{{change.arrow}}</span> {{change.text}}</div>
+        </div>
+      </figure>
+
+      <div class="legend-wrap">
+        <table class="legend">
+          <caption class="sr-only">{{t.categories}}</caption>
+          <thead><tr><th scope="col">{{t.category}}</th><th scope="col" class="num">{{t.pointsBudget}}</th></tr></thead>
+          <tbody>
+            <!--{{#legend}}-->
+            <tr>
+              <th scope="row"><span class="swatch {{cls}}" aria-hidden="true"></span> <span class="cat-id">{{key}}</span> {{name}}</th>
+              <td class="num">{{points}} / {{budget}}</td>
+            </tr>
+            <!--{{/legend}}-->
+          </tbody>
+        </table>
+
+        <ul class="flags">
+          <li id="boundary-flag" class="is-hidden"></li>
+          {{#heavyCredit}}<li class="badge badge-bad"><span aria-hidden="true">⚠</span> {{t.heavyCredit}}</li>{{/heavyCredit}}
+          {{#triggers}}<li class="badge badge-bad"><span aria-hidden="true">⚡</span> {{t.trigger}}: {{.}}</li>{{/triggers}}
+          {{#skipped.length}}<li class="badge"><span aria-hidden="true">⦸</span> {{t.skippedSignals}}: {{skippedText}}</li>{{/skipped.length}}
+        </ul>
+      </div>
+    </div>
+    <p class="headline">{{headline}}</p>
+    {{#reportUrl}}
+    <div hidden data-view="report" hx-get="{{reportUrl}}" hx-trigger="load" hx-target="#report"></div>
+    {{/reportUrl}}
+  </template>
+
+  <template id="tpl-boundary">
+    <li id="boundary-flag" hx-swap-oob="true" class="badge badge-warn{{^near}} is-hidden{{/near}}"><span aria-hidden="true">⇵</span> {{t.nearBoundary}}</li>
+  </template>
+
+  <template id="tpl-trend">
+    <span id="updated-at" hx-swap-oob="true">{{updatedAt}}</span>
+    {{#empty}}<p class="msg">{{t.noHistory}}</p>{{/empty}}
+    {{^empty}}
+    <div class="chart-legend" aria-hidden="true">
+      <span><svg width="14" height="14"><circle cx="7" cy="7" r="4.5" class="dot-mark"/></svg> {{t.dayReport}}</span>
+      <span><svg width="16" height="16"><rect x="3.5" y="3.5" width="9" height="9" transform="rotate(45 8 8)" class="dot-mark dot-baseline"/></svg> {{t.baseline}}</span>
+    </div>
+    <svg class="trend-svg" viewBox="0 0 {{w}} {{h}}" width="{{w}}" height="{{h}}" role="group" aria-label="{{aria}}">
+      {{#bands}}
+      <rect x="{{x}}" y="{{y}}" width="{{width}}" height="{{height}}" class="band-bg band-{{i}}"/>
+      <text x="{{labelX}}" y="{{labelY}}" class="band-label">{{name}}</text>
+      {{/bands}}
+      {{#yTicks}}
+      <line x1="{{x1}}" x2="{{x2}}" y1="{{y}}" y2="{{y}}" class="grid"/>
+      <text x="{{tx}}" y="{{ty}}" class="tick" text-anchor="end">{{label}}</text>
+      {{/yTicks}}
+      {{#xTicks}}
+      <text x="{{x}}" y="{{y}}" class="tick" text-anchor="middle">{{label}}</text>
+      {{/xTicks}}
+      <polyline points="{{line}}" class="trend-line"/>
+      {{#last}}<text x="{{x}}" y="{{y}}" class="last-label" text-anchor="{{anchor}}">{{score}}</text>{{/last}}
+      {{#dots}}
+      <g class="dot{{#selected}} is-selected{{/selected}}" tabindex="0" role="button" aria-label="{{label}}"
+         data-file="{{file}}" data-view="day" hx-get="{{url}}" hx-target="#day-panel" hx-trigger="click, activate">
+        <title>{{label}}</title>
+        <circle cx="{{x}}" cy="{{y}}" r="14" class="dot-hit"/>
+        {{#baseline}}<rect x="{{rx}}" y="{{ry}}" width="11" height="11" transform="rotate(45 {{x}} {{y}})" class="dot-mark dot-baseline"/>{{/baseline}}
+        {{^baseline}}<circle cx="{{x}}" cy="{{y}}" r="5.5" class="dot-mark{{#noScore}} dot-empty{{/noScore}}"/>{{/baseline}}
+      </g>
+      {{/dots}}
+    </svg>
+    <div class="sr-only">
+    <table>
+      <caption>{{t.trend}}</caption>
+      <thead><tr><th scope="col">{{t.date}}</th><th scope="col">{{t.score}}</th><th scope="col">{{t.band}}</th><th scope="col">{{t.kind}}</th></tr></thead>
+      <tbody>
+        <!--{{#rows}}-->
+        <tr><td>{{date}}</td><td>{{score}}</td><td>{{band}}</td><td>{{kind}}</td></tr>
+        <!--{{/rows}}-->
+      </tbody>
+    </table>
+    </div>
+    {{/empty}}
+  </template>
+
+  <template id="tpl-day">
+    <article class="day">
+      <header class="day-head">
+        <h3>{{dateLong}}</h3>
+        <p class="day-score"><strong>{{score}}</strong><span class="score-max">/1000</span> · {{band}}{{#kindLabel}} · <span class="badge">{{kindLabel}}</span>{{/kindLabel}}</p>
+      </header>
+      {{#noEntry}}<p class="msg">{{t.noEntry}}</p>{{/noEntry}}
+      {{#text}}<p>{{text}}</p>{{/text}}
+      {{#events.length}}
+      <h4>{{t.events}}</h4>
+      <ul class="events">
+        {{#events}}
+        <li><span class="badge sev-{{severity}}">{{severityLabel}}</span> {{#signal}}<span class="cat-id">{{signal}}</span> {{/signal}}{{title}}{{#source}} – <a href="{{source}}" rel="noopener noreferrer" target="_blank">{{host}}</a>{{/source}}</li>
+        {{/events}}
+      </ul>
+      {{/events.length}}
+      <p class="small"><a href="{{jsonUrl}}" rel="noopener noreferrer" target="_blank">{{t.jsonData}}</a></p>
+    </article>
+  </template>
+
+  <template id="tpl-report">
+    <article class="report">
+      <header class="report-head">
+        <p class="report-date">{{dateLong}}{{#typeLabel}} · {{typeLabel}}{{/typeLabel}}</p>
+        <p class="report-score"><strong>{{score}}</strong><span class="score-max">/1000</span> · {{band}} · <span class="chg {{change.cls}}"><span aria-hidden="true">{{change.arrow}}</span> {{change.text}}</span></p>
+        <p class="headline">{{headline}}</p>
+      </header>
+      {{#missingDaily}}<p class="msg">{{t.noDaily}}</p>{{/missingDaily}}
+
+      <h3>{{t.summary}}</h3>
+      <p>{{summary}}</p>
+
+      {{#weekly.length}}
+      <section class="weekly">
+        <h3>{{t.weekly}}</h3>
+        {{#weekly}}<p>{{.}}</p>{{/weekly}}
+      </section>
+      {{/weekly.length}}
+
+      {{#curve}}
+      <h3>{{t.curve}}</h3>
+      <p>{{curve}}</p>
+      {{/curve}}
+
+      <h3>{{t.signals}}</h3>
+      <div class="table-wrap">
+        <table class="signals">
+          <thead>
+            <tr>
+              <th scope="col">{{t.signal}}</th>
+              <th scope="col" class="num">{{t.value}}</th>
+              <th scope="col">{{t.asOf}}</th>
+              <th scope="col">{{t.status}}</th>
+              <th scope="col" class="num">{{t.points}}</th>
+              <th scope="col">{{t.source}}</th>
+            </tr>
+          </thead>
+          <!--{{#groups}}-->
+          <tbody>
+            <tr class="cat-head">
+              <th colspan="6" scope="colgroup"><span class="swatch {{cls}}" aria-hidden="true"></span> <span class="cat-id">{{key}}</span> {{name}} <span class="cat-pts">{{points}} / {{budget}}</span></th>
+            </tr>
+            <!--{{#comment}}-->
+            <tr class="cat-comment"><td colspan="6">{{comment}}</td></tr>
+            <!--{{/comment}}-->
+            <!--{{#rows}}-->
+            <tr class="sig{{#skipped}} is-skipped{{/skipped}}{{#note}} has-note{{/note}}">
+              <th scope="row" data-label="{{t.signal}}">
+                <span class="cat-id">{{id}}</span> {{name}}
+                {{#preliminary}}<span class="badge badge-warn">{{t.preliminary}}</span>{{/preliminary}}
+                {{#coi}}<span class="badge badge-coi" title="{{coiText}}">{{t.coi}}</span>{{/coi}}
+              </th>
+              <td class="num" data-label="{{t.value}}"><span>{{value}}{{#licensed}} <span class="small muted">({{t.licensed}})</span>{{/licensed}}</span></td>
+              <td class="nowrap" data-label="{{t.asOf}}">{{asOf}}</td>
+              <td data-label="{{t.status}}"><span class="status st-{{status.color}}"><span class="dot-st" aria-hidden="true"></span>{{status.label}}</span></td>
+              <td class="num" data-label="{{t.points}}">{{points}} / {{max}}</td>
+              <td data-label="{{t.source}}">{{#source}}<a href="{{source}}" rel="noopener noreferrer" target="_blank">{{host}}</a>{{/source}}{{^source}}—{{/source}}</td>
+            </tr>
+            <!--{{#note}}-->
+            <tr class="note{{#skipped}} is-skipped{{/skipped}}"><td colspan="6">{{note}}</td></tr>
+            <!--{{/note}}-->
+            <!--{{/rows}}-->
+          </tbody>
+          <!--{{/groups}}-->
+        </table>
+      </div>
+
+      <h3>{{t.adjustments}}</h3>
+      {{#adjustments.length}}
+      <ul class="plain">
+        {{#adjustments}}<li><span class="cat-id">{{category}}</span> {{name}}: {{points}} {{t.pts}}{{#floor}} ({{t.floor}} {{floor}}){{/floor}} – {{reason}}</li>{{/adjustments}}
+      </ul>
+      {{/adjustments.length}}
+      {{^adjustments.length}}<p class="muted">{{t.noAdjustments}}</p>{{/adjustments.length}}
+
+      <h3>{{t.calendar}}</h3>
+      {{#calendar.length}}
+      <ul class="calendar">
+        {{#calendar}}<li><time datetime="{{iso}}">{{date}}</time> <span>{{title}}</span></li>{{/calendar}}
+      </ul>
+      {{/calendar.length}}
+      {{^calendar.length}}<p class="muted">{{t.noCalendar}}</p>{{/calendar.length}}
+
+      <p class="disclaimer" role="note"><span aria-hidden="true">⚠</span> {{disclaimer}}</p>
+    </article>
+  </template>
+</body>
+</html>
