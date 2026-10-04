@@ -13,10 +13,10 @@ every report. Every text field has an English counterpart with the `_en` suffix.
 
 | Plik | Opis | Adres raw |
 |---|---|---|
-| `data/latest.json` | Ostatni raport (nadpisywany) | https://raw.githubusercontent.com/Tomologia-Systemowa/ai-doomsday-data/claude/vibrant-rubin-5pq1zr/data/latest.json |
-| `data/scale.json` | Przedziały skali i budżety kategorii | https://raw.githubusercontent.com/Tomologia-Systemowa/ai-doomsday-data/claude/vibrant-rubin-5pq1zr/data/scale.json |
-| `data/history/index.json` | Spis plików dziennych z wynikiem (do wykresu) | https://raw.githubusercontent.com/Tomologia-Systemowa/ai-doomsday-data/claude/vibrant-rubin-5pq1zr/data/history/index.json |
-| `data/history/history-DD-MM-RRRR.json` | Jeden plik na dzień: wynik, zdarzenia i pełny tekst raportu | `https://raw.githubusercontent.com/Tomologia-Systemowa/ai-doomsday-data/claude/vibrant-rubin-5pq1zr/data/history/<file z index.json>` |
+| `data/latest.json` | Ostatni raport (nadpisywany) | https://raw.githubusercontent.com/Tomologia-Systemowa/ai-doomsday-data/main/data/latest.json |
+| `data/scale.json` | Przedziały skali i budżety kategorii | https://raw.githubusercontent.com/Tomologia-Systemowa/ai-doomsday-data/main/data/scale.json |
+| `data/history/index.json` | Spis plików dziennych z wynikiem (do wykresu) | https://raw.githubusercontent.com/Tomologia-Systemowa/ai-doomsday-data/main/data/history/index.json |
+| `data/history/history-DD-MM-RRRR.json` | Jeden plik na dzień: wynik, zdarzenia i pełny tekst raportu | `https://raw.githubusercontent.com/Tomologia-Systemowa/ai-doomsday-data/main/data/history/<file z index.json>` |
 | `data/history.json` | Przestarzały, nieaktualizowany (jeśli jeszcze istnieje) | – |
 
 Kolejność chronologiczną wyznacza pole `date` w `index.json`, nie nazwa pliku
