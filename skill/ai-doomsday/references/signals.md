@@ -52,13 +52,16 @@ A8. Credit events (news from the last 30 days) [40]
     🟢 none
     🟡 LIGHT: postponed or withdrawn IPO or issue, provided valuation and access to funding
        did not fall at the same time (e.g. a new round at a higher valuation); a single
-       postponed bond issue
+       postponed bond issue; a tenant invoking force majeure or asking to defer payments on
+       a debt-financed data-center project
     🔴 HEAVY: downgrade of an AI company to speculative grade; failed refinancing or
        emergency issue by a neocloud; default on a GPU-backed loan, an Nvidia guarantee
        being called, or a margin call on a loan secured by GPUs or lab equity; redemption
        limits at a private credit fund or BDC exposed to AI or data centers; downgrade,
        default, or a mark clearly below par on a data-center ABS/CMBS tranche; an AI lab
-       round or IPO at a clearly lower valuation
+       round or IPO at a clearly lower valuation; such a force majeure or deferral claim
+       once the landlord accepts it, payments are actually withheld, or the project's debt
+       is marked down or downgraded
     Heavy event: set `heavy_credit_event: true` (the script lifts category A to at least
     210) and run a full report.
 Interpretation: high AI premium (A2) with a low junk spread (A3) = sector stress; both
