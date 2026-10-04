@@ -26,7 +26,10 @@
   const I18N = {
     pl: {
       locale: 'pl-PL',
-      skip: 'Przejdź do raportu', judgmentDay: 'Dzień Sądu', lastReport: 'Ostatni raport', today: 'Dzisiejszy wynik',
+      skip: 'Przejdź do raportu',
+      slogan: 'Dzień Sądu: kiedy taniej jest skończyć z ludzkością, niż spłacić dług.',
+      tagline: 'Codzienna ocena ryzyka pęknięcia bańki inwestycyjnej w AI – skala 0–1000, 28 sygnałów rynkowych.',
+      lastReport: 'Ostatni raport', today: 'Dzisiejszy wynik',
       trend: 'Historia wyniku', fullReport: 'Pełny raport', loading: 'Ładowanie…',
       pickDay: 'Wybierz kropkę na wykresie (kliknięcie lub Enter), aby zobaczyć dany dzień.',
       repo: 'Repozytorium danych', updated: 'Aktualizacja danych', notAdvice: 'To nie jest porada inwestycyjna.',
@@ -57,7 +60,10 @@
     },
     en: {
       locale: 'en-GB',
-      skip: 'Skip to report', judgmentDay: 'Judgment Day', lastReport: 'Latest report', today: "Today's score",
+      skip: 'Skip to report',
+      slogan: 'Judgment Day: when ending humanity is cheaper than paying off the debt.',
+      tagline: 'Daily assessment of the risk of the AI investment bubble bursting – 0–1000 scale, 28 market signals.',
+      lastReport: 'Latest report', today: "Today's score",
       trend: 'Score history', fullReport: 'Full report', loading: 'Loading…',
       pickDay: 'Pick a dot on the chart (click or Enter) to see that day.',
       repo: 'Data repository', updated: 'Data updated', notAdvice: 'This is not investment advice.',
