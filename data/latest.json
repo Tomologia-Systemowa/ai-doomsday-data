@@ -6,10 +6,10 @@
   "band": "Pęknięcia",
   "band_en": "Cracks",
   "change_vs_previous": 0,
-  "headline": "Wynik 404/1000 bez zmian – po weekendzie brak nowych odczytów rynkowych i zdarzeń kredytowych; strefa „Pęknięcia”, na granicy z „Przegrzaniem”.",
-  "headline_en": "Score 404/1000, unchanged – after the weekend there are no new market readings or credit events; the \"Cracks\" band, at the boundary with \"Overheating\".",
-  "summary": "Poniedziałkowy pełny raport potwierdza 404/1000 – strefa „Pęknięcia”, 4 pkt nad granicą z „Przegrzaniem”. Ostatnie zamknięcie rynku to piątek 2.10, uwzględniony już w raporcie z 4.10; przegląd wiadomości z weekendu nie wykazał nowych zdarzeń kredytowych, wyzwalaczy ani zmian cenników (doniesienia z 4.10 o odpływie inwestorów od ryzykowniejszych projektów centrów danych powtarzają znane fakty). Ryzyko pozostaje skupione w koszcie pieniądza i makro: 10Y 5,28%, podwyżka Fed z 16.09, premia neocloudów ok. 580 pb, rekordowy CDS Oracle, spread HY 3,24% (+44 pb w tydzień). Druga oś napięć to energia (PJM, moratoria). Przeciwwaga: rosnący capex, przyspieszające chmury, niedobór CoWoS i HBM, rosnące ceny DRAM i adopcja. Do obserwacji: protokół FOMC (7.10), CPI (14.10), spread HY.",
-  "summary_en": "Monday's full report confirms 404/1000 – the \"Cracks\" band, 4 points above the boundary with \"Overheating\". The latest market close is Friday 2 Oct, already included in the report of 4 Oct; the review of weekend news found no new credit events, triggers or pricing changes (reports of 4 Oct about investors moving away from riskier data-center projects repeat known facts). Risk remains concentrated in the cost of money and macro: the 10Y at 5.28%, the Fed hike of 16 Sep, a neocloud premium of about 580 bp, a record Oracle CDS, the HY spread at 3.24% (+44 bp in a week). The second axis of strain is power (PJM, moratoria). The counterweight: rising capex, accelerating cloud, CoWoS and HBM shortages, rising DRAM prices and adoption. To watch: the FOMC minutes (7 Oct), CPI (14 Oct), the HY spread.",
+  "headline": "Wynik 404/1000 bez zmian – 10Y wzrosła do 5,31%, spread HY cofnął się do 3,10%; strefa „Pęknięcia”, na granicy z „Przegrzaniem”.",
+  "headline_en": "Score 404/1000, unchanged – the 10Y rose to 5.31%, the HY spread eased to 3.10%; the \"Cracks\" band, at the boundary with \"Overheating\".",
+  "summary": "Wieczorna aktualizacja pełnego raportu utrzymuje 404/1000 – strefa „Pęknięcia”, 4 pkt nad granicą z „Przegrzaniem”. Poniedziałkowe zamknięcie podniosło 10Y do 5,31% (z 5,28%), a 2Y spadła do 4,84%; trend miesięczny krzywej nadal oznacza zaostrzanie. Spread HY cofnął się do 3,10% (z 3,24%), co łagodzi piątkowy niepokój, ale pozostaje o 30 pb wyżej niż przed dwoma tygodniami. Stawki H100 spadły w 30 dni o 10,4% – poniżej progu ostrzegawczego 15%. Nie odnotowano nowych zdarzeń kredytowych, wyzwalaczy ani zmian cenników. Ryzyko pozostaje skupione w koszcie pieniądza i polityce Fed (A1, E2, E3, A7) oraz energii (F1); przeciwwagą są rosnący capex, adopcja, ceny DRAM i niedobór CoWoS/HBM. Kluczowe najbliższe dane: protokół FOMC (7.10) i CPI (14.10).",
+  "summary_en": "The evening update of the full report keeps 404/1000 – the \"Cracks\" band, 4 points above the boundary with \"Overheating\". Monday's close lifted the 10Y to 5.31% (from 5.28%), while the 2Y fell to 4.84%; the curve's monthly trend still means tightening. The HY spread eased to 3.10% (from 3.24%), which softens Friday's concern, but remains 30 bp higher than two weeks ago. H100 rates fell 10.4% over 30 days – below the 15% warning threshold. No new credit events, triggers or pricing changes were recorded. Risk remains concentrated in the cost of money and Fed policy (A1, E2, E3, A7) and power (F1); the counterweight is rising capex, adoption, DRAM prices and the CoWoS/HBM shortage. Key upcoming data: the FOMC minutes (7 Oct) and CPI (14 Oct).",
   "report_file": "history/history-05-10-2026.json",
   "triggers": [],
   "triggers_en": [],
@@ -22,16 +22,16 @@
       "category": "A",
       "name": "Rentowność 10Y USA",
       "name_en": "US 10Y Treasury yield",
-      "value": 5.28,
+      "value": 5.31,
       "unit": "%",
-      "as_of": "2026-10-02",
+      "as_of": "2026-10-05",
       "status": "red",
       "points": 50.0,
       "max_points": 50.0,
       "preliminary": false,
       "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610",
-      "note": "Treasury par yield 2026-10-02: 5,28%; FRED DGS10 (do 2026-10-01): 5,24%, zgodnie z Treasury dla tego dnia.",
-      "note_en": "Treasury par yield 2026-10-02: 5.28%; FRED DGS10 (through 2026-10-01): 5.24%, matching Treasury for that day."
+      "note": "Treasury par yield 2026-10-05: 5,31% (2.10: 5,28%); FRED DGS10 (do 2026-10-01): 5,24%, zgodnie z Treasury dla tego dnia.",
+      "note_en": "Treasury par yield 2026-10-05: 5.31% (2 Oct: 5.28%); FRED DGS10 (through 2026-10-01): 5.24%, matching Treasury for that day."
     },
     {
       "id": "A2",
@@ -46,8 +46,8 @@
       "max_points": 40.0,
       "preliminary": false,
       "source": "https://www.pennmutualam.com/market-insights-news/blogs/chart-of-the-week/2026-08-06-ai-infrastructure-bonds-a-full-picture-of-spreads",
-      "note": "Obligacje hiperskalerów ok. 35 pb ponad indeks IG (koniec lipca 2026, Penn Mutual AM za Bloombergiem, źródło wtórne); wrześniowy odczyt ok. 37 pb niepotwierdzony. Spread IG (BAMLC0A0CM) 0,86% na 2026-10-01 (0,79% tydzień wcześniej).",
-      "note_en": "Hyperscaler bonds about 35 bp over the IG index (late July 2026, Penn Mutual AM citing Bloomberg, secondary source); a September reading of about 37 bp is unconfirmed. IG spread (BAMLC0A0CM) 0.86% on 2026-10-01 (0.79% a week earlier)."
+      "note": "Obligacje hiperskalerów ok. 35 pb ponad indeks IG (koniec lipca 2026, Penn Mutual AM za Bloombergiem, źródło wtórne); wrześniowy odczyt ok. 37 pb niepotwierdzony. Spread IG (BAMLC0A0CM) 0,85% na 2026-10-02 (0,86% dzień wcześniej, 0,79% na 2026-09-24).",
+      "note_en": "Hyperscaler bonds about 35 bp over the IG index (late July 2026, Penn Mutual AM citing Bloomberg, secondary source); a September reading of about 37 bp is unconfirmed. IG spread (BAMLC0A0CM) 0.85% on 2026-10-02 (0.86% a day earlier, 0.79% on 2026-09-24)."
     },
     {
       "id": "A3",
@@ -56,14 +56,14 @@
       "name_en": "High-yield spread",
       "value": null,
       "unit": "%",
-      "as_of": "2026-10-01",
+      "as_of": "2026-10-02",
       "status": "green",
       "points": 0.0,
       "max_points": 40.0,
       "preliminary": false,
       "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-      "note": "Poniżej progu 3,5%, ale +44 pb w tydzień (2,80% na 2026-09-24); równoległe rozszerzanie spreadu IG.",
-      "note_en": "Below the 3.5% threshold, but +44 bp in a week (2.80% on 2026-09-24); the IG spread is widening at the same time."
+      "note": "3,10% na 2026-10-02, −14 pb po szczycie 3,24% (1.10); nadal +30 pb wobec 2,80% (24.09). Poniżej progu 3,5%.",
+      "note_en": "3.10% on 2026-10-02, −14 bp after the 3.24% peak (1 Oct); still +30 bp vs 2.80% (24 Sep). Below the 3.5% threshold."
     },
     {
       "id": "A4",
@@ -142,8 +142,8 @@
       "max_points": 40.0,
       "preliminary": false,
       "source": "https://datacenterdynamics.com/en/news/oracle-issues-force-majeure-notice-to-blue-owl-following-series-of-setbacks-at-project-jupiter-data-center-campus-report",
-      "note": "Lekkie: przełożone IPO SB Energy i Holtec (22.09); zawiadomienie Oracle o sile wyższej wobec Blue Owl w Project Jupiter (24.09) – możliwe odroczenie czynszu o 3 lata w projekcie finansowanym długiem (ok. 18 mld USD); roszczenie nieuznane, czynsz jeszcze nienależny (start 2028) – zdarzenie lekkie. Brak zdarzeń ciężkich; limity wypłat w funduszach Cliffwater (4.09) i BCRED (3.09) bez potwierdzonej ekspozycji na AI/centra danych – nieliczone jako ciężkie. Opóźnienie IPO Aggreko (NYT 21.09, Bisnow 22.09) należy do tej samej fali co SB Energy i Holtec – bez nowego zdarzenia w weekend 3–4.10.",
-      "note_en": "Light: SB Energy and Holtec IPOs postponed (22 Sep); Oracle's force majeure notice to Blue Owl on Project Jupiter (24 Sep) – a possible 3-year rent deferral on a debt-financed project (about USD 18bn); the claim is not accepted and rent is not yet due (start 2028) – a light event. No heavy events; redemption caps at Cliffwater (4 Sep) and BCRED (3 Sep) funds have no confirmed AI/data-center exposure – not counted as heavy. The Aggreko IPO delay (NYT 21 Sep, Bisnow 22 Sep) belongs to the same wave as SB Energy and Holtec – no new event over the 3–4 Oct weekend."
+      "note": "Lekkie: przełożone IPO SB Energy i Holtec (22.09); zawiadomienie Oracle o sile wyższej wobec Blue Owl w Project Jupiter (24.09) – możliwe odroczenie czynszu o 3 lata w projekcie finansowanym długiem (ok. 18 mld USD); roszczenie nieuznane, czynsz jeszcze nienależny (start 2028) – zdarzenie lekkie. Brak zdarzeń ciężkich; limity wypłat w funduszach Cliffwater (4.09) i BCRED (3.09) bez potwierdzonej ekspozycji na AI/centra danych – nieliczone jako ciężkie. Opóźnienie IPO Aggreko (NYT 21.09, Bisnow 22.09) należy do tej samej fali co SB Energy i Holtec – bez nowego zdarzenia w weekend 3–4.10. Przesunięcie IPO Anthropic z października na listopad (WSJ/NYT 18.09, źródła wtórne) – dla pełnych wyników III kw., bez sygnałów niższej wyceny – nie liczone jako zdarzenie; dotyczy Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne.",
+      "note_en": "Light: SB Energy and Holtec IPOs postponed (22 Sep); Oracle's force majeure notice to Blue Owl on Project Jupiter (24 Sep) – a possible 3-year rent deferral on a debt-financed project (about USD 18bn); the claim is not accepted and rent is not yet due (start 2028) – a light event. No heavy events; redemption caps at Cliffwater (4 Sep) and BCRED (3 Sep) funds have no confirmed AI/data-center exposure – not counted as heavy. The Aggreko IPO delay (NYT 21 Sep, Bisnow 22 Sep) belongs to the same wave as SB Energy and Holtec – no new event over the 3–4 Oct weekend. The Anthropic IPO shift from October to November (WSJ/NYT 18 Sep, secondary sources) – to include full Q3 results, with no signs of a lower valuation – not counted as an event; concerns Anthropic – potential conflict of interest, external sources only."
     },
     {
       "id": "B1",
@@ -265,14 +265,14 @@
       "name_en": "GPU rental rates",
       "value": null,
       "unit": "USD/GPU-h (H100)",
-      "as_of": "2026-10-03",
+      "as_of": "2026-10-04",
       "status": "green",
       "points": 0.0,
       "max_points": 45.0,
       "preliminary": false,
       "source": "https://data.ornn.com/markets/h100-sxm",
-      "note": "Ornn OCPI H100: koniec miesiąca 2,76 → 2,97 → 2,71 (VII–IX, −8,8% m/m we IX, poniżej progu 15%), średnie miesięczne 2,63 → 2,77 → 2,83; B200 8,09 (+33% m/m). Silicon Data H100 2,78. Brak świeżych stawek kontraktowych – testy kontraktowe nierozstrzygalne.",
-      "note_en": "Ornn OCPI H100 month-end 2.76 → 2.97 → 2.71 (Jul–Sep, −8.8% m/m in Sep, below the 15% threshold), monthly averages 2.63 → 2.77 → 2.83; B200 8.09 (+33% m/m). Silicon Data H100 2.78. No fresh contract rates – contract tests cannot be resolved."
+      "note": "Ornn OCPI H100: 2,59 USD/h (4.10), −10,4% w 30 dni (poniżej progu 15%), +4,0% t/t; koniec miesiąca 2,76 → 2,97 → 2,71 (VII–IX), średnie miesięczne 2,63 → 2,77 → 2,83; B200 8,09 (+33% m/m we IX). Silicon Data H100 2,78. Brak świeżych stawek kontraktowych – testy kontraktowe nierozstrzygalne.",
+      "note_en": "Ornn OCPI H100: USD 2.59/h (4 Oct), −10.4% over 30 days (below the 15% threshold), +4.0% w/w; month-end 2.76 → 2.97 → 2.71 (Jul–Sep), monthly averages 2.63 → 2.77 → 2.83; B200 8.09 (+33% m/m in Sep). Silicon Data H100 2.78. No fresh contract rates – contract tests cannot be resolved."
     },
     {
       "id": "D2",
@@ -359,16 +359,16 @@
       "category": "E",
       "name": "Krzywa 10Y–2Y",
       "name_en": "10Y–2Y yield curve",
-      "value": 0.45,
+      "value": 0.47,
       "unit": "pp",
-      "as_of": "2026-10-02",
+      "as_of": "2026-10-05",
       "status": "red",
       "points": 25.0,
       "max_points": 25.0,
       "preliminary": false,
       "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610",
-      "note": "Miesiąc: 2Y +44 pb, 10Y +49 pb; tydzień: 2Y +2 pb, 10Y +11 pb – stromienie przez rosnącą 10Y przy rosnącej 2Y = zaostrzanie. FRED T10Y2Y 0,45 – zgodne.",
-      "note_en": "Month: 2Y +44 bp, 10Y +49 bp; week: 2Y +2 bp, 10Y +11 bp – steepening via a rising 10Y with a rising 2Y = tightening. FRED T10Y2Y 0.45 – consistent."
+      "note": "Treasury 5.10: 10Y 5,31%, 2Y 4,84% → 0,47 pp. Miesiąc (4.09→5.10): 2Y +47 pb, 10Y +53 pb – stromienie przez rosnącą 10Y przy rosnącej 2Y = zaostrzanie. Tydzień (28.09→5.10): 2Y −8 pb, 10Y +7 pb – obraz mieszany; o statusie decyduje trend miesięczny. FRED T10Y2Y 0,45 (2.10) – zgodne.",
+      "note_en": "Treasury 5 Oct: 10Y 5.31%, 2Y 4.84% → 0.47 pp. Month (4 Sep→5 Oct): 2Y +47 bp, 10Y +53 bp – steepening via a rising 10Y with a rising 2Y = tightening. Week (28 Sep→5 Oct): 2Y −8 bp, 10Y +7 bp – mixed; the monthly trend decides the status. FRED T10Y2Y 0.45 (2 Oct) – consistent."
     },
     {
       "id": "E3",
@@ -494,6 +494,11 @@
       "date": "2026-10-15",
       "title": "TSMC – wyniki III kw.; ASML – wyniki III kw.",
       "title_en": "TSMC Q3 results; ASML Q3 results"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "TCEQ – aktualizacja decyzji o pozwoleniach dla centrów danych w Teksasie",
+      "title_en": "TCEQ – update on Texas data-center permit decisions"
     },
     {
       "date": "2026-10-24",
