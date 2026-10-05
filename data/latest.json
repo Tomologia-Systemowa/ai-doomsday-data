@@ -1,16 +1,16 @@
 {
   "schema_version": "1.2",
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "report_type": "full",
   "score": 404,
   "band": "Pęknięcia",
   "band_en": "Cracks",
-  "change_vs_previous": null,
-  "headline": "Wynik 404/1000 bez zmian względem popołudniowego raportu z 4.10 – weekend bez nowych odczytów rynkowych; strefa „Pęknięcia”, na granicy z „Przegrzaniem”.",
-  "headline_en": "Score 404/1000, unchanged from the afternoon report of 4 Oct – a weekend with no new market readings; the \"Cracks\" band, at the boundary with \"Overheating\".",
-  "summary": "Ponowny pełny raport z 4.10 (brak pliku stanu w pamięci) potwierdza 404/1000 – strefa „Pęknięcia”, na granicy z „Przegrzaniem”. W weekend nie ma nowych odczytów rynkowych, a przegląd wiadomości nie wykazał nowych zdarzeń kredytowych, wyzwalaczy ani zmian cenników. Ryzyko pozostaje skupione w koszcie pieniądza i makro: 10Y 5,28%, podwyżka Fed z 16.09 i ok. 70% szans na kolejną w grudniu, premia neocloudów ok. 580 pb, rekordowy CDS Oracle. Energia (PJM, moratoria) to druga oś napięć; zawiadomienie Oracle o sile wyższej w Project Jupiter (24.09) zaliczone do A8 jako zdarzenie lekkie. Przeciwwaga: rosnący capex, przyspieszające chmury, niedobór CoWoS i HBM, rosnące ceny DRAM i adopcja. Do obserwacji: protokół FOMC (7.10), CPI (14.10), spread HY.",
-  "summary_en": "A repeat full report for 4 Oct (no state file in memory) confirms 404/1000 – the \"Cracks\" band, at the boundary with \"Overheating\". There are no new market readings over the weekend, and the news review found no new credit events, triggers or pricing changes. Risk remains concentrated in the cost of money and macro: the 10Y at 5.28%, the Fed hike of 16 Sep and about a 70% chance of another in December, a neocloud premium of about 580 bp, a record Oracle CDS. Power (PJM, moratoria) is the second axis of strain; Oracle's force majeure notice on Project Jupiter (24 Sep) is counted in A8 as a light event. The counterweight: rising capex, accelerating cloud, CoWoS and HBM shortages, rising DRAM prices and adoption. To watch: the FOMC minutes (7 Oct), CPI (14 Oct), the HY spread.",
-  "report_file": "history/history-04-10-2026.json",
+  "change_vs_previous": 0,
+  "headline": "Wynik 404/1000 bez zmian – po weekendzie brak nowych odczytów rynkowych i zdarzeń kredytowych; strefa „Pęknięcia”, na granicy z „Przegrzaniem”.",
+  "headline_en": "Score 404/1000, unchanged – after the weekend there are no new market readings or credit events; the \"Cracks\" band, at the boundary with \"Overheating\".",
+  "summary": "Poniedziałkowy pełny raport potwierdza 404/1000 – strefa „Pęknięcia”, 4 pkt nad granicą z „Przegrzaniem”. Ostatnie zamknięcie rynku to piątek 2.10, uwzględniony już w raporcie z 4.10; przegląd wiadomości z weekendu nie wykazał nowych zdarzeń kredytowych, wyzwalaczy ani zmian cenników (doniesienia z 4.10 o odpływie inwestorów od ryzykowniejszych projektów centrów danych powtarzają znane fakty). Ryzyko pozostaje skupione w koszcie pieniądza i makro: 10Y 5,28%, podwyżka Fed z 16.09, premia neocloudów ok. 580 pb, rekordowy CDS Oracle, spread HY 3,24% (+44 pb w tydzień). Druga oś napięć to energia (PJM, moratoria). Przeciwwaga: rosnący capex, przyspieszające chmury, niedobór CoWoS i HBM, rosnące ceny DRAM i adopcja. Do obserwacji: protokół FOMC (7.10), CPI (14.10), spread HY.",
+  "summary_en": "Monday's full report confirms 404/1000 – the \"Cracks\" band, 4 points above the boundary with \"Overheating\". The latest market close is Friday 2 Oct, already included in the report of 4 Oct; the review of weekend news found no new credit events, triggers or pricing changes (reports of 4 Oct about investors moving away from riskier data-center projects repeat known facts). Risk remains concentrated in the cost of money and macro: the 10Y at 5.28%, the Fed hike of 16 Sep, a neocloud premium of about 580 bp, a record Oracle CDS, the HY spread at 3.24% (+44 bp in a week). The second axis of strain is power (PJM, moratoria). The counterweight: rising capex, accelerating cloud, CoWoS and HBM shortages, rising DRAM prices and adoption. To watch: the FOMC minutes (7 Oct), CPI (14 Oct), the HY spread.",
+  "report_file": "history/history-05-10-2026.json",
   "triggers": [],
   "triggers_en": [],
   "heavy_credit_event": false,
@@ -142,9 +142,8 @@
       "max_points": 40.0,
       "preliminary": false,
       "source": "https://datacenterdynamics.com/en/news/oracle-issues-force-majeure-notice-to-blue-owl-following-series-of-setbacks-at-project-jupiter-data-center-campus-report",
-      "note": "Lekkie: przełożone IPO SB Energy i Holtec (22.09); zawiadomienie Oracle o sile wyższej wobec Blue Owl w Project Jupiter (24.09) – możliwe odroczenie czynszu o 3 lata w projekcie finansowanym długiem (ok. 18 mld USD); roszczenie nieuznane, czynsz jeszcze nienależny (start 2028) – zdarzenie lekkie. Brak zdarzeń ciężkich; limity wypłat w funduszach Cliffwater (4.09) i BCRED (3.09) bez potwierdzonej ekspozycji na AI/centra danych – nieliczone jako ciężkie.",
-      "note_en": "Light: SB Energy and Holtec IPOs postponed (22 Sep); Oracle's force majeure notice to Blue Owl on Project Jupiter (24 Sep) – a possible 3-year rent deferral on a debt-financed project (about USD 18bn); the claim is not accepted and rent is not yet due (start 2028) – a light event. No heavy events; redemption caps at Cliffwater (4 Sep) and BCRED (3 Sep) funds have no confirmed AI/data-center exposure – not counted as heavy.",
-      "expires": "2026-10-24"
+      "note": "Lekkie: przełożone IPO SB Energy i Holtec (22.09); zawiadomienie Oracle o sile wyższej wobec Blue Owl w Project Jupiter (24.09) – możliwe odroczenie czynszu o 3 lata w projekcie finansowanym długiem (ok. 18 mld USD); roszczenie nieuznane, czynsz jeszcze nienależny (start 2028) – zdarzenie lekkie. Brak zdarzeń ciężkich; limity wypłat w funduszach Cliffwater (4.09) i BCRED (3.09) bez potwierdzonej ekspozycji na AI/centra danych – nieliczone jako ciężkie. Opóźnienie IPO Aggreko (NYT 21.09, Bisnow 22.09) należy do tej samej fali co SB Energy i Holtec – bez nowego zdarzenia w weekend 3–4.10.",
+      "note_en": "Light: SB Energy and Holtec IPOs postponed (22 Sep); Oracle's force majeure notice to Blue Owl on Project Jupiter (24 Sep) – a possible 3-year rent deferral on a debt-financed project (about USD 18bn); the claim is not accepted and rent is not yet due (start 2028) – a light event. No heavy events; redemption caps at Cliffwater (4 Sep) and BCRED (3 Sep) funds have no confirmed AI/data-center exposure – not counted as heavy. The Aggreko IPO delay (NYT 21 Sep, Bisnow 22 Sep) belongs to the same wave as SB Energy and Holtec – no new event over the 3–4 Oct weekend."
     },
     {
       "id": "B1",
@@ -384,8 +383,8 @@
       "max_points": 50.0,
       "preliminary": false,
       "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
-      "note": "Podwyżka o 25 pb 16.09.2026; Kalshi (4.10): X – utrzymanie 83%, XII – podwyżka 70%.",
-      "note_en": "25 bp hike on 16 Sep 2026; Kalshi (4 Oct): Oct – hold 83%, Dec – hike 70%."
+      "note": "Podwyżka o 25 pb 16.09.2026; Kalshi (4.10): X – utrzymanie 83%, XII – podwyżka 70%. Rozbieżność: migawka DeFi Rate/Kalshi z 30.09 dawała 55,5% na podwyżkę w październiku – starsza, mniej wiarygodna od odczytu z 4.10; status 🔴 wynika i tak z podwyżki z 16.09.",
+      "note_en": "25 bp hike on 16 Sep 2026; Kalshi (4 Oct): Oct – hold 83%, Dec – hike 70%. Discrepancy: a DeFi Rate/Kalshi snapshot of 30 Sep showed 55.5% for an October hike – older and less credible than the 4 Oct reading; the 🔴 status follows from the 16 Sep hike anyway."
     },
     {
       "id": "F1",
