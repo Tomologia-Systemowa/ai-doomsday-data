@@ -130,12 +130,14 @@ Repo rules:
 - If README.md exists but describes an older schema (no `report` block), delete it and run
   `publish.py report` again – the script recreates it from `assets/README.md` with this
   repository's own raw URLs.
-- Session branch: some environments allow pushing only to a designated session branch
-  (e.g. `claude/<name>`). If the task says so, or the push to the named branch is refused
-  for that reason, push the same commit to the designated branch instead
-  (`git push origin HEAD:<designated-branch>`). This is a successful publication, not a
-  failure – the repository merges such branches into the target branch on its own. Note
-  the branch name in the report in one line; do not send a notification for it.
+- Session branch: some environments designate a session branch (e.g. `claude/<name>`).
+  The task's named branch takes precedence: push to it directly
+  (`git push origin HEAD:<branch>`). Nothing merges session branches into the target
+  branch automatically. If the push to the named branch is refused, push the same commit
+  to the session branch so the data is not lost, but treat it as a failed publication:
+  say in the report that the data is only on `<session-branch>`, not on `<branch>`, and
+  add "Publikacja JSON nieudana: dane tylko na gałęzi <session-branch>, nie na <branch>"
+  to the notification.
 - If push fails for any other reason (e.g. 403 with no designated branch), retry at most
   once; then finish the report normally and add "Publikacja JSON nieudana: <powód>" to
   the notification.
