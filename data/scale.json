@@ -4,32 +4,32 @@
     {
       "min": 0,
       "max": 200,
-      "band": "Zdrowy boom",
-      "band_en": "Healthy boom"
+      "band": "Niskie napięcie",
+      "band_en": "Low stress"
     },
     {
       "min": 201,
       "max": 400,
-      "band": "Przegrzanie",
-      "band_en": "Overheating"
+      "band": "Umiarkowane napięcie",
+      "band_en": "Moderate stress"
     },
     {
       "min": 401,
       "max": 600,
-      "band": "Pęknięcia",
-      "band_en": "Cracks"
+      "band": "Podwyższone napięcie",
+      "band_en": "Elevated stress"
     },
     {
       "min": 601,
       "max": 800,
-      "band": "Korekta",
-      "band_en": "Correction"
+      "band": "Wysokie napięcie",
+      "band_en": "High stress"
     },
     {
       "min": 801,
       "max": 1000,
-      "band": "Krach",
-      "band_en": "Crash"
+      "band": "Skrajne napięcie",
+      "band_en": "Extreme stress"
     }
   ],
   "categories": {

@@ -31,9 +31,13 @@ Kolejność chronologiczną wyznacza pole `date` w `index.json`, nie nazwa pliku
   `comment`, `disclaimer`; lista `triggers` ma odpowiednik `triggers_en`. Starsze pliki mogą
   nie mieć pól `_en` – wtedy użyj pola polskiego.
 - Daty: `RRRR-MM-DD`; `updated_at`: ISO 8601 ze strefą Europa/Warszawa.
-- Przedziały (`band` / `band_en`): Zdrowy boom / Healthy boom (0–200), Przegrzanie /
-  Overheating (201–400), Pęknięcia / Cracks (401–600), Korekta / Correction (601–800),
-  Krach / Crash (801–1000).
+- Przedziały (`band` / `band_en`) opisują poziom napięcia w sygnałach, nie zdarzenie ani
+  jego termin: Niskie napięcie / Low stress (0–200), Umiarkowane napięcie / Moderate stress
+  (201–400), Podwyższone napięcie / Elevated stress (401–600), Wysokie napięcie / High
+  stress (601–800), Skrajne napięcie / Extreme stress (801–1000). Do 2026-10-06 te same
+  zakresy nazywały się Zdrowy boom / Przegrzanie / Pęknięcia / Korekta / Krach; starsze
+  pliki historii zachowują dawne nazwy, więc przedział porównuj po zakresie (`score`),
+  nie po nazwie.
 
 ## data/latest.json
 
@@ -48,6 +52,7 @@ Kolejność chronologiczną wyznacza pole `date` w `index.json`, nie nazwa pliku
 | `triggers[]`, `triggers_en[]` | Nazwy aktywnych wyzwalaczy |
 | `heavy_credit_event` | Czy wystąpiło ciężkie zdarzenie kredytowe |
 | `skipped_signals[]` | Sygnały pominięte (brak odczytu lub starszy niż 90 dni) |
+| `correlated_moves[]` | Wspólne ruchy skorelowanych sygnałów (grupa `credit_spreads`: A2, A3, A5, A7): `{group, signals: {id: {status, from}}, since, reason, reason_en, discount_points}`. Członek z największym wzrostem liczy się w pełni; u pozostałych poziom sprzed ruchu liczy się w pełni, a wzrost w nim w 50% |
 | `adjustments[]` | Korekty kategorii do progu minimalnego: `{category, points, floor, reason, reason_en}`. `score` = suma `points` sygnałów + suma `adjustments[].points` |
 | `signals[]` | Sygnały A1–G4 (niżej) |
 | `calendar[]` | `{date, title, title_en}` – najbliższe 2 tygodnie |
@@ -58,7 +63,11 @@ licencjonowanych, np. ICE BofA, i płatnych indeksach), `unit`, `as_of`, `status
 `points`, `max_points` (po redystrybucji punktów pominiętych sygnałów; suma = 1000),
 `preliminary`, `source`, opcjonalnie `note`/`note_en`, `expires`, `conflict_of_interest`,
 `unconfirmed` (`{status, as_of, source, note, note_en, added_points}` – odczyt z jednego
-źródła wtórnego, wliczany w 50% różnicy statusów przez 14 dni; `points` już go zawiera).
+źródła wtórnego, wliczany w 50% różnicy statusów przez 14 dni; `points` już go zawiera),
+`status_since` (data, od której sygnał ma obecny status), `status_prev` (status
+poprzedni), `correlated` (`{group,
+discount_points}` – rabat za wspólny ruch skorelowanych sygnałów; `points` już go
+uwzględnia).
 
 `status`: `green` | `yellow` | `red` | `skipped` | `q0` | `q25` | `q50` | `q75` | `q100`
 (q* – ocena jakościowa, odsetek budżetu sygnału).

@@ -5,6 +5,7 @@ parentheses. Record status in report.json as `green`/`yellow`/`red`, and for qua
 signals as `q0`/`q25`/`q50`/`q75`/`q100`. "bp" = basis points (Polish report: "pb").
 
 ## Contents
+- Counting rules
 - A. Debt [300]
 - B. Capex and cash flows [150]
 - C. Demand and adoption [150]
@@ -13,6 +14,39 @@ signals as `q0`/`q25`/`q50`/`q75`/`q100`. "bp" = basis points (Polish report: "p
 - F. Power and infrastructure [50]
 - G. Token prices and open-weight models [100]
 - Scale, triggers
+
+## Counting rules
+One event, one signal. A discrete event – a deal, default, downgrade, regulatory change,
+project delay, price-list change, model release – raises the status of one signal only: its
+primary signal below. Other signals whose definitions mention it record it in `note`
+without a status change. Measured series (yields, spreads, CDS levels, rental rates,
+prices, reported capex and FCF, index readings) are not events: each reading counts in its
+own signal, even when the same news moved several of them. Triggers and
+`heavy_credit_event` follow the primary signal.
+    credit events listed in A8 (downgrades, defaults, failed refinancing, margin calls,
+      redemption limits, ABS/CMBS tranche marks, down rounds, tenant force majeure or
+      payment deferral claims)                                          → A8
+    securitizations, SPVs, sale-leasebacks, private-credit deals, ABS rules and
+      exemptions                                                        → A6
+    capex guidance changes                                              → B1
+    server depreciation period changes                                  → D4
+    data-center project delays and cancellations without a payment claim → F1
+    Fed decisions and statements                                        → E3
+    frontier model price-list changes                                   → G2
+    open-weight model releases                                          → G4
+An event that fits none of these counts in the signal whose definition names it most
+directly; say which in `note`.
+
+Correlated series. A2, A3, A5 and A7 are different readings of one price of credit risk
+(group `credit_spreads`). When two or more of them reach a higher status within 14 days of
+each other for one cause, declare a joint move in report.json `correlated_moves` with that
+cause. The script then counts the member with the largest rise in full; for the others
+their level before the move counts in full and their rise in it at 50% (🟡→🔴 on 40 points:
+20 + 10 = 30). This holds for as long as each keeps the status it had in the move; a member whose status changes
+leaves it, and the move ends below two members. Signals of the group that move for
+different reasons (e.g. A7 on one neocloud's refinancing, A3 on the broad market) are not
+a joint move and count in full. Joint or not, report the A2/A3 reading as sector or
+systemic stress (interpretation under A).
 
 ## A. Debt [300]
 A1. US 10Y yield (market close; confirm with FRED DGS10; daily) [50]
@@ -23,7 +57,16 @@ A2. AI premium: spread of AI companies' debt minus the spread of the whole inves
 A3. High-yield spread (FRED: BAMLH0A0HYM2, daily) [40]
     🟢 < 3.5% | 🟡 3.5–5% | 🔴 > 5%
 A4. Debt share of hyperscaler capex funding (quarterly) [30]
-    🟢 < 20% | 🟡 20–40% | 🔴 > 40%
+    🟢 < 20% | 🟡 20–40%, or > 40% but at most 5 pp above its average of the previous 4
+    quarters | 🔴 > 40% and more than 5 pp above that average
+    The relative part keeps a share that has settled at a new, higher level from staying
+    🔴 for good. With fewer than 4 previous quarters in "HISTORIA DO PROGÓW", use > 40% = 🔴
+    and set `preliminary: true`.
+    Off-balance-sheet structures (SPVs or sale-leasebacks of GPUs or data centers, e.g.
+    Amazon's ~USD 8bn GPU SPV reported by the FT on 2 Oct 2026) are debt-like funding that
+    the reported debt share does not capture. Note them in `note` with amount, date and
+    status (explored / closed); they don't change the debt share or the A4 status – under
+    the counting rules such a deal counts in A6.
 A5. AI sector CDS: number of large AI issuers (hyperscalers, Oracle, neoclouds) with a
     record 5-year CDS in the last month (news) [35]
     🟢 0 | 🟡 1–2 | 🔴 3+ or CDS doubling within 3 months
@@ -32,7 +75,7 @@ A6. Data-center securitization and private credit: data-center ABS/CMBS issuance
     retained by sponsors in new deals (reference: ~30% in 2026), scope of regulatory
     exemptions (e.g. the SEC position of 29 Jul 2026 exempting some data-center
     securitizations from ABS rules), SPV structures financing GPUs alone (e.g. Amazon's
-    USD 8bn SPV of 2 Oct 2026) [30]
+    USD 8bn SPV of 2 Oct 2026; see also A4, D4) [30]
     🟢 stable spreads, no loosening of standards, sponsor risk retention ≥ 25% |
     🟡 fast volume growth (> 30% y/y), loosening standards, or risk retention down to
        10–25% |
@@ -44,6 +87,11 @@ A6. Data-center securitization and private credit: data-center ABS/CMBS issuance
     below 10% in closed deals; or an exemption applied to a closed securitization of GPUs
     alone or other fast-depreciating assets. Deals that are only being explored or
     negotiated stay 🟡 and go into `note`.
+    A status based on an event (a regulatory change or exemption, loosening of standards,
+    risk retention in a closed deal, an exemption applied to a closed deal) holds for 90
+    days from the event; give its date in `note`. After that the signal falls back to what
+    its measured readings (spreads, issuance volume, risk retention in recent deals)
+    support, unless a new event confirms the status.
 A7. Neocloud premium: cost of neocloud debt and GPU-backed loans (company filings, CDS,
     news on financing terms) minus the investment-grade yield (10Y + IG spread) [35]
     🟢 < 200 bp | 🟡 200–500 bp | 🔴 > 500 bp
@@ -52,8 +100,8 @@ A8. Credit events (news from the last 30 days) [40]
     🟢 none
     🟡 LIGHT: postponed or withdrawn IPO or issue, provided valuation and access to funding
        did not fall at the same time (e.g. a new round at a higher valuation); a single
-       postponed bond issue; a tenant invoking force majeure or asking to defer payments on
-       a debt-financed data-center project
+       postponed bond issue; a tenant invoking force majeure or asking to defer payments
+       on a debt-financed data-center project
     🔴 HEAVY: downgrade of an AI company to speculative grade; failed refinancing or
        emergency issue by a neocloud; default on a GPU-backed loan, an Nvidia guarantee
        being called, or a margin call on a loan secured by GPUs or lab equity; redemption
@@ -109,6 +157,12 @@ D4. GPU residual value: used H100 and A100 prices (Compute Exchange, Hashrate In
     ServerBuyback) and changes to server depreciation periods in hyperscaler filings [30]
     🟢 prices stable or rising | 🟡 down 15–30% in a quarter | 🔴 down > 30% in a quarter,
     or a hyperscaler shortens its depreciation period
+    Valuations of installed GPUs in SPV or sale-leaseback deals (e.g. Amazon's GPU SPV) are
+    market readings of residual value: once such a deal closes, record the implied value
+    per GPU (or as % of purchase cost) with GPU model, date and source, and use it as a
+    reading for D4: compare it with the market price of the same GPU model in the previous
+    quarter and apply the thresholds to that change. The deal itself counts in A6 (counting
+    rules). Deals only being explored go into `note`.
 D5. Production bottlenecks (on TSMC and memory makers' earnings): CoWoS packaging
     capacity, DRAM wafer allocation to HBM [25]
     🟢 bottleneck persists (shortage continues) | 🟡 bottleneck easing with stable demand |
@@ -147,7 +201,10 @@ G2. Frontier model price lists (OpenAI, Anthropic, Google, xAI): increases, cuts
     (price war)
 G3. Open-weight (incl. Chinese) model share of traffic: OpenRouter (weekly); share of
     businesses using open-source models in the Ramp AI Index (monthly) [20]
-    Ramp: 🟢 < 10% | 🟡 10–20% | 🔴 > 20%
+    Ramp: 🟢 < 10% | 🟡 10–20%, or > 20% but at most 3 pp above its average of the previous
+    6 months | 🔴 > 20% and more than 3 pp above that average
+    With fewer than 6 previous months in "HISTORIA DO PROGÓW", use > 20% = 🔴 and set
+    `preliminary: true`.
 G4. Quality gap between the best open-weight and best closed model: Artificial Analysis
     Intelligence Index (points and %), Epoch AI estimates (lag in months) (on new
     releases; at least weekly) [30]
@@ -167,14 +224,23 @@ A rising open-weight share in developer traffic is a moderate signal; the same t
 enterprise data (Ramp, surveys) is a strong signal.
 
 ## AI Doomsday scale (0–1000)
-Band names in the Polish report (the script also writes `band_en`):
-    0–200  Zdrowy boom (Healthy boom): easy financing, rising capex, hardware shortage
-  201–400  Przegrzanie (Overheating): rising debt and cost of money, cracks in weaker links
-  401–600  Pęknięcia (Cracks): refinancing problems, downgrades, weakening bond demand,
-           price pressure on labs
-  601–800  Korekta (Correction): first capex cuts, falling GPU rates and DRAM prices,
-           failed rounds/IPOs, price war
-  801–1000 Krach (Crash): mass capex cuts, failures of leveraged players, hardware glut
+The score measures how much stress the signals show, not an event or its timing: a high
+score means conditions in which a correction is more likely, not that one is happening or
+when it will come. Bubbles can stay under high stress for years. Never present a band as a
+forecast. Band names in the Polish report (the script also writes `band_en`), each with
+its typical picture:
+    0–200  Niskie napięcie (Low stress): easy financing, rising capex, hardware shortage
+  201–400  Umiarkowane napięcie (Moderate stress): rising debt and cost of money, cracks in
+           weaker links
+  401–600  Podwyższone napięcie (Elevated stress): refinancing problems, downgrades,
+           weakening bond demand, price pressure on labs
+  601–800  Wysokie napięcie (High stress): first capex cuts, falling GPU rates and DRAM
+           prices, failed rounds/IPOs, price war
+  801–1000 Skrajne napięcie (Extreme stress): mass capex cuts, failures of leveraged
+           players, hardware glut
+Until 2026-10-06 the bands were called Zdrowy boom / Przegrzanie / Pęknięcia / Korekta /
+Krach; the ranges did not change, so a different name for the same range is not a band
+change.
 A score within 15 points of a band boundary is "na granicy" (the script flags it).
 
 ## Triggers
