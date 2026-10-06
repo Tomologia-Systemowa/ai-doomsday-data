@@ -99,6 +99,13 @@ CORRELATION_GROUP_NAMES = {"credit_spreads": ("spready kredytowe", "credit sprea
 CORRELATED_SHARE = 0.5        # other members: 50% of their rise in the joint move
 CORRELATED_WINDOW_DAYS = 14   # "together": each status change at most 14 days old
 
+# State file state/historia-progow.json: readings kept per series for trend and relative
+# thresholds. Series in STATE_NO_LEVEL come from licensed sources and are stored as % change
+# and direction only (the data repo is public).
+STATE_FILE = "state/historia-progow.json"
+STATE_SERIES = {"A4": 5, "C1": 3, "C2": 3, "D1": 3, "D3": 4, "D4": 2, "G3": 7, "G4": 1}
+STATE_NO_LEVEL = {"D1"}
+
 EVENT_TYPES = {"credit_light", "credit_heavy", "rating", "fed_hike", "fed_cut", "infra",
                "financing", "threshold_cross", "trigger", "pricing", "model_release"}
 SEVERITIES = {"info", "light", "medium", "heavy", "trigger"}

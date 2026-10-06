@@ -39,6 +39,10 @@ Kolejność chronologiczną wyznacza pole `date` w `index.json`, nie nazwa pliku
   pliki historii zachowują dawne nazwy, więc przedział porównuj po zakresie (`score`),
   nie po nazwie.
 
+Katalog `state/` (`state/historia-progow.json`) to roboczy stan skilla – krótkie serie
+odczytów do progów trendowych. Nie jest przeznaczony do wyświetlania; dla danych
+licencjonowanych zawiera tylko zmianę procentową i kierunek, bez poziomów.
+
 ## data/latest.json
 
 | Pole | Opis |

@@ -1,6 +1,6 @@
 ---
 name: "ai-doomsday"
-description: Daily "AI Doomsday" report – AI investment bubble risk scored 0–1000 from 28 signals (debt, capex, demand, hardware, macro, power, token prices), with a Friday weekly analysis, state kept in memory files, bilingual JSON published to a GitHub repo named in the task, and a push notification. Use this skill whenever a user or routine asks for the AI Doomsday report, the AI Doomsday score, an update of AI bubble signals, the weekly AI Doomsday analysis, or publishing AI Doomsday data – including short commands like "zrób dzisiejszy raport" / "run today's report" in this routine's context. Raport AI Doomsday, skala AI Doomsday, ryzyko bańki AI.
+description: Daily "AI Doomsday" report – AI investment bubble risk scored 0–1000 from 28 signals (debt, capex, demand, hardware, macro, power, token prices), with a Friday weekly analysis, state kept in the data repo (state/), bilingual JSON published to a GitHub repo named in the task, and a push notification. Use this skill whenever a user or routine asks for the AI Doomsday report, the AI Doomsday score, an update of AI bubble signals, the weekly AI Doomsday analysis, or publishing AI Doomsday data – including short commands like "zrób dzisiejszy raport" / "run today's report" in this routine's context. Raport AI Doomsday, skala AI Doomsday, ryzyko bańki AI.
 ---
 
 # AI Doomsday – AI bubble risk report
@@ -29,33 +29,41 @@ This keeps the score computed identically every day and the files on a fixed sch
 
 ## Workflow
 
-1. **Memory.** Read `/areas/ai-doomsday-stan.md` (last full signal table and the
-   "HISTORIA DO PROGÓW" section) and the last 10 entries of
-   `/areas/ai-doomsday-historia.md`. If they don't exist, you create them in step 8.
+1. **Clone the target repo and read the state.** The container starts empty on every run,
+   so the repository is the only lasting store; local files and `/areas` memory files are
+   gone by the next run. Clone the repo named in the task (`references/publishing.md`),
+   then read `data/latest.json` (last signal table, statuses, `status_since`),
+   `state/historia-progow.json` ("HISTORIA DO PROGÓW": series for trend and relative
+   thresholds) and the last 10 entries of `data/history/index.json` (score history).
+   If `state/historia-progow.json` is missing, rebuild what you can from the `value` and
+   `as_of` of signals in the daily files under `data/history/`, and fill the rest by web
+   search in step 3. No repository named: use `/areas/ai-doomsday-stan.md` with the same
+   content instead (it may not persist).
 2. **Report mode** (below).
 3. **Data.** Read `references/signals.md`. Collect readings via web search following the
    RULES. In a short report check every daily/weekly signal and news for the rest; only
    changed signals go into the report table.
 4. **Statuses** from thresholds; for trend thresholds use "HISTORIA DO PROGÓW". Identify
    triggers and heavy credit events – each forces a full report.
-5. **Clone the target repo (if one is named) and score.** Clone first (you need the
-   previous `latest.json`; without a repo, skip `--previous` and use the memory state file
-   for carry-over), build
-   `report.json` without the text fields yet, then run
+5. **Score.** Build `report.json` without the text fields yet (without a repo, skip
+   `--previous` and use the memory state file for carry-over), then run
    `python3 scripts/score.py --report report.json --out scored.json --previous <repo>/data/latest.json`.
    It prints the calculation table (in Polish) and warnings – use both in the report.
 6. **Write the report in Polish** using the format below and the script's score and table.
-   Score change = vs the last 0–1000 entry in the history.
+   Score change = vs the last 0–1000 entry in `data/history/index.json`.
 7. **Add the report text to `report.json`** (Polish + `_en`; see
    `references/publishing.md`) and rerun `score.py` so `scored.json` contains it.
-8. **Memory – write.** Overwrite `ai-doomsday-stan.md` (full table: value, date, status,
-   points, source; in a short report update only changed rows). In "HISTORIA DO PROGÓW" add
-   new readings and drop the oldest, each with its date: memory makers' DIO (D3) – 4
-   quarters; Ramp median spend (C1) – 3 months; Census BTOS share (C2) – 3 readings; GPU
-   spot and contract rates (D1) – 3 months (monthly value); used H100/A100 prices (D4) – 2
-   quarters; Artificial Analysis index (G4) – last reading with version number.
-   Append to `ai-doomsday-historia.md` one line:
-   `data | wynik/1000 | punkty A B C D E F G | najważniejsza zmiana` (Polish).
+8. **State – write.** Update `state/historia-progow.json` in the repo clone (format in
+   `references/publishing.md`): add new readings, drop the oldest, each with period,
+   `as_of` and source. Kept per series (`STATE_SERIES` in `scripts/config.py`): debt share
+   of capex funding (A4) – 5 quarters; Ramp median spend (C1) – 3 months; Census BTOS share
+   (C2) – 3 readings; GPU spot and contract rates (D1) – 3 months; memory makers' DIO (D3) –
+   4 quarters; used H100/A100 prices (D4) – 2 quarters; Ramp open-source share (G3) – 7
+   months; Artificial Analysis index (G4) – last reading with version number.
+   The repo is public: for licensed series (D1 – Ornn, Silicon Data) store only the monthly
+   % change and direction, never the price level; the validator rejects a level there.
+   The file is committed with the report in step 9. The signal table and the score history
+   need no separate file – they are in `data/`.
 9. **Publish** per `references/publishing.md` (seed if needed → publish → validate →
    commit/push) – only to the repository and branch named in the task (routine prompt or
    user message; branch defaults to `main`). Never assume or guess a target. If you worked
@@ -71,8 +79,10 @@ This keeps the score computed identically every day and the files on a fixed sch
   give the unchanged score.
 - Friday: SHORT REPORT + WEEKLY ANALYSIS.
 - Saturday/Sunday (manual runs only): SHORT REPORT.
-- Missing state file or "HISTORIA DO PROGÓW" section, any trigger, or a heavy credit event:
-  always FULL REPORT. On a Friday the weekly analysis is added to whichever report runs.
+- No `data/latest.json` in the repo, any trigger, or a heavy credit event: always FULL
+  REPORT. A missing `state/historia-progow.json` alone does not force one: carry over
+  from `latest.json`, rebuild the history (step 1) and mark affected trend signals
+  `preliminary: true`. On a Friday the weekly analysis is added to whichever report runs.
 
 Compare only 0–1000 entries (0–100 entries are the old method; new method baseline:
 2026-10-04, 368/1000). Missing history for a trend threshold → preliminary status

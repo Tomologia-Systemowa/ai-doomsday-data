@@ -126,16 +126,39 @@ python3 $SKILL/scripts/publish.py report --scored scored.json --repo "$REPO"
 # 4. Validate – on errors fix report.json and repeat 1, 3, 4
 python3 $SKILL/scripts/validate.py --repo "$REPO" --date YYYY-MM-DD
 
-# 5. Commit and push
-cd "$REPO" && git add -A data README.md && \
+# 5. Commit and push (state/ goes in the same commit as the report)
+cd "$REPO" && git add -A data state README.md && \
 git -c user.name="Claude" -c user.email="noreply@anthropic.com" \
     commit -m "AI Doomsday YYYY-MM-DD: <score>/1000" && git push origin "$BRANCH"
 ```
 
-`seed.json` (step 2) comes from the memory file ai-doomsday-historia.md: every 0–1000
+`seed.json` (step 2) – only for a new, empty repository – comes from the memory file
+ai-doomsday-historia.md if it exists: every 0–1000
 entry as `{"date", "kind", "score", "categories": {"A": .., ...}, "headline",
 "headline_en"}`; the 2026-10-04 368/1000 entry has `"kind": "baseline"`. Seeded days have
 no `report` block.
+
+### State file: `state/historia-progow.json`
+Written by you (not by a script) in step 8 of the workflow; the only state kept between
+runs besides `data/`. The repository is public, so it holds no licensed values.
+```json
+{
+  "updated": "2026-10-06",
+  "series": {
+    "A4": [{"period": "2026Q2", "as_of": "2026-08-01", "value": 31.5, "unit": "%",
+            "source": "https://..."}],
+    "D1": [{"period": "2026-09", "as_of": "2026-10-01", "measure": "contract",
+            "change_pct": -4.2, "direction": "down", "source": "Ornn OCPI"}],
+    "G4": [{"as_of": "2026-10-03", "value": 7.1, "unit": "pp", "index_version": "v3",
+            "source": "https://..."}]
+  }
+}
+```
+- Series and how many readings each keeps: `STATE_SERIES` in `scripts/config.py`; newest
+  last, drop the oldest beyond the limit.
+- Every reading has `as_of` and `source`. `period` for quarterly/monthly data.
+- `STATE_NO_LEVEL` series (D1) store `change_pct` and `direction` (`up`/`flat`/`down`)
+  only, never `value`; A2/A3 (ICE BofA) are never stored. The validator checks both.
 
 Repo rules:
 - `data/history.json` is frozen: don't read, change, delete or recreate it. The validator
