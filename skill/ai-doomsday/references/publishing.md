@@ -25,6 +25,11 @@ don't add them.
   ],
   "triggers": [],
   "heavy_credit_event": false,
+  "correlated_moves": [
+    {"group": "credit_spreads", "signals": ["A2", "A3"],
+     "reason": "Wyprzedaż obligacji po danych o inflacji.",
+     "reason_en": "Bond sell-off after inflation data."}
+  ],
   "events": [
     {"date": "2026-10-05", "type": "credit_light", "signal": "A8", "severity": "light",
      "title": "...", "title_en": "...", "source": "https://...", "expires": "2026-11-04"}
@@ -61,6 +66,16 @@ don't add them.
   secondary source."}`. The script adds 50% of the gap to that status for 14 days from
   `as_of`, then drops it (also when carried over in a short report). Published in the JSON
   with `added_points`.
+- `correlated_moves` (report level): optional joint moves of a correlation group (see
+  "Counting rules" in signals.md). Declare only signals that reached their status within
+  the last 14 days, or that are already in that move; the script carries active moves over
+  from the previous `latest.json`, so don't repeat them. Members other than the one with
+  the largest rise get `correlated: {group, discount_points}` (50% of their rise in the
+  move) and their `points` already include the cut. `status_prev` (set by the script) is
+  the status before the current one.
+- `status_since`: set by the script, never by hand – the date the current status began
+  (kept while the status matches the previous `latest.json`, otherwise the report date).
+  Used for the calibration review; published in the JSON.
 
 Full report: all 28 signals. Short report: only changed ones; the script carries the rest
 over from the previous `latest.json` (pass it via `--previous`).

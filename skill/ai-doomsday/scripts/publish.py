@@ -75,10 +75,16 @@ def die(msg):
 
 def ensure_static(repo):
     scale_p = os.path.join(repo, "data", "scale.json")
-    if not os.path.exists(scale_p):
+    bands = [{"min": lo, "max": hi, "band": pl, "band_en": en} for lo, hi, pl, en in BANDS]
+    existing = load(scale_p, None)
+    if existing is not None and existing.get("bands") != bands:
+        existing["bands"] = bands
+        dump(scale_p, existing)
+        print("Updated band names in data/scale.json")
+    if existing is None:
         dump(scale_p, {
             "schema_version": SCHEMA_VERSION,
-            "bands": [{"min": lo, "max": hi, "band": pl, "band_en": en} for lo, hi, pl, en in BANDS],
+            "bands": bands,
             "categories": {c: {"name": CATEGORY_NAMES[c][0], "name_en": CATEGORY_NAMES[c][1],
                                "budget": b} for c, b in BUDGETS.items()},
             "total": 1000,
@@ -165,6 +171,7 @@ def build_report(sc, out_signals):
         "near_boundary": bool(sc.get("near_boundary")),
         "weekly_analysis": weekly, "weekly_analysis_en": weekly_en,
         "adjustments": sc.get("adjustments", []),
+        "correlated_moves": sc.get("correlated_moves", []),
         "signals": out_signals,
         "calendar": sc.get("calendar", []),
     }
@@ -214,7 +221,8 @@ def cmd_report(a):
              "unit": s.get("unit"), "as_of": s.get("as_of"), "status": s["status"],
              "points": s["points"], "max_points": s["max_points"],
              "preliminary": bool(s.get("preliminary")), "source": s.get("source")}
-        for k in ("note", "note_en", "expires", "conflict_of_interest", "unconfirmed"):
+        for k in ("note", "note_en", "expires", "conflict_of_interest", "unconfirmed",
+                  "status_since", "status_prev", "correlated"):
             if s.get(k) not in (None, ""):
                 o[k] = s[k]
         out_signals.append(o)
@@ -231,6 +239,7 @@ def cmd_report(a):
         "heavy_credit_event": sc["heavy_credit_event"],
         "skipped_signals": sc["skipped_signals"],
         "adjustments": sc.get("adjustments", []),
+        "correlated_moves": sc.get("correlated_moves", []),
         "signals": out_signals,
         "calendar": sc.get("calendar", []),
         "disclaimer": DISCLAIMER, "disclaimer_en": DISCLAIMER_EN,

@@ -66,13 +66,14 @@ STATUS_EMOJI = {
     "q0": "q0", "q25": "q25", "q50": "q50", "q75": "q75", "q100": "q100",
 }
 
-# (from, to, Polish, English)
+# (from, to, Polish, English). Bands name a level of stress, not an event.
+# Until 2026-10-06: Zdrowy boom / Przegrzanie / Pęknięcia / Korekta / Krach (same ranges).
 BANDS = [
-    (0, 200, "Zdrowy boom", "Healthy boom"),
-    (201, 400, "Przegrzanie", "Overheating"),
-    (401, 600, "Pęknięcia", "Cracks"),
-    (601, 800, "Korekta", "Correction"),
-    (801, 1000, "Krach", "Crash"),
+    (0, 200, "Niskie napięcie", "Low stress"),
+    (201, 400, "Umiarkowane napięcie", "Moderate stress"),
+    (401, 600, "Podwyższone napięcie", "Elevated stress"),
+    (601, 800, "Wysokie napięcie", "High stress"),
+    (801, 1000, "Skrajne napięcie", "Extreme stress"),
 ]
 BAND_BOUNDARIES = [200, 400, 600, 800]
 NEAR_BOUNDARY = 15
@@ -82,6 +83,21 @@ HEAVY_CREDIT_FLOOR_A = 210     # heavy credit event: A >= 210
 STALE_DAYS = 90
 UNCONFIRMED_SHARE = 0.5       # single-source reading: half of the gap to its status
 UNCONFIRMED_MAX_DAYS = 14     # ...and only while it is at most 14 days old
+REVIEW_SCORE = 601            # calibration review: score at or above this...
+REVIEW_DAYS = 90              # ...for this many days, or a signal at REVIEW_SHARE+ that long
+REVIEW_SHARE = 0.75           # red, q75, q100
+
+# Correlated measured series: readings of the same underlying price of risk. When signals
+# of a group rise together for one reason (declared in report.json "correlated_moves"),
+# the member with the largest rise counts in full; for the others only CORRELATED_SHARE of
+# their rise in that move counts (their level before the move counts in full), for as
+# long as they keep the status they had in it.
+CORRELATION_GROUPS = {
+    "credit_spreads": ("A2", "A3", "A5", "A7"),
+}
+CORRELATION_GROUP_NAMES = {"credit_spreads": ("spready kredytowe", "credit spreads")}
+CORRELATED_SHARE = 0.5        # other members: 50% of their rise in the joint move
+CORRELATED_WINDOW_DAYS = 14   # "together": each status change at most 14 days old
 
 EVENT_TYPES = {"credit_light", "credit_heavy", "rating", "fed_hike", "fed_cut", "infra",
                "financing", "threshold_cross", "trigger", "pricing", "model_release"}

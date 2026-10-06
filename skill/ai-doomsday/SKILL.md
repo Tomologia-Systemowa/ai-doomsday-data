@@ -127,6 +127,12 @@ Compare only 0–1000 entries (0–100 entries are the old method; new method ba
   move it to `status` and remove `unconfirmed`. An undated or out-of-window reading still
   never counts. An unconfirmed reading never sets a trigger or `heavy_credit_event` and
   never forces a full report. In the report table mark it, e.g. „🟡→🔴 (niepotwierdzone)”.
+- One event, one signal: a discrete event raises the status of its primary signal only;
+  other signals mention it in `note`. Measured series count each on their own. See
+  "Counting rules" in `references/signals.md`.
+- Correlated series (A2, A3, A5, A7): when two or more rise together for one cause, declare
+  it in `correlated_moves` (see "Counting rules"); the script counts the largest rise in
+  full and the others' rise at 50% while they hold that status. Different causes → no joint move.
 - A threshold met only partly (e.g. 1 of the required 2 quarters, or a qualitative
   condition still under discussion rather than in effect) keeps the lower status; flag it
   in `note` as "near threshold" / „blisko progu”.
@@ -138,7 +144,10 @@ Compare only 0–1000 entries (0–100 entries are the old method; new method ba
   in the report).
 - Trigger → category ≥ 70% of budget; heavy credit event → A ≥ 210 (the script adds the
   top-up and shows it in the calculation).
-- Thresholds are a starting proposal to calibrate after a few weeks.
+- Thresholds are a starting proposal to calibrate after a few weeks. The script tracks
+  how long each signal has held its status (`status_since`) and prints „PRZEGLĄD
+  KALIBRACJI” when the score has been ≥ 601 for 90+ days or a signal has been at 🔴, q75
+  or q100 for 90+ days; the Friday analysis then includes a calibration review.
 
 ## Full report format (Polish)
 1. Header: date, score (e.g. 420/1000), change vs previous report, one sentence on what
@@ -166,12 +175,19 @@ for numbers.
 2. For each: mechanism, current evidence (with sources), time horizon, and the signal from
    the list that would confirm or refute the chain in the coming weeks.
 3. The strongest argument against your own conclusion.
-4. One closing sentence: did the week bring the correction scenario closer or push it
+4. Calibration review – only when the script printed „PRZEGLĄD KALIBRACJI”: say whether a
+   correction actually happened in that period (capex cuts, falling GPU rates, failed
+   rounds, a market drawdown); for each signal the script listed judge whether its
+   threshold still separates an exception from a new normal, and if not, propose a
+   concrete new threshold. These are proposals only: thresholds change only after the
+   user approves an edit of `references/signals.md` (and `scripts/config.py` if points
+   change).
+5. One closing sentence: did the week bring the correction scenario closer or push it
    away, and why.
 
 ## Notification
 Send one (PushNotification, content inside `<routine_summary>` tags, in Polish) when: the
-band changed, the score moved ≥ 25 points, a trigger or heavy credit event occurred, a signal
+band changed (judge by the score range, not the name), the score moved ≥ 25 points, a trigger or heavy credit event occurred, a signal
 turned 🔴, it's Friday (weekly analysis), or publishing failed. Otherwise don't send. First
 sentence: score, band and change; then the key changes and the next important event. End
 with "To nie jest porada inwestycyjna." On publishing failure add
