@@ -1,7 +1,7 @@
 {
   "schema_version": "1.2",
   "date": "2026-10-06",
-  "updated_at": "2026-10-06T09:13:45+02:00",
+  "updated_at": "2026-10-06T18:07:17+02:00",
   "entry": {
     "kind": "full",
     "score": 426,
@@ -16,8 +16,8 @@
       "F": 37.5,
       "G": 27.5
     },
-    "headline": "Wynik 426/1000 (+22) – stawki wynajmu H100 (Ornn) spadły o 17,6% w 30 dni, powyżej progu ostrzegawczego 15%; D1 przechodzi na 🟡, strefa „Pęknięcia” bez zmian.",
-    "headline_en": "Score 426/1000 (+22) – H100 rental rates (Ornn) fell 17.6% over 30 days, above the 15% warning threshold; D1 turns 🟡, the \"Cracks\" band unchanged."
+    "headline": "Wynik 426/1000 bez zmian wobec porannego raportu (+22 wobec 5.10) – aktualizacja wieczorna: brak zmian statusów; kursy podwyżki Fed w październiku spadły do ok. 17%, trwa syndykacja 60 mld USD finansowania chipów.",
+    "headline_en": "Score 426/1000, unchanged from the morning report (+22 vs 5 Oct) – evening update: no status changes; October Fed hike odds fell to about 17%, syndication of USD 60bn chip financing under way."
   },
   "events": [
     {
@@ -31,14 +31,14 @@
     }
   ],
   "report": {
-    "summary": "Wynik wzrósł do 426/1000 (+22) i oddalił się od granicy z „Przegrzaniem”. Jedyna zmiana statusu dotyczy D1: indeks Ornn H100 spadł do 2,52 USD/h, o 17,6% w 30 dni, co przekracza próg wczesnego ostrzeżenia (15%). Odczyt jest jednak niepewny – seria dzienna jest bardzo zmienna, średnie miesięczne do września rosły, a Silicon Data pokazuje 2,81 USD (+2,9% t/t); brak danych o kontraktach. Rynki od wieczornej aktualizacji bez nowych zamknięć: 10Y 5,31%, krzywa 0,47 pp, HY 3,10%, IG 0,85%. MAGS nadal za S&P 500 (−3,1 pp). Brak nowych zdarzeń kredytowych i wyzwalaczy; przesunięcie IPO Oury (spoza infrastruktury AI) potwierdza słabszy rynek IPO. Ryzyko pozostaje skupione w koszcie pieniądza i polityce Fed (A1, E2, E3, A7) oraz energii (F1). Najbliższe dane: protokół FOMC (7.10) i CPI (14.10).",
-    "summary_en": "The score rose to 426/1000 (+22) and moved away from the boundary with \"Overheating\". The only status change concerns D1: the Ornn H100 index fell to USD 2.52/h, down 17.6% over 30 days, exceeding the early-warning threshold (15%). The reading is uncertain, however – the daily series is very volatile, monthly averages were still rising through September, and Silicon Data shows USD 2.81 (+2.9% w/w); there are no contract data. Markets have had no new closes since the evening update: 10Y 5.31%, curve 0.47 pp, HY 3.10%, IG 0.85%. MAGS still trails the S&P 500 (−3.1 pp). No new credit events or triggers; Oura's IPO postponement (outside AI infrastructure) confirms a weaker IPO market. Risk remains concentrated in the cost of money and Fed policy (A1, E2, E3, A7) and power (F1). Next data: the FOMC minutes (7 Oct) and CPI (14 Oct).",
-    "curve_comment": "Krzywa 10Y–2Y wynosi 0,47 pp (Treasury, 5.10: 10Y 5,31%, 2Y 4,84%). W ciągu miesiąca (4.09→5.10) 2Y wzrosła o 47 pb, a 10Y o 53 pb – stromienie przez rosnącą 10Y przy rosnącej 2Y oznacza zaostrzanie warunków finansowych. W ujęciu tygodniowym (28.09→5.10) 2Y spadła o 8 pb, a 10Y wzrosła o 7 pb – obraz mieszany, ale o statusie 🔴 decyduje trend miesięczny.",
-    "curve_comment_en": "The 10Y–2Y curve stands at 0.47 pp (Treasury, 5 Oct: 10Y 5.31%, 2Y 4.84%). Over the month (4 Sep→5 Oct) the 2Y rose 47 bp and the 10Y 53 bp – steepening via a rising 10Y with a rising 2Y means tightening financial conditions. On a weekly basis (28 Sep→5 Oct) the 2Y fell 8 bp and the 10Y rose 7 bp – a mixed picture, but the monthly trend decides the 🔴 status.",
+    "summary": "Wynik pozostaje na poziomie 426/1000 (Podwyższone napięcie), bez zmian wobec porannego raportu; żaden sygnał nie zmienił statusu. Nowe odczyty: spread HY 3,12% (5.10), spread IG 0,84%; zamknięcia rynków z 6.10 jeszcze brak (10Y śródsesyjnie ok. 5,27%). Rynki predykcyjne obniżyły szanse podwyżki Fed 28.10 do ok. 17%, ale na grudzień wyceniają ją na 75% – E3 pozostaje 🔴 przez wrześniową podwyżkę. W kredycie: syndykacja 60 mld USD finansowania leasingu chipów dla Anthropic (w toku; konflikt interesów) i obligacja HY CleanSpark po 8,25% przy dużym popycie – dostęp do długu jest, ale drożeje. Odroczenie IPO OpenAI do 2027 r. (29.09) to zdarzenie lekkie, bez niższej wyceny. Ryzyko nadal skupia się w koszcie pieniądza i polityce Fed oraz energii.",
+    "summary_en": "The score stays at 426/1000 (Elevated stress), unchanged from the morning report; no signal changed status. New readings: HY spread 3.12% (5 Oct), IG spread 0.84%; market closes for 6 Oct are not yet available (10Y about 5.27% intraday). Prediction markets cut the odds of a Fed hike on 28 Oct to about 17%, but price one for December at 75% – E3 stays 🔴 because of the September hike. In credit: syndication of USD 60bn of chip-lease financing for Anthropic (in progress; conflict of interest) and a CleanSpark HY bond at 8.25% with strong demand – debt is available but getting more expensive. OpenAI's IPO postponement to 2027 (29 Sep) is a light event, with no lower valuation. Risk remains concentrated in the cost of money, Fed policy and power.",
+    "curve_comment": "Brak nowego zamknięcia: krzywa 10Y–2Y pozostaje na 0,47 pp (Treasury, 5.10: 10Y 5,31%, 2Y 4,84%; FRED T10Y2Y 0,47 pp potwierdza). W ciągu miesiąca 2Y wzrosła o 47 pb, a 10Y o 53 pb – stromienie przez rosnącą 10Y przy rosnącej 2Y oznacza zaostrzanie warunków finansowych (🔴). Śródsesyjny spadek 10Y do ok. 5,27% 6.10 zostanie oceniony po publikacji zamknięcia.",
+    "curve_comment_en": "No new close: the 10Y–2Y curve stays at 0.47 pp (Treasury, 5 Oct: 10Y 5.31%, 2Y 4.84%; FRED T10Y2Y 0.47 pp confirms). Over the month the 2Y rose 47 bp and the 10Y 53 bp – steepening via a rising 10Y with a rising 2Y means tightening financial conditions (🔴). The intraday fall of the 10Y to about 5.27% on 6 Oct will be assessed once the close is published.",
     "category_comments": {
       "A": {
-        "comment": "172,5/300 – 10Y powyżej 5,25% i premia neocloudów ponad 500 pb dają maksimum punktów, przy niskim spreadzie HY (3,10%) i wyłącznie lekkich zdarzeniach kredytowych.",
-        "comment_en": "172.5/300 – the 10Y above 5.25% and the neocloud premium above 500 bp score maximum points, with a low HY spread (3.10%) and only light credit events."
+        "comment": "172,5/300 – 10Y powyżej 5,25% i premia neocloudów ponad 500 pb dają maksimum punktów, przy niskim spreadzie HY (3,12%) i wyłącznie lekkich zdarzeniach kredytowych.",
+        "comment_en": "172.5/300 – the 10Y above 5.25% and the neocloud premium above 500 bp score maximum points, with a low HY spread (3.12%) and only light credit events."
       },
       "B": {
         "comment": "50/150 – prognozy capeksu nadal rosną, ale FCF wielkiej czwórki pokrywa tylko 4,1% capeksu, a MAGS jest 3,1 pp za S&P 500.",
@@ -49,12 +49,12 @@
         "comment_en": "28.75/150 – spending and adoption (Ramp, BTOS) are rising; points stem from unaudited lab run-rates and a stable, mixed ROI picture."
       },
       "D": {
-        "comment": "22,5/150 – spadek spotowych stawek H100 o 17,6% w 30 dni przełącza D1 na 🟡, przy rosnących cenach DRAM i utrzymującym się niedoborze CoWoS/HBM.",
-        "comment_en": "22.5/150 – a 17.6% drop in H100 spot rates over 30 days switches D1 to 🟡, with rising DRAM prices and a persistent CoWoS/HBM shortage."
+        "comment": "22,5/150 – spotowe stawki H100 (Ornn 2,52 USD/h, −17,6% w 30 dni) utrzymują D1 na 🟡, przy rosnących cenach DRAM i utrzymującym się niedoborze CoWoS/HBM.",
+        "comment_en": "22.5/150 – H100 spot rates (Ornn USD 2.52/h, −17.6% over 30 days) keep D1 at 🟡, with rising DRAM prices and a persistent CoWoS/HBM shortage."
       },
       "E": {
-        "comment": "87,5/100 – wrześniowa podwyżka Fed i zaostrzające stromienie krzywej, PMI powyżej 50, ale spadające.",
-        "comment_en": "87.5/100 – the September Fed hike and tightening curve steepening, PMI above 50 but falling."
+        "comment": "87,5/100 – wrześniowa podwyżka Fed, rynek wyceniający podwyżkę w grudniu i zaostrzające stromienie krzywej; PMI powyżej 50, ale spadające.",
+        "comment_en": "87.5/100 – the September Fed hike, a market pricing a December hike and tightening curve steepening; PMI above 50 but falling."
       },
       "F": {
         "comment": "37,5/50 – wstrzymany przetarg PJM, plany ograniczania poboru centrów danych od 2027 r. i kolejne lokalne moratoria.",
@@ -74,6 +74,7 @@
     "weekly_analysis": null,
     "weekly_analysis_en": null,
     "adjustments": [],
+    "correlated_moves": [],
     "signals": [
       {
         "id": "A1",
@@ -88,8 +89,10 @@
         "max_points": 50.0,
         "preliminary": false,
         "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610",
-        "note": "Treasury par yield 2026-10-05: 5,31% (2.10: 5,28%); FRED DGS10 (do 2026-10-01): 5,24%, zgodnie z Treasury dla tego dnia.",
-        "note_en": "Treasury par yield 2026-10-05: 5.31% (2 Oct: 5.28%); FRED DGS10 (through 2026-10-01): 5.24%, matching Treasury for that day."
+        "note": "Treasury par yield 2026-10-05: 5,31% (2.10: 5,28%); FRED DGS10 (do 2026-10-01): 5,24%, zgodnie z Treasury dla tego dnia. 6.10 śródsesyjnie 10Y ok. 5,27% (źródło wtórne) – brak zamknięcia w chwili raportu.",
+        "note_en": "Treasury par yield 2026-10-05: 5.31% (2 Oct: 5.28%); FRED DGS10 (through 2026-10-01): 5.24%, matching Treasury for that day. On 6 Oct the 10Y traded intraday at about 5.27% (secondary source) – no close at the time of the report.",
+        "status_since": "2026-10-06",
+        "status_prev": "red"
       },
       {
         "id": "A2",
@@ -104,8 +107,10 @@
         "max_points": 40.0,
         "preliminary": false,
         "source": "https://www.pennmutualam.com/market-insights-news/blogs/chart-of-the-week/2026-08-06-ai-infrastructure-bonds-a-full-picture-of-spreads",
-        "note": "Obligacje hiperskalerów ok. 35 pb ponad indeks IG (koniec lipca 2026, Penn Mutual AM za Bloombergiem, źródło wtórne); wrześniowy odczyt ok. 37 pb niepotwierdzony. Spread IG (BAMLC0A0CM) 0,85% na 2026-10-02 (0,86% dzień wcześniej, 0,79% na 2026-09-24).",
-        "note_en": "Hyperscaler bonds about 35 bp over the IG index (late July 2026, Penn Mutual AM citing Bloomberg, secondary source); a September reading of about 37 bp is unconfirmed. IG spread (BAMLC0A0CM) 0.85% on 2026-10-02 (0.86% a day earlier, 0.79% on 2026-09-24)."
+        "note": "Obligacje hiperskalerów ok. 35 pb ponad indeks IG (koniec lipca 2026, Penn Mutual AM za Bloombergiem, źródło wtórne); wrześniowy odczyt ok. 37 pb niepotwierdzony. Spread IG (BAMLC0A0CM) 0,84% na 2026-10-05 (FRED). Brak nowego odczytu premii AI – ostatni z końca lipca 2026.",
+        "note_en": "Hyperscaler bonds about 35 bp over the IG index (end of July 2026, Penn Mutual AM citing Bloomberg, secondary source); a September reading of about 37 bp is unconfirmed. IG spread (BAMLC0A0CM) 0.84% on 2026-10-05 (FRED). No new AI premium reading – the last one is from end of July 2026.",
+        "status_since": "2026-10-06",
+        "status_prev": "yellow"
       },
       {
         "id": "A3",
@@ -114,14 +119,16 @@
         "name_en": "High-yield spread",
         "value": null,
         "unit": "%",
-        "as_of": "2026-10-02",
+        "as_of": "2026-10-05",
         "status": "green",
         "points": 0.0,
         "max_points": 40.0,
         "preliminary": false,
         "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "note": "3,10% na 2026-10-02, −14 pb po szczycie 3,24% (1.10); nadal +30 pb wobec 2,80% (24.09). Poniżej progu 3,5%.",
-        "note_en": "3.10% on 2026-10-02, −14 bp after the 3.24% peak (1 Oct); still +30 bp vs 2.80% (24 Sep). Below the 3.5% threshold."
+        "note": "3,12% na 2026-10-05 (2.10: 3,10%; szczyt 3,24% 1.10); nadal +32 pb wobec 2,80% (24.09). Poniżej progu 3,5%.",
+        "note_en": "3.12% on 2026-10-05 (2 Oct: 3.10%; peak 3.24% on 1 Oct); still +32 bp vs 2.80% (24 Sep). Below the 3.5% threshold.",
+        "status_since": "2026-10-06",
+        "status_prev": "green"
       },
       {
         "id": "A4",
@@ -137,7 +144,9 @@
         "preliminary": false,
         "source": "https://insight.factset.com/hyperscalers-tap-external-financing-as-ai-capex-outruns-cash-flow",
         "note": "FactSet: przyrost długu = 32% capeksu (LTM do połowy 2026) wobec 9% w FY24. Inne szacunki (ok. 29%, prognoza Goldman Sachs 35% na 2027) niezweryfikowane.",
-        "note_en": "FactSet: incremental debt = 32% of capex (LTM to mid-2026) vs 9% in FY24. Other estimates (about 29%, Goldman Sachs forecast of 35% for 2027) unverified."
+        "note_en": "FactSet: incremental debt = 32% of capex (LTM to mid-2026) vs 9% in FY24. Other estimates (about 29%, Goldman Sachs forecast of 35% for 2027) unverified.",
+        "status_since": "2026-10-06",
+        "status_prev": "yellow"
       },
       {
         "id": "A5",
@@ -153,7 +162,9 @@
         "preliminary": false,
         "source": "https://www.tradingview.com/news/seekingalpha:62ed2825e094b:0-hyperscaler-cds-spreads-widen-with-oracle-hitting-record-high/",
         "note": "Rekord 5-letniego CDS Oracle 227 pb (2026-09-28, dwa niezależne źródła wtórne). Rekordy Nvidii i Alphabetu z lipca – poza oknem miesiąca; brak podwojenia w 3 mies. (144 pb na początku 2026).",
-        "note_en": "Record Oracle 5-year CDS at 227 bp (2026-09-28, two independent secondary sources). Nvidia and Alphabet records date from July – outside the one-month window; no doubling within 3 months (144 bp at the start of 2026)."
+        "note_en": "Record Oracle 5-year CDS at 227 bp (2026-09-28, two independent secondary sources). Nvidia and Alphabet records date from July – outside the one-month window; no doubling within 3 months (144 bp at the start of 2026).",
+        "status_since": "2026-10-06",
+        "status_prev": "yellow"
       },
       {
         "id": "A6",
@@ -168,8 +179,11 @@
         "max_points": 30.0,
         "preliminary": false,
         "source": "https://www.credaily.com/?p=222783",
-        "note": "Luzowanie standardów (stanowisko SEC z lipca 2026 znosi wymóg retencji ryzyka dla części sekurytyzacji centrów danych; sponsorzy nadal zwykle zatrzymują ≥30%). AAA CMBS centrów danych 165 pb vs 93–125 pb dla innych CMBS (Barclays, 15.09). Blisko progu: doniesienia o poszerzaniu spreadów DC względem reszty ABS (Bloomberg VIII, The Real Deal 30.09) nie dają jeszcze dwóch potwierdzonych odczytów zmiany. SPV Amazona na GPU (8 mld USD, 2.10) wciąż tylko rozważane.",
-        "note_en": "Loosening standards (the SEC position of July 2026 removes the risk-retention requirement for some data-center securitizations; sponsors still typically retain ≥30%). AAA data-center CMBS at 165 bp vs 93–125 bp for other CMBS (Barclays, 15 Sep). Near threshold: reports of DC spreads widening vs the rest of ABS (Bloomberg Aug, The Real Deal 30 Sep) do not yet give two confirmed readings of the change. Amazon's GPU SPV (USD 8bn, 2 Oct) is still only being explored."
+        "note": "Luzowanie standardów (stanowisko SEC z lipca 2026 znosi wymóg retencji ryzyka dla części sekurytyzacji centrów danych; sponsorzy nadal zwykle zatrzymują ≥30%). AAA CMBS centrów danych 165 pb vs 93–125 pb dla innych CMBS (Barclays, 15.09). Blisko progu: doniesienia o poszerzaniu spreadów DC względem reszty ABS (Bloomberg VIII, The Real Deal 30.09) nie dają jeszcze dwóch potwierdzonych odczytów zmiany. SPV Amazona na GPU (8 mld USD, 2.10) wciąż tylko rozważane. Nowe (nota, bez zmiany statusu): syndykat Broadcomu rozpoczyna zbieranie 60 mld USD finansowania leasingu chipów dla Anthropic (42 mld USD senior z gwarancją wartości rezydualnej Broadcomu, 18 mld USD junior, z czego 9 mld USD Blackstone; Bloomberg 2.10, syndykacja ok. 5–6.10, źródła wtórne) – transakcja w toku, nie zamknięta; dotyczy Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne. Obligacja HY CleanSpark (centrum danych dla Mety) 2,28 mld USD po 8,25% przy ok. 10 mld USD zapisów – popyt silny, ale inwestorzy żądają wyższych premii.",
+        "note_en": "Loosening standards (the SEC position of July 2026 removes the risk-retention requirement for some data-center securitizations; sponsors still typically retain ≥30%). AAA data-center CMBS at 165 bp vs 93–125 bp for other CMBS (Barclays, 15 Sep). Near threshold: reports of DC spreads widening vs the rest of ABS (Bloomberg Aug, The Real Deal 30 Sep) do not yet give two confirmed readings of the change. Amazon's GPU SPV (USD 8bn, 2 Oct) is still only being explored. New (note, no status change): Broadcom's syndicate is starting to raise USD 60bn of chip-lease financing for Anthropic (USD 42bn senior with Broadcom residual value support, USD 18bn junior, of which USD 9bn from Blackstone; Bloomberg 2 Oct, syndication around 5–6 Oct, secondary sources) – a deal in progress, not closed; concerns Anthropic – potential conflict of interest, external sources only. CleanSpark's HY bond (data center for Meta) USD 2.28bn at 8.25% with about USD 10bn of orders – strong demand, but investors demand higher premiums.",
+        "conflict_of_interest": true,
+        "status_since": "2026-10-06",
+        "status_prev": "yellow"
       },
       {
         "id": "A7",
@@ -185,7 +199,9 @@
         "preliminary": false,
         "source": "https://realinvestmentadvice.com/resources/blog/is-coreweave-at-the-mercy-of-the-bond-market/",
         "note": "Obligacje CoreWeave 9,25% 2030: ok. 11,6% (16.09, źródło wtórne) vs rentowność IG 5,79% (DGS10 5,01% + BAMLC0A0CM 0,78%) = ok. 580 pb; RIA (4.09) podaje ok. 13% → ok. 740 pb. Dwa niezależne źródła wtórne powyżej 500 pb. Kontrprzykład: kredyt TLB Lambdy SOFR+300 z ratingiem Baa2 (22.09).",
-        "note_en": "CoreWeave 9.25% 2030 notes: about 11.6% (16 Sep, secondary source) vs IG yield 5.79% (DGS10 5.01% + BAMLC0A0CM 0.78%) = about 580 bp; RIA (4 Sep) gives about 13% → about 740 bp. Two independent secondary sources above 500 bp. Counterexample: Lambda's Baa2-rated TLB at SOFR+300 (22 Sep)."
+        "note_en": "CoreWeave 9.25% 2030 notes: about 11.6% (16 Sep, secondary source) vs IG yield 5.79% (DGS10 5.01% + BAMLC0A0CM 0.78%) = about 580 bp; RIA (4 Sep) gives about 13% → about 740 bp. Two independent secondary sources above 500 bp. Counterexample: Lambda's Baa2-rated TLB at SOFR+300 (22 Sep).",
+        "status_since": "2026-10-06",
+        "status_prev": "red"
       },
       {
         "id": "A8",
@@ -200,8 +216,10 @@
         "max_points": 40.0,
         "preliminary": false,
         "source": "https://datacenterdynamics.com/en/news/oracle-issues-force-majeure-notice-to-blue-owl-following-series-of-setbacks-at-project-jupiter-data-center-campus-report",
-        "note": "Lekkie: przełożone IPO SB Energy i Holtec (22.09); zawiadomienie Oracle o sile wyższej wobec Blue Owl w Project Jupiter (24.09) – możliwe odroczenie czynszu o 3 lata w projekcie finansowanym długiem (ok. 18 mld USD); roszczenie nieuznane, czynsz jeszcze nienależny (start 2028) – zdarzenie lekkie. Brak zdarzeń ciężkich; limity wypłat w funduszach Cliffwater (4.09) i BCRED (3.09) bez potwierdzonej ekspozycji na AI/centra danych – nieliczone jako ciężkie. Opóźnienie IPO Aggreko (NYT 21.09, Bisnow 22.09) należy do tej samej fali co SB Energy i Holtec – bez nowego zdarzenia w weekend 3–4.10. Przesunięcie IPO Anthropic z października na listopad (WSJ/NYT 18.09, źródła wtórne) – dla pełnych wyników III kw., bez sygnałów niższej wyceny – nie liczone jako zdarzenie; dotyczy Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne.",
-        "note_en": "Light: SB Energy and Holtec IPOs postponed (22 Sep); Oracle's force majeure notice to Blue Owl on Project Jupiter (24 Sep) – a possible 3-year rent deferral on a debt-financed project (about USD 18bn); the claim is not accepted and rent is not yet due (start 2028) – a light event. No heavy events; redemption caps at Cliffwater (4 Sep) and BCRED (3 Sep) funds have no confirmed AI/data-center exposure – not counted as heavy. The Aggreko IPO delay (NYT 21 Sep, Bisnow 22 Sep) belongs to the same wave as SB Energy and Holtec – no new event over the 3–4 Oct weekend. The Anthropic IPO shift from October to November (WSJ/NYT 18 Sep, secondary sources) – to include full Q3 results, with no signs of a lower valuation – not counted as an event; concerns Anthropic – potential conflict of interest, external sources only."
+        "note": "Lekkie: przełożone IPO SB Energy i Holtec (22.09); zawiadomienie Oracle o sile wyższej wobec Blue Owl w Project Jupiter (24.09) – możliwe odroczenie czynszu o 3 lata w projekcie finansowanym długiem (ok. 18 mld USD); roszczenie nieuznane, czynsz jeszcze nienależny (start 2028) – zdarzenie lekkie. Brak zdarzeń ciężkich; limity wypłat w funduszach Cliffwater (4.09) i BCRED (3.09) bez potwierdzonej ekspozycji na AI/centra danych – nieliczone jako ciężkie. Opóźnienie IPO Aggreko (NYT 21.09, Bisnow 22.09) należy do tej samej fali co SB Energy i Holtec – bez nowego zdarzenia w weekend 3–4.10. Przesunięcie IPO Anthropic z października na listopad (WSJ/NYT 18.09, źródła wtórne) – dla pełnych wyników III kw., bez sygnałów niższej wyceny – nie liczone jako zdarzenie; dotyczy Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne. Uzupełnienie: OpenAI 29.09 odłożyło IPO co najmniej do 2027 r., podając względy bezpieczeństwa AI, i szuka 30 mld USD finansowania prywatnego (źródła wtórne) – bez sygnałów niższej wyceny; zdarzenie lekkie, okno A8 trwa do 29.10.",
+        "note_en": "Light: SB Energy and Holtec IPOs postponed (22 Sep); Oracle's force majeure notice to Blue Owl on Project Jupiter (24 Sep) – a possible 3-year rent deferral on a debt-financed project (about USD 18bn); the claim is not accepted and rent is not yet due (start 2028) – a light event. No heavy events; redemption caps at Cliffwater (4 Sep) and BCRED (3 Sep) funds have no confirmed AI/data-center exposure – not counted as heavy. The Aggreko IPO delay (NYT 21 Sep, Bisnow 22 Sep) belongs to the same wave as SB Energy and Holtec – no new event over the 3–4 Oct weekend. The Anthropic IPO shift from October to November (WSJ/NYT 18 Sep, secondary sources) – to include full Q3 results, with no signs of a lower valuation – not counted as an event; concerns Anthropic – potential conflict of interest, external sources only. Addendum: on 29 Sep OpenAI postponed its IPO to 2027 at the earliest, citing AI safety, and is seeking USD 30bn of private funding (secondary sources) – no signs of a lower valuation; a light event, the A8 window runs to 29 Oct.",
+        "status_since": "2026-10-06",
+        "status_prev": "yellow"
       },
       {
         "id": "B1",
@@ -217,7 +235,9 @@
         "preliminary": false,
         "source": "https://s23.q4cdn.com/440135859/files/content_files/Q1-FY27-Oracle-Earnings-Slides.pdf",
         "note": "Alphabet (195–205 mld USD), Amazon (ok. 220 mld) i Meta (130–145 mld) podniosły prognozy na 2026, Oracle do 95 mld USD na FY27. Spadek raportowanego capeksu Microsoftu wynika ze zmiany księgowej (okres użytkowania budynków 15→25 lat, część leasingu finansowego → operacyjny) – nie liczony jako cięcie.",
-        "note_en": "Alphabet (USD 195–205bn), Amazon (about 220bn) and Meta (130–145bn) raised 2026 guidance, Oracle up to USD 95bn for FY27. Microsoft's lower reported capex reflects an accounting change (building useful life 15→25 years, some finance leases → operating) – not counted as a cut."
+        "note_en": "Alphabet (USD 195–205bn), Amazon (about 220bn) and Meta (130–145bn) raised 2026 guidance, Oracle up to USD 95bn for FY27. Microsoft's lower reported capex reflects an accounting change (building useful life 15→25 years, some finance leases → operating) – not counted as a cut.",
+        "status_since": "2026-10-06",
+        "status_prev": "green"
       },
       {
         "id": "B2",
@@ -233,7 +253,9 @@
         "preliminary": false,
         "source": "https://www.etfreplay.com/etf/mags",
         "note": "MAGS +11,43% YTD vs S&P 500 (SPY) +14,51% (5.10), obie stopy całkowite (źródło wtórne, ETFreplay).",
-        "note_en": "MAGS +11.43% YTD vs the S&P 500 (SPY) +14.51% (5 Oct), both total return (secondary source, ETFreplay)."
+        "note_en": "MAGS +11.43% YTD vs the S&P 500 (SPY) +14.51% (5 Oct), both total return (secondary source, ETFreplay).",
+        "status_since": "2026-10-06",
+        "status_prev": "yellow"
       },
       {
         "id": "B3",
@@ -249,7 +271,9 @@
         "preliminary": false,
         "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
         "note": "II kw. 2026 z XBRL SEC: OCF 171,8 mld USD, zakupy środków trwałych 165,1 mld USD (brutto; Amazon bez potrącenia wpływów, Microsoft bez leasingu finansowego), FCF 6,7 mld USD = 4,1%; z ratami leasingu finansowego 2,5%. Alphabet (−5,9 mld) i Amazon (−8,8 mld) z ujemnym FCF.",
-        "note_en": "Q2 2026 from SEC XBRL: OCF USD 171.8bn, purchases of property and equipment USD 165.1bn (gross; Amazon without proceeds netted, Microsoft excluding finance leases), FCF USD 6.7bn = 4.1%; 2.5% including finance-lease principal. Alphabet (−5.9bn) and Amazon (−8.8bn) had negative FCF."
+        "note_en": "Q2 2026 from SEC XBRL: OCF USD 171.8bn, purchases of property and equipment USD 165.1bn (gross; Amazon without proceeds netted, Microsoft excluding finance leases), FCF USD 6.7bn = 4.1%; 2.5% including finance-lease principal. Alphabet (−5.9bn) and Amazon (−8.8bn) had negative FCF.",
+        "status_since": "2026-10-06",
+        "status_prev": "yellow"
       },
       {
         "id": "C1",
@@ -265,7 +289,9 @@
         "preliminary": false,
         "source": "https://ramp.com/data/ai-index-sept-2026",
         "note": "Dane za VIII: mediana 10,92 → 11,88 → 12,50 USD (VI–VIII); top 10% 645 → 676 USD; top 1% −9,7% m/m; odsetek płacących 55,71% → 56,13%.",
-        "note_en": "August data: median 10.92 → 11.88 → 12.50 USD (Jun–Aug); top 10% 645 → 676 USD; top 1% −9.7% m/m; share paying 55.71% → 56.13%."
+        "note_en": "August data: median 10.92 → 11.88 → 12.50 USD (Jun–Aug); top 10% 645 → 676 USD; top 1% −9.7% m/m; share paying 55.71% → 56.13%.",
+        "status_since": "2026-10-06",
+        "status_prev": "green"
       },
       {
         "id": "C2",
@@ -281,7 +307,9 @@
         "preliminary": false,
         "source": "https://www.census.gov/hfp/btos/downloads/National.xlsx",
         "note": "22,4% → 23,2% → 23,8% w trzech kolejnych odczytach (ostatni okres 24.08–6.09).",
-        "note_en": "22.4% → 23.2% → 23.8% over three consecutive readings (latest period 24 Aug–6 Sep)."
+        "note_en": "22.4% → 23.2% → 23.8% over three consecutive readings (latest period 24 Aug–6 Sep).",
+        "status_since": "2026-10-06",
+        "status_prev": "green"
       },
       {
         "id": "C3",
@@ -298,7 +326,9 @@
         "source": "https://www.insiderfinance.io/news/openai-revenue-run-rate-nears-70-billion",
         "note": "Run-rate OpenAI blisko 70 mld USD (29.09), Anthropic powyżej 65 mld USD (koniec VII); AWS +37%, Azure +43%, Google Cloud +82% r/r w II kw. – przyspieszenie; 25% za nieaudytowany charakter run-rate i koncentrację. Dotyczy też Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne (wtórne).",
         "note_en": "OpenAI run-rate near USD 70bn (29 Sep), Anthropic above USD 65bn (end of July); AWS +37%, Azure +43%, Google Cloud +82% y/y in Q2 – accelerating; 25% for unaudited run-rates and concentration. Also concerns Anthropic – potential conflict of interest, external (secondary) sources only.",
-        "conflict_of_interest": true
+        "conflict_of_interest": true,
+        "status_since": "2026-10-06",
+        "status_prev": "q25"
       },
       {
         "id": "C4",
@@ -314,7 +344,9 @@
         "preliminary": false,
         "source": "https://enterprisedna.co/resources/news/mckinsey-state-of-ai-2026-enterprise-roi-gap/",
         "note": "McKinsey State of AI 2026: 37% firm z wpływem AI na EBIT – bez zmian r/r (źródło wtórne). Brak nowego badania porzucania inicjatyw (S&P Global 2025: 42%) – obraz stabilny/mieszany.",
-        "note_en": "McKinsey State of AI 2026: 37% of firms with an AI impact on EBIT – unchanged y/y (secondary source). No new abandonment survey (S&P Global 2025: 42%) – stable/mixed picture."
+        "note_en": "McKinsey State of AI 2026: 37% of firms with an AI impact on EBIT – unchanged y/y (secondary source). No new abandonment survey (S&P Global 2025: 42%) – stable/mixed picture.",
+        "status_since": "2026-10-06",
+        "status_prev": "yellow"
       },
       {
         "id": "D1",
@@ -330,7 +362,9 @@
         "preliminary": false,
         "source": "https://data.ornn.com/markets/h100-sxm",
         "note": "Ornn OCPI H100: 2,52 USD/h (5.10), −17,6% w 30 dni (z 3,06 USD 5.09) – powyżej progu ostrzegawczego 15% spadku spotu w miesiącu; −1,6% t/t. Seria dzienna bardzo zmienna (zakres 3 mies. 2,46–3,17; ruchy dzienne do ±11%), średnie miesięczne 2,63 → 2,77 → 2,83 (VII–IX) jeszcze rosły. Silicon Data H100 (neocloud) 2,81 USD, +2,9% t/t – odczyt niższego ryzyka; zgodnie z zasadą przyjęto status wyższego ryzyka. Brak świeżych stawek kontraktowych 1-rocznych – nie można stwierdzić spadku kontraktów (🔴); status 🟡 jako wczesne ostrzeżenie.",
-        "note_en": "Ornn OCPI H100: USD 2.52/h (5 Oct), −17.6% over 30 days (from USD 3.06 on 5 Sep) – above the 15% monthly spot-decline warning threshold; −1.6% w/w. The daily series is very volatile (3-month range 2.46–3.17; daily moves up to ±11%), and monthly averages 2.63 → 2.77 → 2.83 (Jul–Sep) were still rising. Silicon Data H100 (neocloud) USD 2.81, +2.9% w/w – a lower-risk reading; per the rule the higher-risk status is used. No fresh 1-year contract rates – a contract decline (🔴) cannot be established; 🟡 status as an early warning."
+        "note_en": "Ornn OCPI H100: USD 2.52/h (5 Oct), −17.6% over 30 days (from USD 3.06 on 5 Sep) – above the 15% monthly spot-decline warning threshold; −1.6% w/w. The daily series is very volatile (3-month range 2.46–3.17; daily moves up to ±11%), and monthly averages 2.63 → 2.77 → 2.83 (Jul–Sep) were still rising. Silicon Data H100 (neocloud) USD 2.81, +2.9% w/w – a lower-risk reading; per the rule the higher-risk status is used. No fresh 1-year contract rates – a contract decline (🔴) cannot be established; 🟡 status as an early warning.",
+        "status_since": "2026-10-06",
+        "status_prev": "yellow"
       },
       {
         "id": "D2",
@@ -346,7 +380,9 @@
         "preliminary": false,
         "source": "https://www.trendforce.com/presscenter/news/20260930-13258.html",
         "note": "Ceny kontraktowe rosną (DDR4 16Gb +4,2% w II poł. VIII); TrendForce prognozuje +10–15% k/k w IV kw.; spot DDR4 mieszany pod koniec IX.",
-        "note_en": "Contract prices rising (DDR4 16Gb +4.2% in 2H Aug); TrendForce forecasts +10–15% q/q in Q4; DDR4 spot mixed at end of Sep."
+        "note_en": "Contract prices rising (DDR4 16Gb +4.2% in 2H Aug); TrendForce forecasts +10–15% q/q in Q4; DDR4 spot mixed at end of Sep.",
+        "status_since": "2026-10-06",
+        "status_prev": "green"
       },
       {
         "id": "D3",
@@ -362,7 +398,9 @@
         "preliminary": false,
         "source": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm",
         "note": "Micron DIO (×91 dni): 124,5 → 123,2 → 121,8 → 131,4 – wzrost w jednym kwartale (14-tygodniowy kwartał); capex FY26 30,7 mld USD (z 15,9). Samsung i SK hynix poniżej 10 dni zapasów (KB Securities, wtórne).",
-        "note_en": "Micron DIO (×91 days): 124.5 → 123.2 → 121.8 → 131.4 – an increase in one quarter (14-week quarter); FY26 capex USD 30.7bn (from 15.9). Samsung and SK hynix below 10 days of inventory (KB Securities, secondary)."
+        "note_en": "Micron DIO (×91 days): 124.5 → 123.2 → 121.8 → 131.4 – an increase in one quarter (14-week quarter); FY26 capex USD 30.7bn (from 15.9). Samsung and SK hynix below 10 days of inventory (KB Securities, secondary).",
+        "status_since": "2026-10-06",
+        "status_prev": "green"
       },
       {
         "id": "D4",
@@ -378,7 +416,9 @@
         "preliminary": true,
         "source": "https://www.servnetuk.com/research/gpu-residual-value-study-2026",
         "note": "Używane H100 ok. 14–28 tys. USD (IV–VIII 2026, różne SKU, źródła wtórne) – brak porównywalnej serii k/k. Brak skrócenia okresów amortyzacji w 2026. Wynajem A100 −14% m/m we IX do obserwacji.",
-        "note_en": "Used H100s about 14–28k USD (Apr–Aug 2026, different SKUs, secondary sources) – no comparable q/q series. No shortening of depreciation periods in 2026. A100 rental −14% m/m in Sep worth watching."
+        "note_en": "Used H100s about 14–28k USD (Apr–Aug 2026, different SKUs, secondary sources) – no comparable q/q series. No shortening of depreciation periods in 2026. A100 rental −14% m/m in Sep worth watching.",
+        "status_since": "2026-10-06",
+        "status_prev": "green"
       },
       {
         "id": "D5",
@@ -394,7 +434,9 @@
         "preliminary": false,
         "source": "https://www.kgi.com.hk/en/-/media/files/kgishk/research-reports/tw-reports/tsmc_2330-tt_09032026e.pdf",
         "note": "KGI podnosi prognozę mocy CoWoS na koniec 2027 do 170 tys. wafli/mies., bo popyt rośnie szybciej niż moce; HBM4 ogranicza wysyłki Rubin; HBM na 2026 wyprzedany (wtórne).",
-        "note_en": "KGI raises its end-2027 CoWoS capacity forecast to 170k wafers/month as demand outgrows capacity; HBM4 limits Rubin shipments; 2026 HBM sold out (secondary)."
+        "note_en": "KGI raises its end-2027 CoWoS capacity forecast to 170k wafers/month as demand outgrows capacity; HBM4 limits Rubin shipments; 2026 HBM sold out (secondary).",
+        "status_since": "2026-10-06",
+        "status_prev": "green"
       },
       {
         "id": "E1",
@@ -410,7 +452,9 @@
         "preliminary": false,
         "source": "https://www.ftportfolios.com/Commentary/EconomicResearch/2026/10/1/the-ism-manufacturing-index-declined-to-54.5-in-september",
         "note": "54,5 po 54,6 (spadek, > 50); indeks cen 77,9 po 71,1. Dwa niezależne źródła wtórne.",
-        "note_en": "54.5 after 54.6 (falling, > 50); prices index 77.9 after 71.1. Two independent secondary sources."
+        "note_en": "54.5 after 54.6 (falling, > 50); prices index 77.9 after 71.1. Two independent secondary sources.",
+        "status_since": "2026-10-06",
+        "status_prev": "yellow"
       },
       {
         "id": "E2",
@@ -426,7 +470,9 @@
         "preliminary": false,
         "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610",
         "note": "Treasury 5.10: 10Y 5,31%, 2Y 4,84% → 0,47 pp. Miesiąc (4.09→5.10): 2Y +47 pb, 10Y +53 pb – stromienie przez rosnącą 10Y przy rosnącej 2Y = zaostrzanie. Tydzień (28.09→5.10): 2Y −8 pb, 10Y +7 pb – obraz mieszany; o statusie decyduje trend miesięczny. FRED T10Y2Y 0,45 (2.10) – zgodne.",
-        "note_en": "Treasury 5 Oct: 10Y 5.31%, 2Y 4.84% → 0.47 pp. Month (4 Sep→5 Oct): 2Y +47 bp, 10Y +53 bp – steepening via a rising 10Y with a rising 2Y = tightening. Week (28 Sep→5 Oct): 2Y −8 bp, 10Y +7 bp – mixed; the monthly trend decides the status. FRED T10Y2Y 0.45 (2 Oct) – consistent."
+        "note_en": "Treasury 5 Oct: 10Y 5.31%, 2Y 4.84% → 0.47 pp. Month (4 Sep→5 Oct): 2Y +47 bp, 10Y +53 bp – steepening via a rising 10Y with a rising 2Y = tightening. Week (28 Sep→5 Oct): 2Y −8 bp, 10Y +7 bp – mixed; the monthly trend decides the status. FRED T10Y2Y 0.45 (2 Oct) – consistent.",
+        "status_since": "2026-10-06",
+        "status_prev": "red"
       },
       {
         "id": "E3",
@@ -435,14 +481,16 @@
         "name_en": "Fed policy",
         "value": "3,75–4,00",
         "unit": "%",
-        "as_of": "2026-10-04",
+        "as_of": "2026-10-06",
         "status": "red",
         "points": 50.0,
         "max_points": 50.0,
         "preliminary": false,
         "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
-        "note": "Podwyżka o 25 pb 16.09.2026; Kalshi (4.10): X – utrzymanie 83%, XII – podwyżka 70%. Rozbieżność: migawka DeFi Rate/Kalshi z 30.09 dawała 55,5% na podwyżkę w październiku – starsza, mniej wiarygodna od odczytu z 4.10; status 🔴 wynika i tak z podwyżki z 16.09.",
-        "note_en": "25 bp hike on 16 Sep 2026; Kalshi (4 Oct): Oct – hold 83%, Dec – hike 70%. Discrepancy: a DeFi Rate/Kalshi snapshot of 30 Sep showed 55.5% for an October hike – older and less credible than the 4 Oct reading; the 🔴 status follows from the 16 Sep hike anyway."
+        "note": "Podwyżka o 25 pb 16.09.2026. Rynki predykcyjne (6.10, DeFi Rate: Kalshi/Polymarket): 28.10 – utrzymanie 83%, podwyżka ok. 17%; 9.12 – podwyżka 75% (Kalshi 73%). Kurs podwyżki w październiku spadł w tydzień o ok. 26 pkt; status 🔴 wynika z podwyżki z 16.09.",
+        "note_en": "25 bp hike on 16 Sep 2026. Prediction markets (6 Oct, DeFi Rate: Kalshi/Polymarket): 28 Oct – hold 83%, hike about 17%; 9 Dec – hike 75% (Kalshi 73%). October hike odds fell about 26 points in a week; the 🔴 status follows from the 16 Sep hike.",
+        "status_since": "2026-10-06",
+        "status_prev": "red"
       },
       {
         "id": "F1",
@@ -458,7 +506,9 @@
         "preliminary": false,
         "source": "https://www.utilitydive.com/news/pjm-delays-backstop-procurement-ferc-data-center/831751",
         "note": "FERC 29.09 tylko częściowo zatwierdził awaryjną procedurę PJM (6,8 GW niedoboru na 2028/29), przetarg wstrzymany bezterminowo; kolejne lokalne moratoria we wrześniu (Lake County IL, Leavenworth KS, Mattoon IL).",
-        "note_en": "On 29 Sep FERC only partly approved PJM's emergency procurement (6.8 GW shortfall for 2028/29), the auction is delayed indefinitely; more local moratoria in September (Lake County IL, Leavenworth KS, Mattoon IL)."
+        "note_en": "On 29 Sep FERC only partly approved PJM's emergency procurement (6.8 GW shortfall for 2028/29), the auction is delayed indefinitely; more local moratoria in September (Lake County IL, Leavenworth KS, Mattoon IL).",
+        "status_since": "2026-10-06",
+        "status_prev": "q75"
       },
       {
         "id": "G1",
@@ -474,7 +524,9 @@
         "preliminary": false,
         "source": "https://ramp.com/data/ai-index-sept-2026",
         "note": "Cena spada (Ramp −41% od III) przy rosnącej medianie wydatków (C1) = zdrowa adopcja; Silicon Data odbiło do 0,94 USD (2.10, +5,7% t/t); top 1% −9,7% m/m.",
-        "note_en": "Price falling (Ramp −41% since March) with rising median spend (C1) = healthy adoption; Silicon Data rebounded to USD 0.94 (2 Oct, +5.7% w/w); top 1% −9.7% m/m."
+        "note_en": "Price falling (Ramp −41% since March) with rising median spend (C1) = healthy adoption; Silicon Data rebounded to USD 0.94 (2 Oct, +5.7% w/w); top 1% −9.7% m/m.",
+        "status_since": "2026-10-06",
+        "status_prev": "green"
       },
       {
         "id": "G2",
@@ -491,7 +543,9 @@
         "source": "https://www.vktr.com/ai-platforms/openai-launches-gpt6-sol-and-luna-cuts-api-prices-in-half/",
         "note": "Opus 5.5 −20% vs Opus 5 (frontier), GPT-6 Sol/Luna −50% (modele średnie i tanie); nowe flagowce OpenAI (GPT-6 Astra) droższe, Gemini 4 Argon z ceną wprowadzającą. Brak wojny cenowej. Dotyczy cennika Anthropic – potencjalny konflikt interesów; tylko źródła zewnętrzne (wtórne).",
         "note_en": "Opus 5.5 −20% vs Opus 5 (frontier), GPT-6 Sol/Luna −50% (mid-tier and cheap models); new OpenAI flagship (GPT-6 Astra) pricier, Gemini 4 Argon on introductory pricing. No price war. Concerns Anthropic pricing – potential conflict of interest; external (secondary) sources only.",
-        "conflict_of_interest": true
+        "conflict_of_interest": true,
+        "status_since": "2026-10-06",
+        "status_prev": "yellow"
       },
       {
         "id": "G3",
@@ -507,7 +561,9 @@
         "preliminary": false,
         "source": "https://ramp.com/data/ai-index-sept-2026",
         "note": "Ramp: 6,4% płacących firm (3,6% wszystkich). OpenRouter (top 20, tydzień do 3.10): open-weight ok. 49–67% tokenów – sygnał umiarkowany (ruch deweloperski).",
-        "note_en": "Ramp: 6.4% of paying businesses (3.6% of all). OpenRouter (top 20, week to 3 Oct): open-weight about 49–67% of tokens – a moderate signal (developer traffic)."
+        "note_en": "Ramp: 6.4% of paying businesses (3.6% of all). OpenRouter (top 20, week to 3 Oct): open-weight about 49–67% of tokens – a moderate signal (developer traffic).",
+        "status_since": "2026-10-06",
+        "status_prev": "green"
       },
       {
         "id": "G4",
@@ -524,7 +580,9 @@
         "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
         "note": "AA v4.3.2: Claude Opus 5.5 (max) 57,6 vs MiMo-V2.6-Pro 46,3 = 11,3 pkt (19,6%); vs najlepszy zamknięty spoza Anthropic GPT-6 Astra (max) 52,7 = 6,4 pkt (12,1%). Epoch AI: opóźnienie ok. 4 mies. (V 2026) → 🟡. Lider to model Anthropic – potencjalny konflikt interesów.",
         "note_en": "AA v4.3.2: Claude Opus 5.5 (max) 57.6 vs MiMo-V2.6-Pro 46.3 = 11.3 pts (19.6%); vs the best non-Anthropic closed model GPT-6 Astra (max) 52.7 = 6.4 pts (12.1%). Epoch AI: lag about 4 months (May 2026) → 🟡. The leader is an Anthropic model – potential conflict of interest.",
-        "conflict_of_interest": true
+        "conflict_of_interest": true,
+        "status_since": "2026-10-06",
+        "status_prev": "yellow"
       }
     ],
     "calendar": [
@@ -559,14 +617,14 @@
         "title_en": "TCEQ – update on Texas data-center permit decisions"
       },
       {
-        "date": "2026-10-24",
-        "title": "Wygasa okno A8 (ostatnie zdarzenie lekkie z 24.09)",
-        "title_en": "A8 window expires (latest light event of 24 Sep)"
-      },
-      {
         "date": "2026-10-28",
         "title": "Decyzja FOMC (27–28.10)",
         "title_en": "FOMC decision (27–28 Oct)"
+      },
+      {
+        "date": "2026-10-29",
+        "title": "Wygasa okno A8 (ostatnie zdarzenie lekkie: odroczenie IPO OpenAI 29.09)",
+        "title_en": "A8 window expires (latest light event: OpenAI IPO postponement of 29 Sep)"
       }
     ]
   }
