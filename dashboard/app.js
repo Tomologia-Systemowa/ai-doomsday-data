@@ -27,6 +27,7 @@
     pl: {
       locale: 'pl-PL',
       skip: 'Przejdź do raportu',
+      aiGenerated: 'AI Generated',
       slogan: 'Dzień Sądu: kiedy taniej jest skończyć z ludzkością, niż spłacić dług.',
       tagline: 'Stan bańki AI na dziś',
       lastReport: 'Ostatni raport',
@@ -61,6 +62,7 @@
     en: {
       locale: 'en-GB',
       skip: 'Skip to report',
+      aiGenerated: 'AI Generated',
       slogan: 'Judgment Day: when ending humanity is cheaper than paying off the debt.',
       tagline: 'State of the AI bubble today',
       lastReport: 'Latest report',

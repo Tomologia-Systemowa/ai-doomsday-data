@@ -10,6 +10,7 @@
   <!-- mode cors: data comes from raw.githubusercontent.com (hosts are checked in app.js). noSwap: error bodies are never shown.
        No hx-trigger filters / hx-on / js: values; Enter on chart dots is handled in app.js. -->
   <meta name="htmx-config" content='{"mode": "cors", "history": false, "noSwap": [204, 304, "4xx", "5xx"]}'>
+  <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <script defer src="https://cdn.jsdelivr.net/npm/htmx.org@4.0.0/dist/htmx.min.js"
           integrity="sha384-BvJpBiO8Kh31EqtJe5DRIeWrHWnCGkwytKs9NKFi86Hhw96dEqdEMzZDeK9iEGTc"
@@ -207,7 +208,7 @@
   <header class="site-header">
     <div class="wrap header-row">
       <div class="brand">
-        <h1>AI Doomsday</h1>
+        <h1>AI Doomsday<sup class="ai-gen" data-i18n="aiGenerated">AI Generated</sup></h1>
         <p class="slogan" data-i18n="slogan">Dzień Sądu: kiedy taniej jest skończyć z ludzkością, niż spłacić dług.</p>
         <p class="tagline" data-i18n="tagline">Stan bańki AI na dziś</p>
       </div>
@@ -227,7 +228,61 @@
     <section class="hero">
       <div id="overview" data-view="overview" data-src="latest.json"
            hx-get="" hx-trigger="dataready from:body, langchange from:body">
-        <p class="msg" role="status" data-i18n="loading">Ładowanie…</p>
+        <!-- Placeholder with the same geometry as tpl-overview, so the page does not jump when the data arrives. -->
+        <div class="overview is-loading" role="status">
+          <div class="donut">
+            <svg viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+              <circle cx="200" cy="200" r="148" class="donut-rim"/>
+              <circle cx="200" cy="200" r="126" class="skeleton-ring"/>
+              <circle cx="200" cy="200" r="102" class="donut-hole"/>
+            </svg>
+            <div class="donut-center">
+              <div class="score"><span class="score-num">…</span><span class="score-max">/1000</span></div>
+              <div class="band-name" data-i18n="loading">Ładowanie…</div>
+              <div class="chg">&nbsp;</div>
+            </div>
+          </div>
+          <ul class="flags" aria-hidden="true"></ul>
+          <h3 class="cats-title" aria-hidden="true">&nbsp;</h3>
+          <ul class="cats" aria-hidden="true">
+            <li class="cat cat-1">
+              <span class="cat-top"><span class="swatch" aria-hidden="true"></span><span class="cat-id">A</span> <span class="cat-name">…</span></span>
+              <span class="cat-val"><strong>—</strong> / —</span>
+              <span class="cat-bar" aria-hidden="true"><span style="width: 0"></span></span>
+            </li>
+            <li class="cat cat-2">
+              <span class="cat-top"><span class="swatch" aria-hidden="true"></span><span class="cat-id">B</span> <span class="cat-name">…</span></span>
+              <span class="cat-val"><strong>—</strong> / —</span>
+              <span class="cat-bar" aria-hidden="true"><span style="width: 0"></span></span>
+            </li>
+            <li class="cat cat-3">
+              <span class="cat-top"><span class="swatch" aria-hidden="true"></span><span class="cat-id">C</span> <span class="cat-name">…</span></span>
+              <span class="cat-val"><strong>—</strong> / —</span>
+              <span class="cat-bar" aria-hidden="true"><span style="width: 0"></span></span>
+            </li>
+            <li class="cat cat-4">
+              <span class="cat-top"><span class="swatch" aria-hidden="true"></span><span class="cat-id">D</span> <span class="cat-name">…</span></span>
+              <span class="cat-val"><strong>—</strong> / —</span>
+              <span class="cat-bar" aria-hidden="true"><span style="width: 0"></span></span>
+            </li>
+            <li class="cat cat-5">
+              <span class="cat-top"><span class="swatch" aria-hidden="true"></span><span class="cat-id">E</span> <span class="cat-name">…</span></span>
+              <span class="cat-val"><strong>—</strong> / —</span>
+              <span class="cat-bar" aria-hidden="true"><span style="width: 0"></span></span>
+            </li>
+            <li class="cat cat-6">
+              <span class="cat-top"><span class="swatch" aria-hidden="true"></span><span class="cat-id">F</span> <span class="cat-name">…</span></span>
+              <span class="cat-val"><strong>—</strong> / —</span>
+              <span class="cat-bar" aria-hidden="true"><span style="width: 0"></span></span>
+            </li>
+            <li class="cat cat-7">
+              <span class="cat-top"><span class="swatch" aria-hidden="true"></span><span class="cat-id">G</span> <span class="cat-name">…</span></span>
+              <span class="cat-val"><strong>—</strong> / —</span>
+              <span class="cat-bar" aria-hidden="true"><span style="width: 0"></span></span>
+            </li>
+          </ul>
+          <p class="headline" aria-hidden="true">&nbsp;</p>
+        </div>
       </div>
     </section>
 
