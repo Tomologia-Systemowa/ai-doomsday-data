@@ -1,7 +1,7 @@
 {
   "schema_version": "1.2",
   "date": "2026-10-06",
-  "updated_at": "2026-10-06T18:07:17+02:00",
+  "updated_at": "2026-10-06T22:12:24+02:00",
   "entry": {
     "kind": "full",
     "score": 426,
@@ -16,8 +16,8 @@
       "F": 37.5,
       "G": 27.5
     },
-    "headline": "Wynik 426/1000 bez zmian wobec porannego raportu (+22 wobec 5.10) – aktualizacja wieczorna: brak zmian statusów; kursy podwyżki Fed w październiku spadły do ok. 17%, trwa syndykacja 60 mld USD finansowania chipów.",
-    "headline_en": "Score 426/1000, unchanged from the morning report (+22 vs 5 Oct) – evening update: no status changes; October Fed hike odds fell to about 17%, syndication of USD 60bn chip financing under way."
+    "headline": "Wynik 426/1000 bez zmian (+22 wobec 5.10) – aktualizacja nocna: zamknięcie 6.10 – 10Y 5,27% (−4 pb), 2Y 4,79% (−5 pb); A1 i E2 pozostają 🔴, A1 tylko 2 pb nad progiem.",
+    "headline_en": "Score 426/1000, unchanged (+22 vs 5 Oct) – late update: 6 Oct close – 10Y 5.27% (−4 bp), 2Y 4.79% (−5 bp); A1 and E2 stay 🔴, A1 only 2 bp above the threshold."
   },
   "events": [
     {
@@ -31,10 +31,10 @@
     }
   ],
   "report": {
-    "summary": "Wynik pozostaje na poziomie 426/1000 (Podwyższone napięcie), bez zmian wobec porannego raportu; żaden sygnał nie zmienił statusu. Nowe odczyty: spread HY 3,12% (5.10), spread IG 0,84%; zamknięcia rynków z 6.10 jeszcze brak (10Y śródsesyjnie ok. 5,27%). Rynki predykcyjne obniżyły szanse podwyżki Fed 28.10 do ok. 17%, ale na grudzień wyceniają ją na 75% – E3 pozostaje 🔴 przez wrześniową podwyżkę. W kredycie: syndykacja 60 mld USD finansowania leasingu chipów dla Anthropic (w toku; konflikt interesów) i obligacja HY CleanSpark po 8,25% przy dużym popycie – dostęp do długu jest, ale drożeje. Odroczenie IPO OpenAI do 2027 r. (29.09) to zdarzenie lekkie, bez niższej wyceny. Ryzyko nadal skupia się w koszcie pieniądza i polityce Fed oraz energii.",
-    "summary_en": "The score stays at 426/1000 (Elevated stress), unchanged from the morning report; no signal changed status. New readings: HY spread 3.12% (5 Oct), IG spread 0.84%; market closes for 6 Oct are not yet available (10Y about 5.27% intraday). Prediction markets cut the odds of a Fed hike on 28 Oct to about 17%, but price one for December at 75% – E3 stays 🔴 because of the September hike. In credit: syndication of USD 60bn of chip-lease financing for Anthropic (in progress; conflict of interest) and a CleanSpark HY bond at 8.25% with strong demand – debt is available but getting more expensive. OpenAI's IPO postponement to 2027 (29 Sep) is a light event, with no lower valuation. Risk remains concentrated in the cost of money, Fed policy and power.",
-    "curve_comment": "Brak nowego zamknięcia: krzywa 10Y–2Y pozostaje na 0,47 pp (Treasury, 5.10: 10Y 5,31%, 2Y 4,84%; FRED T10Y2Y 0,47 pp potwierdza). W ciągu miesiąca 2Y wzrosła o 47 pb, a 10Y o 53 pb – stromienie przez rosnącą 10Y przy rosnącej 2Y oznacza zaostrzanie warunków finansowych (🔴). Śródsesyjny spadek 10Y do ok. 5,27% 6.10 zostanie oceniony po publikacji zamknięcia.",
-    "curve_comment_en": "No new close: the 10Y–2Y curve stays at 0.47 pp (Treasury, 5 Oct: 10Y 5.31%, 2Y 4.84%; FRED T10Y2Y 0.47 pp confirms). Over the month the 2Y rose 47 bp and the 10Y 53 bp – steepening via a rising 10Y with a rising 2Y means tightening financial conditions (🔴). The intraday fall of the 10Y to about 5.27% on 6 Oct will be assessed once the close is published.",
+    "summary": "Wynik pozostaje na poziomie 426/1000 (Podwyższone napięcie), bez zmian wobec porannego i wieczornego raportu; żaden sygnał nie zmienił statusu. Nowe zamknięcia z 6.10 (Treasury): 10Y 5,27% (−4 pb), 2Y 4,79% (−5 pb), krzywa 0,48 pp. A1 pozostaje 🔴, ale tylko 2 pb nad progiem 5,25% – zejście poniżej obniżyłoby wynik o 25 pkt. E2 pozostaje 🔴 przez trend miesięczny, choć tydzień przyniósł spadek 2Y, zgodny z niższymi szansami podwyżki Fed 28.10. Spready HY i IG za 6.10 jeszcze nieopublikowane. Nowych zdarzeń kredytowych nie odnotowano.",
+    "summary_en": "The score stays at 426/1000 (Elevated stress), unchanged from the morning and evening reports; no signal changed status. New 6 Oct closes (Treasury): 10Y 5.27% (−4 bp), 2Y 4.79% (−5 bp), curve 0.48 pp. A1 stays 🔴, but only 2 bp above the 5.25% threshold – a move below it would cut the score by 25 points. E2 stays 🔴 on the monthly trend, although the week brought a fall in the 2Y, consistent with lower odds of a Fed hike on 28 Oct. HY and IG spreads for 6 Oct are not yet published. No new credit events were recorded.",
+    "curve_comment": "Zamknięcie 6.10 (Treasury): 10Y 5,27%, 2Y 4,79% – krzywa 10Y–2Y 0,48 pp (5.10: 0,47 pp). W ciągu miesiąca 2Y wzrosła o 42 pb, a 10Y o 49 pb – stromienie przez rosnącą 10Y oznacza zaostrzanie warunków finansowych (🔴). W ostatnim tygodniu 2Y spadła o 10 pb przy 10Y +1 pb (łagodzenie po spadku szans podwyżki Fed w październiku), ale jeden tydzień nie odwraca trendu miesięcznego.",
+    "curve_comment_en": "6 Oct close (Treasury): 10Y 5.27%, 2Y 4.79% – the 10Y–2Y curve at 0.48 pp (5 Oct: 0.47 pp). Over the month the 2Y rose 42 bp and the 10Y 49 bp – steepening via a rising 10Y means tightening financial conditions (🔴). Over the last week the 2Y fell 10 bp with the 10Y +1 bp (easing after the odds of an October Fed hike fell), but one week does not reverse the monthly trend.",
     "category_comments": {
       "A": {
         "comment": "172,5/300 – 10Y powyżej 5,25% i premia neocloudów ponad 500 pb dają maksimum punktów, przy niskim spreadzie HY (3,12%) i wyłącznie lekkich zdarzeniach kredytowych.",
@@ -81,16 +81,16 @@
         "category": "A",
         "name": "Rentowność 10Y USA",
         "name_en": "US 10Y Treasury yield",
-        "value": 5.31,
+        "value": 5.27,
         "unit": "%",
-        "as_of": "2026-10-05",
+        "as_of": "2026-10-06",
         "status": "red",
         "points": 50.0,
         "max_points": 50.0,
         "preliminary": false,
         "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610",
-        "note": "Treasury par yield 2026-10-05: 5,31% (2.10: 5,28%); FRED DGS10 (do 2026-10-01): 5,24%, zgodnie z Treasury dla tego dnia. 6.10 śródsesyjnie 10Y ok. 5,27% (źródło wtórne) – brak zamknięcia w chwili raportu.",
-        "note_en": "Treasury par yield 2026-10-05: 5.31% (2 Oct: 5.28%); FRED DGS10 (through 2026-10-01): 5.24%, matching Treasury for that day. On 6 Oct the 10Y traded intraday at about 5.27% (secondary source) – no close at the time of the report.",
+        "note": "Treasury par yield 2026-10-06 (zamknięcie): 5,27% (5.10: 5,31%) – nadal powyżej progu 5,25%, ale tylko o 2 pb. FRED DGS10 (do 2026-10-02): 5,28%, zgodnie z Treasury dla tego dnia.",
+        "note_en": "Treasury par yield 2026-10-06 (close): 5.27% (5 Oct: 5.31%) – still above the 5.25% threshold, but by only 2 bp. FRED DGS10 (through 2026-10-02): 5.28%, matching Treasury for that day.",
         "status_since": "2026-10-06",
         "status_prev": "red"
       },
@@ -461,16 +461,16 @@
         "category": "E",
         "name": "Krzywa 10Y–2Y",
         "name_en": "10Y–2Y yield curve",
-        "value": 0.47,
+        "value": 0.48,
         "unit": "pp",
-        "as_of": "2026-10-05",
+        "as_of": "2026-10-06",
         "status": "red",
         "points": 25.0,
         "max_points": 25.0,
         "preliminary": false,
         "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610",
-        "note": "Treasury 5.10: 10Y 5,31%, 2Y 4,84% → 0,47 pp. Miesiąc (4.09→5.10): 2Y +47 pb, 10Y +53 pb – stromienie przez rosnącą 10Y przy rosnącej 2Y = zaostrzanie. Tydzień (28.09→5.10): 2Y −8 pb, 10Y +7 pb – obraz mieszany; o statusie decyduje trend miesięczny. FRED T10Y2Y 0,45 (2.10) – zgodne.",
-        "note_en": "Treasury 5 Oct: 10Y 5.31%, 2Y 4.84% → 0.47 pp. Month (4 Sep→5 Oct): 2Y +47 bp, 10Y +53 bp – steepening via a rising 10Y with a rising 2Y = tightening. Week (28 Sep→5 Oct): 2Y −8 bp, 10Y +7 bp – mixed; the monthly trend decides the status. FRED T10Y2Y 0.45 (2 Oct) – consistent.",
+        "note": "Treasury 6.10: 10Y 5,27%, 2Y 4,79% → 0,48 pp. Miesiąc (4.09→6.10): 2Y +42 pb, 10Y +49 pb – stromienie przez rosnącą 10Y przy rosnącej 2Y = zaostrzanie. Tydzień (29.09→6.10): 2Y −10 pb, 10Y +1 pb – stromienie przez spadającą 2Y (łagodzenie); przy rozbieżności przyjęto status wyższego ryzyka (trend miesięczny). FRED T10Y2Y 0,47 (5.10) – zgodne z Treasury.",
+        "note_en": "Treasury 6 Oct: 10Y 5.27%, 2Y 4.79% → 0.48 pp. Month (4 Sep→6 Oct): 2Y +42 bp, 10Y +49 bp – steepening via a rising 10Y with a rising 2Y = tightening. Week (29 Sep→6 Oct): 2Y −10 bp, 10Y +1 bp – steepening via a falling 2Y (easing); given the divergence the higher-risk status (monthly trend) is used. FRED T10Y2Y 0.47 (5 Oct) – consistent with Treasury.",
         "status_since": "2026-10-06",
         "status_prev": "red"
       },
