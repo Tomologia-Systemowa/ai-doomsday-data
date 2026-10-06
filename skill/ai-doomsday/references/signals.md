@@ -24,6 +24,11 @@ A3. High-yield spread (FRED: BAMLH0A0HYM2, daily) [40]
     🟢 < 3.5% | 🟡 3.5–5% | 🔴 > 5%
 A4. Debt share of hyperscaler capex funding (quarterly) [30]
     🟢 < 20% | 🟡 20–40% | 🔴 > 40%
+    Off-balance-sheet structures (SPVs or sale-leasebacks of GPUs or data centers, e.g.
+    Amazon's ~USD 8bn GPU SPV reported by the FT on 2 Oct 2026) are debt-like funding that
+    the reported debt share does not capture. Note them in `note` with amount, date and
+    status (explored / closed). A closed deal: add its financing to the debt share where
+    the amount is known and say so; an explored deal: `note` only, no status change.
 A5. AI sector CDS: number of large AI issuers (hyperscalers, Oracle, neoclouds) with a
     record 5-year CDS in the last month (news) [35]
     🟢 0 | 🟡 1–2 | 🔴 3+ or CDS doubling within 3 months
@@ -32,7 +37,7 @@ A6. Data-center securitization and private credit: data-center ABS/CMBS issuance
     retained by sponsors in new deals (reference: ~30% in 2026), scope of regulatory
     exemptions (e.g. the SEC position of 29 Jul 2026 exempting some data-center
     securitizations from ABS rules), SPV structures financing GPUs alone (e.g. Amazon's
-    USD 8bn SPV of 2 Oct 2026) [30]
+    USD 8bn SPV of 2 Oct 2026; see also A4, D4) [30]
     🟢 stable spreads, no loosening of standards, sponsor risk retention ≥ 25% |
     🟡 fast volume growth (> 30% y/y), loosening standards, or risk retention down to
        10–25% |
@@ -52,8 +57,8 @@ A8. Credit events (news from the last 30 days) [40]
     🟢 none
     🟡 LIGHT: postponed or withdrawn IPO or issue, provided valuation and access to funding
        did not fall at the same time (e.g. a new round at a higher valuation); a single
-       postponed bond issue; a tenant invoking force majeure or asking to defer payments on
-       a debt-financed data-center project
+       postponed bond issue; a tenant invoking force majeure or asking to defer payments
+       on a debt-financed data-center project
     🔴 HEAVY: downgrade of an AI company to speculative grade; failed refinancing or
        emergency issue by a neocloud; default on a GPU-backed loan, an Nvidia guarantee
        being called, or a margin call on a loan secured by GPUs or lab equity; redemption
@@ -109,6 +114,10 @@ D4. GPU residual value: used H100 and A100 prices (Compute Exchange, Hashrate In
     ServerBuyback) and changes to server depreciation periods in hyperscaler filings [30]
     🟢 prices stable or rising | 🟡 down 15–30% in a quarter | 🔴 down > 30% in a quarter,
     or a hyperscaler shortens its depreciation period
+    Valuations of installed GPUs in SPV or sale-leaseback deals (e.g. Amazon's GPU SPV) are
+    market readings of residual value: once such a deal closes, record the implied value
+    per GPU (or as % of purchase cost) with GPU model, date and source, and use it as a
+    reading for D4. Deals only being explored go into `note`.
 D5. Production bottlenecks (on TSMC and memory makers' earnings): CoWoS packaging
     capacity, DRAM wafer allocation to HBM [25]
     🟢 bottleneck persists (shortage continues) | 🟡 bottleneck easing with stable demand |

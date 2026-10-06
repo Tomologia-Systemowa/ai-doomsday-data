@@ -58,8 +58,10 @@ This keeps the score computed identically every day and the files on a fixed sch
    `data | wynik/1000 | punkty A B C D E F G | najważniejsza zmiana` (Polish).
 9. **Publish** per `references/publishing.md` (seed if needed → publish → validate →
    commit/push) – only to the repository and branch named in the task (routine prompt or
-   user message). Never assume or guess a target. If no repository is named, skip
-   publishing, keep the report and memory steps, and add one line to the report:
+   user message; branch defaults to `main`). Never assume or guess a target. If you worked
+   on a session branch, merge it into the target branch and push it as the last step.
+   If no repository is named, skip publishing, keep the report and memory steps, and add
+   one line to the report:
    „Publikacja JSON pominięta: nie wskazano repozytorium.”
 10. **Notification** (below).
 
