@@ -1,39 +1,137 @@
 {
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "note": "Odbudowane 2026-10-06 z odczytów w data/latest.json (pierwszy zapis pliku stanu).",
   "series": {
     "A4": [
-      {"period": "LTM 2026Q2", "as_of": "2026-07-23", "value": 32, "unit": "%",
-       "source": "https://insight.factset.com/hyperscalers-tap-external-financing-as-ai-capex-outruns-cash-flow"}
+      {
+        "period": "LTM 2026Q2",
+        "as_of": "2026-07-23",
+        "value": 32,
+        "unit": "%",
+        "source": "https://insight.factset.com/hyperscalers-tap-external-financing-as-ai-capex-outruns-cash-flow"
+      }
     ],
     "C1": [
-      {"period": "2026-06", "as_of": "2026-09-09", "value": 10.92, "unit": "USD/pracownik/mies.", "source": "https://ramp.com/data/ai-index-sept-2026"},
-      {"period": "2026-07", "as_of": "2026-09-09", "value": 11.88, "unit": "USD/pracownik/mies.", "source": "https://ramp.com/data/ai-index-sept-2026"},
-      {"period": "2026-08", "as_of": "2026-09-09", "value": 12.50, "unit": "USD/pracownik/mies.", "source": "https://ramp.com/data/ai-index-sept-2026"}
+      {
+        "period": "2026-06",
+        "as_of": "2026-09-09",
+        "value": 10.92,
+        "unit": "USD/pracownik/mies.",
+        "source": "https://ramp.com/data/ai-index-sept-2026"
+      },
+      {
+        "period": "2026-07",
+        "as_of": "2026-09-09",
+        "value": 11.88,
+        "unit": "USD/pracownik/mies.",
+        "source": "https://ramp.com/data/ai-index-sept-2026"
+      },
+      {
+        "period": "2026-08",
+        "as_of": "2026-09-09",
+        "value": 12.5,
+        "unit": "USD/pracownik/mies.",
+        "source": "https://ramp.com/data/ai-index-sept-2026"
+      }
     ],
     "C2": [
-      {"period": "BTOS -2", "as_of": "2026-09-24", "value": 22.4, "unit": "%", "source": "https://www.census.gov/hfp/btos/downloads/National.xlsx"},
-      {"period": "BTOS -1", "as_of": "2026-09-24", "value": 23.2, "unit": "%", "source": "https://www.census.gov/hfp/btos/downloads/National.xlsx"},
-      {"period": "2026-08-24/2026-09-06", "as_of": "2026-09-24", "value": 23.8, "unit": "%", "source": "https://www.census.gov/hfp/btos/downloads/National.xlsx"}
+      {
+        "period": "BTOS -2",
+        "as_of": "2026-09-24",
+        "value": 22.4,
+        "unit": "%",
+        "source": "https://www.census.gov/hfp/btos/downloads/National.xlsx"
+      },
+      {
+        "period": "BTOS -1",
+        "as_of": "2026-09-24",
+        "value": 23.2,
+        "unit": "%",
+        "source": "https://www.census.gov/hfp/btos/downloads/National.xlsx"
+      },
+      {
+        "period": "2026-08-24/2026-09-06",
+        "as_of": "2026-09-24",
+        "value": 23.8,
+        "unit": "%",
+        "source": "https://www.census.gov/hfp/btos/downloads/National.xlsx"
+      }
     ],
     "D1": [
-      {"period": "2026-08", "as_of": "2026-10-05", "measure": "spot_monthly_avg", "change_pct": 5.3, "direction": "up", "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"},
-      {"period": "2026-09", "as_of": "2026-10-05", "measure": "spot_monthly_avg", "change_pct": 2.2, "direction": "up", "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"},
-      {"period": "30d do 2026-10-05", "as_of": "2026-10-05", "measure": "spot_30d", "change_pct": -17.6, "direction": "down", "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"}
+      {
+        "period": "2026-08",
+        "as_of": "2026-10-05",
+        "measure": "spot_monthly_avg",
+        "change_pct": 5.3,
+        "direction": "up",
+        "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"
+      },
+      {
+        "period": "2026-09",
+        "as_of": "2026-10-05",
+        "measure": "spot_monthly_avg",
+        "change_pct": 2.2,
+        "direction": "up",
+        "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"
+      },
+      {
+        "period": "30d do 2026-10-06",
+        "as_of": "2026-10-06",
+        "measure": "spot_30d",
+        "change_pct": -6.8,
+        "direction": "down",
+        "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"
+      }
     ],
     "D3": [
-      {"period": "FY26Q1", "as_of": "2026-09-30", "value": 124.5, "unit": "dni (Micron, ×91)", "source": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm"},
-      {"period": "FY26Q2", "as_of": "2026-09-30", "value": 123.2, "unit": "dni (Micron, ×91)", "source": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm"},
-      {"period": "FY26Q3", "as_of": "2026-09-30", "value": 121.8, "unit": "dni (Micron, ×91)", "source": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm"},
-      {"period": "FY26Q4", "as_of": "2026-09-30", "value": 131.4, "unit": "dni (Micron, ×91)", "source": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm"}
+      {
+        "period": "FY26Q1",
+        "as_of": "2026-09-30",
+        "value": 124.5,
+        "unit": "dni (Micron, ×91)",
+        "source": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm"
+      },
+      {
+        "period": "FY26Q2",
+        "as_of": "2026-09-30",
+        "value": 123.2,
+        "unit": "dni (Micron, ×91)",
+        "source": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm"
+      },
+      {
+        "period": "FY26Q3",
+        "as_of": "2026-09-30",
+        "value": 121.8,
+        "unit": "dni (Micron, ×91)",
+        "source": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm"
+      },
+      {
+        "period": "FY26Q4",
+        "as_of": "2026-09-30",
+        "value": 131.4,
+        "unit": "dni (Micron, ×91)",
+        "source": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm"
+      }
     ],
     "D4": [],
     "G3": [
-      {"period": "2026-08", "as_of": "2026-09-09", "value": 6.4, "unit": "% firm płacących", "source": "https://ramp.com/data/ai-index-sept-2026"}
+      {
+        "period": "2026-08",
+        "as_of": "2026-09-09",
+        "value": 6.4,
+        "unit": "% firm płacących",
+        "source": "https://ramp.com/data/ai-index-sept-2026"
+      }
     ],
     "G4": [
-      {"as_of": "2026-10-04", "value": 19.6, "unit": "%", "gap_points": 11.3, "index_version": "v4.3.2",
-       "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index"}
+      {
+        "as_of": "2026-10-04",
+        "value": 19.6,
+        "unit": "%",
+        "gap_points": 11.3,
+        "index_version": "v4.3.2",
+        "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index"
+      }
     ]
   }
 }
