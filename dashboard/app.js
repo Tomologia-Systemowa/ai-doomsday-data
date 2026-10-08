@@ -187,6 +187,9 @@
   }
 
   function bandLabel(plName, score) {
+    // Polish: the name stored in the data file wins, so a stale cached scale.json cannot
+    // replace it with an older name for the same score range.
+    if (state.lang !== 'en' && plName) return plName;
     const bands = (state.scale && state.scale.bands) || [];
     let band = bands.find(function (b) { return b.band === plName; });
     if (!band && typeof score === 'number') {
