@@ -21,8 +21,8 @@
   },
   "events": [],
   "report": {
-    "summary": "Wynik bez zmian: 426/1000 (Podwyższone napięcie); żaden sygnał nie zmienił statusu. Indeks Ornn OCPI H100 spadł o 10,1% w 30 dni (2,85 USD/h, 7.10) – poniżej progu 15%, więc D1 pozostaje 🟡. Spread HY 3,03% (6.10), 10Y 5,28% (7.10) – bez nowych odczytów. Komentarze analityków (Fortune, 7.10) o możliwym spowolnieniu wzrostu capeksu w 2027 to prognozy, nie zmiana prognoz spółek (B1 🟢). Nowych zdarzeń kredytowych nie odnotowano.",
-    "summary_en": "Score unchanged: 426/1000 (Elevated stress); no signal changed status. The Ornn OCPI H100 index fell 10.1% over 30 days (USD 2.85/h, 7 Oct) – below the 15% threshold, so D1 stays 🟡. HY spread 3.03% (6 Oct), 10Y 5.28% (7 Oct) – no new readings. Analyst comments (Fortune, 7 Oct) on a possible slowdown in capex growth in 2027 are forecasts, not a change in company guidance (B1 🟢). No new credit events were recorded.",
+    "summary": "Wynik bez zmian: 426/1000 (Pęknięcia); żaden sygnał nie zmienił statusu. Indeks Ornn OCPI H100 spadł o 10,1% w 30 dni (2,85 USD/h, 7.10) – poniżej progu 15%, więc D1 pozostaje 🟡. Spread HY 3,03% (6.10), 10Y 5,28% (7.10) – bez nowych odczytów. Komentarze analityków (Fortune, 7.10) o możliwym spowolnieniu wzrostu capeksu w 2027 to prognozy, nie zmiana prognoz spółek (B1 🟢). Nowych zdarzeń kredytowych nie odnotowano.",
+    "summary_en": "Score unchanged: 426/1000 (Cracks); no signal changed status. The Ornn OCPI H100 index fell 10.1% over 30 days (USD 2.85/h, 7 Oct) – below the 15% threshold, so D1 stays 🟡. HY spread 3.03% (6 Oct), 10Y 5.28% (7 Oct) – no new readings. Analyst comments (Fortune, 7 Oct) on a possible slowdown in capex growth in 2027 are forecasts, not a change in company guidance (B1 🟢). No new credit events were recorded.",
     "curve_comment": null,
     "curve_comment_en": null,
     "category_comments": null,
