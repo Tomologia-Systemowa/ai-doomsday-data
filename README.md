@@ -31,13 +31,9 @@ Kolejność chronologiczną wyznacza pole `date` w `index.json`, nie nazwa pliku
   `comment`, `disclaimer`; lista `triggers` ma odpowiednik `triggers_en`. Starsze pliki mogą
   nie mieć pól `_en` – wtedy użyj pola polskiego.
 - Daty: `RRRR-MM-DD`; `updated_at`: ISO 8601 ze strefą Europa/Warszawa.
-- Przedziały (`band` / `band_en`) opisują poziom napięcia w sygnałach, nie zdarzenie ani
-  jego termin: Niskie napięcie / Low stress (0–200), Umiarkowane napięcie / Moderate stress
-  (201–400), Podwyższone napięcie / Elevated stress (401–600), Wysokie napięcie / High
-  stress (601–800), Skrajne napięcie / Extreme stress (801–1000). Do 2026-10-06 te same
-  zakresy nazywały się Zdrowy boom / Przegrzanie / Pęknięcia / Korekta / Krach; starsze
-  pliki historii zachowują dawne nazwy, więc przedział porównuj po zakresie (`score`),
-  nie po nazwie.
+- Przedziały (`band` / `band_en`): Zdrowy boom / Healthy boom (0–200), Przegrzanie /
+  Overheating (201–400), Pęknięcia / Cracks (401–600), Korekta / Correction (601–800),
+  Krach / Crash (801–1000).
 
 ## data/latest.json
 

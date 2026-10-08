@@ -5,8 +5,8 @@
   "entry": {
     "kind": "full",
     "score": 426,
-    "band": "Podwyższone napięcie",
-    "band_en": "Elevated stress",
+    "band": "Pęknięcia",
+    "band_en": "Cracks",
     "categories": {
       "A": 172.5,
       "B": 50.0,

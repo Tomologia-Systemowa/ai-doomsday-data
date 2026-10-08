@@ -224,23 +224,17 @@ A rising open-weight share in developer traffic is a moderate signal; the same t
 enterprise data (Ramp, surveys) is a strong signal.
 
 ## AI Doomsday scale (0–1000)
-The score measures how much stress the signals show, not an event or its timing: a high
-score means conditions in which a correction is more likely, not that one is happening or
-when it will come. Bubbles can stay under high stress for years. Never present a band as a
-forecast. Band names in the Polish report (the script also writes `band_en`), each with
-its typical picture:
-    0–200  Niskie napięcie (Low stress): easy financing, rising capex, hardware shortage
-  201–400  Umiarkowane napięcie (Moderate stress): rising debt and cost of money, cracks in
-           weaker links
-  401–600  Podwyższone napięcie (Elevated stress): refinancing problems, downgrades,
-           weakening bond demand, price pressure on labs
-  601–800  Wysokie napięcie (High stress): first capex cuts, falling GPU rates and DRAM
-           prices, failed rounds/IPOs, price war
-  801–1000 Skrajne napięcie (Extreme stress): mass capex cuts, failures of leveraged
-           players, hardware glut
-Until 2026-10-06 the bands were called Zdrowy boom / Przegrzanie / Pęknięcia / Korekta /
-Krach; the ranges did not change, so a different name for the same range is not a band
-change.
+The score measures how much stress the signals show, not an event or its timing: a band
+name describes the typical picture at that level of stress, not a forecast that it is
+happening or when. Bubbles can stay under high stress for years. Band names in the Polish
+report (the script also writes `band_en`):
+    0–200  Zdrowy boom (Healthy boom): easy financing, rising capex, hardware shortage
+  201–400  Przegrzanie (Overheating): rising debt and cost of money, cracks in weaker links
+  401–600  Pęknięcia (Cracks): refinancing problems, downgrades, weakening bond demand,
+           price pressure on labs
+  601–800  Korekta (Correction): first capex cuts, falling GPU rates and DRAM prices,
+           failed rounds/IPOs, price war
+  801–1000 Krach (Crash): mass capex cuts, failures of leveraged players, hardware glut
 A score within 15 points of a band boundary is "na granicy" (the script flags it).
 
 ## Triggers

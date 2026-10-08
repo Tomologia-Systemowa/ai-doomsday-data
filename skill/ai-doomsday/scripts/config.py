@@ -66,14 +66,13 @@ STATUS_EMOJI = {
     "q0": "q0", "q25": "q25", "q50": "q50", "q75": "q75", "q100": "q100",
 }
 
-# (from, to, Polish, English). Bands name a level of stress, not an event.
-# Until 2026-10-06: Zdrowy boom / Przegrzanie / Pęknięcia / Korekta / Krach (same ranges).
+# (from, to, Polish, English)
 BANDS = [
-    (0, 200, "Niskie napięcie", "Low stress"),
-    (201, 400, "Umiarkowane napięcie", "Moderate stress"),
-    (401, 600, "Podwyższone napięcie", "Elevated stress"),
-    (601, 800, "Wysokie napięcie", "High stress"),
-    (801, 1000, "Skrajne napięcie", "Extreme stress"),
+    (0, 200, "Zdrowy boom", "Healthy boom"),
+    (201, 400, "Przegrzanie", "Overheating"),
+    (401, 600, "Pęknięcia", "Cracks"),
+    (601, 800, "Korekta", "Correction"),
+    (801, 1000, "Krach", "Crash"),
 ]
 BAND_BOUNDARIES = [200, 400, 600, 800]
 NEAR_BOUNDARY = 15
