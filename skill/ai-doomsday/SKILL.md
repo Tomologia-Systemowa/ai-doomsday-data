@@ -43,6 +43,14 @@ This keeps the score computed identically every day and the files on a fixed sch
 3. **Data.** Read `references/signals.md`. Collect readings via web search following the
    RULES. In a short report check every daily/weekly signal and news for the rest; only
    changed signals go into the report table.
+   **News sweep (every report, before assigning statuses).** For the period since the last
+   report (at least the last 72 hours) run separate searches for each category A–G, and at
+   minimum these terms combined with the current month and year: "CDS record",
+   "credit default swaps", "downgrade", "refinancing", "GPU-backed loan", "data center
+   financing", "force majeure", "capex guidance", "private credit redemptions". Also search
+   for the AI and data-center headlines of FT, Bloomberg, WSJ and Reuters (often paywalled
+   – look for their reprints and re-reports). Every hit that touches a signal goes through
+   the corroboration rule below.
 4. **Statuses** from thresholds; for trend thresholds use "HISTORIA DO PROGÓW". Identify
    triggers and heavy credit events – each forces a full report.
 5. **Score.** Build `report.json` without the text fields yet (without a repo, skip
@@ -129,6 +137,14 @@ Compare only 0–1000 entries (0–100 entries are the old method; new method ba
 - A reading is confirmed when it has a primary source, or two independent secondary
   sources, and a known date inside the signal's time window. `status` always reflects
   confirmed readings only.
+- Corroboration before "unconfirmed": a reading may be labelled unconfirmed only after at
+  least two further targeted searches (company or instrument + key term + month/year;
+  the name of the outlet that first reported it; the key number) have found no second
+  independent source. Find and name the outlet that first reported it (attribute to it,
+  not to whoever repeated it) and say in `note` which searches found nothing. Independent
+  means own data or own reporting: re-reports of one article count as one source, while
+  market readings (CDS, spreads, prices) from different data providers count separately.
+  Re-check unconfirmed readings carried over from earlier reports on every run.
 - Unconfirmed reading: a single secondary source with a known date inside the signal's
   time window that points to a higher-risk status. Put it in the signal's `unconfirmed`
   field (`status`, `as_of`, `source`, `note`, `note_en`); the script adds half of the gap
