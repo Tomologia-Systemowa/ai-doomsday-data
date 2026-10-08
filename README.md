@@ -35,6 +35,10 @@ Kolejność chronologiczną wyznacza pole `date` w `index.json`, nie nazwa pliku
   Overheating (201–400), Pęknięcia / Cracks (401–600), Korekta / Correction (601–800),
   Krach / Crash (801–1000).
 
+Katalog `state/` (`state/historia-progow.json`) to roboczy stan skilla – krótkie serie
+odczytów do progów trendowych. Nie jest przeznaczony do wyświetlania; dla danych
+licencjonowanych zawiera tylko zmianę procentową i kierunek, bez poziomów.
+
 ## data/latest.json
 
 | Pole | Opis |

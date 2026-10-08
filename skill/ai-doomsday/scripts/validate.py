@@ -12,7 +12,8 @@ import sys
 from datetime import date
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from config import SIGNALS, BUDGETS, SUMMARY_MAX_WORDS, WEEKLY_WORDS, FRIDAY, daily_filename
+from config import (SIGNALS, BUDGETS, SUMMARY_MAX_WORDS, WEEKLY_WORDS, FRIDAY, daily_filename,
+                    STATE_FILE, STATE_SERIES, STATE_NO_LEVEL, DEFAULT_RESTRICTED)
 
 errors, warnings = [], []
 
@@ -132,6 +133,34 @@ def main():
                 errors.append(f"index.json: score {f.get('score')} ≠ {es} in {f['file']}")
         for name in sorted(on_disk - {f["file"] for f in files}):
             errors.append(f"{name} has no record in index.json")
+
+    sp = os.path.join(repo, STATE_FILE)
+    if not os.path.exists(sp):
+        warnings.append(f"{STATE_FILE} missing – trend thresholds have no history.")
+    else:
+        stt = load(sp) or {}
+        series = stt.get("series")
+        if not isinstance(series, dict):
+            errors.append(f"{STATE_FILE}: 'series' must be an object")
+            series = {}
+        for sid, rows in series.items():
+            if sid not in STATE_SERIES:
+                errors.append(f"{STATE_FILE}: unknown series {sid}")
+                continue
+            if sid in DEFAULT_RESTRICTED:
+                errors.append(f"{STATE_FILE}: {sid} is licence-restricted and must not be stored")
+            if not isinstance(rows, list):
+                errors.append(f"{STATE_FILE}: {sid} must be a list")
+                continue
+            if len(rows) > STATE_SERIES[sid]:
+                warnings.append(f"{STATE_FILE}: {sid} keeps {len(rows)} readings, "
+                                f"limit {STATE_SERIES[sid]} – drop the oldest")
+            for r in rows:
+                if not r.get("as_of") or not r.get("source"):
+                    errors.append(f"{STATE_FILE}: {sid} reading without as_of or source")
+                if sid in STATE_NO_LEVEL and r.get("value") is not None:
+                    errors.append(f"{STATE_FILE}: {sid} is licensed – store change_pct and "
+                                  f"direction, not value")
 
     if os.path.exists(os.path.join(repo, ".git")):
         st = subprocess.run(["git", "-C", repo, "status", "--porcelain", "--", "data/history.json"],
