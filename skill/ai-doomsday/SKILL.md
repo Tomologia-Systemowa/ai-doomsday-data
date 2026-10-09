@@ -15,6 +15,16 @@ text as in the report, copied verbatim; the English one is a faithful translatio
 content, numbers, dates and proper names; nothing added or dropped). Time zone:
 Europe/Warsaw.
 
+**Tone of `headline` and `summary`** (the text shown on the website). Write them for a
+non-specialist: plain words, jargon explained in passing (e.g. CDS = the price of
+insurance against a company defaulting), lightly cynical, with dry humour or a pop-culture
+reference (games, films, well-known events) where one fits naturally. The joke is about
+the situation, never about specific people, and never bends the facts: every number, date
+and status exactly as in the table, no conclusion the data don't support, and
+conflict-of-interest flags kept. The `_en` text keeps the same facts and numbers; jokes may
+be adapted so they read naturally in English. Everything else – table, notes, category
+comments, curve comment, weekly analysis – stays neutral and professional.
+
 Arithmetic (points, redistribution, floors, band, "near boundary") and all JSON writing are
 done by the scripts in `scripts/`. You collect data, assign statuses and write the text.
 This keeps the score computed identically every day and the files on a fixed schema.
@@ -119,7 +129,7 @@ Compare only 0–1000 entries (0–100 entries are the old method; new method ba
   e.g. `AI-Doomsday-Report research bot`. If the source rejects such requests, treat it as
   unavailable: use a secondary source, mark it as such, and say so in `note`.
 - A single reading is noise; a trend over several periods is a signal.
-- Neutral language; no predetermined conclusions; present arguments against the dominant
+- Neutral language (except the tone of `headline`/`summary` above); no predetermined conclusions; present arguments against the dominant
   interpretation too.
 - Don't track individual companies day to day – name them only for a credit event, a
   trigger, or when they are the data source for an aggregate indicator.
