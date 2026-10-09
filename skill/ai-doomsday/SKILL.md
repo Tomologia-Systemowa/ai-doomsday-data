@@ -21,7 +21,10 @@ insurance against a company defaulting), lightly cynical, with dry humour or a p
 reference (games, films, well-known events) where one fits naturally. The joke is about
 the situation, never about specific people, and never bends the facts: every number, date
 and status exactly as in the table, no conclusion the data don't support, and
-conflict-of-interest flags kept. The `_en` text keeps the same facts and numbers; jokes may
+conflict-of-interest flags kept. Leave out points, statuses, thresholds and band
+mechanics – they are in the table and details below; the only sentence about the score
+says where it is today compared with the previous report (on Fridays it may also compare
+with the start of the week). The `_en` text keeps the same facts and numbers; jokes may
 be adapted so they read naturally in English. Everything else – table, notes, category
 comments, curve comment, weekly analysis – stays neutral and professional.
 
