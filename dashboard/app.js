@@ -31,6 +31,7 @@
       slogan: 'Dzień Sądu: kiedy taniej jest skończyć z ludzkością, niż spłacić dług.',
       tagline: 'Stan bańki AI na dziś',
       lastReport: 'Ostatni raport',
+      howBuilt: 'Zobacz, jak zostałem zbudowany', aboutTitle: 'Jak zostałem zbudowany', close: 'Zamknij',
       trend: 'Historia wyniku', fullReport: 'Pełny raport', loading: 'Ładowanie…',
       pickDay: 'Wybierz kropkę na wykresie (kliknięcie lub Enter), aby zobaczyć dany dzień.',
       repo: 'Repozytorium danych', updated: 'Aktualizacja danych', notAdvice: 'To nie jest porada inwestycyjna.',
@@ -66,6 +67,7 @@
       slogan: 'Judgment Day: when ending humanity is cheaper than paying off the debt.',
       tagline: 'State of the AI bubble today',
       lastReport: 'Latest report',
+      howBuilt: 'See how I was built', aboutTitle: 'How I was built', close: 'Close',
       trend: 'Score history', fullReport: 'Full report', loading: 'Loading…',
       pickDay: 'Pick a dot on the chart (click or Enter) to see that day.',
       repo: 'Data repository', updated: 'Data updated', notAdvice: 'This is not investment advice.',
@@ -642,6 +644,13 @@
       const v = t()[el.getAttribute('data-i18n')];
       if (typeof v === 'string') el.textContent = v;
     });
+    document.querySelectorAll('[data-i18n-label]').forEach(function (el) {
+      const v = t()[el.getAttribute('data-i18n-label')];
+      if (typeof v === 'string') el.setAttribute('aria-label', v);
+    });
+    document.querySelectorAll('[data-lang-block]').forEach(function (el) {
+      el.hidden = el.getAttribute('data-lang-block') !== state.lang;
+    });
     document.querySelectorAll('.lang button').forEach(function (b) {
       b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === state.lang));
     });
@@ -658,6 +667,33 @@
   document.querySelectorAll('.lang button').forEach(function (b) {
     b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); });
   });
+
+  // ---- "How I was built" dialog -------------------------------------------------------------
+
+  const about = document.getElementById('about');
+  if (about && typeof about.showModal === 'function') {
+    document.querySelectorAll('[aria-controls="about"]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        about.showModal();
+        about.querySelector('.about-scroll').scrollTo({ top: 0, behavior: 'instant' });
+      });
+    });
+    about.querySelector('.about-close').addEventListener('click', function () { about.close(); });
+    // A click on the dimmed backdrop lands on the <dialog> itself (its content fills it edge to edge).
+    about.addEventListener('click', function (evt) { if (evt.target === about) about.close(); });
+    // Table-of-contents links scroll inside the dialog without touching the page URL.
+    about.addEventListener('click', function (evt) {
+      const a = evt.target.closest && evt.target.closest('a[href^="#about-"]');
+      const dest = a && document.getElementById(a.getAttribute('href').slice(1));
+      if (!dest) return;
+      evt.preventDefault();
+      dest.scrollIntoView({ block: 'start' });
+      dest.focus({ preventScroll: true });
+    });
+  } else {
+    // No <dialog> support (very old browsers): hide the button rather than show one that does nothing.
+    document.querySelectorAll('[aria-controls="about"]').forEach(function (b) { b.hidden = true; });
+  }
 
   // ---- Start ---------------------------------------------------------------------------------
 
