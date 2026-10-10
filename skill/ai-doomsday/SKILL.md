@@ -17,16 +17,22 @@ Europe/Warsaw.
 
 **Tone of `headline` and `summary`** (the text shown on the website). Write them for a
 non-specialist: plain words, jargon explained in passing (e.g. CDS = the price of
-insurance against a company defaulting), lightly cynical, with dry humour or a pop-culture
-reference (games, films, well-known events) where one fits naturally. The joke is about
-the situation, never about specific people, and never bends the facts: every number, date
-and status exactly as in the table, no conclusion the data don't support, and
-conflict-of-interest flags kept. Leave out points, statuses, thresholds and band
+insurance against a company defaulting). No jokes, puns or pop-culture references.
+Instead, where today's data show the market behaving inconsistently – two readings that
+cannot both be right, or a price that contradicts what the same players say or do (e.g.
+capex guidance raised while the same companies' CDS hit records; lenders asking more for
+GPU-backed loans while equity valuations keep rising) – end with a short ironic punchline
+that sets the two facts side by side and lets the contradiction speak. The irony comes
+only from the facts placed next to each other, never from a mocking adjective, and is
+about market behaviour, never about specific people. Both facts must be in the table with
+source and date; no conclusion the data don't support; conflict-of-interest flags kept.
+If there is no such inconsistency today, write plainly with no punchline – never force
+one. Leave out points, statuses, thresholds and band
 mechanics – they are in the table and details below; the only sentence about the score
-says where it is today compared with the previous report (on Fridays it may also compare
-with the start of the week). The `_en` text keeps the same facts and numbers; jokes may
-be adapted so they read naturally in English. Everything else – table, notes, category
-comments, curve comment, weekly analysis – stays neutral and professional.
+says where it is today compared with the
+previous report (on Fridays it may also compare with the start of the week). The `_en`
+text keeps the same facts, numbers and punchline. Everything else – table, notes,
+category comments, curve comment, weekly analysis – stays neutral and professional.
 
 Arithmetic (points, redistribution, floors, band, "near boundary") and all JSON writing are
 done by the scripts in `scripts/`. You collect data, assign statuses and write the text.
