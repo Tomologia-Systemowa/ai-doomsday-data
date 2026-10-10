@@ -670,14 +670,27 @@
 
   // ---- "How I was built" dialog -------------------------------------------------------------
 
+  // Direct link: tomologia.eu/#jak-zbudowano (or #how-built) opens the dialog straight away.
+  const ABOUT_HASH = { pl: '#jak-zbudowano', en: '#how-built' };
   const about = document.getElementById('about');
+  let openAboutFromLink = function () {};
   if (about && typeof about.showModal === 'function') {
+    const isAboutHash = function () { return location.hash === ABOUT_HASH.pl || location.hash === ABOUT_HASH.en; };
+    const setHash = function (hash) {
+      try { history.replaceState(null, '', hash || location.pathname + location.search); } catch (e) { /* e.g. file:// */ }
+    };
+    const openAbout = function () {
+      if (!about.open) about.showModal();
+      about.querySelector('.about-scroll').scrollTo({ top: 0, behavior: 'instant' });
+      // The address bar shows a link to share; closing the dialog clears it.
+      if (!isAboutHash()) setHash(ABOUT_HASH[state.lang]);
+    };
+    openAboutFromLink = function () { if (isAboutHash()) openAbout(); };
     document.querySelectorAll('[aria-controls="about"]').forEach(function (b) {
-      b.addEventListener('click', function () {
-        about.showModal();
-        about.querySelector('.about-scroll').scrollTo({ top: 0, behavior: 'instant' });
-      });
+      b.addEventListener('click', openAbout);
     });
+    about.addEventListener('close', function () { if (isAboutHash()) setHash(''); });
+    window.addEventListener('hashchange', openAboutFromLink);
     about.querySelector('.about-close').addEventListener('click', function () { about.close(); });
     // A click on the dimmed backdrop lands on the <dialog> itself (its content fills it edge to edge).
     about.addEventListener('click', function (evt) { if (evt.target === about) about.close(); });
@@ -704,6 +717,7 @@
 
   state.lang = readLang();
   applyStaticTexts();
+  openAboutFromLink();
 
   let lastWidth = 0;
   window.addEventListener('resize', (function () {
