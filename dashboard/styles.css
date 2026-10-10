@@ -355,6 +355,99 @@ ul.plain { padding-left: 18px; }
 }
 .disclaimer-foot { font-weight: 700; color: var(--ink); }
 
+/* ---- "How I was built": button and dialog -------------------------------------------------- */
+
+.build-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font: 700 0.8rem var(--mono); letter-spacing: 0.04em; min-height: 40px; padding: 0 14px;
+  color: var(--ink); background: rgba(0, 0, 0, 0.5); border: 1px solid var(--border); border-radius: 4px; cursor: pointer;
+}
+.build-btn:hover { border-color: var(--blood); box-shadow: 0 0 12px rgba(255, 60, 30, 0.35); }
+.build-btn-icon { color: var(--ember); }
+
+/* The page behind the open dialog does not scroll. */
+html:has(dialog[open]) { overflow: hidden; }
+
+.about {
+  padding: 0; margin: auto; border: 1px solid var(--border); border-radius: 8px;
+  width: min(920px, calc(100vw - 32px)); max-width: none;
+  height: min(880px, calc(100vh - 48px)); height: min(880px, calc(100dvh - 48px)); max-height: none;
+  background: var(--surface-solid); color: var(--ink);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7), 0 20px 80px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 50, 20, 0.18);
+}
+.about[open] { animation: about-in 0.18s ease-out; }
+.about::backdrop { background: rgba(5, 2, 2, 0.62); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); }
+@keyframes about-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
+.about-inner { display: flex; flex-direction: column; height: 100%; }
+.about-bar {
+  flex: none; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 12px 14px 12px 22px; border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(60, 10, 6, 0.55), rgba(0, 0, 0, 0.3));
+}
+.about-bar h2 {
+  margin: 0; font-family: var(--display); font-weight: 400; font-size: clamp(1.2rem, 4vw, 1.6rem);
+  letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.1;
+}
+.about-bar h2::before { content: "// "; color: var(--blood); }
+.about-close {
+  flex: none; width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; color: var(--ink); background: rgba(0, 0, 0, 0.45); border: 1px solid var(--border); border-radius: 4px; cursor: pointer;
+}
+.about-close:hover { background: var(--blood); border-color: var(--blood); color: #fff; }
+
+.about-scroll {
+  flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scroll-behavior: smooth;
+  padding: 20px 26px 32px;
+}
+.about-body > :first-child { margin-top: 0; }
+.about-sec:focus, .about-toc:focus { outline: none; }
+.about code { font-family: var(--mono); font-size: 0.88em; background: rgba(255, 255, 255, 0.07); padding: 1px 5px; border-radius: 3px; overflow-wrap: anywhere; }
+.about-lead { margin: 0 0 14px; color: var(--ink-2); }
+
+.about-toc ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; counter-reset: toc; }
+.about-toc li { counter-increment: toc; }
+.about-toc a {
+  position: relative; display: block; height: 100%; padding: 12px 14px 12px 52px; text-decoration: none; color: var(--ink);
+  background: rgba(0, 0, 0, 0.35); border: 1px solid var(--border); border-left: 4px solid var(--blood); border-radius: var(--radius);
+}
+.about-toc a::before {
+  content: counter(toc, decimal-leading-zero); position: absolute; left: 14px; top: 13px;
+  font: 700 0.9rem var(--mono); color: var(--ember);
+}
+.about-toc a:hover { border-color: var(--ember); background: rgba(255, 70, 30, 0.1); }
+.toc-title { display: block; font-weight: 700; }
+.toc-hint { display: block; font-size: 0.85rem; color: var(--ink-2); }
+
+.about-sec { margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--grid); }
+.about-sec h3 {
+  margin: 0 0 12px; font-family: var(--display); font-weight: 400; font-size: 1.35rem;
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+.sec-num { font-family: var(--mono); font-size: 0.95rem; color: var(--blood); margin-right: 6px; vertical-align: 2px; }
+.about-sec p { margin: 0 0 12px; max-width: 72ch; }
+.about-top { display: inline-block; margin-top: 4px; font: 0.82rem var(--mono); }
+
+.about-cats { list-style: none; padding: 0; margin: 0 0 14px; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 6px 14px; }
+.about-cats li .swatch { margin-right: 4px; }
+.about-files { padding-left: 18px; margin: 0 0 12px; }
+.about-files li { margin: 4px 0; }
+
+.about-map { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 8px 18px; margin: 0 0 14px; }
+.about-map dt { font: 700 0.9rem var(--mono); color: var(--ember); padding-top: 2px; }
+.about-map dd { margin: 0; }
+.about-map-arrows dd::before { content: "→ "; color: var(--ink-2); }
+
+.about-aside { padding: 10px 14px; background: var(--warn-bg); border-left: 4px solid var(--st-yellow); border-radius: 4px; }
+
+.about-stats { list-style: none; padding: 0; margin: 4px 0 16px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.about-stats li {
+  display: flex; flex-direction: column; gap: 2px; padding: 14px 12px; text-align: center;
+  background: rgba(0, 0, 0, 0.35); border: 1px solid var(--border); border-radius: var(--radius);
+}
+.about-stats strong { font: 800 1.9rem/1.1 var(--mono); color: #fff; text-shadow: 0 0 10px rgba(255, 60, 30, 0.8); }
+.about-stats span { font-size: 0.85rem; color: var(--ink-2); }
+
 /* ---- Phones -------------------------------------------------------------------------------- */
 
 @media (max-width: 720px) {
@@ -374,6 +467,23 @@ ul.plain { padding-left: 18px; }
   .signals td.num { white-space: normal; }
   .note td { padding: 0 0 6px; }
   .calendar li { grid-template-columns: 1fr; gap: 0; }
+
+  /* Button on its own row under the language switch and the date. */
+  .header-side { flex-wrap: wrap; row-gap: 10px; }
+  .header-side .sub { flex: 1 1 0; min-width: 0; }
+  .build-btn { flex-basis: 100%; min-height: 44px; }
+
+  /* The dialog becomes a full-screen sheet; the bar with ✕ stays on top while the content scrolls. */
+  .about { width: 100%; height: 100vh; height: 100dvh; border: 0; border-radius: 0; }
+  .about-bar { padding: 8px 10px 8px 16px; padding-top: max(8px, env(safe-area-inset-top)); }
+  .about-scroll { padding: 16px 16px calc(28px + env(safe-area-inset-bottom)); }
+  .about-toc ol { grid-template-columns: 1fr; gap: 8px; }
+  .about-toc a { padding: 11px 12px 11px 48px; }
+  .about-map { grid-template-columns: 1fr; gap: 2px; }
+  .about-map dd { margin-bottom: 10px; }
+  .about-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .about-stats strong { font-size: 1.6rem; }
+  .about-top { display: inline-flex; align-items: center; min-height: 44px; margin-top: 0; }
 }
 
 @media (forced-colors: active) {
@@ -384,4 +494,5 @@ ul.plain { padding-left: 18px; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
+  .about-scroll { scroll-behavior: auto; }
 }

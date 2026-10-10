@@ -233,6 +233,9 @@
           <button type="button" data-lang="en" aria-pressed="false">EN</button>
         </div>
         <p class="sub"><span data-i18n="lastReport">Ostatni raport</span>: <span id="report-date">…</span></p>
+        <button type="button" class="build-btn" aria-haspopup="dialog" aria-controls="about">
+          <span class="build-btn-icon" aria-hidden="true">&lt;/&gt;</span> <span data-i18n="howBuilt">Zobacz, jak zostałem zbudowany</span>
+        </button>
       </div>
     </div>
   </header>
@@ -330,6 +333,244 @@
       <p class="disclaimer-foot" data-i18n="notAdvice">To nie jest porada inwestycyjna.</p>
     </div>
   </footer>
+
+  <!-- "How I was built": a modal <dialog> (top layer, dimmed backdrop, closes on ✕ / Esc).
+       Static content in both languages; app.js shows the block matching the current language. -->
+  <dialog id="about" class="about" aria-labelledby="about-title">
+    <div class="about-inner">
+      <header class="about-bar">
+        <h2 id="about-title" data-i18n="aboutTitle">Jak zostałem zbudowany</h2>
+        <button type="button" class="about-close" data-i18n-label="close" aria-label="Zamknij" autofocus>
+          <span aria-hidden="true">✕</span>
+        </button>
+      </header>
+      <div class="about-scroll">
+
+        <div class="about-body" lang="pl" data-lang-block="pl">
+          <nav id="about-pl-toc" class="about-toc" tabindex="-1" aria-label="Spis treści">
+            <p class="about-lead">Ta strona to mały eksperyment: codzienny raport o bańce AI, który pisze Claude, a publikuje… GitHub. Wybierz, od czego zacząć:</p>
+            <ol>
+              <li><a href="#about-pl-skill"><span class="toc-title">Skill Claude</span><span class="toc-hint">Analityk, który liczy skalę 0–1000</span></a></li>
+              <li><a href="#about-pl-page"><span class="toc-title">Strona</span><span class="toc-hint">Co tu widzisz i jak to działa</span></a></li>
+              <li><a href="#about-pl-tech"><span class="toc-title">Technologie</span><span class="toc-hint">htmx, Mustache, SVG, Python</span></a></li>
+              <li><a href="#about-pl-site-data"><span class="toc-title">Skąd strona bierze dane</span><span class="toc-hint">Pliki JSON prosto z repozytorium</span></a></li>
+              <li><a href="#about-pl-skill-data"><span class="toc-title">Skąd skill bierze dane</span><span class="toc-hint">Treasury, FRED, SEC, Ramp i inni</span></a></li>
+              <li><a href="#about-pl-backend"><span class="toc-title">GitHub jako backend</span><span class="toc-hint">Baza danych? git push.</span></a></li>
+              <li><a href="#about-pl-live"><span class="toc-title">Na żywo i ruch</span><span class="toc-hint">Ok. 2000 unikalnych odwiedzających miesięcznie</span></a></li>
+            </ol>
+          </nav>
+
+          <section id="about-pl-skill" class="about-sec" tabindex="-1" aria-labelledby="about-pl-skill-h">
+            <h3 id="about-pl-skill-h"><span class="sec-num">01</span> Skill Claude</h3>
+            <p>Za każdym raportem stoi skill Claude o nazwie <code>ai-doomsday</code> – instrukcja i zestaw skryptów, które zamieniają Claude’a w analityka pilnującego bańki inwestycyjnej w AI. Skill śledzi 28 sygnałów w 7 kategoriach (w nawiasie budżet punktów):</p>
+            <ul class="about-cats">
+              <li class="cat-1"><span class="swatch" aria-hidden="true"></span><span class="cat-id">A</span> Dług <span class="muted">(300)</span></li>
+              <li class="cat-2"><span class="swatch" aria-hidden="true"></span><span class="cat-id">B</span> Capex i przepływy <span class="muted">(150)</span></li>
+              <li class="cat-3"><span class="swatch" aria-hidden="true"></span><span class="cat-id">C</span> Popyt i adopcja <span class="muted">(150)</span></li>
+              <li class="cat-4"><span class="swatch" aria-hidden="true"></span><span class="cat-id">D</span> Sprzęt <span class="muted">(150)</span></li>
+              <li class="cat-5"><span class="swatch" aria-hidden="true"></span><span class="cat-id">E</span> Makro <span class="muted">(100)</span></li>
+              <li class="cat-6"><span class="swatch" aria-hidden="true"></span><span class="cat-id">F</span> Energia i infrastruktura <span class="muted">(50)</span></li>
+              <li class="cat-7"><span class="swatch" aria-hidden="true"></span><span class="cat-id">G</span> Ceny tokenów i modele open-weight <span class="muted">(100)</span></li>
+            </ul>
+            <p>Każdy sygnał ma progi: zielony daje 0%, żółty 50%, czerwony 100% jego punktów, a suma tworzy skalę 0–1000. Claude zbiera odczyty i nadaje statusy, ale całą arytmetykę – punkty, redystrybucję pominiętych sygnałów, progi minimalne, przedział – liczą skrypty w Pythonie. Dzięki temu wynik co dzień liczy się tak samo, a pliki JSON mają stały schemat.</p>
+            <p>Rytm tygodnia: w poniedziałek raport pełny, od wtorku do czwartku krótki, w piątek krótki z analizą tygodniową. Wyzwalacz albo ciężkie zdarzenie kredytowe zawsze wymuszają raport pełny. Każdy tekst powstaje po polsku i po angielsku.</p>
+            <p class="about-aside">Ciekawostka: przy sygnałach dotyczących Anthropic (cennik i pozycja Claude’a) skill sam zgłasza konflikt interesów i opiera się wyłącznie na źródłach zewnętrznych. Claude nie wystawia ocen Claude’owi.</p>
+            <p><a href="https://github.com/Tomologia-Systemowa/ai-doomsday-data/tree/main/skill/ai-doomsday" rel="noopener noreferrer" target="_blank">Kopia skilla w repozytorium</a></p>
+            <a class="about-top" href="#about-pl-toc">↑ Spis treści</a>
+          </section>
+
+          <section id="about-pl-page" class="about-sec" tabindex="-1" aria-labelledby="about-pl-page-h">
+            <h3 id="about-pl-page-h"><span class="sec-num">02</span> Strona</h3>
+            <p>Strona to jeden widok w motywie „Dzień Sądu”: płonący pierścień z punktami kategorii (im wyższy wynik, tym więcej ognia – również u dołu ekranu), wykres historii wyniku z klikalnymi dniami i pełny raport z tabelą wszystkich sygnałów, źródłami i kalendarzem na dwa tygodnie.</p>
+            <p>Działa po polsku i po angielsku (wybór zapamiętuje przeglądarka). Na telefonie tabela sygnałów zamienia się w karty, a wykres dopasowuje się do szerokości ekranu. Sama strona niczego nie liczy – wyświetla to, co policzył skill.</p>
+            <p>Teksty pod wynikiem pisze AI, stąd znaczek „AI Generated” przy tytule. To nie jest porada inwestycyjna.</p>
+            <a class="about-top" href="#about-pl-toc">↑ Spis treści</a>
+          </section>
+
+          <section id="about-pl-tech" class="about-sec" tabindex="-1" aria-labelledby="about-pl-tech-h">
+            <h3 id="about-pl-tech-h"><span class="sec-num">03</span> Technologie</h3>
+            <dl class="about-map">
+              <dt>HTML + CSS</dt><dd>Ręcznie pisane, bez frameworka i bez bundlera. Motyw, ogień i układ na telefon to czysty CSS.</dd>
+              <dt>htmx 4</dt><dd>Pobiera pliki JSON i podmienia fragmenty strony. Bez SPA, bez Reacta.</dd>
+              <dt>Mustache 4.2</dt><dd>Szablony widoków w <code>&lt;template&gt;</code>. Każda wartość jest escapowana, więc tekst z danych nie trafia do HTML-a bez filtra.</dd>
+              <dt>JavaScript</dt><dd>Jeden plik <code>app.js</code> bez zależności: zamienia JSON na model widoku i liczy geometrię wykresów.</dd>
+              <dt>SVG</dt><dd>Scena w tle, pierścień i wykres historii rysowane ręcznie, bez biblioteki do wykresów.</dd>
+              <dt>Python</dt><dd><code>build-single.py</code> skleja stronę w jeden plik HTML do wrzucenia na hosting, <code>update-meta.py</code> odświeża podgląd linku (Open Graph). W skillu <code>score.py</code>, <code>publish.py</code> i <code>validate.py</code> liczą wynik i pilnują schematu.</dd>
+              <dt>Claude</dt><dd>Research, statusy sygnałów i teksty raportu.</dd>
+            </dl>
+            <a class="about-top" href="#about-pl-toc">↑ Spis treści</a>
+          </section>
+
+          <section id="about-pl-site-data" class="about-sec" tabindex="-1" aria-labelledby="about-pl-site-data-h">
+            <h3 id="about-pl-site-data-h"><span class="sec-num">04</span> Skąd strona bierze dane</h3>
+            <p>Prosto z repozytorium na GitHubie, przez <code>raw.githubusercontent.com</code>. Bez własnego API i bez bazy danych:</p>
+            <ul class="about-files">
+              <li><code>data/scale.json</code> – przedziały skali i budżety kategorii,</li>
+              <li><code>data/latest.json</code> – ostatni raport: wynik, sygnały, korekty, kalendarz,</li>
+              <li><code>data/history/index.json</code> – spis dni z wynikami do wykresu,</li>
+              <li><code>data/history/history-DD-MM-RRRR.json</code> – jeden plik na dzień: zdarzenia i pełny tekst raportu.</li>
+            </ul>
+            <p>Strona przyjmuje dane tylko z tego jednego hosta i tylko pliki o nazwach pasujących do wzorca, a linki do źródeł pokazuje wyłącznie, gdy są http(s). Po każdym pushu nowy raport pojawia się na stronie bez ponownego wdrażania – wystarczy, że GitHub odświeży cache.</p>
+            <p><a href="https://github.com/Tomologia-Systemowa/ai-doomsday-data#readme" rel="noopener noreferrer" target="_blank">Opis formatu danych</a></p>
+            <a class="about-top" href="#about-pl-toc">↑ Spis treści</a>
+          </section>
+
+          <section id="about-pl-skill-data" class="about-sec" tabindex="-1" aria-labelledby="about-pl-skill-data-h">
+            <h3 id="about-pl-skill-data-h"><span class="sec-num">05</span> Skąd skill bierze dane</h3>
+            <p>Przy każdym raporcie Claude szuka odczytów w sieci i stawia na źródła pierwotne:</p>
+            <dl class="about-map">
+              <dt>Rentowności</dt><dd>U.S. Treasury (Daily Par Yield Curve), FRED jako potwierdzenie.</dd>
+              <dt>Spready</dt><dd>Serie ICE BofA w FRED.</dd>
+              <dt>Capex</dt><dd>Raporty spółek i dokumenty w SEC.</dd>
+              <dt>Popyt</dt><dd>Ramp AI Index, Census BTOS, ISM.</dd>
+              <dt>Sprzęt</dt><dd>TrendForce, TSMC, stawki wynajmu GPU (Ornn, Silicon Data).</dd>
+              <dt>Modele</dt><dd>OpenRouter, Artificial Analysis, Epoch AI, cenniki dostawców.</dd>
+            </dl>
+            <p>Do tego przegląd wiadomości z każdej kategorii A–G (FT, Bloomberg, WSJ, Reuters i ich przedruki). Zasady są twarde: każda liczba ma link i datę odczytu, nic nie jest uzupełniane z pamięci modelu. Odczyt z jednego źródła wtórnego jest „niepotwierdzony” – liczy się w połowie i najwyżej przez 14 dni. Dane licencjonowane trafiają do publicznego repozytorium bez poziomów cen.</p>
+            <a class="about-top" href="#about-pl-toc">↑ Spis treści</a>
+          </section>
+
+          <section id="about-pl-backend" class="about-sec" tabindex="-1" aria-labelledby="about-pl-backend-h">
+            <h3 id="about-pl-backend-h"><span class="sec-num">06</span> GitHub jako backend</h3>
+            <p>Zabawna rzecz: ta strona nie ma backendu. A dokładniej – jej backendem jest GitHub, a do pary z nim rutyna w Claude:</p>
+            <dl class="about-map about-map-arrows">
+              <dt>Baza danych</dt><dd>pliki JSON w repozytorium</dd>
+              <dt>API</dt><dd><code>raw.githubusercontent.com</code></dd>
+              <dt>Wdrożenie</dt><dd><code>git push</code></dd>
+              <dt>Log audytowy</dt><dd><code>git log</code> – każdy raport to commit</dd>
+              <dt>Serwer aplikacji</dt><dd>rutyna w Claude</dd>
+            </dl>
+            <p>Rutynę uruchamia wzorzec cron w rutynach Claude – codziennie w dwóch porach: o 9:00 CET, na początek dnia w Polsce, i po zamknięciu giełdy w USA (16:00 czasu nowojorskiego, ok. 22:00 w Polsce). Rutyna odpala skill, a skill liczy raport i robi push do repozytorium.</p>
+            <a class="about-top" href="#about-pl-toc">↑ Spis treści</a>
+          </section>
+
+          <section id="about-pl-live" class="about-sec" tabindex="-1" aria-labelledby="about-pl-live-h">
+            <h3 id="about-pl-live-h"><span class="sec-num">07</span> Na żywo i ruch</h3>
+            <p>Cała strona jest wpięta na żywo: rutyna, repozytorium i strona na tomologia.eu działają w jednym łańcuchu, a nowy raport pojawia się bez niczyjej pomocy. Na razie miesięczny ruch to ok. 2000 unikalnych odwiedzających.</p>
+            <ul class="about-stats">
+              <li><strong>~2000</strong><span>unikalnych odwiedzających miesięcznie</span></li>
+              <li><strong>2×</strong><span>dziennie nowe dane</span></li>
+              <li><strong>28</strong><span>sygnałów w 7 kategoriach</span></li>
+              <li><strong>0</strong><span>baz danych</span></li>
+            </ul>
+            <a class="about-top" href="#about-pl-toc">↑ Spis treści</a>
+          </section>
+        </div>
+
+        <div class="about-body" lang="en" data-lang-block="en" hidden>
+          <nav id="about-en-toc" class="about-toc" tabindex="-1" aria-label="Contents">
+            <p class="about-lead">This site is a small experiment: a daily AI bubble report written by Claude and published by… GitHub. Pick where to start:</p>
+            <ol>
+              <li><a href="#about-en-skill"><span class="toc-title">The Claude skill</span><span class="toc-hint">An analyst that scores the 0–1000 scale</span></a></li>
+              <li><a href="#about-en-page"><span class="toc-title">The site</span><span class="toc-hint">What you see here and how it works</span></a></li>
+              <li><a href="#about-en-tech"><span class="toc-title">Technologies</span><span class="toc-hint">htmx, Mustache, SVG, Python</span></a></li>
+              <li><a href="#about-en-site-data"><span class="toc-title">Where the site gets its data</span><span class="toc-hint">JSON files straight from the repo</span></a></li>
+              <li><a href="#about-en-skill-data"><span class="toc-title">Where the skill gets its data</span><span class="toc-hint">Treasury, FRED, SEC, Ramp and more</span></a></li>
+              <li><a href="#about-en-backend"><span class="toc-title">GitHub as the backend</span><span class="toc-hint">Database? git push.</span></a></li>
+              <li><a href="#about-en-live"><span class="toc-title">Live and traffic</span><span class="toc-hint">About 2,000 unique visitors a month</span></a></li>
+            </ol>
+          </nav>
+
+          <section id="about-en-skill" class="about-sec" tabindex="-1" aria-labelledby="about-en-skill-h">
+            <h3 id="about-en-skill-h"><span class="sec-num">01</span> The Claude skill</h3>
+            <p>Behind every report is a Claude skill called <code>ai-doomsday</code> – instructions plus a set of scripts that turn Claude into an analyst watching the AI investment bubble. The skill tracks 28 signals in 7 categories (point budget in brackets):</p>
+            <ul class="about-cats">
+              <li class="cat-1"><span class="swatch" aria-hidden="true"></span><span class="cat-id">A</span> Debt <span class="muted">(300)</span></li>
+              <li class="cat-2"><span class="swatch" aria-hidden="true"></span><span class="cat-id">B</span> Capex and cash flows <span class="muted">(150)</span></li>
+              <li class="cat-3"><span class="swatch" aria-hidden="true"></span><span class="cat-id">C</span> Demand and adoption <span class="muted">(150)</span></li>
+              <li class="cat-4"><span class="swatch" aria-hidden="true"></span><span class="cat-id">D</span> Hardware <span class="muted">(150)</span></li>
+              <li class="cat-5"><span class="swatch" aria-hidden="true"></span><span class="cat-id">E</span> Macro <span class="muted">(100)</span></li>
+              <li class="cat-6"><span class="swatch" aria-hidden="true"></span><span class="cat-id">F</span> Power and infrastructure <span class="muted">(50)</span></li>
+              <li class="cat-7"><span class="swatch" aria-hidden="true"></span><span class="cat-id">G</span> Token prices and open-weight models <span class="muted">(100)</span></li>
+            </ul>
+            <p>Every signal has thresholds: green gives 0%, yellow 50% and red 100% of its points, and the total makes the 0–1000 scale. Claude collects the readings and assigns statuses, but all the arithmetic – points, redistribution of skipped signals, category floors, the band – is done by Python scripts. That way the score is computed the same way every day and the JSON files keep a fixed schema.</p>
+            <p>Weekly rhythm: a full report on Monday, a short one Tuesday to Thursday, a short one plus a weekly analysis on Friday. A trigger or a heavy credit event always forces a full report. Every text is written in Polish and English.</p>
+            <p class="about-aside">Fun fact: for signals involving Anthropic (Claude’s pricing and position) the skill flags its own conflict of interest and relies only on external sources. Claude does not grade Claude.</p>
+            <p><a href="https://github.com/Tomologia-Systemowa/ai-doomsday-data/tree/main/skill/ai-doomsday" rel="noopener noreferrer" target="_blank">Copy of the skill in the repository</a></p>
+            <a class="about-top" href="#about-en-toc">↑ Contents</a>
+          </section>
+
+          <section id="about-en-page" class="about-sec" tabindex="-1" aria-labelledby="about-en-page-h">
+            <h3 id="about-en-page-h"><span class="sec-num">02</span> The site</h3>
+            <p>The site is a single view in a “Judgment Day” theme: a burning ring with category points (the higher the score, the more fire – at the bottom of the screen too), a score history chart with clickable days, and the full report with a table of every signal, its sources and a two-week calendar.</p>
+            <p>It works in Polish and English (your browser remembers the choice). On a phone the signal table turns into cards and the chart fits the screen width. The site itself computes nothing – it shows what the skill computed.</p>
+            <p>The texts under the score are written by AI, hence the “AI Generated” badge next to the title. This is not investment advice.</p>
+            <a class="about-top" href="#about-en-toc">↑ Contents</a>
+          </section>
+
+          <section id="about-en-tech" class="about-sec" tabindex="-1" aria-labelledby="about-en-tech-h">
+            <h3 id="about-en-tech-h"><span class="sec-num">03</span> Technologies</h3>
+            <dl class="about-map">
+              <dt>HTML + CSS</dt><dd>Hand-written, no framework, no bundler. The theme, the fire and the phone layout are plain CSS.</dd>
+              <dt>htmx 4</dt><dd>Fetches the JSON files and swaps parts of the page. No SPA, no React.</dd>
+              <dt>Mustache 4.2</dt><dd>View templates in <code>&lt;template&gt;</code>. Every value is escaped, so no text from the data reaches the HTML unfiltered.</dd>
+              <dt>JavaScript</dt><dd>One dependency-free <code>app.js</code>: turns JSON into a view model and computes the chart geometry.</dd>
+              <dt>SVG</dt><dd>The background scene, the ring and the history chart are drawn by hand, no charting library.</dd>
+              <dt>Python</dt><dd><code>build-single.py</code> bundles the site into one HTML file for hosting, <code>update-meta.py</code> refreshes the link preview (Open Graph). In the skill, <code>score.py</code>, <code>publish.py</code> and <code>validate.py</code> compute the score and enforce the schema.</dd>
+              <dt>Claude</dt><dd>Research, signal statuses and the report texts.</dd>
+            </dl>
+            <a class="about-top" href="#about-en-toc">↑ Contents</a>
+          </section>
+
+          <section id="about-en-site-data" class="about-sec" tabindex="-1" aria-labelledby="about-en-site-data-h">
+            <h3 id="about-en-site-data-h"><span class="sec-num">04</span> Where the site gets its data</h3>
+            <p>Straight from the GitHub repository, via <code>raw.githubusercontent.com</code>. No API of its own and no database:</p>
+            <ul class="about-files">
+              <li><code>data/scale.json</code> – scale bands and category budgets,</li>
+              <li><code>data/latest.json</code> – the latest report: score, signals, adjustments, calendar,</li>
+              <li><code>data/history/index.json</code> – list of days with scores for the chart,</li>
+              <li><code>data/history/history-DD-MM-RRRR.json</code> – one file per day: events and the full report text.</li>
+            </ul>
+            <p>The site accepts data only from that one host and only file names matching a pattern, and shows source links only when they are http(s). After every push the new report appears on the site with no redeploy – GitHub just needs to refresh its cache.</p>
+            <p><a href="https://github.com/Tomologia-Systemowa/ai-doomsday-data#readme" rel="noopener noreferrer" target="_blank">Data format description</a></p>
+            <a class="about-top" href="#about-en-toc">↑ Contents</a>
+          </section>
+
+          <section id="about-en-skill-data" class="about-sec" tabindex="-1" aria-labelledby="about-en-skill-data-h">
+            <h3 id="about-en-skill-data-h"><span class="sec-num">05</span> Where the skill gets its data</h3>
+            <p>On every report Claude searches the web for readings and prefers primary sources:</p>
+            <dl class="about-map">
+              <dt>Yields</dt><dd>U.S. Treasury (Daily Par Yield Curve), FRED as confirmation.</dd>
+              <dt>Spreads</dt><dd>ICE BofA series on FRED.</dd>
+              <dt>Capex</dt><dd>Company reports and SEC filings.</dd>
+              <dt>Demand</dt><dd>Ramp AI Index, Census BTOS, ISM.</dd>
+              <dt>Hardware</dt><dd>TrendForce, TSMC, GPU rental rates (Ornn, Silicon Data).</dd>
+              <dt>Models</dt><dd>OpenRouter, Artificial Analysis, Epoch AI, provider price lists.</dd>
+            </dl>
+            <p>Plus a news sweep for every category A–G (FT, Bloomberg, WSJ, Reuters and their re-reports). The rules are strict: every number has a link and a reading date, nothing is filled in from the model’s memory. A reading from a single secondary source is “unconfirmed” – it counts at half weight and for 14 days at most. Licensed data goes into the public repository without price levels.</p>
+            <a class="about-top" href="#about-en-toc">↑ Contents</a>
+          </section>
+
+          <section id="about-en-backend" class="about-sec" tabindex="-1" aria-labelledby="about-en-backend-h">
+            <h3 id="about-en-backend-h"><span class="sec-num">06</span> GitHub as the backend</h3>
+            <p>The funny part: this site has no backend. Or rather – its backend is GitHub, paired with a Claude routine:</p>
+            <dl class="about-map about-map-arrows">
+              <dt>Database</dt><dd>JSON files in the repository</dd>
+              <dt>API</dt><dd><code>raw.githubusercontent.com</code></dd>
+              <dt>Deployment</dt><dd><code>git push</code></dd>
+              <dt>Audit log</dt><dd><code>git log</code> – every report is a commit</dd>
+              <dt>App server</dt><dd>a Claude routine</dd>
+            </dl>
+            <p>The routine is started by a cron pattern in Claude routines, twice every day: at 9:00 CET, at the start of the day in Poland, and after the US stock market closes (16:00 New York time, about 22:00 in Poland). The routine runs the skill, and the skill computes the report and pushes it to the repository.</p>
+            <a class="about-top" href="#about-en-toc">↑ Contents</a>
+          </section>
+
+          <section id="about-en-live" class="about-sec" tabindex="-1" aria-labelledby="about-en-live-h">
+            <h3 id="about-en-live-h"><span class="sec-num">07</span> Live and traffic</h3>
+            <p>The whole site is wired up live: the routine, the repository and the site on tomologia.eu work as one chain, and a new report shows up without anyone’s help. For now, monthly traffic is about 2,000 unique visitors.</p>
+            <ul class="about-stats">
+              <li><strong>~2,000</strong><span>unique visitors a month</span></li>
+              <li><strong>2×</strong><span>new data every day</span></li>
+              <li><strong>28</strong><span>signals in 7 categories</span></li>
+              <li><strong>0</strong><span>databases</span></li>
+            </ul>
+            <a class="about-top" href="#about-en-toc">↑ Contents</a>
+          </section>
+        </div>
+
+      </div>
+    </div>
+  </dialog>
 
   <!--
     Mustache templates. Every {{var}} is HTML-escaped by Mustache; there is no {{{triple}}} anywhere.
