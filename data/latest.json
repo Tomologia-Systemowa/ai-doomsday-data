@@ -1,16 +1,16 @@
 {
   "schema_version": "1.2",
-  "date": "2026-10-11",
-  "report_type": "short",
+  "date": "2026-10-12",
+  "report_type": "full",
   "score": 410,
   "band": "Pęknięcia",
   "band_en": "Cracks",
-  "change_vs_previous": 9,
-  "headline": "410/1000, o 9 punktów więcej niż w sobotę i bez zmian od porannego odczytu. Rekord kosztu ubezpieczenia długu Broadcomu wciąż ma tylko jedno źródło.",
-  "headline_en": "410/1000, 9 points higher than on Saturday and unchanged since the morning reading. The record cost of insuring Broadcom's debt still has only one source.",
-  "summary": "410/1000 – o 9 punktów więcej niż w sobotę, bez zmian od porannego odczytu. W niedzielę nie pojawiły się nowe dane ani zdarzenia kredytowe. Rekordowy 5-letni CDS Broadcomu (cena ubezpieczenia od niewypłacalności firmy) – 136 pb 8–9.10 według Bloomberga – nadal nie ma drugiego niezależnego źródła, więc liczy się w połowie do 22.10. W poniedziałek rynek obligacji USA zamknięty; w środę CPI i Beżowa Księga Fed.",
-  "summary_en": "410/1000 – 9 points higher than on Saturday, unchanged since the morning reading. No new data or credit events appeared on Sunday. Broadcom's record 5-year CDS (the price of insurance against the company defaulting) – 136 bp on 8–9 Oct according to Bloomberg – still has no second independent source, so it counts by half until 22 Oct. On Monday the US bond market is closed; CPI and the Fed Beige Book on Wednesday.",
-  "report_file": "history/history-11-10-2026.json",
+  "change_vs_previous": 0,
+  "headline": "410/1000, bez zmian od niedzieli: weekend nie przyniósł nowych zdarzeń kredytowych, a rynek obligacji USA ma dziś wolne.",
+  "headline_en": "410/1000, unchanged since Sunday: the weekend brought no new credit events, and the US bond market is closed today.",
+  "summary": "410/1000 – bez zmian od niedzieli. Weekend nie przyniósł nowych zdarzeń kredytowych ani zmian prognoz inwestycji. Najwięcej ciąży koszt pieniądza: wrześniowa podwyżka stóp Fed i rentowność 10-letnich obligacji USA 5,24%, tuż pod granicą 5,25%. Neocloudy (firmy wynajmujące moc obliczeniową GPU) pożyczają ponad 5 punktów procentowych drożej od solidnych firm. Rekordowy CDS Broadcomu (cena ubezpieczenia od niewypłacalności firmy) nadal ma tylko jedno źródło i liczy się w połowie do 22.10. Odsetek firm używających AI według Census zatrzymał się na 23,8%. W tym tygodniu kluczowe są CPI w środę oraz wyniki TSMC i ASML w czwartek. Rynek obstawia już tylko ok. 19–22% szans na październikową podwyżkę stóp, a 10-letnia rentowność stoi tam, gdzie tydzień temu.",
+  "summary_en": "410/1000 – unchanged since Sunday. The weekend brought no new credit events or changes to investment guidance. The cost of money weighs most: the Fed's September rate hike and the US 10-year yield at 5.24%, just below the 5.25% line. Neoclouds (companies renting out GPU computing power) borrow more than 5 percentage points more expensively than solid companies. Broadcom's record CDS (the price of insurance against the company defaulting) still has only one source and counts by half until 22 Oct. The share of firms using AI according to the Census has stalled at 23.8%. This week, CPI on Wednesday and the TSMC and ASML results on Thursday are key. The market now prices only about a 19–22% chance of an October rate hike, and the 10-year yield stands where it did a week ago.",
+  "report_file": "history/history-12-10-2026.json",
   "triggers": [],
   "triggers_en": [],
   "heavy_credit_event": false,
@@ -103,8 +103,8 @@
       "max_points": 35.0,
       "preliminary": false,
       "source": "https://www.benzinga.com/markets/tech/26/10/62240386/elon-musk-is-betting-40-billion-on-nvidia-chips-spacex-investors-arent-so-sure-as-spcx-credit-default-swaps-hit-record-high-report",
-      "note": "Dwóch emitentów z rekordem 5-letniego CDS w ostatnim miesiącu: Oracle 227 pb (2026-09-28, dwa niezależne źródła wtórne) i SpaceX – 194 pb na 7.10 wg Financial Times (z ok. 110 pb w czerwcu), intradzienne maksimum ok. 197,6 pb wg ICE Data Services, przy rozmowach o ok. 40 mld USD długu (30 mld USD obligacji IG, 10 mld USD kredytów) na chipy Nvidii; odczyt potwierdzony – dwa niezależne dostawcy danych (FT, ICE), źródła wtórne. Nadal 🟡 (1–2 emitentów). Rekord CDS Broadcomu (122 pb, sierpień) oraz rekordy Nvidii i Alphabetu (lipiec) – poza oknem miesiąca; brak podwojenia w 3 mies. Bloomberg (6.10, za Bloomberg Tax) podaje, że 5-letnie CDS hiperskalerów zbliżają się do najszerszych poziomów w roku – bez liczb, bez zmiany statusu. Nowe (niepotwierdzone): Broadcom – 5-letni CDS na rekordowych 136 pb 8–9.10 (pierwszy podał Bloomberg 8.10; powtórzenia: Crypto Briefing 8.10, Börse Global 9.10 bez wskazania źródła – liczone jako jedno źródło). Dodatkowe wyszukiwania („Broadcom CDS record October 2026 Bloomberg”, „Broadcom swaps 136 basis points”) nie dały drugiego niezależnego źródła. Potwierdzenie przez drugiego dostawcę danych (np. ICE, LSEG, S&P Global) lub niezależną relację oznaczałoby trzech emitentów z rekordem = 🔴. Oracle wg tej samej relacji ok. 261 pb (nowe maksimum). Ponowna weryfikacja 11.10 wieczorem (wyszukiwania: „Broadcom five-year CDS 136 basis points”, „Broadcom credit swaps widest on record Bloomberg Oct 8 2026”) nie dała drugiego niezależnego źródła; znalezione odczyty ok. 131 pb (wpis Global Markets Investor, 26.08) i 122 pb (sierpień) są poza oknem miesiąca. Finansowanie gwarantowane przez Broadcom obejmuje chipy dla Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne.",
-      "note_en": "Two issuers with a record 5-year CDS in the last month: Oracle at 227 bp (2026-09-28, two independent secondary sources) and SpaceX – 194 bp on 7 Oct per the Financial Times (from about 110 bp in June), intraday high about 197.6 bp per ICE Data Services, amid talks on about USD 40bn of debt (USD 30bn of IG bonds, USD 10bn of loans) for Nvidia chips; reading confirmed – two independent data providers (FT, ICE), secondary sources. Still 🟡 (1–2 issuers). The Broadcom CDS record (122 bp, August) and the Nvidia and Alphabet records (July) – outside the one-month window; no doubling within 3 months. Bloomberg (6 Oct, via Bloomberg Tax) reports hyperscaler 5-year CDS nearing their widest levels of the year – no figures, no status change. New (unconfirmed): Broadcom – 5-year CDS at a record 136 bp on 8–9 Oct (first reported by Bloomberg on 8 Oct; re-reports: Crypto Briefing 8 Oct, Börse Global 9 Oct with no source named – counted as one source). Further searches (\"Broadcom CDS record October 2026 Bloomberg\", \"Broadcom swaps 136 basis points\") found no second independent source. Confirmation by a second data provider (e.g. ICE, LSEG, S&P Global) or independent reporting would mean three issuers with a record = 🔴. Oracle per the same report about 261 bp (new high). Re-check on the evening of 11 Oct (searches: \"Broadcom five-year CDS 136 basis points\", \"Broadcom credit swaps widest on record Bloomberg Oct 8 2026\") found no second independent source; the readings found, about 131 bp (Global Markets Investor post, 26 Aug) and 122 bp (August), are outside the one-month window. The financing guaranteed by Broadcom includes chips for Anthropic – potential conflict of interest, external sources only.",
+      "note": "Dwóch emitentów z rekordem 5-letniego CDS w ostatnim miesiącu: Oracle 227 pb (2026-09-28, dwa niezależne źródła wtórne) i SpaceX – 194 pb na 7.10 wg Financial Times (z ok. 110 pb w czerwcu), intradzienne maksimum ok. 197,6 pb wg ICE Data Services, przy rozmowach o ok. 40 mld USD długu (30 mld USD obligacji IG, 10 mld USD kredytów) na chipy Nvidii; odczyt potwierdzony – dwa niezależne dostawcy danych (FT, ICE), źródła wtórne. Nadal 🟡 (1–2 emitentów). Rekord CDS Broadcomu (122 pb, sierpień) oraz rekordy Nvidii i Alphabetu (lipiec) – poza oknem miesiąca; brak podwojenia w 3 mies. Bloomberg (6.10, za Bloomberg Tax) podaje, że 5-letnie CDS hiperskalerów zbliżają się do najszerszych poziomów w roku – bez liczb, bez zmiany statusu. Nowe (niepotwierdzone): Broadcom – 5-letni CDS na rekordowych 136 pb 8–9.10 (pierwszy podał Bloomberg 8.10; powtórzenia: Crypto Briefing 8.10, Börse Global 9.10 bez wskazania źródła – liczone jako jedno źródło). Dodatkowe wyszukiwania („Broadcom CDS record October 2026 Bloomberg”, „Broadcom swaps 136 basis points”) nie dały drugiego niezależnego źródła. Potwierdzenie przez drugiego dostawcę danych (np. ICE, LSEG, S&P Global) lub niezależną relację oznaczałoby trzech emitentów z rekordem = 🔴. Oracle wg tej samej relacji ok. 261 pb (nowe maksimum). Ponowna weryfikacja 11.10 wieczorem (wyszukiwania: „Broadcom five-year CDS 136 basis points”, „Broadcom credit swaps widest on record Bloomberg Oct 8 2026”) nie dała drugiego niezależnego źródła; znalezione odczyty ok. 131 pb (wpis Global Markets Investor, 26.08) i 122 pb (sierpień) są poza oknem miesiąca. Finansowanie gwarantowane przez Broadcom obejmuje chipy dla Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne. Ponowna weryfikacja 12.10 rano (wyszukiwania: „Broadcom credit default swaps record October 2026”, „Broadcom CDS 136 basis points”): jedyne trafienie z 136 pb to ponownie Börse Global (bez wskazania źródła); pozostałe dotyczą rekordu 122 pb z sierpnia – brak drugiego niezależnego źródła.",
+      "note_en": "Two issuers with a record 5-year CDS in the last month: Oracle at 227 bp (2026-09-28, two independent secondary sources) and SpaceX – 194 bp on 7 Oct per the Financial Times (from about 110 bp in June), intraday high about 197.6 bp per ICE Data Services, amid talks on about USD 40bn of debt (USD 30bn of IG bonds, USD 10bn of loans) for Nvidia chips; reading confirmed – two independent data providers (FT, ICE), secondary sources. Still 🟡 (1–2 issuers). The Broadcom CDS record (122 bp, August) and the Nvidia and Alphabet records (July) – outside the one-month window; no doubling within 3 months. Bloomberg (6 Oct, via Bloomberg Tax) reports hyperscaler 5-year CDS nearing their widest levels of the year – no figures, no status change. New (unconfirmed): Broadcom – 5-year CDS at a record 136 bp on 8–9 Oct (first reported by Bloomberg on 8 Oct; re-reports: Crypto Briefing 8 Oct, Börse Global 9 Oct with no source named – counted as one source). Further searches (\"Broadcom CDS record October 2026 Bloomberg\", \"Broadcom swaps 136 basis points\") found no second independent source. Confirmation by a second data provider (e.g. ICE, LSEG, S&P Global) or independent reporting would mean three issuers with a record = 🔴. Oracle per the same report about 261 bp (new high). Re-check on the evening of 11 Oct (searches: \"Broadcom five-year CDS 136 basis points\", \"Broadcom credit swaps widest on record Bloomberg Oct 8 2026\") found no second independent source; the readings found, about 131 bp (Global Markets Investor post, 26 Aug) and 122 bp (August), are outside the one-month window. The financing guaranteed by Broadcom includes chips for Anthropic – potential conflict of interest, external sources only. Re-check on the morning of 12 Oct (searches: \"Broadcom credit default swaps record October 2026\", \"Broadcom CDS 136 basis points\"): the only hit with 136 bp is again Börse Global (no source named); the others concern the 122 bp record from August – no second independent source.",
       "conflict_of_interest": true,
       "unconfirmed": {
         "status": "red",
@@ -130,8 +130,8 @@
       "max_points": 30.0,
       "preliminary": false,
       "source": "https://www.credaily.com/?p=222783",
-      "note": "Luzowanie standardów (stanowisko SEC z lipca 2026 znosi wymóg retencji ryzyka dla części sekurytyzacji centrów danych; sponsorzy nadal zwykle zatrzymują ≥30%). AAA CMBS centrów danych 165 pb vs 93–125 pb dla innych CMBS (Barclays, 15.09). Blisko progu: doniesienia o poszerzaniu spreadów DC względem reszty ABS (Bloomberg VIII, The Real Deal 30.09) nie dają jeszcze dwóch potwierdzonych odczytów zmiany. SPV Amazona na GPU (8 mld USD, 2.10) wciąż tylko rozważane. Nowe (nota, bez zmiany statusu): syndykat Broadcomu rozpoczyna zbieranie 60 mld USD finansowania leasingu chipów dla Anthropic (42 mld USD senior z gwarancją wartości rezydualnej Broadcomu, 18 mld USD junior, z czego 9 mld USD Blackstone; Bloomberg 2.10, syndykacja ok. 5–6.10, źródła wtórne) – transakcja w toku, nie zamknięta; dotyczy Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne. Obligacja HY CleanSpark (centrum danych dla Mety) 2,28 mld USD po 8,25% przy ok. 10 mld USD zapisów – popyt silny, ale inwestorzy żądają wyższych premii.",
-      "note_en": "Loosening standards (the SEC position of July 2026 removes the risk-retention requirement for some data-center securitizations; sponsors still typically retain ≥30%). AAA data-center CMBS at 165 bp vs 93–125 bp for other CMBS (Barclays, 15 Sep). Near threshold: reports of DC spreads widening vs the rest of ABS (Bloomberg Aug, The Real Deal 30 Sep) do not yet give two confirmed readings of the change. Amazon's GPU SPV (USD 8bn, 2 Oct) is still only being explored. New (note, no status change): Broadcom's syndicate is starting to raise USD 60bn of chip-lease financing for Anthropic (USD 42bn senior with Broadcom residual value support, USD 18bn junior, of which USD 9bn from Blackstone; Bloomberg 2 Oct, syndication around 5–6 Oct, secondary sources) – a deal in progress, not closed; concerns Anthropic – potential conflict of interest, external sources only. CleanSpark's HY bond (data center for Meta) USD 2.28bn at 8.25% with about USD 10bn of orders – strong demand, but investors demand higher premiums.",
+      "note": "Luzowanie standardów (stanowisko SEC z lipca 2026 znosi wymóg retencji ryzyka dla części sekurytyzacji centrów danych; sponsorzy nadal zwykle zatrzymują ≥30%). AAA CMBS centrów danych 165 pb vs 93–125 pb dla innych CMBS (Barclays, 15.09). Blisko progu: doniesienia o poszerzaniu spreadów DC względem reszty ABS (Bloomberg VIII, The Real Deal 30.09) nie dają jeszcze dwóch potwierdzonych odczytów zmiany. SPV Amazona na GPU (8 mld USD, 2.10) wciąż tylko rozważane. Nowe (nota, bez zmiany statusu): syndykat Broadcomu rozpoczyna zbieranie 60 mld USD finansowania leasingu chipów dla Anthropic (42 mld USD senior z gwarancją wartości rezydualnej Broadcomu, 18 mld USD junior, z czego 9 mld USD Blackstone; Bloomberg 2.10, syndykacja ok. 5–6.10, źródła wtórne) – transakcja w toku, nie zamknięta; dotyczy Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne. Obligacja HY CleanSpark (centrum danych dla Mety) 2,276 mld USD: kupon 7,875%, cena emisyjna 98,5% nominału (wycena 18.09, zamknięcie 25.09; komunikat spółki w 8-K SEC), rentowność ok. 8,25% przy ok. 10 mld USD zapisów – popyt silny, ale inwestorzy żądają wyższych premii. Według The Information (źródło wtórne, pojedyncze) część banków (Société Générale, SMBC, MUFG) ostrożniej podchodzi do kredytów projektowych na centra danych – bez zmiany statusu.",
+      "note_en": "Loosening standards (the SEC position of July 2026 removes the risk-retention requirement for some data-center securitizations; sponsors still typically retain ≥30%). AAA data-center CMBS at 165 bp vs 93–125 bp for other CMBS (Barclays, 15 Sep). Near threshold: reports of DC spreads widening vs the rest of ABS (Bloomberg Aug, The Real Deal 30 Sep) do not yet give two confirmed readings of the change. Amazon's GPU SPV (USD 8bn, 2 Oct) is still only being explored. New (note, no status change): Broadcom's syndicate is starting to raise USD 60bn of chip-lease financing for Anthropic (USD 42bn senior with Broadcom residual value support, USD 18bn junior, of which USD 9bn from Blackstone; Bloomberg 2 Oct, syndication around 5–6 Oct, secondary sources) – a deal in progress, not closed; concerns Anthropic – potential conflict of interest, external sources only. CleanSpark's HY bond (data center for Meta) USD 2.276bn: 7.875% coupon, issue price 98.5% of par (priced 18 Sep, closed 25 Sep; company release in an SEC 8-K), yield about 8.25% with about USD 10bn of orders – strong demand, but investors demand higher premiums. According to The Information (single secondary source) some banks (Société Générale, SMBC, MUFG) are more cautious about data-center project loans – no status change.",
       "conflict_of_interest": true,
       "status_since": "2026-10-06",
       "status_prev": "yellow"
@@ -239,8 +239,8 @@
       "max_points": 50.0,
       "preliminary": false,
       "source": "https://ramp.com/data/ai-index-sept-2026",
-      "note": "Dane za VIII: mediana 10,92 → 11,88 → 12,50 USD (VI–VIII); top 10% 645 → 676 USD; top 1% −9,7% m/m; odsetek płacących 55,71% → 56,13%.",
-      "note_en": "August data: median 10.92 → 11.88 → 12.50 USD (Jun–Aug); top 10% 645 → 676 USD; top 1% −9.7% m/m; share paying 55.71% → 56.13%.",
+      "note": "Dane za VIII: mediana 10,92 → 11,88 → 12,50 USD (VI–VIII); top 10% 645 → 676 USD; top 1% −9,7% m/m; odsetek płacących 55,71% → 56,13%. Ramp AI Index za wrzesień jeszcze nieopublikowany (stan 12.10) – brak nowego odczytu.",
+      "note_en": "August data: median 10.92 → 11.88 → 12.50 USD (Jun–Aug); top 10% 645 → 676 USD; top 1% −9.7% m/m; share paying 55.71% → 56.13%. The Ramp AI Index for September not yet published (as of 12 Oct) – no new reading.",
       "status_since": "2026-10-06",
       "status_prev": "green"
     },
@@ -251,14 +251,14 @@
       "name_en": "Census BTOS: AI adoption",
       "value": 23.8,
       "unit": "%",
-      "as_of": "2026-09-24",
+      "as_of": "2026-10-08",
       "status": "green",
       "points": 0.0,
       "max_points": 25.0,
       "preliminary": false,
       "source": "https://www.census.gov/hfp/btos/downloads/National.xlsx",
-      "note": "22,4% → 23,2% → 23,8% w trzech kolejnych odczytach (ostatni okres 24.08–6.09).",
-      "note_en": "22.4% → 23.2% → 23.8% over three consecutive readings (latest period 24 Aug–6 Sep).",
+      "note": "BTOS: 22,4% → 23,2% → 23,8% → 23,8% (okresy odniesienia do 6.09 i 7–20.09; ostatni opublikowany 8.10) – wzrost w poprzednich odczytach, ostatni płaski. Jeden płaski odczyt nie spełnia warunku 🟡 (płasko 2+ odczyty) – blisko progu.",
+      "note_en": "BTOS: 22.4% → 23.2% → 23.8% → 23.8% (reference periods to 6 Sep and 7–20 Sep; latest published 8 Oct) – rising in earlier readings, the latest flat. One flat reading does not meet the 🟡 condition (flat 2+ readings) – near threshold.",
       "status_since": "2026-10-06",
       "status_prev": "green"
     },
@@ -306,14 +306,14 @@
       "name_en": "GPU rental rates",
       "value": null,
       "unit": "USD/GPU-h (H100)",
-      "as_of": "2026-10-10",
+      "as_of": "2026-10-11",
       "status": "yellow",
       "points": 22.5,
       "max_points": 45.0,
       "preliminary": false,
       "source": "https://data.ornn.com/markets/h100-sxm",
-      "note": "Ornn OCPI H100 (10.10): −4,3% d/d, +1,1% t/t, −6,0% w 30 dni – poniżej progu ostrzegawczego 15% spadku spotu w miesiącu. Seria dzienna bardzo zmienna, a średnia październikowa jak dotąd niższa od wrześniowej – status 🟡 utrzymano. Brak świeżych stawek kontraktowych 1-rocznych (krzywe terminowe Ornn tylko w dostępie płatnym).",
-      "note_en": "Ornn OCPI H100 (10 Oct): −4.3% d/d, +1.1% w/w, −6.0% over 30 days – below the 15% monthly spot-decline warning threshold. The daily series is very volatile and the October average so far is below September's – the 🟡 status is kept. No fresh 1-year contract rates (Ornn forward curves only behind paid access).",
+      "note": "Ornn OCPI H100 (11.10): −0,7% d/d, +2,3% t/t, −7,7% w 30 dni (10.10: −6,0%) – poniżej progu ostrzegawczego 15% spadku spotu w miesiącu. Seria dzienna bardzo zmienna, a średnia październikowa jak dotąd niższa od wrześniowej – status 🟡 utrzymano. Brak świeżych stawek kontraktowych 1-rocznych (krzywe terminowe Ornn tylko w dostępie płatnym).",
+      "note_en": "Ornn OCPI H100 (11 Oct): −0.7% d/d, +2.3% w/w, −7.7% over 30 days (10 Oct: −6.0%) – below the 15% monthly spot-decline warning threshold. The daily series is very volatile and the October average so far is below September's – the 🟡 status is kept. No fresh 1-year contract rates (Ornn forward curves only behind paid access).",
       "status_since": "2026-10-06",
       "status_prev": "yellow"
     },
@@ -438,8 +438,8 @@
       "max_points": 50.0,
       "preliminary": false,
       "source": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
-      "note": "Podwyżka o 25 pb 16.09.2026 (jednogłośnie). Protokół z 15–16.09 (opublikowany 7.10): większość uczestników uznała, że kolejna podwyżka „prawdopodobnie będzie właściwa do końca roku”. CME FedWatch (ok. 7–8.10, źródło wtórne): podwyżka 28.10 – 18,3% (37,6% 30.09); Kalshi (7.10): podwyżka 16–19%, grudzień ok. 74% (źródła wtórne). Status 🔴 wynika z podwyżki z 16.09.",
-      "note_en": "25 bp hike on 16 Sep 2026 (unanimous). Minutes of 15–16 Sep (released 7 Oct): most participants judged that another increase 'would likely be appropriate by year end'. CME FedWatch (around 7–8 Oct, secondary source): 28 Oct hike – 18.3% (37.6% on 30 Sep); Kalshi (7 Oct): hike 16–19%, December about 74% (secondary sources). The 🔴 status follows from the 16 Sep hike.",
+      "note": "Podwyżka o 25 pb 16.09.2026 (jednogłośnie). Protokół z 15–16.09 (opublikowany 7.10): większość uczestników uznała, że kolejna podwyżka „prawdopodobnie będzie właściwa do końca roku”. CME FedWatch (ok. 7–8.10, źródło wtórne): podwyżka 28.10 – 18,3% (37,6% 30.09); Kalshi (7.10): podwyżka 16–19%, grudzień ok. 74% (źródła wtórne). Status 🔴 wynika z podwyżki z 16.09. Aktualizacja 12.10: CME FedWatch – szansa podwyżki 28.10 ok. 19–22% (Investing.com, źródło wtórne); kluczowy CPI za wrzesień 14.10.",
+      "note_en": "25 bp hike on 16 Sep 2026 (unanimous). Minutes of 15–16 Sep (released 7 Oct): most participants judged that another increase 'would likely be appropriate by year end'. CME FedWatch (around 7–8 Oct, secondary source): 28 Oct hike – 18.3% (37.6% on 30 Sep); Kalshi (7 Oct): hike 16–19%, December about 74% (secondary sources). The 🔴 status follows from the 16 Sep hike. Update 12 Oct: CME FedWatch – probability of a 28 Oct hike about 19–22% (Investing.com, secondary source); the key September CPI is on 14 Oct.",
       "status_since": "2026-10-06",
       "status_prev": "red"
     },
@@ -529,19 +529,14 @@
       "max_points": 30.0,
       "preliminary": false,
       "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "note": "AA v4.3.2: Claude Opus 5.5 (max) 57,6 vs MiMo-V2.6-Pro 46,3 = 11,3 pkt (19,6%); vs najlepszy zamknięty spoza Anthropic GPT-6 Astra (max) 52,7 = 6,4 pkt (12,1%). Epoch AI: opóźnienie ok. 4 mies. (V 2026) → 🟡. Lider to model Anthropic – potencjalny konflikt interesów.",
-      "note_en": "AA v4.3.2: Claude Opus 5.5 (max) 57.6 vs MiMo-V2.6-Pro 46.3 = 11.3 pts (19.6%); vs the best non-Anthropic closed model GPT-6 Astra (max) 52.7 = 6.4 pts (12.1%). Epoch AI: lag about 4 months (May 2026) → 🟡. The leader is an Anthropic model – potential conflict of interest.",
+      "note": "AA v4.3.2: Claude Opus 5.5 (max) 57,6 vs MiMo-V2.6-Pro 46,3 = 11,3 pkt (19,6%); vs najlepszy zamknięty spoza Anthropic GPT-6 Astra (max) 52,7 = 6,4 pkt (12,1%). Epoch AI: opóźnienie ok. 4 mies. (V 2026) → 🟡. Lider to model Anthropic – potencjalny konflikt interesów. Sprawdzenie 12.10: wersja indeksu nadal v4.3.2, lider bez zmian (Claude Opus 5.5 max ok. 58); Beam (Reflection AI, open-weight, zapowiedziany 5.10) bez wag i bez wyniku w indeksie.",
+      "note_en": "AA v4.3.2: Claude Opus 5.5 (max) 57.6 vs MiMo-V2.6-Pro 46.3 = 11.3 pts (19.6%); vs the best non-Anthropic closed model GPT-6 Astra (max) 52.7 = 6.4 pts (12.1%). Epoch AI: lag about 4 months (May 2026) → 🟡. The leader is an Anthropic model – potential conflict of interest. Check on 12 Oct: the index version is still v4.3.2, leader unchanged (Claude Opus 5.5 max about 58); Beam (Reflection AI, open-weight, announced 5 Oct) has no released weights and no index score.",
       "conflict_of_interest": true,
       "status_since": "2026-10-06",
       "status_prev": "yellow"
     }
   ],
   "calendar": [
-    {
-      "date": "2026-10-12",
-      "title": "Ramp AI Index za wrzesień (orientacyjnie 8–15.10); Columbus Day – rynek obligacji USA zamknięty",
-      "title_en": "Ramp AI Index for September (indicative 8–15 Oct); Columbus Day – US bond market closed"
-    },
     {
       "date": "2026-10-13",
       "title": "Milwaukee – głosowanie nad rocznym zakazem centrów danych",
@@ -554,13 +549,28 @@
     },
     {
       "date": "2026-10-15",
-      "title": "TSMC – wyniki III kw.; ASML – wyniki III kw.",
-      "title_en": "TSMC Q3 results; ASML Q3 results"
+      "title": "TSMC – wyniki III kw. (CoWoS, D5); ASML – wyniki III kw.",
+      "title_en": "TSMC Q3 results (CoWoS, D5); ASML Q3 results"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Ramp AI Index za wrzesień (orientacyjnie do 15.10; C1, G1, G3)",
+      "title_en": "Ramp AI Index for September (indicatively by 15 Oct; C1, G1, G3)"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Wygasa niepotwierdzony odczyt rekordu CDS Broadcomu (A5)",
+      "title_en": "The unconfirmed Broadcom CDS record reading expires (A5)"
     },
     {
       "date": "2026-10-28",
       "title": "Decyzja FOMC (27–28.10)",
       "title_en": "FOMC decision (27–28 Oct)"
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Koniec okna A8 dla wycofanego IPO Firmusa",
+      "title_en": "End of the A8 window for Firmus's withdrawn IPO"
     }
   ],
   "disclaimer": "To nie jest porada inwestycyjna.",

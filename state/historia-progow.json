@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10",
+  "updated": "2026-10-12",
   "note": "Odbudowane 2026-10-06 z odczytów w data/latest.json (pierwszy zapis pliku stanu).",
   "series": {
     "A4": [
@@ -36,15 +36,8 @@
     ],
     "C2": [
       {
-        "period": "BTOS -2",
-        "as_of": "2026-09-24",
-        "value": 22.4,
-        "unit": "%",
-        "source": "https://www.census.gov/hfp/btos/downloads/National.xlsx"
-      },
-      {
-        "period": "BTOS -1",
-        "as_of": "2026-09-24",
+        "period": "2026-08-10/2026-08-23",
+        "as_of": "2026-09-10",
         "value": 23.2,
         "unit": "%",
         "source": "https://www.census.gov/hfp/btos/downloads/National.xlsx"
@@ -52,6 +45,13 @@
       {
         "period": "2026-08-24/2026-09-06",
         "as_of": "2026-09-24",
+        "value": 23.8,
+        "unit": "%",
+        "source": "https://www.census.gov/hfp/btos/downloads/National.xlsx"
+      },
+      {
+        "period": "2026-09-07/2026-09-20",
+        "as_of": "2026-10-08",
         "value": 23.8,
         "unit": "%",
         "source": "https://www.census.gov/hfp/btos/downloads/National.xlsx"
@@ -75,10 +75,10 @@
         "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"
       },
       {
-        "period": "30d do 2026-10-09",
-        "as_of": "2026-10-09",
+        "period": "30d do 2026-10-11",
+        "as_of": "2026-10-11",
         "measure": "spot_30d",
-        "change_pct": -5.7,
+        "change_pct": -7.7,
         "direction": "down",
         "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"
       }
