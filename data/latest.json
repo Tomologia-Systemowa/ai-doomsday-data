@@ -6,10 +6,10 @@
   "band": "Pęknięcia",
   "band_en": "Cracks",
   "change_vs_previous": 0,
-  "headline": "419/1000 bez zmian: wynajem chipów AI wyraźnie podrożał w tym tygodniu, rynek długu spokojny przed wrześniową inflacją z USA.",
-  "headline_en": "419/1000, unchanged: renting AI chips got clearly more expensive this week, while the debt market stays calm ahead of US September inflation data.",
-  "summary": "419/1000 – bez zmian wobec wczorajszego raportu. Godzinowy wynajem chipów Nvidia H100 podrożał w tydzień o ok. 7–11% według dwóch niezależnych indeksów (Ornn, Silicon Data) – popyt na moc obliczeniową trzyma się, choć seria jest zmienna. Dodatkowa marża, jaką płacą najsłabsze firmy za pożyczki (spread obligacji śmieciowych), stoi na 3,11%. Akcje gigantów technologicznych zostają o ok. 2,3 pp w tyle za S&P 500. Kolejne władze lokalne w USA wstrzymują budowę centrów danych.",
-  "summary_en": "419/1000 – unchanged from yesterday's report. Hourly rental of Nvidia H100 chips rose about 7–11% over the week according to two independent indices (Ornn, Silicon Data) – demand for computing power is holding up, though the series is volatile. The extra margin the weakest companies pay to borrow (the high-yield spread) stands at 3.11%. Tech giants' shares lag the S&P 500 by about 2.3 pp. More local authorities in the US are pausing data-center construction.",
+  "headline": "419/1000 bez zmian: inflacja w USA wyższa od oczekiwań, rynek znów liczy się z podwyżką stóp w październiku, Oregon wstrzymuje pozwolenia dla centrów danych.",
+  "headline_en": "419/1000, unchanged: US inflation came in above expectations, the market again reckons with an October rate hike, and Oregon pauses permits for data centers.",
+  "summary": "419/1000 – bez zmian wobec porannego raportu. Inflacja w USA za wrzesień wyniosła 3,7% r/r, więcej niż oczekiwano, więc rynek wycenia ok. 39–49% szans na kolejną podwyżkę stóp Fed 28 października. Odsetek firm płacących za AI wzrósł we wrześniu do 55,9% (Ramp). Tymczasem Milwaukee zakazało na rok budowy centrów danych, a Oregon wstrzymał dla nich pozwolenia do lipca 2027 r. Firmy coraz chętniej płacą za AI, a władze coraz chętniej zamykają drzwi przed budynkami, w których ta AI ma działać.",
+  "summary_en": "419/1000 – unchanged from this morning's report. US inflation for September was 3.7% y/y, more than expected, so the market prices about a 39–49% chance of another Fed rate hike on 28 October. The share of businesses paying for AI rose to 55.9% in September (Ramp). Meanwhile Milwaukee banned data-center construction for a year, and Oregon paused permits for them until July 2027. Businesses are ever more willing to pay for AI, and authorities ever more willing to shut the door on the buildings where that AI is meant to run.",
   "report_file": "history/history-14-10-2026.json",
   "triggers": [],
   "triggers_en": [],
@@ -61,14 +61,14 @@
       "name_en": "High-yield spread",
       "value": null,
       "unit": "%",
-      "as_of": "2026-10-12",
+      "as_of": "2026-10-13",
       "status": "green",
       "points": 0.0,
       "max_points": 40.0,
       "preliminary": false,
       "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-      "note": "3,11% na 2026-10-12 (9.10: 3,11%; 8.10: 3,15%; 7.10: 3,09%; szczyt 3,24% 1.10) – stabilnie, poniżej progu 3,5%. Spread IG (BAMLC0A0CM) 0,83% (12.10).",
-      "note_en": "3.11% on 2026-10-12 (9 Oct: 3.11%; 8 Oct: 3.15%; 7 Oct: 3.09%; peak 3.24% on 1 Oct) – stable, below the 3.5% threshold. IG spread (BAMLC0A0CM) 0.83% (12 Oct).",
+      "note": "3,16% na 2026-10-13 (12.10: 3,11%; 9.10: 3,11%; 8.10: 3,15%; 7.10: 3,09%; szczyt 3,24% 1.10) – lekki wzrost, nadal poniżej progu 3,5%.",
+      "note_en": "3.16% on 2026-10-13 (12 Oct: 3.11%; 9 Oct: 3.11%; 8 Oct: 3.15%; 7 Oct: 3.09%; peak 3.24% on 1 Oct) – a slight rise, still below the 3.5% threshold.",
       "status_since": "2026-10-06",
       "status_prev": "green"
     },
@@ -141,8 +141,8 @@
       "max_points": 35.0,
       "preliminary": false,
       "source": "https://realinvestmentadvice.com/resources/blog/is-coreweave-at-the-mercy-of-the-bond-market/",
-      "note": "Obligacje CoreWeave 9,25% 2030: ok. 11,6% (16.09, źródło wtórne) vs rentowność IG 5,79% (DGS10 5,01% + BAMLC0A0CM 0,78%) = ok. 580 pb; RIA (4.09) podaje ok. 13% → ok. 740 pb. Dwa niezależne źródła wtórne powyżej 500 pb. Kontrprzykład: kredyt TLB Lambdy SOFR+300 z ratingiem Baa2 (22.09).",
-      "note_en": "CoreWeave 9.25% 2030 notes: about 11.6% (16 Sep, secondary source) vs IG yield 5.79% (DGS10 5.01% + BAMLC0A0CM 0.78%) = about 580 bp; RIA (4 Sep) gives about 13% → about 740 bp. Two independent secondary sources above 500 bp. Counterexample: Lambda's Baa2-rated TLB at SOFR+300 (22 Sep).",
+      "note": "Obligacje CoreWeave 9,25% 2030: ok. 11,6% (16.09, źródło wtórne) vs rentowność IG 5,79% (DGS10 5,01% + BAMLC0A0CM 0,78%) = ok. 580 pb; RIA (4.09) podaje ok. 13% → ok. 740 pb. Dwa niezależne źródła wtórne powyżej 500 pb. Kontrprzykład: kredyt TLB Lambdy SOFR+300 z ratingiem Baa2 (22.09). Nowe 14.10 (bez wpływu na status, pojedyncze źródło oparte na wpisach w mediach społecznościowych – HuggingNews za @zerohedge i innymi): niezabezpieczone obligacje CoreWeave miały 13.10 po raz pierwszy przekroczyć 1000 pb spreadu przy rentowności ok. 15% – niepotwierdzone, kierunek zgodny z 🔴.",
+      "note_en": "CoreWeave 9.25% 2030 notes: about 11.6% (16 Sep, secondary source) vs IG yield 5.79% (DGS10 5.01% + BAMLC0A0CM 0.78%) = about 580 bp; RIA (4 Sep) gives about 13% → about 740 bp. Two independent secondary sources above 500 bp. Counterexample: Lambda's Baa2-rated TLB at SOFR+300 (22 Sep). New on 14 Oct (no effect on status, a single source based on social-media posts – HuggingNews citing @zerohedge and others): CoreWeave's unsecured notes reportedly passed a 1,000 bp spread for the first time on 13 Oct at a yield of about 15% – unconfirmed, direction consistent with 🔴.",
       "status_since": "2026-10-06",
       "status_prev": "red"
     },
@@ -231,8 +231,8 @@
       "max_points": 50.0,
       "preliminary": false,
       "source": "https://ramp.com/data/ai-index-sept-2026",
-      "note": "Dane za VIII: mediana 10,92 → 11,88 → 12,50 USD (VI–VIII); top 10% 645 → 676 USD; top 1% −9,7% m/m; odsetek płacących 55,71% → 56,13%. Ramp AI Index za wrzesień jeszcze nieopublikowany (stan 12.10) – brak nowego odczytu.",
-      "note_en": "August data: median 10.92 → 11.88 → 12.50 USD (Jun–Aug); top 10% 645 → 676 USD; top 1% −9.7% m/m; share paying 55.71% → 56.13%. The Ramp AI Index for September not yet published (as of 12 Oct) – no new reading.",
+      "note": "Mediana wydatków (dane za VIII): 10,92 → 11,88 → 12,50 USD (VI–VIII); top 10% 645 → 676 USD. Ramp AI Index za wrzesień (opublikowany 14.10, https://ramp.com/data/ai-index-oct-2026; FRED RAMPAIALL): odsetek firm płacących za AI 55,86% (VIII po rewizji 55,24%, VII 54,84%) – dalszy wzrost; top 1% 9568 USD na pracownika miesięcznie, −3,1% od lipcowego szczytu 9873 USD. Publikacja nie podaje mediany ani top 10% za IX – brak nowego odczytu mediany, status bez zmian. Następna publikacja 11.11.",
+      "note_en": "Median spend (August data): 10.92 → 11.88 → 12.50 USD (Jun–Aug); top 10% 645 → 676 USD. Ramp AI Index for September (published 14 Oct, https://ramp.com/data/ai-index-oct-2026; FRED RAMPAIALL): share of businesses paying for AI 55.86% (August revised to 55.24%, July 54.84%) – a further rise; top 1% 9,568 USD per employee per month, −3.1% from the July peak of 9,873 USD. The release gives no median or top 10% for September – no new median reading, status unchanged. Next release 11 Nov.",
       "status_since": "2026-10-06",
       "status_prev": "green"
     },
@@ -424,14 +424,14 @@
       "name_en": "Fed policy",
       "value": "3,75–4,00",
       "unit": "%",
-      "as_of": "2026-10-08",
+      "as_of": "2026-10-14",
       "status": "red",
       "points": 50.0,
       "max_points": 50.0,
       "preliminary": false,
-      "source": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
-      "note": "Podwyżka o 25 pb 16.09.2026 (jednogłośnie). Protokół z 15–16.09 (opublikowany 7.10): większość uczestników uznała, że kolejna podwyżka „prawdopodobnie będzie właściwa do końca roku”. CME FedWatch (ok. 7–8.10, źródło wtórne): podwyżka 28.10 – 18,3% (37,6% 30.09); Kalshi (7.10): podwyżka 16–19%, grudzień ok. 74% (źródła wtórne). Status 🔴 wynika z podwyżki z 16.09. Aktualizacja 12.10: CME FedWatch – szansa podwyżki 28.10 ok. 19–22% (Investing.com, źródło wtórne); kluczowy CPI za wrzesień 14.10.",
-      "note_en": "25 bp hike on 16 Sep 2026 (unanimous). Minutes of 15–16 Sep (released 7 Oct): most participants judged that another increase 'would likely be appropriate by year end'. CME FedWatch (around 7–8 Oct, secondary source): 28 Oct hike – 18.3% (37.6% on 30 Sep); Kalshi (7 Oct): hike 16–19%, December about 74% (secondary sources). The 🔴 status follows from the 16 Sep hike. Update 12 Oct: CME FedWatch – probability of a 28 Oct hike about 19–22% (Investing.com, secondary source); the key September CPI is on 14 Oct.",
+      "source": "https://www.cnn.com/2026/10/14/economy/us-cpi-inflation-september",
+      "note": "Podwyżka o 25 pb 16.09.2026 (jednogłośnie); protokół z 15–16.09: większość uczestników uznała kolejną podwyżkę do końca roku za prawdopodobnie właściwą. CPI za wrzesień (BLS, 14.10): +0,6% m/m, 3,7% r/r (VIII: 3,4%, konsensus 3,6%), bazowa 2,6% r/r (konsensus 2,5%); paliwa +9,1% m/m. Po publikacji CME FedWatch wycenia podwyżkę 28.10 na ok. 39–49% według różnych migawek (ok. 22% dzień wcześniej; jedno źródło podaje 54%), Polymarket 43% (źródła wtórne: Invezz, Blockonomi, KuCoin) – rozbieżne odczyty wokół progu 50%. Status 🔴 wynika z podwyżki z 16.09, niezależnie od wyceny.",
+      "note_en": "25 bp hike on 16 Sep 2026 (unanimous); minutes of 15–16 Sep: most participants judged another hike by year end likely appropriate. September CPI (BLS, 14 Oct): +0.6% m/m, 3.7% y/y (August: 3.4%, consensus 3.6%), core 2.6% y/y (consensus 2.5%); gasoline +9.1% m/m. After the release CME FedWatch prices a 28 Oct hike at about 39–49% depending on the snapshot (about 22% a day earlier; one source gives 54%), Polymarket 43% (secondary sources: Invezz, Blockonomi, KuCoin) – readings diverge around the 50% threshold. The 🔴 status follows from the 16 Sep hike, regardless of pricing.",
       "status_since": "2026-10-06",
       "status_prev": "red"
     },
@@ -442,14 +442,14 @@
       "name_en": "Data center power and infrastructure",
       "value": null,
       "unit": null,
-      "as_of": "2026-10-12",
+      "as_of": "2026-10-13",
       "status": "q75",
       "points": 37.5,
       "max_points": 50.0,
       "preliminary": false,
-      "source": "https://www.actionnews5.com/2026/10/13/first-city-now-county-debates-data-center-temporary-moratorium/",
-      "note": "FERC 29.09 tylko częściowo zatwierdził awaryjną procedurę PJM (6,8 GW niedoboru na 2028/29), przetarg wstrzymany. Fala lokalnych moratoriów w październiku: Raleigh (6 mies.) i Oakland (45 dni) 6.10, San Francisco (45 dni, 6.10), Brighton CO (rok, wycofany wniosek o kampus 155 akrów); głosowanie w Milwaukee 13.10; szef CDC Data Centres powiedział, że planowany z Firmusem projekt 1,6 GW w Australii nie jest już realizowany (Reuters 9.10; zdarzenie liczone w A8 jako część wycofanego IPO) – obraz q75 bez zmian. Sprawdzenie 12.10 wieczorem: komisja Rady Miejskiej Milwaukee jednogłośnie poparła roczny zakaz 6.10, ale termin głosowania całej Rady nie jest potwierdzony – prawo stanowe wymaga wcześniej wysłuchania publicznego, które może odbyć się dopiero w listopadzie (Urban Milwaukee, CBS 58 – źródła wtórne). Nowe 12.10: Shelby County (Tennessee) przyjął w pierwszym czytaniu tymczasowe wstrzymanie budowy centrów danych (Action News 5, lokalne źródło); Dover (Delaware) głosował 12.10 nad 18-miesięcznym moratorium – wynik niepotwierdzony. Brak nowych anulowań projektów i nowych informacji z PJM – q75 bez zmian. Nowe 12.10: Shelby County (Tennessee) przyjął w pierwszym czytaniu tymczasowe wstrzymanie budowy centrów danych (Action News 5, lokalne źródło); Dover (Delaware) głosował 12.10 nad 18-miesięcznym moratorium – wynik niepotwierdzony. Brak nowych anulowań projektów i nowych informacji z PJM – q75 bez zmian.",
-      "note_en": "On 29 Sep FERC only partly approved PJM's emergency procurement (6.8 GW shortfall for 2028/29), the auction is suspended. A wave of local moratoria in October: Raleigh (6 months) and Oakland (45 days) on 6 Oct, San Francisco (45 days, 6 Oct), Brighton CO (one year, a 155-acre campus application withdrawn); Milwaukee votes on 13 Oct; CDC Data Centres' CEO said the planned 1.6 GW project with Firmus in Australia is no longer underway (Reuters 9 Oct; counted in A8 as part of the withdrawn IPO) – the q75 picture is unchanged. Check on the evening of 12 Oct: a Milwaukee Common Council committee unanimously backed the one-year ban on 6 Oct, but the date of the full Council vote is not confirmed – state law first requires a public hearing, which may only take place in November (Urban Milwaukee, CBS 58 – secondary sources). New on 12 Oct: Shelby County (Tennessee) passed on first reading a temporary pause on data-center construction (Action News 5, local source); Dover (Delaware) voted on 12 Oct on an 18-month moratorium – outcome unconfirmed. No new project cancellations and no new PJM news – q75 unchanged. New on 12 Oct: Shelby County (Tennessee) passed on first reading a temporary pause on data-center construction (Action News 5, local source); Dover (Delaware) voted on 12 Oct on an 18-month moratorium – outcome unconfirmed. No new project cancellations and no new PJM news – q75 unchanged.",
+      "source": "https://oregoncapitalchronicle.com/2026/10/13/oregon-governor-orders-pause-on-environmental-permits-to-build-or-expand-data-centers/",
+      "note": "FERC 29.09 tylko częściowo zatwierdził awaryjną procedurę PJM (6,8 GW niedoboru na 2028/29), przetarg wstrzymany. Fala lokalnych moratoriów w październiku: Raleigh, Oakland, San Francisco (6.10), Brighton CO, Dover DE (18 mies., 12.10), Shelby County TN (pierwsze czytanie). Nowe: Rada Miejska Milwaukee 13.10 jednogłośnie (13–0) przyjęła roczny zakaz budowy i rozbudowy centrów danych (Urban Milwaukee); gubernator Oregonu Tina Kotek listem z 9.10 (ujawnionym 13.10) poleciła stanowej agencji środowiskowej DEQ wstrzymać do 1.07.2027 nowe pozwolenia wodne i powietrzne dla centrów danych – de facto pierwsze stanowe wstrzymanie w dużym hubie (Oregon Capital Chronicle, OPB, DCD); może dotknąć planowany kampus Amazona w Boardman. Dalej Forest Grove OR (120 dni) i Elizabeth City NC (18 mies.). Brak nowych anulowań projektów i nowych informacji z PJM; budowy z wydanymi pozwoleniami trwają – q75, blisko q100.",
+      "note_en": "On 29 Sep FERC only partly approved PJM's emergency procurement (6.8 GW shortfall for 2028/29), the auction is suspended. A wave of local moratoria in October: Raleigh, Oakland, San Francisco (6 Oct), Brighton CO, Dover DE (18 months, 12 Oct), Shelby County TN (first reading). New: Milwaukee's Common Council on 13 Oct unanimously (13–0) adopted a one-year ban on building and expanding data centers (Urban Milwaukee); Oregon Governor Tina Kotek, in a letter dated 9 Oct (made public 13 Oct), told the state environmental agency DEQ to pause new water and air permits for data centers until 1 Jul 2027 – in effect the first state-level pause in a major hub (Oregon Capital Chronicle, OPB, DCD); it may affect Amazon's planned campus in Boardman. Also Forest Grove OR (120 days) and Elizabeth City NC (18 months). No new project cancellations and no new PJM news; construction with permits already issued continues – q75, near q100.",
       "status_since": "2026-10-06",
       "status_prev": "q75"
     },
@@ -530,34 +530,9 @@
   ],
   "calendar": [
     {
-      "date": "2026-10-14",
-      "title": "CPI za wrzesień (konsensus 3,6% r/r)",
-      "title_en": "September CPI (consensus 3.6% y/y)"
-    },
-    {
-      "date": "2026-10-14",
-      "title": "CPI za wrzesień (konsensus 3,6% r/r)",
-      "title_en": "September CPI (consensus 3.6% y/y)"
-    },
-    {
-      "date": "2026-10-14",
-      "title": "Beżowa Księga Fed (październik)",
-      "title_en": "Fed Beige Book (October)"
-    },
-    {
-      "date": "2026-10-14",
-      "title": "Beżowa Księga Fed (październik)",
-      "title_en": "Fed Beige Book (October)"
-    },
-    {
       "date": "2026-10-15",
       "title": "TSMC – wyniki III kw. (CoWoS, D5); ASML – wyniki III kw.",
       "title_en": "TSMC Q3 results (CoWoS, D5); ASML Q3 results"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "Ramp AI Index za wrzesień (orientacyjnie do 15.10; C1, G1, G3)",
-      "title_en": "Ramp AI Index for September (indicatively by 15 Oct; C1, G1, G3)"
     },
     {
       "date": "2026-10-17",
@@ -573,6 +548,11 @@
       "date": "2026-11-08",
       "title": "Koniec okna A8 dla wycofanego IPO Firmusa",
       "title_en": "End of the A8 window for Firmus's withdrawn IPO"
+    },
+    {
+      "date": "2026-11-11",
+      "title": "Ramp AI Index za październik (C1, G1, G3)",
+      "title_en": "Ramp AI Index for October (C1, G1, G3)"
     }
   ],
   "disclaimer": "To nie jest porada inwestycyjna.",
