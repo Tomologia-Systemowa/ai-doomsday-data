@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12",
+  "updated": "2026-10-14",
   "note": "Odbudowane 2026-10-06 z odczytów w data/latest.json (pierwszy zapis pliku stanu).",
   "series": {
     "A4": [
@@ -59,14 +59,6 @@
     ],
     "D1": [
       {
-        "period": "2026-08",
-        "as_of": "2026-10-05",
-        "measure": "spot_monthly_avg",
-        "change_pct": 5.3,
-        "direction": "up",
-        "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"
-      },
-      {
         "period": "2026-09",
         "as_of": "2026-10-05",
         "measure": "spot_monthly_avg",
@@ -80,6 +72,14 @@
         "measure": "spot_30d",
         "change_pct": -7.7,
         "direction": "down",
+        "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"
+      },
+      {
+        "period": "30d do 2026-10-13",
+        "as_of": "2026-10-13",
+        "measure": "spot_30d",
+        "change_pct": 14.0,
+        "direction": "up",
         "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"
       }
     ],
