@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-10-16T08:58:05+02:00",
+  "updated_at": "2026-10-16T15:26:52+02:00",
   "files": [
     {
       "date": "2026-10-04",
@@ -90,8 +90,8 @@
       "date": "2026-10-16",
       "file": "history-16-10-2026.json",
       "kind": "short",
-      "score": 406,
-      "band": "Pęknięcia"
+      "score": 399,
+      "band": "Przegrzanie"
     }
   ]
 }

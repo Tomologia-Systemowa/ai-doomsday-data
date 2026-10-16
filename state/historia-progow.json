@@ -132,6 +132,15 @@
         "index_version": "v4.3.2",
         "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index"
       }
+    ],
+    "D6": [
+      {
+        "period": "2026-09",
+        "as_of": "2026-10-01",
+        "value": 322,
+        "unit": "% r/r na dzień roboczy",
+        "source": "https://www.koreatimes.co.kr/economy/20261001/koreas-monthly-exports-hit-1209-bil-in-sept-on-record-chip-sales (60,3 mld USD, +263% r/r; 21,5 vs 25 dni roboczych – wyliczenie własne)"
+      }
     ]
   }
 }
