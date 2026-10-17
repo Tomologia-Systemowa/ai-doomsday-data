@@ -77,7 +77,7 @@ don't add them.
   (kept while the status matches the previous `latest.json`, otherwise the report date).
   Used for the calibration review; published in the JSON.
 
-Full report: all 28 signals. Short report: only changed ones; the script carries the rest
+Full report: all 30 signals. Short report: only changed ones; the script carries the rest
 over from the previous `latest.json` (pass it via `--previous`).
 
 `events`: only events dated on the report day (credit_light, credit_heavy, rating,
