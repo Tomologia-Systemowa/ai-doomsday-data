@@ -1,7 +1,7 @@
 {
   "schema_version": "1.2",
   "date": "2026-10-20",
-  "updated_at": "2026-10-20T08:57:16+02:00",
+  "updated_at": "2026-10-20T21:55:21+02:00",
   "entry": {
     "kind": "short",
     "score": 399,
@@ -16,13 +16,13 @@
       "F": 37.5,
       "G": 27.5
     },
-    "headline": "399/1000, bez zmian: koszt ubezpieczenia długu SoftBanku najwyższy od 2022 r., KOSPI traci 3,7%, a wynajem GPU w ciągu miesiąca podrożał o 4,6%.",
-    "headline_en": "399/1000, unchanged: the cost of insuring SoftBank's debt is the highest since 2022, the KOSPI loses 3.7%, and GPU rental got 4.6% dearer over the month."
+    "headline": "399/1000, bez zmian: wieczorem bez nowych zdarzeń kredytowych, spread obligacji śmieciowych lekko w dół do 3,29%.",
+    "headline_en": "399/1000, unchanged: no new credit events by the evening, the junk-bond spread eased slightly to 3.29%."
   },
   "events": [],
   "report": {
-    "summary": "399/1000 – bez zmian wobec poniedziałku. CDS SoftBanku, czyli cena ubezpieczenia od jego niewypłacalności, wzrósł do 432 pb – najwyżej od listopada 2022 r. (Bloomberg, źródło wtórne). Koreański KOSPI spadł o 3,73%, SK hynix o 4,22%, przy wątpliwościach co do zwrotu z inwestycji w infrastrukturę AI. Nowych zdarzeń kredytowych nie było. Tymczasem godzina wynajmu GPU H100 jest o 4,6% droższa niż miesiąc temu – inwestorzy sprzedają producentów pamięci w obawie o popyt, za który najemcy płacą coraz więcej.",
-    "summary_en": "399/1000 – unchanged from Monday. SoftBank's CDS, i.e. the price of insurance against its default, rose to 432 bp – the highest since November 2022 (Bloomberg, secondary source). Korea's KOSPI fell 3.73% and SK hynix 4.22% amid doubts about the return on AI infrastructure investment. There were no new credit events. Meanwhile an hour of H100 GPU rental costs 4.6% more than a month ago – investors are selling memory makers over fears about demand that renters are paying ever more for.",
+    "summary": "399/1000 – bez zmian wobec poniedziałku i porannego raportu. Wieczorny przegląd nie przyniósł nowych zdarzeń kredytowych ani rekordów CDS (ceny ubezpieczenia od niewypłacalności) poza już odnotowanymi. Spread obligacji śmieciowych, czyli dopłata za pożyczanie firmom o słabszej wiarygodności, spadł lekko do 3,29% (FRED, 19.10). Zamknięcia rentowności Treasury za 20.10 jeszcze nie opublikowano. Jutro wyniki Mety i koreański eksport za 1–20 października.",
+    "summary_en": "399/1000 – unchanged from Monday and from the morning report. The evening review brought no new credit events or CDS records (prices of insurance against default) beyond those already recorded. The junk-bond spread, i.e. the extra charge for lending to less creditworthy companies, eased slightly to 3.29% (FRED, 19 Oct). Treasury closing yields for 20 Oct have not been published yet. Tomorrow brings Meta's results and Korea's exports for 1–20 October.",
     "curve_comment": null,
     "curve_comment_en": null,
     "category_comments": null,
@@ -80,14 +80,14 @@
         "name_en": "High-yield spread",
         "value": null,
         "unit": "%",
-        "as_of": "2026-10-16",
+        "as_of": "2026-10-19",
         "status": "green",
         "points": 0.0,
         "max_points": 40.0,
         "preliminary": false,
         "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "note": "3,31% na 2026-10-16 (15.10: 3,23%; 14.10: 3,25%; 9.10: 3,11%) – najwyższy odczyt października, nadal poniżej progu 3,5%.",
-        "note_en": "3.31% on 2026-10-16 (15 Oct: 3.23%; 14 Oct: 3.25%; 9 Oct: 3.11%) – the highest reading of October, still below the 3.5% threshold.",
+        "note": "3,29% na 2026-10-19 (16.10: 3,31%; 15.10: 3,23%; 14.10: 3,25%) – lekki spadek po najwyższym odczycie października, nadal poniżej progu 3,5%.",
+        "note_en": "3.29% on 2026-10-19 (16 Oct: 3.31%; 15 Oct: 3.23%; 14 Oct: 3.25%) – a slight decline after October's highest reading, still below the 3.5% threshold.",
         "status_since": "2026-10-06",
         "status_prev": "green"
       },
@@ -585,13 +585,13 @@
     "calendar": [
       {
         "date": "2026-10-20",
-        "title": "Shelby County/Memphis – głosowanie nad rocznym moratorium na centra danych (F1)",
-        "title_en": "Shelby County/Memphis – vote on a one-year data-center moratorium (F1)"
+        "title": "Rada Miejska Memphis – głosowanie nad moratorium na centra danych (F1); wynik jeszcze nieopublikowany",
+        "title_en": "Memphis City Council – vote on a data-center moratorium (F1); result not yet published"
       },
       {
         "date": "2026-10-21",
-        "title": "Meta – wyniki III kw. po sesji (B1, B3); Korea: eksport za 1–20.10 (D6); Texas Instruments – wyniki III kw.",
-        "title_en": "Meta Q3 results after the close (B1, B3); Korea: exports for 1–20 Oct (D6); Texas Instruments Q3 results"
+        "title": "Meta – wyniki III kw. po sesji (B1, B3); Korea: eksport za 1–20.10 (D6); Texas Instruments – wyniki III kw.; Komisja hrabstwa Shelby – posiedzenie, alternatywny projekt regulacji centrów danych (F1)",
+        "title_en": "Meta Q3 results after the close (B1, B3); Korea: exports for 1–20 Oct (D6); Texas Instruments Q3 results; Shelby County Commission meeting, alternative data-center regulation proposal (F1)"
       },
       {
         "date": "2026-10-22",
