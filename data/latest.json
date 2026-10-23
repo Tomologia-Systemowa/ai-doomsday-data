@@ -1,16 +1,16 @@
 {
   "schema_version": "1.2",
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "report_type": "short",
   "score": 400,
   "band": "Przegrzanie",
   "band_en": "Overheating",
-  "change_vs_previous": 1,
-  "headline": "Dzień po podniesieniu przez Metę dolnej granicy capeksu do 135 mld USD koszt ubezpieczenia jej długu od niewypłacalności pobił rekord.",
-  "headline_en": "A day after Meta raised the floor of its capex to USD 135bn, the cost of insuring its debt against default hit a record.",
-  "summary": "400/1000 – bez zmian wobec porannego raportu i o 1 punkt więcej niż w środę, na granicy przedziałów. Po wynikach Mety jej 5-letni CDS (cena ubezpieczenia od niewypłacalności) wzrósł do rekordowych 114,79 pb (Reuters, dane Markit); akcje Mety straciły ok. 7%, Nasdaq ok. 2,6%. Inwestorzy przenieśli się do obligacji: 10-latka USA spadła o 17 pb do 4,96%. Meta zapowiada wydać więcej, a rynek żąda więcej za ubezpieczenie jej długu.",
-  "summary_en": "400/1000 – unchanged from the morning report and 1 point higher than on Wednesday, at the band boundary. After Meta's results its 5-year CDS (the price of insurance against default) rose to a record 114.79 bp (Reuters, Markit data); Meta shares lost about 7%, the Nasdaq about 2.6%. Investors moved into bonds: the US 10-year fell 17 bp to 4.96%. Meta plans to spend more, and the market asks more to insure its debt.",
-  "report_file": "history/history-22-10-2026.json",
+  "change_vs_previous": 0,
+  "headline": "Globalne spready obligacji firm najszersze od 17 miesięcy przy wyprzedaży spółek AI, a stawki najmu chipów H100 wciąż rosną.",
+  "headline_en": "Global corporate bond spreads are the widest in 17 months amid the AI stock sell-off, while H100 chip rental rates keep rising.",
+  "summary": "400/1000 – bez zmian wobec czwartku i o 1 punkt więcej niż w poniedziałek (399). Według Bloomberga (23.10) globalny indeks spreadów obligacji firm, czyli dopłaty za pożyczanie firmom zamiast państwu, wzrósł do 129 pb – najwyżej od maja 2025 – przy wyprzedaży spółek AI. Census: odsetek firm używających AI wzrósł do 24,6%. Stawki najmu GPU H100 są o 10,5% wyższe niż miesiąc temu (Ornn). Pożyczkodawcy żądają więcej od spółek AI, a wynajem ich chipów drożeje.",
+  "summary_en": "400/1000 – unchanged from Thursday and 1 point higher than on Monday (399). According to Bloomberg (23 Oct), a global corporate bond spread index – the extra pay for lending to companies rather than to governments – rose to 129 bp, the widest since May 2025, amid the AI stock sell-off. Census: the share of firms using AI rose to 24.6%. H100 GPU rental rates are 10.5% higher than a month ago (Ornn). Lenders ask more from AI companies, while renting their chips gets more expensive.",
+  "report_file": "history/history-23-10-2026.json",
   "triggers": [],
   "triggers_en": [],
   "heavy_credit_event": false,
@@ -51,8 +51,8 @@
       "max_points": 44.44,
       "preliminary": false,
       "source": "https://www.pennmutualam.com/market-insights-news/blogs/chart-of-the-week/2026-08-06-ai-infrastructure-bonds-a-full-picture-of-spreads",
-      "note": "Obligacje hiperskalerów ok. 35 pb ponad indeks IG (koniec lipca 2026, Penn Mutual AM za Bloombergiem, źródło wtórne); wrześniowy odczyt ok. 37 pb niepotwierdzony. Spread IG (BAMLC0A0CM) 0,85% na 2026-10-16 (FRED). Brak nowego odczytu premii AI – ostatni z końca lipca 2026.",
-      "note_en": "Hyperscaler bonds about 35 bp over the IG index (end of July 2026, Penn Mutual AM citing Bloomberg, secondary source); a September reading of about 37 bp is unconfirmed. IG spread (BAMLC0A0CM) 0.85% on 2026-10-16 (FRED). No new AI premium reading – the last one is from end of July 2026.",
+      "note": "Obligacje hiperskalerów ok. 35 pb ponad indeks IG (koniec lipca 2026, Penn Mutual AM za Bloombergiem, źródło wtórne); wrześniowy odczyt ok. 37 pb niepotwierdzony. Spread IG (BAMLC0A0CM) 0,85% na 2026-10-16 (FRED). Brak nowego odczytu premii AI – ostatni z końca lipca 2026. Nowe 22–23.10 (nota, bez zmiany statusu): Bloomberg (23.10) – globalny indeks spreadów obligacji korporacyjnych wzrósł do 129 pb, najwyżej od maja 2025, przy wyprzedaży spółek AI; indeks spreadów hiperskalerów Goldman Sachs (GSUCHS30) najszerszy w tym roku (źródła wtórne, bez poziomu w pb); obligacje Mety 5,25% z terminem 2036 – spread +6 pb do 1,2 pp (Trace, za Bloombergiem). Brak nowego odczytu premii AI w pb wobec całego rynku IG – blisko progu 🔴 nie do oceny; odczyt z lipca wygaśnie 29.10.",
+      "note_en": "Hyperscaler bonds about 35 bp over the IG index (end of July 2026, Penn Mutual AM citing Bloomberg, secondary source); a September reading of about 37 bp is unconfirmed. IG spread (BAMLC0A0CM) 0.85% on 2026-10-16 (FRED). No new AI premium reading – the last one is from end of July 2026. New 22–23 Oct (note, no status change): Bloomberg (23 Oct) – a global corporate bond spread index rose to 129 bp, the widest since May 2025, amid the AI stock sell-off; the Goldman Sachs hyperscaler spread index (GSUCHS30) is at its widest this year (secondary sources, no level in bp); Meta's 5.25% notes due 2036 – spread +6 bp to 1.2 pp (Trace, citing Bloomberg). No new reading of the AI premium in bp versus the whole IG market – closeness to the 🔴 threshold cannot be judged; the July reading expires on 29 Oct.",
       "status_since": "2026-10-06",
       "status_prev": "yellow"
     },
@@ -244,16 +244,16 @@
       "category": "C",
       "name": "Census BTOS: adopcja AI",
       "name_en": "Census BTOS: AI adoption",
-      "value": 23.8,
+      "value": 24.6,
       "unit": "%",
-      "as_of": "2026-10-08",
+      "as_of": "2026-10-22",
       "status": "green",
       "points": 0.0,
       "max_points": 25.0,
       "preliminary": false,
       "source": "https://www.census.gov/hfp/btos/downloads/National.xlsx",
-      "note": "BTOS: 22,4% → 23,2% → 23,8% → 23,8% (okresy odniesienia do 6.09 i 7–20.09; ostatni opublikowany 8.10) – wzrost w poprzednich odczytach, ostatni płaski. Jeden płaski odczyt nie spełnia warunku 🟡 (płasko 2+ odczyty) – blisko progu.",
-      "note_en": "BTOS: 22.4% → 23.2% → 23.8% → 23.8% (reference periods to 6 Sep and 7–20 Sep; latest published 8 Oct) – rising in earlier readings, the latest flat. One flat reading does not meet the 🟡 condition (flat 2+ readings) – near threshold.",
+      "note": "BTOS: 23,2% → 23,8% → 23,8% → 24,6% (okresy odniesienia: do 6.09, 7–20.09, 21.09–4.10; najnowszy cykl 202621 opublikowany ok. 22.10, Census National.xlsx) – po jednym płaskim odczycie ponowny wzrost; warunek 🟡 (płasko 2+ odczyty) odsunięty.",
+      "note_en": "BTOS: 23.2% → 23.8% → 23.8% → 24.6% (reference periods: to 6 Sep, 7–20 Sep, 21 Sep–4 Oct; latest cycle 202621 published around 22 Oct, Census National.xlsx) – after one flat reading, rising again; the 🟡 condition (flat 2+ readings) moves further away.",
       "status_since": "2026-10-06",
       "status_prev": "green"
     },
@@ -301,14 +301,14 @@
       "name_en": "GPU rental rates",
       "value": null,
       "unit": "% (30 dni, H100)",
-      "as_of": "2026-10-21",
+      "as_of": "2026-10-22",
       "status": "yellow",
       "points": 20.0,
       "max_points": 40.0,
       "preliminary": false,
       "source": "https://data.ornn.com/markets/h100-sxm",
-      "note": "Ornn OCPI H100 (rozliczenie 21.10): −1,0% d/d, −3,7% w 7 dni, +10,8% w 30 dni (20.10: +17,7% w 30 dni; 19.10: +4,6%; 18.10: −7,0%) – zmiana 30-dniowa dodatnia, ale przy bardzo dużej zmienności dziennej. 🟡 utrzymane do potwierdzenia kierunku w średniej miesięcznej za październik. Silicon Data SDH100RT (14.10): +7,1% w 7 dni. Brak świeżych stawek kontraktowych 1-rocznych (krzywe terminowe Ornn tylko w dostępie płatnym).",
-      "note_en": "Ornn OCPI H100 (21 Oct settlement): −1.0% d/d, −3.7% over 7 days, +10.8% over 30 days (20 Oct: +17.7% over 30 days; 19 Oct: +4.6%; 18 Oct: −7.0%) – the 30-day change is positive, but with very high daily volatility. 🟡 kept until the direction is confirmed in the October monthly average. Silicon Data SDH100RT (14 Oct): +7.1% over 7 days. No fresh 1-year contract rates (Ornn forward curves are paywalled only).",
+      "note": "Ornn OCPI H100 (rozliczenie 22.10): +1,9% d/d, +0,6% w 7 dni, +10,5% w 30 dni (21.10: −1,0% d/d, +10,8% w 30 dni; 20.10: +17,7%) – zmiana 30-dniowa dodatnia trzeci dzień z rzędu, przy dużej zmienności dziennej. 🟡 utrzymane do potwierdzenia kierunku w średniej miesięcznej za październik. Brak świeżych stawek kontraktowych 1-rocznych (krzywe terminowe Ornn tylko w dostępie płatnym).",
+      "note_en": "Ornn OCPI H100 (22 Oct settlement): +1.9% d/d, +0.6% over 7 days, +10.5% over 30 days (21 Oct: −1.0% d/d, +10.8% over 30 days; 20 Oct: +17.7%) – the 30-day change positive for the third day in a row, with high daily volatility. 🟡 kept until the direction is confirmed in the October monthly average. No fresh 1-year contract rates (Ornn forward curves are paywalled only).",
       "status_since": "2026-10-06",
       "status_prev": "yellow"
     },
@@ -460,16 +460,16 @@
       "category": "E",
       "name": "Bank Japonii i carry trade na jenie",
       "name_en": "Bank of Japan and the yen carry trade",
-      "value": 156.84,
+      "value": 157.0,
       "unit": "JPY/USD",
-      "as_of": "2026-10-22",
+      "as_of": "2026-10-23",
       "status": "yellow",
       "points": 10.0,
       "max_points": 20.0,
       "preliminary": false,
-      "source": "https://finance.yahoo.com/quote/JPY=X/",
-      "note": "BoJ podniósł 18.09 stopę o 25 pb do ok. 1,25% (głosowanie 7–2; Jiji/nippon.com, Nation Thailand – dwa źródła wtórne) – podwyżka w ostatnich 3 miesiącach → 🟡. USD/JPY 22.10 ok. 156,84 (Yahoo Finance – źródło wtórne; 21.10 ok. 158,27) – jen umocnił się o ok. 0,9% w dniu wyprzedaży akcji technologicznych, ale wobec ok. 153,5 przed miesiącem nadal słabszy, warunek 🔴 niespełniony. Rynek oczekuje kolejnej podwyżki BoJ najpewniej 17.12, nie 30.10 (FXStreet 21.10). 10-letnie JGB tylko jako potwierdzenie.",
-      "note_en": "The BoJ raised its rate by 25 bp to about 1.25% on 18 Sep (7–2 vote; Jiji/nippon.com, Nation Thailand – two secondary sources) – a hike in the last 3 months → 🟡. USD/JPY on 22 Oct about 156.84 (Yahoo Finance – secondary source; 21 Oct about 158.27) – the yen strengthened by about 0.9% on the day of the tech sell-off, but against about 153.5 a month ago it is still weaker, the 🔴 condition is not met. The market expects the next BoJ hike most likely on 17 Dec, not 30 Oct (FXStreet 21 Oct). The 10-year JGB only as confirmation.",
+      "source": "https://investinglive.com/central-banks/most-analysts-now-expect-the-next-boj-rate-hike-in-december-none-see-october-move-bloomberg/",
+      "note": "BoJ podniósł 18.09 stopę o 25 pb do ok. 1,25% – podwyżka w ostatnich 3 miesiącach → 🟡. USD/JPY rano 23.10 ok. 157,00 (FXStreet – źródło wtórne; 22.10 ok. 156,84 wg Yahoo Finance) – wobec ok. 153,5 przed miesiącem jen słabszy, warunek 🔴 niespełniony. Wycena OIS: podwyżka 30.10 ok. 4–5,5%, do grudnia ok. 80–84% (JKN za danymi z 22.10; FXStreet 23.10); w ankiecie Bloomberga żaden ekonomista nie oczekuje ruchu 30.10, 83% wskazuje grudzień (InvestingLive za Bloombergiem). Nie przekracza 50% dla najbliższego posiedzenia.",
+      "note_en": "The BoJ raised its rate by 25 bp to about 1.25% on 18 Sep – a hike in the last 3 months → 🟡. USD/JPY on the morning of 23 Oct about 157.00 (FXStreet – secondary source; 22 Oct about 156.84 per Yahoo Finance) – against about 153.5 a month ago the yen is weaker, the 🔴 condition is not met. OIS pricing: a hike on 30 Oct about 4–5.5%, by December about 80–84% (JKN citing 22 Oct data; FXStreet 23 Oct); in a Bloomberg survey no economist expects a move on 30 Oct, 83% point to December (InvestingLive citing Bloomberg). Below 50% for the next meeting.",
       "status_since": "2026-10-16"
     },
     {
@@ -567,19 +567,29 @@
   ],
   "calendar": [
     {
-      "date": "2026-10-23",
-      "title": "Piątkowa analiza tygodniowa; odczyt spreadów HY i IG po wyprzedaży z 22.10 (A3)",
-      "title_en": "Friday weekly analysis; HY and IG spread readings after the 22 Oct sell-off (A3)"
-    },
-    {
       "date": "2026-10-26",
-      "title": "Początek tygodnia wyników Alphabetu, Microsoftu i Amazona (B1, B3)",
-      "title_en": "Start of the earnings week for Alphabet, Microsoft and Amazon (B1, B3)"
+      "title": "Początek tygodnia wyników hiperskalerów: Microsoft i Alphabet (27–28.10, terminy niepotwierdzone), Amazon 29.10 (B1, B3)",
+      "title_en": "Start of hyperscaler earnings week: Microsoft and Alphabet (27–28 Oct, dates unconfirmed), Amazon on 29 Oct (B1, B3)"
     },
     {
       "date": "2026-10-27",
-      "title": "FOMC 27–28.10 (E3); A6: wygasa 90-dniowe okno stanowiska SEC; SK hynix – wyniki III kw. 28.10 (D3, D5); BoJ 29–30.10 (E4)",
-      "title_en": "FOMC 27–28 Oct (E3); A6: the 90-day window of the SEC position expires; SK hynix Q3 results on 28 Oct (D3, D5); BoJ 29–30 Oct (E4)"
+      "title": "FOMC 27–28.10 (E3); A6: wygasa 90-dniowe okno stanowiska SEC; SK hynix – wyniki III kw. 27–28.10 wg różnych źródeł (D3, D5)",
+      "title_en": "FOMC 27–28 Oct (E3); A6: the 90-day window of the SEC position expires; SK hynix Q3 results 27–28 Oct per different sources (D3, D5)"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Amazon – wyniki III kw. (B1, B3); BoJ 29–30.10 (E4); wygasa lipcowy odczyt premii AI (A2)",
+      "title_en": "Amazon Q3 results (B1, B3); BoJ 29–30 Oct (E4); the July AI premium reading expires (A2)"
+    },
+    {
+      "date": "2026-11-01",
+      "title": "Eksport Korei Płd. za październik (D6)",
+      "title_en": "South Korea's October exports (D6)"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "ISM Manufacturing za październik (E1)",
+      "title_en": "ISM Manufacturing for October (E1)"
     }
   ],
   "disclaimer": "To nie jest porada inwestycyjna.",
