@@ -1,16 +1,16 @@
 {
   "schema_version": "1.2",
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "report_type": "short",
   "score": 400,
   "band": "Przegrzanie",
   "band_en": "Overheating",
   "change_vs_previous": 0,
-  "headline": "400/1000, bez zmian: SK hynix wycofał IPO Solidigm, a OpenAI szuka pieniędzy przy wycenie niższej od tej, o której mówiło się jeszcze niedawno.",
-  "headline_en": "400/1000, unchanged: SK hynix pulled the Solidigm IPO, and OpenAI is raising money at a valuation below the one discussed only recently.",
-  "summary": "400/1000 – bez zmian wobec porannego raportu. Wieczorny przegląd wiadomości przyniósł jedno nowe lekkie zdarzenie: 23.10 SK hynix ogłosił, że jego spółka Solidigm rezygnuje z IPO w USA, podając warunki na rynku kapitałowym. OpenAI negocjuje rundę do 30 mld USD przy wycenie 1,25 bln USD – mniej niż omawiane wcześniej 1,4 bln, ale więcej niż w marcu (852 mld). S&P ostrzega, że lokalne moratoria mogą obniżać ratingi projektów centrów danych. Dalej kluczowe: Fed 27–28.10 i wyniki hiperskalerów.",
-  "summary_en": "400/1000 – unchanged from the morning report. The evening news sweep brought one new light event: on 23 Oct SK hynix announced that its unit Solidigm is dropping its US IPO, citing capital market conditions. OpenAI is negotiating a round of up to USD 30bn at a USD 1.25tn valuation – less than the USD 1.4tn discussed earlier, but more than in March (USD 852bn). S&P warns that local moratoriums may lower the ratings of data-center projects. Still key: the Fed on 27–28 Oct and hyperscaler earnings.",
-  "report_file": "history/history-24-10-2026.json",
+  "headline": "400/1000, bez zmian: weekend bez nowych zdarzeń kredytowych, rynek czeka na Fed i wyniki hiperskalerów.",
+  "headline_en": "400/1000, unchanged: a weekend with no new credit events, as the market waits for the Fed and hyperscaler earnings.",
+  "summary": "400/1000 – bez zmian wobec sobotniego raportu. Weekendowy przegląd wiadomości (rekordy CDS, obniżki ratingów, refinansowanie, kredyty pod zastaw GPU, siła wyższa, wypłaty z funduszy private credit, BoJ, eksport chipów z Korei) nie przyniósł nowych zdarzeń zmieniających statusy, a rynki były zamknięte. Najbliższe dni są kluczowe: decyzja Fed 28.10, wyniki Microsoftu, Alphabetu i Amazona oraz posiedzenie BoJ 29–30.10.",
+  "summary_en": "400/1000 – unchanged from Saturday's report. The weekend news sweep (CDS records, downgrades, refinancing, GPU-backed loans, force majeure, private credit fund redemptions, the BoJ, Korean chip exports) brought no new events that change statuses, and markets were closed. The coming days are key: the Fed decision on 28 Oct, results from Microsoft, Alphabet and Amazon, and the BoJ meeting on 29–30 Oct.",
+  "report_file": "history/history-25-10-2026.json",
   "triggers": [],
   "triggers_en": [],
   "heavy_credit_event": false,
@@ -568,28 +568,23 @@
   "calendar": [
     {
       "date": "2026-10-26",
-      "title": "Początek tygodnia wyników hiperskalerów: Microsoft i Alphabet (27–28.10, terminy niepotwierdzone), Amazon 29.10 (B1, B3); Aurora (Kolorado) – głosowanie nad moratorium na centra danych (F1)",
-      "title_en": "Start of hyperscaler earnings week: Microsoft and Alphabet (27–28 Oct, dates unconfirmed), Amazon on 29 Oct (B1, B3); Aurora (Colorado) – vote on a data-center moratorium (F1)"
+      "title": "Początek tygodnia wyników hiperskalerów; Aurora (Kolorado) – głosowanie nad moratorium na centra danych (F1)",
+      "title_en": "Start of hyperscaler earnings week; Aurora (Colorado) – vote on a data-center moratorium (F1)"
     },
     {
       "date": "2026-10-27",
-      "title": "FOMC 27–28.10 (E3); A6: wygasa 90-dniowe okno stanowiska SEC; SK hynix – wyniki III kw. 27–28.10 wg różnych źródeł (D3, D5)",
-      "title_en": "FOMC 27–28 Oct (E3); A6: the 90-day window of the SEC position expires; SK hynix Q3 results 27–28 Oct per different sources (D3, D5)"
+      "title": "FOMC 27–28.10 (E3); A6: wygasa 90-dniowe okno stanowiska SEC; SK hynix – wyniki III kw. 27–28.10 wg różnych źródeł (D3, D5); Microsoft i Alphabet 27–28.10 (terminy niepotwierdzone; B1, B3)",
+      "title_en": "FOMC 27–28 Oct (E3); A6: the 90-day window of the SEC position expires; SK hynix Q3 results 27–28 Oct per different sources (D3, D5); Microsoft and Alphabet 27–28 Oct (dates unconfirmed; B1, B3)"
+    },
+    {
+      "date": "2026-10-28",
+      "title": "Decyzja FOMC (E3)",
+      "title_en": "FOMC decision (E3)"
     },
     {
       "date": "2026-10-29",
       "title": "Amazon – wyniki III kw. (B1, B3); BoJ 29–30.10 (E4); wygasa lipcowy odczyt premii AI (A2)",
       "title_en": "Amazon Q3 results (B1, B3); BoJ 29–30 Oct (E4); the July AI premium reading expires (A2)"
-    },
-    {
-      "date": "2026-11-01",
-      "title": "Eksport Korei Płd. za październik (D6)",
-      "title_en": "South Korea's October exports (D6)"
-    },
-    {
-      "date": "2026-11-02",
-      "title": "ISM Manufacturing za październik (E1)",
-      "title_en": "ISM Manufacturing for October (E1)"
     }
   ],
   "disclaimer": "To nie jest porada inwestycyjna.",
