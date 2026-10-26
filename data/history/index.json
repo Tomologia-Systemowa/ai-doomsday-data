@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-10-25T07:54:58+01:00",
+  "updated_at": "2026-10-26T08:01:48+01:00",
   "files": [
     {
       "date": "2026-10-04",
@@ -153,6 +153,13 @@
       "date": "2026-10-25",
       "file": "history-25-10-2026.json",
       "kind": "short",
+      "score": 400,
+      "band": "Przegrzanie"
+    },
+    {
+      "date": "2026-10-26",
+      "file": "history-26-10-2026.json",
+      "kind": "full",
       "score": 400,
       "band": "Przegrzanie"
     }
