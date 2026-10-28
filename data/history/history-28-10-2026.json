@@ -1,31 +1,36 @@
 {
   "schema_version": "1.2",
   "date": "2026-10-28",
-  "updated_at": "2026-10-28T20:56:22+01:00",
+  "updated_at": "2026-10-28T22:32:08+01:00",
   "entry": {
     "kind": "short",
-    "score": 400,
-    "band": "Przegrzanie",
-    "band_en": "Overheating",
+    "score": 413,
+    "band": "Pęknięcia",
+    "band_en": "Cracks",
     "categories": {
       "A": 166.7,
-      "B": 50.0,
+      "B": 62.5,
       "C": 28.8,
       "D": 20.0,
       "E": 70.0,
       "F": 37.5,
       "G": 27.5
     },
-    "headline": "400/1000, bez zmian: Fed zostawił stopy bez zmian, choć dwóch członków chciało podwyżki, a rentowność 10-latek wzrosła do 5,05%.",
-    "headline_en": "400/1000, unchanged: the Fed left rates unchanged, though two members wanted a hike, and the 10-year yield rose to 5.05%."
+    "headline": "413/1000, +13: do skali doszedł sygnał chińskich spółek AI, których indeksy są 37–43% poniżej rocznych szczytów; Fed zostawił stopy bez zmian, choć dwóch członków chciało podwyżki.",
+    "headline_en": "413/1000, +13: a Chinese AI stocks signal joined the scale, with their indices 37–43% below their one-year highs; the Fed left rates unchanged, though two members wanted a hike."
   },
   "events": [],
   "report": {
-    "summary": "Wynik 400/1000 – bez zmian wobec porannego raportu, nadal na granicy między przegrzaniem a pęknięciami. Fed zostawił stopy na poziomie 3,75–4,00%, ale dwóch z dwunastu głosujących chciało podwyżki, a komunikat opisał wzrost gospodarki jako „silny”. Rentowność 10-letnich obligacji USA wzrosła do 5,05%. Spread obligacji śmieciowych (dodatkowe oprocentowanie żądane od najsłabszych firm) spadł do 3,18%. Po zamknięciu sesji wyniki Alphabetu i Microsoftu, jutro Amazona.",
-    "summary_en": "Score 400/1000 – unchanged from the morning report, still at the boundary between overheating and cracks. The Fed left rates at 3.75–4.00%, but two of the twelve voters wanted a hike, and the statement described economic growth as \"strong\". The 10-year US Treasury yield rose to 5.05%. The high-yield spread (the extra interest demanded from the weakest companies) fell to 3.18%. Alphabet and Microsoft report after the close, Amazon tomorrow.",
+    "summary": "Wynik 413/1000 – o 13 punktów więcej niż we wtorkowym raporcie, tuż powyżej granicy między przegrzaniem a pęknięciami. Wzrost wynika z dodania do skali nowego sygnału: chińskich spółek AI. Indeks STAR 50 (chipy i sprzęt AI w Szanghaju) jest ok. 43% poniżej szczytu z lipca, a Hang Seng Tech (platformy w Hongkongu) ok. 37% poniżej rocznego szczytu. Fed zostawił stopy na poziomie 3,75–4,00%, ale dwóch z dwunastu głosujących chciało podwyżki. Rentowność 10-letnich obligacji USA wzrosła do 5,05%.",
+    "summary_en": "Score 413/1000 – 13 points higher than in Tuesday's report, just above the boundary between overheating and cracks. The rise comes from adding a new signal to the scale: Chinese AI stocks. The STAR 50 index (AI chips and hardware in Shanghai) is about 43% below its July peak, and Hang Seng Tech (platforms in Hong Kong) about 37% below its one-year high. The Fed left rates at 3.75–4.00%, but two of the twelve voters wanted a hike. The 10-year US Treasury yield rose to 5.05%.",
     "curve_comment": "Krzywa 10Y–2Y stromieje do 0,38 pp. W dniu decyzji Fed wzrosła 10Y (+6 pb) przy spadku 2Y (−3 pb), co oznacza zaostrzenie warunków finansowych, natomiast w ujęciu tygodniowym stromienie wynika ze spadku 2Y (łagodzenie). Obraz pozostaje mieszany.",
     "curve_comment_en": "The 10Y–2Y curve steepens to 0.38 pp. On the day of the Fed decision the 10Y rose (+6 bp) while the 2Y fell (−3 bp), which signals tightening financial conditions, while over the week the steepening comes from a falling 2Y (easing). The picture remains mixed.",
-    "category_comments": null,
+    "category_comments": {
+      "B": {
+        "comment": "Kategoria B wzrosła do 62,5/150 po dodaniu B4 (🔴) i przeliczeniu budżetów B1–B3; capex hiperskalerów bez cięć, wolne przepływy pieniężne nadal niskie.",
+        "comment_en": "Category B rose to 62.5/150 after adding B4 (🔴) and rebalancing the B1–B3 budgets; hyperscaler capex has not been cut, free cash flow remains low."
+      }
+    },
     "top_signals": [
       "E3",
       "A5",
@@ -194,7 +199,7 @@
         "as_of": "2026-10-21",
         "status": "green",
         "points": 0.0,
-        "max_points": 50.0,
+        "max_points": 45.0,
         "preliminary": false,
         "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066700/meta-09302026xexhibit991.htm",
         "note": "Meta (wyniki III kw., 21.10, komunikat w 8-K SEC): prognoza capeksu na 2026 (z ratami leasingu finansowego) zawężona do 135–145 mld USD z 130–145 mld – podniesiona dolna granica; bez liczby na 2027 („nadal opracowujemy budżet”, dalsze „agresywne” inwestycje). Alphabet (195–205 mld USD) i Amazon (ok. 220 mld) podniosły prognozy na 2026, Oracle do 95 mld USD na FY27. Spadek raportowanego capeksu Microsoftu wynika ze zmiany księgowej (okres użytkowania budynków 15→25 lat, część leasingu finansowego → operacyjny) – nie liczony jako cięcie. Terminy wyników III kw. (Reuters 23.10): Alphabet i Microsoft 28.10, Amazon 29.10.",
@@ -211,8 +216,8 @@
         "unit": "pp",
         "as_of": "2026-10-26",
         "status": "yellow",
-        "points": 15.0,
-        "max_points": 30.0,
+        "points": 12.5,
+        "max_points": 25.0,
         "preliminary": false,
         "source": "https://finance.yahoo.com/quote/MAGS/",
         "note": "Trzy miary, wybrana bardziej ryzykowna (🟡, USA). USA: MAGS ok. +7,2% YTD vs S&P 500 (SPY) ok. +13,1% (zamknięcie 26.10: MAGS 70,70, SPY 765,37; ceny skorygowane o dywidendy, Yahoo Finance – źródło wtórne) – różnica ok. −5,9 pp (23.10: −6,1 pp; 16.10: −4,7 pp). W przedziale 0–10 pp. Korea (KRW, równe wagi, Yahoo Finance – wtórne): 22.10 SK hynix +87,9% YTD, Samsung Electronics +78,9%, średnio +83,4% vs KOSPI +31,3% → 🟢. Japonia: brak nowego odczytu po 16.10 (Advantest i Tokyo Electron średnio +65,4% vs TOPIX +19,7%) → 🟢. Baza: ostatnia sesja 2025 r.",
@@ -229,14 +234,31 @@
         "unit": "%",
         "as_of": "2026-07-31",
         "status": "yellow",
-        "points": 35.0,
-        "max_points": 70.0,
+        "points": 30.0,
+        "max_points": 60.0,
         "preliminary": false,
         "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
         "note": "II kw. 2026 z XBRL SEC: OCF 171,8 mld USD, zakupy środków trwałych 165,1 mld USD (brutto; Amazon bez potrącenia wpływów, Microsoft bez leasingu finansowego), FCF 6,7 mld USD = 4,1%; z ratami leasingu finansowego 2,5%. Alphabet (−5,9 mld) i Amazon (−8,8 mld) z ujemnym FCF. Nowe (III kw., tylko Meta, 8-K SEC 21.10): OCF 32,79 mld USD, capex z ratami leasingu 34,91 mld USD (33,94 mld zakupów środków trwałych + 0,96 mld leasingu) – FCF Mety −2,12 mld USD. Łączny wynik III kw. po raportach Alphabetu, Microsoftu i Amazona w przyszłym tygodniu.",
         "note_en": "Q2 2026 from SEC XBRL: OCF USD 171.8bn, purchases of property and equipment USD 165.1bn (gross; Amazon without proceeds netted, Microsoft without finance leases), FCF USD 6.7bn = 4.1%; including finance lease principal 2.5%. Alphabet (−5.9bn) and Amazon (−8.8bn) with negative FCF. New (Q3, Meta only, SEC 8-K 21 Oct): OCF USD 32.79bn, capex including lease principal USD 34.91bn (33.94bn purchases of property and equipment + 0.96bn leases) – Meta's FCF −2.12bn. The combined Q3 figure follows Alphabet, Microsoft and Amazon reports next week.",
         "status_since": "2026-10-06",
         "status_prev": "yellow"
+      },
+      {
+        "id": "B4",
+        "category": "B",
+        "name": "Chińskie spółki AI (STAR 50, Hang Seng Tech)",
+        "name_en": "Chinese AI stocks (STAR 50, Hang Seng Tech)",
+        "value": 43.1,
+        "unit": "% spadku od szczytu 52-tyg. (STAR 50)",
+        "as_of": "2026-10-28",
+        "status": "red",
+        "points": 20.0,
+        "max_points": 20.0,
+        "preliminary": false,
+        "source": "https://english.news.cn/20261028/b36e7da2a9904dd0864c49dd2116b374/c.html",
+        "note": "Nowy sygnał od 28.10 (wersja skilla z 31 sygnałami). STAR 50: zamknięcie 28.10 1282,93 pkt (+2,45%; Xinhua, Investing.com) wobec szczytu 52-tygodniowego 2255,25 pkt (lipiec 2026, maksimum śróddzienne wg Investing.com – szczyt na zamknięciu nieznacznie niższy) – ok. −43%; ok. −40% od lipcowego szczytu potwierdza Reuters (za 24/7 Wall St. i Trending Topics). Hang Seng Tech: zamknięcie 28.10 3853,72 pkt (+1,40%; Bastille Post, Investing.com) wobec szczytu 52-tygodniowego 6162,47 pkt (maksimum śróddzienne wg Investing.com) – ok. −37%. Oba indeksy > 30% → 🔴. Przyczyny chińskie: październikowe wytyczne Pekinu przeciw bańkom w „nowych siłach wytwórczych”, ograniczenia handlu lewarowanego i wysokiej częstotliwości, sprzedaż przez inwestorów państwowych w czasie wzrostów (Reuters), obawy przed zakazem USA dla chińskiego sprzętu do centrów danych. Przyczyny związane z AI: wyceny (C/Z STAR 50 z ok. 250 do ok. 100), koncentracja (spółki AI to 42% kapitalizacji i 57% obrotów wg Goldman Sachs). Brak danych o saldzie kredytu maklerskiego, przepływach Southbound i zakupach funduszy państwowych – do uzupełnienia. To odczyt wyceny i nastrojów, nie zdarzenie kredytowe.",
+        "note_en": "New signal from 28 Oct (skill version with 31 signals). STAR 50: close on 28 Oct 1,282.93 points (+2.45%; Xinhua, Investing.com) vs a 52-week high of 2,255.25 points (July 2026, intraday maximum per Investing.com – the closing high is slightly lower) – about −43%; a fall of about 40% from the July peak is confirmed by Reuters (via 24/7 Wall St. and Trending Topics). Hang Seng Tech: close on 28 Oct 3,853.72 points (+1.40%; Bastille Post, Investing.com) vs a 52-week high of 6,162.47 points (intraday maximum per Investing.com) – about −37%. Both indices > 30% → 🔴. China-specific causes: Beijing's October guidelines against bubbles in \"new productive forces\", curbs on leveraged and high-frequency trading, selling by state-backed investors into rallies (Reuters), fears of a US ban on Chinese-made data-center equipment. AI-related causes: valuations (STAR 50 P/E from about 250 to about 100), concentration (AI stocks are 42% of market value and 57% of trading per Goldman Sachs). No data on the margin financing balance, Southbound flows or state fund purchases – to be added. This is a valuation and sentiment reading, not a credit event.",
+        "status_since": "2026-10-28"
       },
       {
         "id": "C1",
