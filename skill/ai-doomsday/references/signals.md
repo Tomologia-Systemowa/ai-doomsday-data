@@ -28,10 +28,12 @@ own signal, even when the same news moved several of them. Triggers and
       payment deferral claims)                                          → A8
     securitizations, SPVs, sale-leasebacks, private-credit deals, ABS rules and
       exemptions                                                        → A6
-    capex guidance changes                                              → B1
+    capex guidance changes (US hyperscalers and Chinese platforms)      → B1
+    Chinese state funds ("national team") buying shares                 → B4 (note only)
     server depreciation period changes                                  → D4
     data-center project delays and cancellations without a payment claim → F1
     Fed decisions and statements                                        → E3
+    Bank of Japan decisions and statements                              → E4
     frontier model price-list changes                                   → G2
     open-weight model releases                                          → G4
 An event that fits none of these counts in the signal whose definition names it most
@@ -67,8 +69,11 @@ A4. Debt share of hyperscaler capex funding (quarterly) [30]
     the reported debt share does not capture. Note them in `note` with amount, date and
     status (explored / closed); they don't change the debt share or the A4 status – under
     the counting rules such a deal counts in A6.
-A5. AI sector CDS: number of large AI issuers (hyperscalers, Oracle, neoclouds) with a
-    record 5-year CDS in the last month (news) [35]
+A5. AI sector CDS: number of large AI issuers (hyperscalers, Oracle, neoclouds, SoftBank
+    Group) with a record 5-year CDS in the last month (news) [35]
+    SoftBank Group is the most leveraged financier of AI labs and data centers (OpenAI,
+    Stargate); a record in its CDS counts like any other issuer's. Its yen and dollar bond
+    spreads are a confirming reading.
     🟢 0 | 🟡 1–2 | 🔴 3+ or CDS doubling within 3 months
 A6. Data-center securitization and private credit: data-center ABS/CMBS issuance volume,
     their spreads vs other ABS, changes in standards (regulation, ratings), share of risk
@@ -104,7 +109,8 @@ A8. Credit events (news from the last 30 days) [40]
        on a debt-financed data-center project
     🔴 HEAVY: downgrade of an AI company to speculative grade; failed refinancing or
        emergency issue by a neocloud; default on a GPU-backed loan, an Nvidia guarantee
-       being called, or a margin call on a loan secured by GPUs or lab equity; redemption
+       being called, or a margin call on a loan secured by GPUs, lab equity or shares of
+       AI holdings (e.g. SoftBank's margin loan secured by Arm shares); redemption
        limits at a private credit fund or BDC exposed to AI or data centers; downgrade,
        default, or a mark clearly below par on a data-center ABS/CMBS tranche; an AI lab
        round or IPO at a clearly lower valuation; such a force majeure or deferral claim
@@ -117,15 +123,46 @@ rising = systemic stress.
 
 ## B. Capex and cash flows [150]
 B1. Capex guidance of Alphabet, Microsoft, Amazon, Meta, Oracle (quarterly; between
-    earnings only material news) [50]
+    earnings only material news); Chinese platforms Alibaba, Tencent, ByteDance, Baidu as
+    a secondary measure [45]
     🟢 rising or unchanged | 🟡 growth paused at 2+ companies | 🔴 guidance cut by a major
     hyperscaler (not when the cut is purely an accounting change)
-B2. Hyperscaler stocks vs S&P 500 (e.g. MAGS ETF vs S&P 500) [30]
+    A capex cut by a Chinese platform raises B1 to 🟡 at most and is never a trigger:
+    Chinese AI spending is funded mostly by own cash, state banks and equity, and a cut
+    there reflects local competition and regulation more than the US investment cycle.
+    It matters for memory and HBM demand – say in `note` how it relates to D2 and D6.
+B2. AI stocks vs their home market: hyperscalers vs S&P 500 (e.g. MAGS ETF vs S&P 500);
+    Korean AI memory makers (SK Hynix, Samsung Electronics) vs KOSPI; Japanese AI chip
+    suppliers (Advantest, Tokyo Electron) vs TOPIX [25]
     🟢 outperforming YTD | 🟡 underperforming by 0–10 pp | 🔴 underperforming by > 10 pp
+    Score each of the three measures in local currency and take the higher-risk status
+    (several measures rule); give all three in `note`. The KOSPI and TOPIX measures
+    weigh their companies equally.
 B3. Combined free cash flow (FCF) of Alphabet, Microsoft, Amazon and Meta as % of their
     combined capex (quarterly, from filings; state which capex definition each company
-    uses) [70]
+    uses) [60]
     🟢 > 25% | 🟡 0–25% | 🔴 < 0 (combined negative)
+B4. Chinese AI stocks: drawdown of the STAR 50 index (Shanghai, AI chips and hardware) and
+    the Hang Seng Tech index (Hong Kong, AI platforms) from their 52-week closing high
+    (daily; Shanghai Stock Exchange, Hang Seng Indexes) [20]
+    🟢 < 15% | 🟡 15–30% | 🔴 > 30%
+    Score both indices and take the higher-risk status; give both in `note` with the date
+    of the high. Confirming readings for `note`: A-share margin financing balance
+    (Shanghai and Shenzhen exchanges; a fall over 10+ sessions = forced deleveraging),
+    Southbound net flows into Hong Kong (HKEX Stock Connect), large lock-up expiries of AI
+    chip IPOs.
+    State funds ("national team", e.g. Central Huijin) buying shares or ETFs: record it in
+    `note`; it never lowers the status. An index held up by state buying is not a market
+    price.
+    Why and how much: Chinese AI valuations deflate in public, retail-driven markets, but
+    Chinese AI is funded mostly by own cash, state banks and equity rather than by the
+    private credit, ABS and GPU-backed loans that categories A and D track. A fall here is
+    a valuation and sentiment reading, not a credit event: it is not part of the
+    correlated `credit_spreads` group and never sets `heavy_credit_event` on its own (a
+    credit event of a Chinese AI company still counts in A8). Separate China-specific
+    causes (regulation of platforms, property, US–China tensions, tax payments) from AI
+    causes in `note`. The 52-week window lets a long bear market fade out of the status:
+    once the old high drops out, the drawdown is measured from a lower one.
 
 ## C. Demand and adoption [150]
 C1. Ramp AI Index: % of businesses paying, spend per employee (median, top 10%, top 1%)
@@ -141,20 +178,20 @@ C4. Deployment ROI vs adoption (quarterly or on new surveys): share of firms rep
 
 ## D. Hardware [150]
 D1. H100/B200 GPU rental rates: spot/on-demand and 1-year+ contracts (weekly; e.g. Ornn
-    OCPI, Silicon Data) [45]
+    OCPI, Silicon Data) [40]
     🟢 rising | 🟡 flat 2+ months, or spot down ≥ 15% in a month with stable contracts (early
     warning: smaller providers dumping capacity) | 🔴 contracts down 3 months in a row, or
     spot and contracts falling together
-D2. DRAM prices: contract and spot (TrendForce, weekly) [30]
+D2. DRAM prices: contract and spot (TrendForce, weekly) [25]
     Contract: 🟢 rising | 🟡 flat | 🔴 falling
-D3. Memory makers' inventories (DIO) and capex (quarterly) [20]
+D3. Memory makers' inventories (DIO) and capex (quarterly) [15]
     🟢 inventories stable or falling | 🟡 rising 2 quarters in a row | 🔴 rising 3+
     quarters in a row
     Count consecutive quarterly increases in DIO for the same company. If makers disagree,
     use the one with the most quarters of history and say so in `note`; don't mix different
     makers in one series.
 D4. GPU residual value: used H100 and A100 prices (Compute Exchange, Hashrate Index,
-    ServerBuyback) and changes to server depreciation periods in hyperscaler filings [30]
+    ServerBuyback) and changes to server depreciation periods in hyperscaler filings [25]
     🟢 prices stable or rising | 🟡 down 15–30% in a quarter | 🔴 down > 30% in a quarter,
     or a hyperscaler shortens its depreciation period
     Valuations of installed GPUs in SPV or sale-leaseback deals (e.g. Amazon's GPU SPV) are
@@ -164,14 +201,25 @@ D4. GPU residual value: used H100 and A100 prices (Compute Exchange, Hashrate In
     quarter and apply the thresholds to that change. The deal itself counts in A6 (counting
     rules). Deals only being explored go into `note`.
 D5. Production bottlenecks (on TSMC and memory makers' earnings): CoWoS packaging
-    capacity, DRAM wafer allocation to HBM [25]
+    capacity, DRAM wafer allocation to HBM [20]
     🟢 bottleneck persists (shortage continues) | 🟡 bottleneck easing with stable demand |
     🔴 bottleneck easing with weakening demand (oversupply risk)
+D6. South Korea's semiconductor exports: preliminary data for the first 10 and 20 days of
+    the month (Korea Customs Service, released around the 11th and 21st) and the full month
+    (Ministry of Trade, Industry and Energy, 1st of the following month) [25]
+    Measure: year-on-year change in exports per working day (daily average). Holidays such
+    as Chuseok and Lunar New Year move between months and distort unadjusted figures by
+    tens of percent – never score an unadjusted change.
+    🟢 > +10% y/y | 🟡 0 to +10% y/y | 🔴 negative y/y in two consecutive full months
+    Status comes from full-month data and the 1–20-day reading; the 1–10-day reading goes
+    into `note` only. The value includes memory prices: when it moves with DRAM prices (D2),
+    say in `note` whether volume or price drove it. Store each full month in "HISTORIA DO
+    PROGÓW".
 
 ## E. Macro [100]
-E1. ISM Manufacturing PMI incl. prices index (1st business day of the month) [25]
+E1. ISM Manufacturing PMI incl. prices index (1st business day of the month) [20]
     🟢 rising and > 50 | 🟡 falling but > 50 | 🔴 < 50
-E2. 10Y–2Y curve (market close; confirm with FRED T10Y2Y) [25]. ALWAYS classify the move
+E2. 10Y–2Y curve (market close; confirm with FRED T10Y2Y) [20]. ALWAYS classify the move
     from the 2Y and 10Y changes over the last week and month:
     - steepening via falling 2Y (market expects cuts) = easing,
     - steepening via rising 10Y (term premium, inflation) = tightening financial
@@ -181,9 +229,20 @@ E2. 10Y–2Y curve (market close; confirm with FRED T10Y2Y) [25]. ALWAYS classif
     🟢 easing | 🟡 mixed | 🔴 tightening
     Don't treat every widening of the spread as positive.
 E3. Fed policy: decisions, statements, market expectations for upcoming meetings (CME
-    FedWatch, Kalshi), futures reaction after decisions [50]
+    FedWatch, Kalshi), futures reaction after decisions [40]
     🟢 cuts or expected cuts | 🟡 rates on hold with no expected hikes | 🔴 a hike in the
     last 3 months, or the market pricing a hike at > 50%
+E4. Bank of Japan and the yen carry trade: BoJ decisions and statements, market pricing of
+    the next meeting (OIS), USD/JPY (BoJ or Fed H.10 reference rate; market close), 10Y
+    JGB yield [20]
+    🟢 BoJ on hold and USD/JPY within ±3% over the last month | 🟡 a BoJ hike in the last 3
+    months, the market pricing a hike at the next meeting at > 50%, or the yen stronger by
+    3–6% over the last month | 🔴 the yen stronger by > 6% over the last month, or by > 3%
+    within 5 trading days alongside a BoJ hike or a hawkish surprise
+    Why: positions funded in cheap yen are closed when the yen strengthens fast, forcing
+    sales of high-risk assets worldwide; in July–August 2024 this pulled AI stocks down
+    within days. "Stronger yen" = fewer yen per dollar. A rising 10Y JGB yield goes into
+    `note` as confirmation; it does not change the status on its own.
 
 ## F. Power and infrastructure [50]
 F1. Delayed/abandoned data-center projects, interconnection wait times for large loads
@@ -224,6 +283,10 @@ A rising open-weight share in developer traffic is a moderate signal; the same t
 enterprise data (Ramp, surveys) is a strong signal.
 
 ## AI Doomsday scale (0–1000)
+Since 2026-10-16 the scale has 30 signals (D6 and E4 added, points within D and E
+rebalanced) and since 2026-10-28 31 signals (B4 added, points within B rebalanced);
+category budgets unchanged. Scores before those dates used 28 and 30 signals: compare
+across them with caution and say so when the change matters.
 The score measures how much stress the signals show, not an event or its timing: a band
 name describes the typical picture at that level of stress, not a forecast that it is
 happening or when. Bubbles can stay under high stress for years. Band names in the Polish

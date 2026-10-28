@@ -1,6 +1,6 @@
 ---
 name: "ai-doomsday"
-description: "Daily \"AI Doomsday\" report – AI investment bubble risk scored 0–1000 from 28 signals (debt, capex, demand, hardware, macro, power, token prices), with a Friday weekly analysis, state kept in the data repo (state/), bilingual JSON published to a GitHub repo named in the task, and a push notification. Use this skill whenever a user or routine asks for the AI Doomsday report, the AI Doomsday score, an update of AI bubble signals, the weekly AI Doomsday analysis, or publishing AI Doomsday data – including short commands like \"zrób dzisiejszy raport\" / \"run today's report\" in this routine's context. Raport AI Doomsday, skala AI Doomsday, ryzyko bańki AI."
+description: "Daily \"AI Doomsday\" report – AI investment bubble risk scored 0–1000 from 31 signals (debt, capex, demand, hardware, macro incl. Japan, power, token prices; US, South Korea, Japan and China), with a Friday weekly analysis, state kept in the data repo (state/), bilingual JSON published to a GitHub repo named in the task, and a push notification. Use this skill whenever a user or routine asks for the AI Doomsday report, the AI Doomsday score, an update of AI bubble signals, the weekly AI Doomsday analysis, or publishing AI Doomsday data – including short commands like \"zrób dzisiejszy raport\" / \"run today's report\" in this routine's context. Raport AI Doomsday, skala AI Doomsday, ryzyko bańki AI."
 ---
 
 # AI Doomsday – AI bubble risk report
@@ -21,7 +21,8 @@ insurance against a company defaulting). No jokes, puns or pop-culture reference
 Instead, where today's data show the market behaving inconsistently – two readings that
 cannot both be right, or a price that contradicts what the same players say or do (e.g.
 capex guidance raised while the same companies' CDS hit records; lenders asking more for
-GPU-backed loans while equity valuations keep rising) – end with a short ironic punchline
+GPU-backed loans while equity valuations keep rising; a chipmaker announcing market-share
+gains while its listed peers lose half their value) – end with a short ironic punchline
 that sets the two facts side by side and lets the contradiction speak. The irony comes
 only from the facts placed next to each other, never from a mocking adjective, and is
 about market behaviour, never about specific people. Both facts must be in the table with
@@ -65,9 +66,17 @@ This keeps the score computed identically every day and the files on a fixed sch
    report (at least the last 72 hours) run separate searches for each category A–G, and at
    minimum these terms combined with the current month and year: "CDS record",
    "credit default swaps", "downgrade", "refinancing", "GPU-backed loan", "data center
-   financing", "force majeure", "capex guidance", "private credit redemptions". Also search
+   financing", "force majeure", "capex guidance", "private credit redemptions", "Bank of
+   Japan", "yen carry trade", "SoftBank CDS", "Korea chip exports", "SK Hynix HBM",
+   "Samsung HBM", "STAR 50", "Hang Seng Tech", "China national team stocks", "Southbound
+   flows", "Alibaba capex", "Tencent capex", "ByteDance capex", "Huawei Ascend", "China
+   export controls AI". Also search
    for the AI and data-center headlines of FT, Bloomberg, WSJ and Reuters (often paywalled
-   – look for their reprints and re-reports). Every hit that touches a signal goes through
+   – look for their reprints and re-reports), for Korea and Japan of Nikkei Asia,
+   Yonhap, The Korea Herald and Korea JoongAng Daily, and for China of SCMP and Caixin
+   Global. Treat claims by Chinese companies or officials about their own market share
+   (e.g. Huawei vs Nvidia) as the company's claim until an independent source confirms
+   it. Every hit that touches a signal goes through
    the corroboration rule below.
 4. **Statuses** from thresholds; for trend thresholds use "HISTORIA DO PROGÓW". Identify
    triggers and heavy credit events – each forces a full report.
@@ -84,7 +93,8 @@ This keeps the score computed identically every day and the files on a fixed sch
    `as_of` and source. Kept per series (`STATE_SERIES` in `scripts/config.py`): debt share
    of capex funding (A4) – 5 quarters; Ramp median spend (C1) – 3 months; Census BTOS share
    (C2) – 3 readings; GPU spot and contract rates (D1) – 3 months; memory makers' DIO (D3) –
-   4 quarters; used H100/A100 prices (D4) – 2 quarters; Ramp open-source share (G3) – 7
+   4 quarters; used H100/A100 prices (D4) – 2 quarters; Korea's semiconductor exports per
+   working day, y/y (D6) – 3 months; Ramp open-source share (G3) – 7
    months; Artificial Analysis index (G4) – last reading with version number.
    The repo is public: for licensed series (D1 – Ornn, Silicon Data) store only the monthly
    % change and direction, never the price level; the validator rejects a level there.
@@ -201,7 +211,8 @@ Compare only 0–1000 entries (0–100 entries are the old method; new method ba
 4. Category scores A–G (points/budget) with a one-sentence rationale each; the 3 signals
    adding the most points; the script's calculation table.
 5. Summary (max 150 words): where we are, what matters most today.
-6. Calendar for the next 2 weeks (earnings, Ramp, ISM, Fed meetings, IPOs, model releases,
+6. Calendar for the next 2 weeks (earnings, Ramp, ISM, Fed and BoJ meetings, Korea's
+   export data (around the 1st, 11th and 21st), IPOs, model releases,
    expiry of signal time windows such as A7 and A8).
 
 ## Short report format (Polish)

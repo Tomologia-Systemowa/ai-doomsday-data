@@ -31,21 +31,24 @@ SIGNALS = {
     "A6": ("Sekurytyzacja i private credit centrów danych", "Data center securitization and private credit", 30),
     "A7": ("Premia neocloudów", "Neocloud funding premium", 35),
     "A8": ("Zdarzenia kredytowe", "Credit events", 40),
-    "B1": ("Prognozy capeksu hiperskalerów", "Hyperscaler capex guidance", 50),
-    "B2": ("Kursy hiperskalerów vs S&P 500", "Hyperscaler stocks vs S&P 500", 30),
-    "B3": ("FCF wielkiej czwórki jako % capeksu", "Big Four FCF as % of capex", 70),
+    "B1": ("Prognozy capeksu hiperskalerów", "Hyperscaler capex guidance", 45),
+    "B2": ("Spółki AI vs rynek (USA, Korea, Japonia)", "AI stocks vs home market (US, Korea, Japan)", 25),
+    "B3": ("FCF wielkiej czwórki jako % capeksu", "Big Four FCF as % of capex", 60),
+    "B4": ("Chińskie spółki AI (STAR 50, Hang Seng Tech)", "Chinese AI stocks (STAR 50, Hang Seng Tech)", 20),
     "C1": ("Ramp AI Index", "Ramp AI Index", 50),
     "C2": ("Census BTOS: adopcja AI", "Census BTOS: AI adoption", 25),
     "C3": ("Przychody laboratoriów i wzrost chmur", "Lab revenue and cloud growth", 35),
     "C4": ("Zwrot z wdrożeń vs adopcja", "Deployment ROI vs adoption", 40),
-    "D1": ("Stawki wynajmu GPU", "GPU rental rates", 45),
-    "D2": ("Ceny DRAM", "DRAM prices", 30),
-    "D3": ("Zapasy i capex producentów pamięci", "Memory makers' inventories and capex", 20),
-    "D4": ("Wartość rezydualna GPU", "GPU residual value", 30),
-    "D5": ("Wąskie gardła produkcji", "Production bottlenecks", 25),
-    "E1": ("ISM PMI przemysłu", "ISM Manufacturing PMI", 25),
-    "E2": ("Krzywa 10Y–2Y", "10Y–2Y yield curve", 25),
-    "E3": ("Polityka Fed", "Fed policy", 50),
+    "D1": ("Stawki wynajmu GPU", "GPU rental rates", 40),
+    "D2": ("Ceny DRAM", "DRAM prices", 25),
+    "D3": ("Zapasy i capex producentów pamięci", "Memory makers' inventories and capex", 15),
+    "D4": ("Wartość rezydualna GPU", "GPU residual value", 25),
+    "D5": ("Wąskie gardła produkcji", "Production bottlenecks", 20),
+    "D6": ("Eksport półprzewodników z Korei Płd.", "South Korea's semiconductor exports", 25),
+    "E1": ("ISM PMI przemysłu", "ISM Manufacturing PMI", 20),
+    "E2": ("Krzywa 10Y–2Y", "10Y–2Y yield curve", 20),
+    "E3": ("Polityka Fed", "Fed policy", 40),
+    "E4": ("Bank Japonii i carry trade na jenie", "Bank of Japan and the yen carry trade", 20),
     "F1": ("Energia i infrastruktura centrów danych", "Data center power and infrastructure", 50),
     "G1": ("Efektywna cena tokena", "Effective token price", 25),
     "G2": ("Cenniki czołowych modeli", "Frontier model pricing", 25),
@@ -102,7 +105,8 @@ CORRELATED_WINDOW_DAYS = 14   # "together": each status change at most 14 days o
 # thresholds. Series in STATE_NO_LEVEL come from licensed sources and are stored as % change
 # and direction only (the data repo is public).
 STATE_FILE = "state/historia-progow.json"
-STATE_SERIES = {"A4": 5, "C1": 3, "C2": 3, "D1": 3, "D3": 4, "D4": 2, "G3": 7, "G4": 1}
+STATE_SERIES = {"A4": 5, "C1": 3, "C2": 3, "D1": 3, "D3": 4, "D4": 2, "D6": 3, "G3": 7,
+                "G4": 1}
 STATE_NO_LEVEL = {"D1"}
 
 EVENT_TYPES = {"credit_light", "credit_heavy", "rating", "fed_hike", "fed_cut", "infra",
