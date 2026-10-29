@@ -1,23 +1,23 @@
 {
   "schema_version": "1.2",
   "date": "2026-10-29",
-  "updated_at": "2026-10-29T07:59:50+01:00",
+  "updated_at": "2026-10-29T21:59:21+01:00",
   "entry": {
-    "kind": "short",
-    "score": 430,
+    "kind": "full",
+    "score": 472,
     "band": "Pęknięcia",
     "band_en": "Cracks",
     "categories": {
       "A": 183.3,
-      "B": 62.5,
+      "B": 105.0,
       "C": 28.8,
       "D": 20.0,
       "E": 70.0,
       "F": 37.5,
       "G": 27.5
     },
-    "headline": "430/1000, +17: inwestorzy żądają wyraźnie wyższej premii za obligacje zabezpieczone na centrach danych; Alphabet w III kw. wydał na inwestycje więcej, niż wygenerował gotówki, i nie zmienia planów.",
-    "headline_en": "430/1000, +17: investors are demanding a clearly higher premium for bonds backed by data centers; in Q3 Alphabet spent more on investment than it generated in cash, and is not changing its plans."
+    "headline": "472/1000, +59: Alphabet, Microsoft, Amazon i Meta w III kw. łącznie wydały na inwestycje o 26,4 mld USD więcej, niż zarobiły gotówki z bieżącej działalności, a żadna nie obniża planów.",
+    "headline_en": "472/1000, +59: in Q3 Alphabet, Microsoft, Amazon and Meta together spent USD 26.4bn more on investment than they earned in cash from operations, and none is cutting its plans."
   },
   "events": [
     {
@@ -28,23 +28,78 @@
       "title": "A6 Sekurytyzacja i private credit centrów danych: zmiana statusu 🟡 → 🔴",
       "title_en": "A6 Data center securitization and private credit: status change 🟡 → 🔴",
       "source": "https://wrenews.com/trepp-data-center-cmbs-spreads-widen-october-2026-ai-credit/"
+    },
+    {
+      "date": "2026-10-29",
+      "type": "trigger",
+      "signal": "B3",
+      "severity": "heavy",
+      "title": "Łączny FCF Alphabetu, Microsoftu, Amazona i Mety w III kw. ujemny: −26,4 mld USD (−13,1% capeksu)",
+      "title_en": "Combined Q3 FCF of Alphabet, Microsoft, Amazon and Meta negative: −USD 26.4bn (−13.1% of capex)",
+      "source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx"
+    },
+    {
+      "date": "2026-10-29",
+      "type": "threshold_cross",
+      "signal": "B3",
+      "severity": "medium",
+      "title": "B3 FCF wielkiej czwórki jako % capeksu: zmiana statusu 🟡 → 🔴",
+      "title_en": "B3 Big Four FCF as % of capex: status change 🟡 → 🔴",
+      "source": "https://s2.q4cdn.com/299287126/files/doc_earnings/2026/q3/earnings-result/AMZN-Q3-2026-Earnings-Release.pdf"
     }
   ],
   "report": {
-    "summary": "Wynik 430/1000 – o 17 punktów więcej niż w środę. Według Trepp premia obligacji zabezpieczonych na centrach danych ponad obligacje skarbowe wzrosła w tydzień o 21 pb, do 182 pb, a obligacje innych nieruchomości stoją w miejscu. Alphabet w III kw. wydał na inwestycje o 9,1 mld USD więcej, niż wygenerował gotówki, i utrzymał plan na ten rok. Kredytodawcy liczą ryzyko centrów danych coraz drożej w tygodniu, w którym SK hynix zapowiada popyt na pamięci przewyższający podaż do 2030 r.",
-    "summary_en": "Score 430/1000 – 17 points higher than on Wednesday. According to Trepp, the premium of bonds backed by data centers over Treasuries rose by 21 bp in a week, to 182 bp, while bonds backed by other property stayed flat. In Q3 Alphabet spent USD 9.1bn more on investment than it generated in cash, and kept its plan for this year. Lenders are pricing data-center risk ever higher in the week SK hynix says memory demand will exceed supply until 2030.",
-    "curve_comment": null,
-    "curve_comment_en": null,
-    "category_comments": null,
+    "summary": "Wynik 472/1000 – o 59 punktów więcej niż w środę i o 42 więcej niż w porannym raporcie. Po wynikach Amazona znany jest komplet: Alphabet, Microsoft, Amazon i Meta wydały w III kw. na inwestycje (głównie centra danych i chipy AI) łącznie 201,9 mld USD, a z bieżącej działalności zarobiły 175,5 mld USD. Różnicę, 26,4 mld USD, pokrywają z oszczędności lub długu. Najwięcej dołożył Amazon (34,8 mld USD); nadwyżkę wypracował tylko Microsoft. Sprzedaż chmury przy tym rośnie – AWS o 39% r/r. W Chinach indeks STAR 50 spółek technologicznych spadł o 4,3% i jest ok. 45% poniżej lipcowego szczytu. Cztery firmy łącznie wydają więcej gotówki, niż zarabiają – i żadna nie obniża planu inwestycji.",
+    "summary_en": "Score 472/1000 – 59 points higher than on Wednesday and 42 higher than in the morning report. With Amazon's results the full set is in: in Q3 Alphabet, Microsoft, Amazon and Meta together spent USD 201.9bn on investment (mainly data centers and AI chips) and earned USD 175.5bn from operations. They cover the gap, USD 26.4bn, from savings or debt. Amazon added the most (USD 34.8bn); only Microsoft generated a surplus. Cloud sales are growing meanwhile – AWS by 39% y/y. In China the STAR 50 index of tech stocks fell 4.3% and is about 45% below its July high. The four companies together spend more cash than they earn – and none is cutting its investment plan.",
+    "curve_comment": "Krzywa 10Y–2Y na zamknięciu 29.10 wynosiła 0,37 pp (10Y 4,98%, 2Y 4,61%), dzień po decyzji Fed obie rentowności spadły niemal równo (2Y −6 pb, 10Y −7 pb). W tygodniu 2Y spadła o 4 pb, a 10Y wzrosła o 2 pb, w miesiącu obie spadły o 28 pb przy niezmienionym spreadzie. Brak przewagi jednego mechanizmu – obraz mieszany (🟡).",
+    "curve_comment_en": "The 10Y–2Y curve was 0.37 pp at the 29 Oct close (10Y 4.98%, 2Y 4.61%); the day after the Fed decision both yields fell almost equally (2Y −6 bp, 10Y −7 bp). Over the week the 2Y fell 4 bp and the 10Y rose 2 bp; over the month both fell 28 bp with the spread unchanged. No mechanism dominates – mixed picture (🟡).",
+    "category_comments": {
+      "A": {
+        "comment": "183/300: rekordowe CDS czterech emitentów (A5), poszerzające się spready CMBS centrów danych (A6) i premia neocloudów ok. 1000 pb (A7) przy niskim spreadzie high yield (A3 3,14%) – stres sektorowy, nie systemowy.",
+        "comment_en": "183/300: record CDS at four issuers (A5), widening data-center CMBS spreads (A6) and a neocloud premium of about 1,000 bp (A7) alongside a low high-yield spread (A3 3.14%) – sector stress, not systemic."
+      },
+      "B": {
+        "comment": "105/150 (z dopłatą do 70% budżetu za wyzwalacz): łączny FCF Wielkiej Czwórki w III kw. ujemny (−13,1% capeksu), chińskie indeksy technologiczne > 30% pod szczytem, a plany capeksu bez cięć.",
+        "comment_en": "105/150 (topped up to 70% of budget for the trigger): the Big Four's combined Q3 FCF is negative (−13.1% of capex), Chinese tech indices are > 30% below their highs, and capex plans are uncut."
+      },
+      "C": {
+        "comment": "28,75/150: adopcja (Ramp, Census) dalej rośnie, AWS przyspiesza do +39% r/r; ryzyko w nieaudytowanych run-rate laboratoriów i mieszanych danych o zwrocie z wdrożeń.",
+        "comment_en": "28.75/150: adoption (Ramp, Census) is still rising, AWS accelerates to +39% y/y; the risk lies in labs' unaudited run-rates and mixed deployment ROI data."
+      },
+      "D": {
+        "comment": "20/150: niedobór pamięci i mocy produkcyjnych trwa, eksport chipów z Korei rośnie; jedyny punkt ryzyka to stawki GPU bez potwierdzonego trendu miesięcznego (D1).",
+        "comment_en": "20/150: memory and capacity shortages persist, Korea's chip exports are rising; the only risk point is GPU rates without a confirmed monthly trend (D1)."
+      },
+      "E": {
+        "comment": "70/100: Fed po wrześniowej podwyżce trzyma stopy przy dwóch głosach za podwyżką (E3), 10Y blisko 5%, krzywa mieszana, BoJ po wrześniowej podwyżce.",
+        "comment_en": "70/100: the Fed holds rates after the September hike with two votes for a hike (E3), 10Y near 5%, a mixed curve, the BoJ after its September hike."
+      },
+      "F": {
+        "comment": "37,5/50: fala lokalnych moratoriów na centra danych i stanowe wstrzymanie pozwoleń w Oregonie przy niedoborze mocy w PJM.",
+        "comment_en": "37.5/50: a wave of local data-center moratoria and Oregon's state permit pause amid PJM capacity shortfalls."
+      },
+      "G": {
+        "comment": "27,5/100: brak wojny cenowej na modelach frontier, luka modeli open-weight 19,6% indeksu AA (lider to model Anthropic – potencjalny konflikt interesów).",
+        "comment_en": "27.5/100: no price war on frontier models, open-weight gap of 19.6% of the AA index (the leader is an Anthropic model – potential conflict of interest)."
+      }
+    },
     "top_signals": [
+      "B3",
       "E3",
-      "A5",
-      "A7"
+      "A5"
     ],
     "near_boundary": false,
     "weekly_analysis": null,
     "weekly_analysis_en": null,
-    "adjustments": [],
+    "adjustments": [
+      {
+        "category": "B",
+        "points": 12.5,
+        "floor": 105.0,
+        "reason": "wyzwalacz: Łączny FCF Wielkiej Czwórki ujemny (B3 🔴)",
+        "reason_en": "trigger: Big Four combined FCF negative (B3 🔴)"
+      }
+    ],
     "correlated_moves": [],
     "signals": [
       {
@@ -52,16 +107,16 @@
         "category": "A",
         "name": "Rentowność 10Y USA",
         "name_en": "US 10Y Treasury yield",
-        "value": 5.05,
+        "value": 4.98,
         "unit": "%",
-        "as_of": "2026-10-28",
+        "as_of": "2026-10-29",
         "status": "yellow",
         "points": 27.78,
         "max_points": 55.56,
         "preliminary": false,
         "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610",
-        "note": "Treasury par yield 2026-10-28 (zamknięcie): 5,05% (27.10: 4,99%; 26.10: 5,00%; 23.10: 5,00%) – wzrost o 6 pb w dniu decyzji Fed. W przedziale 4,5–5,25% → 🟡. FRED DGS10 jako potwierdzenie z opóźnieniem.",
-        "note_en": "Treasury par yield 2026-10-28 (close): 5.05% (27 Oct: 4.99%; 26 Oct: 5.00%; 23 Oct: 5.00%) – up 6 bp on the day of the Fed decision. Within 4.5–5.25% → 🟡. FRED DGS10 confirms with a lag.",
+        "note": "Treasury par yield 2026-10-29 (zamknięcie): 4,98% (28.10: 5,05%; 27.10: 4,99%; 26.10: 5,00%) – spadek o 7 pb dzień po decyzji Fed. W przedziale 4,5–5,25% → 🟡. FRED DGS10 jako potwierdzenie z opóźnieniem.",
+        "note_en": "Treasury par yield 2026-10-29 (close): 4.98% (28 Oct: 5.05%; 27 Oct: 4.99%; 26 Oct: 5.00%) – down 7 bp the day after the Fed decision. Within 4.5–5.25% → 🟡. FRED DGS10 confirms with a lag.",
         "status_since": "2026-10-08",
         "status_prev": "red"
       },
@@ -90,14 +145,14 @@
         "name_en": "High-yield spread",
         "value": null,
         "unit": "%",
-        "as_of": "2026-10-27",
+        "as_of": "2026-10-28",
         "status": "green",
         "points": 0.0,
         "max_points": 44.44,
         "preliminary": false,
         "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "note": "3,18% na 2026-10-27 (26.10: 3,30%; 23.10: 3,38%; 22.10: 3,40%) – spadek o 12 pb; poniżej progu 3,5% → 🟢. Przy wysokiej premii sektorowej (A5, A7) obraz stresu sektorowego, nie systemowego.",
-        "note_en": "3.18% on 2026-10-27 (26 Oct: 3.30%; 23 Oct: 3.38%; 22 Oct: 3.40%) – down 12 bp; below the 3.5% threshold → 🟢. With a high sector premium (A5, A7) the picture is sector, not systemic, stress.",
+        "note": "3,14% na 2026-10-28 (27.10: 3,18%; 26.10: 3,30%; 23.10: 3,38%) – dalszy spadek o 4 pb; poniżej progu 3,5% → 🟢. Przy wysokiej premii sektorowej (A5, A6, A7) obraz stresu sektorowego, nie systemowego. Bloomberg (28.10, wtórne): 18 finansowań centrów danych na rynku obligacji śmieciowych i kredytów lewarowanych z rentownością dwucyfrową.",
+        "note_en": "3.14% on 2026-10-28 (27 Oct: 3.18%; 26 Oct: 3.30%; 23 Oct: 3.38%) – down another 4 bp; below the 3.5% threshold → 🟢. With a high sector premium (A5, A6, A7) the picture is sector stress, not systemic stress. Bloomberg (28 Oct, secondary): 18 data-center financings in the junk-bond and leveraged-loan markets carry double-digit yields.",
         "status_since": "2026-10-06",
         "status_prev": "green"
       },
@@ -201,14 +256,14 @@
         "name_en": "Hyperscaler capex guidance",
         "value": null,
         "unit": null,
-        "as_of": "2026-10-28",
+        "as_of": "2026-10-29",
         "status": "green",
         "points": 0.0,
         "max_points": 45.0,
         "preliminary": false,
-        "source": "https://www.sec.gov/Archives/edgar/data/0001652044/000165204426000080/googexhibit991q32026.htm",
-        "note": "Alphabet (wyniki III kw., 28.10, 8-K SEC): prognoza capeksu na 2026 bez zmian 195–205 mld USD; CFO: capex „znacząco wzrośnie” w 2027 (CNBC, Fortune). Microsoft (28.10): capex I kw. FY27 45,2 mld USD z leasingiem finansowym (39,37 mld USD gotówkowo) – poniżej oczekiwań z powodu opóźnionych dostaw mocy od podmiotów trzecich; ponad 50 mld USD w II kw. i ok. 170 mld USD w FY27 (CNBC, Fortune, investingLive) – źródła różnią się co do okresu (rok fiskalny vs kalendarzowy), ale żadne nie opisuje cięcia; akcje neocloudów spadły po niższym od oczekiwań capeksie Microsoftu (CNBC 28.10). Meta (21.10): 135–145 mld USD (podniesiona dolna granica). Amazon – wyniki 29.10 po sesji. Wzrost lub brak zmian → 🟢.",
-        "note_en": "Alphabet (Q3 results, 28 Oct, SEC 8-K): 2026 capex guidance unchanged at USD 195–205bn; CFO: capex will \"increase significantly\" in 2027 (CNBC, Fortune). Microsoft (28 Oct): fiscal Q1 2027 capex USD 45.2bn including finance leases (USD 39.37bn in cash) – below expectations because third-party capacity deliveries were delayed; over USD 50bn in Q2 and about USD 170bn in FY27 (CNBC, Fortune, investingLive) – sources differ on the period (fiscal vs calendar year), but none describes a cut; neocloud shares fell after Microsoft's lower-than-expected capex (CNBC 28 Oct). Meta (21 Oct): USD 135–145bn (lower end raised). Amazon reports on 29 Oct after the close. Rising or unchanged → 🟢.",
+        "source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+        "note": "Amazon (wyniki III kw., 29.10, komunikat spółki): „nadal oczekujemy” capeksu gotówkowego w 2026 r. ok. 220 mld USD – bez zmian; prezes zapowiada wzrost przychodów AWS o ponad 40% w 2027 i 2028 r. Alphabet (28.10, 8-K): 195–205 mld USD bez zmian, capex „znacząco wzrośnie” w 2027. Microsoft (28.10): capex I kw. FY27 45,2 mld USD z leasingiem finansowym (39,37 mld USD gotówkowo, 10-Q) – poniżej oczekiwań z powodu opóźnionych dostaw mocy od podmiotów trzecich; ponad 50 mld USD w II kw. – brak cięcia. Meta (21.10): 135–145 mld USD (podniesiona dolna granica). Wzrost lub brak zmian u wszystkich → 🟢.",
+        "note_en": "Amazon (Q3 results, 29 Oct, company release): it \"continues to expect\" 2026 cash capex of about USD 220bn – unchanged; the CEO projects AWS revenue growth of over 40% in both 2027 and 2028. Alphabet (28 Oct, 8-K): USD 195–205bn unchanged, capex to \"significantly increase\" in 2027. Microsoft (28 Oct): Q1 FY27 capex USD 45.2bn incl. finance leases (USD 39.37bn in cash, 10-Q) – below expectations due to delayed third-party capacity deliveries; over USD 50bn in Q2 – no cut. Meta (21 Oct): USD 135–145bn (lower bound raised). Rising or unchanged at all → 🟢.",
         "status_since": "2026-10-06",
         "status_prev": "green"
       },
@@ -235,17 +290,17 @@
         "category": "B",
         "name": "FCF wielkiej czwórki jako % capeksu",
         "name_en": "Big Four FCF as % of capex",
-        "value": 4.1,
+        "value": -13.1,
         "unit": "%",
-        "as_of": "2026-07-31",
-        "status": "yellow",
-        "points": 30.0,
+        "as_of": "2026-10-29",
+        "status": "red",
+        "points": 60.0,
         "max_points": 60.0,
         "preliminary": false,
-        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
-        "note": "II kw. 2026 z XBRL SEC: OCF 171,8 mld USD, zakupy środków trwałych 165,1 mld USD (brutto; Amazon bez potrącenia wpływów, Microsoft bez leasingu finansowego), FCF 6,7 mld USD = 4,1%; z ratami leasingu finansowego 2,5%. III kw. częściowo (3 z 4 spółek): Meta (8-K 21.10) FCF −2,12 mld USD (capex z leasingiem 34,91 mld); Alphabet (8-K 28.10) OCF 42,3 mld USD, zakupy środków trwałych 51,4 mld USD, FCF −9,07 mld USD (drugi kwartał z rzędu ujemny; emisja obligacji 28,7 mld USD w kwartale wg Motley Fool); Microsoft (28.10) FCF 18,63 mld USD przy capeksie gotówkowym 39,37 mld USD (45,2 mld z leasingiem finansowym; Motley Fool – źródło wtórne). Łączny wynik III kw. po raporcie Amazona 29.10. Odczyt z II kw. wygasa po 29.10.",
-        "note_en": "Q2 2026 from SEC XBRL: OCF USD 171.8bn, purchases of property and equipment USD 165.1bn (gross; Amazon without netting proceeds, Microsoft without finance leases), FCF USD 6.7bn = 4.1%; including finance lease payments 2.5%. Q3 partial (3 of 4 companies): Meta (8-K 21 Oct) FCF −USD 2.12bn (capex incl. leases USD 34.91bn); Alphabet (8-K 28 Oct) OCF USD 42.3bn, purchases of property and equipment USD 51.4bn, FCF −USD 9.07bn (negative for the second quarter in a row; USD 28.7bn bond issuance in the quarter per Motley Fool); Microsoft (28 Oct) FCF USD 18.63bn with cash capex of USD 39.37bn (USD 45.2bn including finance leases; Motley Fool – secondary source). Combined Q3 result after Amazon's report on 29 Oct. The Q2 reading expires after 29 Oct.",
-        "status_since": "2026-10-06",
+        "source": "https://s2.q4cdn.com/299287126/files/doc_earnings/2026/q3/earnings-result/AMZN-Q3-2026-Earnings-Release.pdf",
+        "note": "III kw. 2026, wszystkie cztery spółki z dokumentów źródłowych (10-Q w XBRL SEC; Amazon – komunikat z 29.10): łączny OCF 175,5 mld USD, łączne zakupy środków trwałych 201,9 mld USD (brutto; Amazon bez potrącenia wpływów ze sprzedaży i zachęt, Microsoft bez leasingu finansowego – ta sama definicja co w II kw.) → łączny FCF −26,4 mld USD = −13,1% capeksu → 🔴 (wyzwalacz). Rozbicie: Amazon OCF 42,4 / capex 77,3 → −34,8 mld USD (z potrąceniem wpływów 1,4 mld: −33,5; FCF za 12 mies. wg spółki −42,4 mld USD); Alphabet 42,3 / 51,4 → −9,1; Meta 32,8 / 33,9 → −1,2 (wg definicji Mety z ratami leasingu −2,1); Microsoft 58,0 / 39,4 → +18,6. Z potrąceniem wpływów Amazona −25,0 mld USD (−12,5%); z leasingiem finansowym Microsoftu (45,2 mld) i ratami leasingu Mety i Amazona jeszcze niżej – wynik ujemny przy każdej definicji. Poprzedni odczyt (II kw.): +4,1%. Kontrargument: przepływy operacyjne rosną (Amazon +29% r/r za 12 mies.), a ujemny FCF wynika z decyzji inwestycyjnych, nie ze spadku przychodów.",
+        "note_en": "Q3 2026, all four companies from primary filings (10-Q in SEC XBRL; Amazon – release of 29 Oct): combined OCF USD 175.5bn, combined purchases of property and equipment USD 201.9bn (gross; Amazon without netting proceeds from sales and incentives, Microsoft without finance leases – same definition as in Q2) → combined FCF −USD 26.4bn = −13.1% of capex → 🔴 (trigger). Breakdown: Amazon OCF 42.4 / capex 77.3 → −34.8bn (net of 1.4bn proceeds: −33.5; trailing-12-month FCF per the company −42.4bn); Alphabet 42.3 / 51.4 → −9.1; Meta 32.8 / 33.9 → −1.2 (−2.1 under Meta's definition with lease principal); Microsoft 58.0 / 39.4 → +18.6. Net of Amazon's proceeds −USD 25.0bn (−12.5%); with Microsoft's finance leases (45.2bn) and Meta's and Amazon's lease principal even lower – negative under every definition. Previous reading (Q2): +4.1%. Counter-argument: operating cash flow is growing (Amazon +29% y/y over 12 months), and negative FCF reflects investment decisions, not falling revenue.",
+        "status_since": "2026-10-29",
         "status_prev": "yellow"
       },
       {
@@ -253,16 +308,16 @@
         "category": "B",
         "name": "Chińskie spółki AI (STAR 50, Hang Seng Tech)",
         "name_en": "Chinese AI stocks (STAR 50, Hang Seng Tech)",
-        "value": 43.1,
-        "unit": "% spadku od szczytu 52-tyg. (STAR 50)",
-        "as_of": "2026-10-28",
+        "value": 45.5,
+        "unit": "%",
+        "as_of": "2026-10-29",
         "status": "red",
         "points": 20.0,
         "max_points": 20.0,
         "preliminary": false,
-        "source": "https://english.news.cn/20261028/b36e7da2a9904dd0864c49dd2116b374/c.html",
-        "note": "Nowy sygnał od 28.10 (wersja skilla z 31 sygnałami). STAR 50: zamknięcie 28.10 1282,93 pkt (+2,45%; Xinhua, Investing.com) wobec szczytu 52-tygodniowego 2255,25 pkt (lipiec 2026, maksimum śróddzienne wg Investing.com – szczyt na zamknięciu nieznacznie niższy) – ok. −43%; ok. −40% od lipcowego szczytu potwierdza Reuters (za 24/7 Wall St. i Trending Topics). Hang Seng Tech: zamknięcie 28.10 3853,72 pkt (+1,40%; Bastille Post, Investing.com) wobec szczytu 52-tygodniowego 6162,47 pkt (maksimum śróddzienne wg Investing.com) – ok. −37%. Oba indeksy > 30% → 🔴. Przyczyny chińskie: październikowe wytyczne Pekinu przeciw bańkom w „nowych siłach wytwórczych”, ograniczenia handlu lewarowanego i wysokiej częstotliwości, sprzedaż przez inwestorów państwowych w czasie wzrostów (Reuters), obawy przed zakazem USA dla chińskiego sprzętu do centrów danych. Przyczyny związane z AI: wyceny (C/Z STAR 50 z ok. 250 do ok. 100), koncentracja (spółki AI to 42% kapitalizacji i 57% obrotów wg Goldman Sachs). Brak danych o saldzie kredytu maklerskiego, przepływach Southbound i zakupach funduszy państwowych – do uzupełnienia. To odczyt wyceny i nastrojów, nie zdarzenie kredytowe.",
-        "note_en": "New signal from 28 Oct (skill version with 31 signals). STAR 50: close on 28 Oct 1,282.93 points (+2.45%; Xinhua, Investing.com) vs a 52-week high of 2,255.25 points (July 2026, intraday maximum per Investing.com – the closing high is slightly lower) – about −43%; a fall of about 40% from the July peak is confirmed by Reuters (via 24/7 Wall St. and Trending Topics). Hang Seng Tech: close on 28 Oct 3,853.72 points (+1.40%; Bastille Post, Investing.com) vs a 52-week high of 6,162.47 points (intraday maximum per Investing.com) – about −37%. Both indices > 30% → 🔴. China-specific causes: Beijing's October guidelines against bubbles in \"new productive forces\", curbs on leveraged and high-frequency trading, selling by state-backed investors into rallies (Reuters), fears of a US ban on Chinese-made data-center equipment. AI-related causes: valuations (STAR 50 P/E from about 250 to about 100), concentration (AI stocks are 42% of market value and 57% of trading per Goldman Sachs). No data on the margin financing balance, Southbound flows or state fund purchases – to be added. This is a valuation and sentiment reading, not a credit event.",
+        "source": "https://english.news.cn/20261029/02a7de7c75f34792a904780f328f1a8e/c.html",
+        "note": "STAR 50: zamknięcie 29.10 1228,09 pkt (−4,27%; Xinhua) wobec szczytu 52-tygodniowego 2255,25 pkt (lipiec 2026, maksimum śróddzienne wg Investing.com) – ok. −45,5% (28.10: ok. −43%). Hang Seng Tech: 29.10 ok. 3744 pkt (−2,8%; The Standard, Futunn za ad-hoc-news) wobec szczytu 6162,47 pkt – ok. −39% (28.10: −37%). Oba indeksy > 30% → 🔴. Spadek prowadziły spółki sprzętu AI i chipów (SMIC −5,9%, ChiNext −4,45%), przy wzrostach banków i energetyki. Przyczyny chińskie (październikowe wytyczne Pekinu przeciw bańkom w „nowych siłach wytwórczych”, ograniczenia handlu lewarowanego, sprzedaż przez inwestorów państwowych w czasie wzrostów – Reuters) mieszają się z wycenowymi związanymi z AI. Sygnał wycen i nastrojów, nie zdarzenie kredytowe.",
+        "note_en": "STAR 50: close on 29 Oct 1,228.09 (−4.27%; Xinhua) vs the 52-week high of 2,255.25 (July 2026, intraday high per Investing.com) – about −45.5% (28 Oct: about −43%). Hang Seng Tech: about 3,744 on 29 Oct (−2.8%; The Standard, Futunn via ad-hoc-news) vs the 6,162.47 high – about −39% (28 Oct: −37%). Both indices > 30% → 🔴. The fall was led by AI hardware and chip stocks (SMIC −5.9%, ChiNext −4.45%), while banks and energy rose. China-specific causes (Beijing's October guidance against bubbles in \"new productive forces\", curbs on leveraged trading, selling by state investors into rallies – Reuters) mix with AI-related valuation causes. A valuation and sentiment reading, not a credit event.",
         "status_since": "2026-10-28"
       },
       {
@@ -314,8 +369,8 @@
         "max_points": 35.0,
         "preliminary": false,
         "source": "https://www.investing.com/news/stock-market-news/openais-annualized-revenue-20-billion-less-than-previously-signaled-ft-reports-4939854",
-        "note": "OpenAI powiedziało inwestorom, że roczny run-rate na koniec IX wynosił blisko 50 mld USD, a nie ok. 68–70 mld USD wcześniej sygnalizowanych (8.10; pierwszy podał FT, potwierdzone własnymi źródłami przez Reuters i CNBC – dwa niezależne źródła wtórne). Różnica jest definicyjna: wyższa liczba obejmowała przychody brutto ze sprzedaży przez partnerów chmurowych, by ułatwić porównanie z Anthropic, który je wlicza – nie traktujemy jej jako zmiany planów. Wzrost run-rate OpenAI o 77% w III kw. (CNBC); Anthropic powyżej 65 mld USD (koniec VII); AWS +37%, Azure +43%, Google Cloud +82% r/r w II kw. – przyspieszenie. Status q25 utrzymany za nieaudytowany i nieporównywalny charakter run-rate oraz koncentrację; blisko progu q50, jeśli kolejne korekty dotkną tempa wzrostu, a nie tylko definicji. Dotyczy też Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne (wtórne). Nowe 26.10: Anthropic złożył publicznie prospekt S-1 w SEC (ticker ANT, Nasdaq; wielkość i cena oferty nieustalone). Według relacji z prospektu (Yahoo Finance 26.10; wcześniej WSJ 20.10 z wersji poufnej – dwa niezależne źródła wtórne; strona SEC odrzuciła automatyczne pobranie, więc liczby nie są zweryfikowane u źródła): przychody 16,3 mld USD w I poł. 2026, strata netto 80,7 mld USD (w większości niegotówkowe przeszacowania instrumentów finansowania, ok. 72 mld USD), ok. 9 mld USD wydatków na moc obliczeniową w I poł.; zobowiązania na moc obliczeniową szacowane różnie: od ok. 430 do 637 mld USD zależnie od definicji; ok. 20–25% przychodów od dwóch klientów. Szybki wzrost przychodów równoważy koncentrację i skalę zobowiązań – q25 bez zmian. Dotyczy Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne.",
-        "note_en": "OpenAI told investors its annualized run-rate at the end of September was close to USD 50bn, not the roughly USD 68–70bn signalled earlier (8 Oct; first reported by the FT, confirmed with their own sources by Reuters and CNBC – two independent secondary sources). The difference is definitional: the higher figure included gross revenue from sales through cloud partners, to ease comparison with Anthropic, which counts them – it is not treated as a change of plans. OpenAI run-rate growth of 77% in Q3 (CNBC); Anthropic above USD 65bn (end of July); AWS +37%, Azure +43%, Google Cloud +82% y/y in Q2 – accelerating. Status q25 kept for unaudited, non-comparable run-rates and concentration; near the q50 threshold if further revisions affect the growth rate rather than only the definition. Also concerns Anthropic – potential conflict of interest, external (secondary) sources only. New 26 Oct: Anthropic publicly filed an S-1 prospectus with the SEC (ticker ANT, Nasdaq; offering size and price not yet set). According to reports on the prospectus (Yahoo Finance 26 Oct; earlier the WSJ on 20 Oct from the confidential draft – two independent secondary sources; the SEC site rejected automated retrieval, so the figures are not verified at the source): revenue of USD 16.3bn in H1 2026, a net loss of USD 80.7bn (mostly non-cash revaluations of financing instruments, about USD 72bn), about USD 9bn of compute spending in H1; compute commitments estimated variously at about USD 430bn to 637bn depending on the definition; about 20–25% of revenue from two customers. Fast revenue growth offsets the concentration and the scale of commitments – q25 unchanged. Concerns Anthropic – potential conflict of interest, external sources only.",
+        "note": "OpenAI powiedziało inwestorom, że roczny run-rate na koniec IX wynosił blisko 50 mld USD, a nie ok. 68–70 mld USD wcześniej sygnalizowanych (8.10; pierwszy podał FT, potwierdzone własnymi źródłami przez Reuters i CNBC – dwa niezależne źródła wtórne). Różnica jest definicyjna: wyższa liczba obejmowała przychody brutto ze sprzedaży przez partnerów chmurowych, by ułatwić porównanie z Anthropic, który je wlicza – nie traktujemy jej jako zmiany planów. Wzrost run-rate OpenAI o 77% w III kw. (CNBC); Anthropic powyżej 65 mld USD (koniec VII); AWS +37%, Azure +43%, Google Cloud +82% r/r w II kw. – przyspieszenie. Status q25 utrzymany za nieaudytowany i nieporównywalny charakter run-rate oraz koncentrację; blisko progu q50, jeśli kolejne korekty dotkną tempa wzrostu, a nie tylko definicji. Dotyczy też Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne (wtórne). Nowe 26.10: Anthropic złożył publicznie prospekt S-1 w SEC (ticker ANT, Nasdaq; wielkość i cena oferty nieustalone). Według relacji z prospektu (Yahoo Finance 26.10; wcześniej WSJ 20.10 z wersji poufnej – dwa niezależne źródła wtórne; strona SEC odrzuciła automatyczne pobranie, więc liczby nie są zweryfikowane u źródła): przychody 16,3 mld USD w I poł. 2026, strata netto 80,7 mld USD (w większości niegotówkowe przeszacowania instrumentów finansowania, ok. 72 mld USD), ok. 9 mld USD wydatków na moc obliczeniową w I poł.; zobowiązania na moc obliczeniową szacowane różnie: od ok. 430 do 637 mld USD zależnie od definicji; ok. 20–25% przychodów od dwóch klientów. Szybki wzrost przychodów równoważy koncentrację i skalę zobowiązań – q25 bez zmian. Dotyczy Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne. Nowe 29.10: AWS +39% r/r w III kw. (46,0 mld USD, najszybciej od prawie 5 lat; komunikat Amazona – źródło pierwotne); Amazon w III kw. 2025 ujął 9,5 mld USD zysków z inwestycji w Anthropic (konflikt interesów). Status q25 bez zmian.",
+        "note_en": "OpenAI told investors its annualized run-rate at the end of September was close to USD 50bn, not the roughly USD 68–70bn signalled earlier (8 Oct; first reported by the FT, confirmed with their own sources by Reuters and CNBC – two independent secondary sources). The difference is definitional: the higher figure included gross revenue from sales through cloud partners, to ease comparison with Anthropic, which counts them – it is not treated as a change of plans. OpenAI run-rate growth of 77% in Q3 (CNBC); Anthropic above USD 65bn (end of July); AWS +37%, Azure +43%, Google Cloud +82% y/y in Q2 – accelerating. Status q25 kept for unaudited, non-comparable run-rates and concentration; near the q50 threshold if further revisions affect the growth rate rather than only the definition. Also concerns Anthropic – potential conflict of interest, external (secondary) sources only. New 26 Oct: Anthropic publicly filed an S-1 prospectus with the SEC (ticker ANT, Nasdaq; offering size and price not yet set). According to reports on the prospectus (Yahoo Finance 26 Oct; earlier the WSJ on 20 Oct from the confidential draft – two independent secondary sources; the SEC site rejected automated retrieval, so the figures are not verified at the source): revenue of USD 16.3bn in H1 2026, a net loss of USD 80.7bn (mostly non-cash revaluations of financing instruments, about USD 72bn), about USD 9bn of compute spending in H1; compute commitments estimated variously at about USD 430bn to 637bn depending on the definition; about 20–25% of revenue from two customers. Fast revenue growth offsets the concentration and the scale of commitments – q25 unchanged. Concerns Anthropic – potential conflict of interest, external sources only. New 29 Oct: AWS +39% y/y in Q3 (USD 46.0bn, fastest in nearly 5 years; Amazon release – primary source); Amazon booked USD 9.5bn of gains on its Anthropic investment in Q3 2025 (conflict of interest). Status q25 unchanged.",
         "conflict_of_interest": true,
         "status_since": "2026-10-06",
         "status_prev": "q25"
@@ -468,16 +523,16 @@
         "category": "E",
         "name": "Krzywa 10Y–2Y",
         "name_en": "10Y–2Y yield curve",
-        "value": 0.38,
+        "value": 0.37,
         "unit": "pp",
-        "as_of": "2026-10-28",
+        "as_of": "2026-10-29",
         "status": "yellow",
         "points": 10.0,
         "max_points": 20.0,
         "preliminary": false,
         "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610",
-        "note": "Treasury 28.10: 10Y 5,05%, 2Y 4,67% → 0,38 pp (27.10: 0,29 pp). Dzień: 2Y −3 pb, 10Y +6 pb (stromienie przez rosnącą 10Y = zaostrzenie warunków finansowych). Tydzień (21.10→28.10): 2Y −14 pb, 10Y −8 pb (stromienie przez spadającą 2Y = łagodzenie); miesiąc (25.09→28.10): 2Y −14 pb, 10Y −12 pb (niemal równoległy spadek). Sygnały w różnych horyzontach sprzeczne → obraz mieszany, 🟡.",
-        "note_en": "Treasury 28 Oct: 10Y 5.05%, 2Y 4.67% → 0.38 pp (27 Oct: 0.29 pp). Day: 2Y −3 bp, 10Y +6 bp (steepening via a rising 10Y = tightening financial conditions). Week (21 Oct→28 Oct): 2Y −14 bp, 10Y −8 bp (steepening via a falling 2Y = easing); month (25 Sep→28 Oct): 2Y −14 bp, 10Y −12 bp (an almost parallel decline). Signals on different horizons conflict → mixed picture, 🟡.",
+        "note": "Treasury 29.10: 10Y 4,98%, 2Y 4,61% → 0,37 pp (28.10: 0,38 pp). Dzień: 2Y −6 pb, 10Y −7 pb (równoległy spadek). Tydzień (22.10→29.10): 2Y −4 pb, 10Y +2 pb (lekkie stromienie przez obie strony); miesiąc (29.09→29.10): 2Y −28 pb, 10Y −28 pb (równoległy spadek, spread bez zmian na 0,37 pp). Brak przewagi jednego mechanizmu → obraz mieszany, 🟡.",
+        "note_en": "Treasury 29 Oct: 10Y 4.98%, 2Y 4.61% → 0.37 pp (28 Oct: 0.38 pp). Day: 2Y −6 bp, 10Y −7 bp (parallel fall). Week (22 Oct→29 Oct): 2Y −4 bp, 10Y +2 bp (slight steepening from both ends); month (29 Sep→29 Oct): 2Y −28 bp, 10Y −28 bp (parallel fall, spread unchanged at 0.37 pp). No mechanism dominates → mixed picture, 🟡.",
         "status_since": "2026-10-15",
         "status_prev": "red"
       },
@@ -504,16 +559,16 @@
         "category": "E",
         "name": "Bank Japonii i carry trade na jenie",
         "name_en": "Bank of Japan and the yen carry trade",
-        "value": 157.91,
+        "value": 157.7,
         "unit": "JPY/USD",
-        "as_of": "2026-10-27",
+        "as_of": "2026-10-29",
         "status": "yellow",
         "points": 10.0,
         "max_points": 20.0,
         "preliminary": false,
-        "source": "https://finance.yahoo.com/quote/JPY=X/",
-        "note": "BoJ podniósł 18.09 stopę o 25 pb do ok. 1,25% – podwyżka w ostatnich 3 miesiącach → 🟡. USD/JPY na zamknięciu 27.10: 157,91 (Yahoo Finance – źródło wtórne; 26.10: 156,83) wobec 157,37 miesiąc wcześniej (22.09) – jen słabszy o ok. 0,3%, w przedziale ±3%; warunek 🔴 niespełniony. Wycena OIS (ostatnie dostępne dane z 22–23.10): podwyżka 30.10 ok. 4–5,5%, do grudnia ok. 80–84% – poniżej 50% dla najbliższego posiedzenia. Decyzja BoJ 30.10.",
-        "note_en": "The BoJ raised its rate by 25 bp to about 1.25% on 18 Sep – a hike in the last 3 months → 🟡. USD/JPY at the close on 27 Oct: 157.91 (Yahoo Finance – secondary source; 26 Oct: 156.83) vs 157.37 a month earlier (22 Sep) – the yen about 0.3% weaker, within ±3%; the 🔴 condition is not met. OIS pricing (latest available data from 22–23 Oct): a hike on 30 Oct about 4–5.5%, by December about 80–84% – below 50% for the next meeting. BoJ decision on 30 Oct.",
+        "source": "https://finance.yahoo.com/quote/JPY=X/history/",
+        "note": "BoJ podniósł 18.09 stopę o 25 pb do ok. 1,25% – podwyżka w ostatnich 3 miesiącach → 🟡. USD/JPY 29.10: ok. 157,70 (Yahoo Finance – źródło wtórne, odczyt przed końcem sesji; 28.10: 157,99) wobec 157,36 miesiąc wcześniej (29.09) – jen słabszy o ok. 0,2%, w przedziale ±3%; warunek 🔴 niespełniony. Wycena OIS (ostatnie dostępne dane z 22–23.10): podwyżka 30.10 ok. 4–5,5%. Decyzja BoJ 30.10.",
+        "note_en": "The BoJ raised its rate by 25 bp to about 1.25% on 18 Sep – a hike within the last 3 months → 🟡. USD/JPY on 29 Oct: about 157.70 (Yahoo Finance – secondary, reading before the session close; 28 Oct: 157.99) vs 157.36 a month earlier (29 Sep) – yen weaker by about 0.2%, within ±3%; the 🔴 condition is not met. OIS pricing (latest available data from 22–23 Oct): a hike on 30 Oct about 4–5.5%. BoJ decision on 30 Oct.",
         "status_since": "2026-10-16"
       },
       {
@@ -610,11 +665,6 @@
       }
     ],
     "calendar": [
-      {
-        "date": "2026-10-29",
-        "title": "Amazon – wyniki III kw. po sesji (B1, B3); początek posiedzenia BoJ (E4)",
-        "title_en": "Amazon Q3 results after the close (B1, B3); BoJ meeting begins (E4)"
-      },
       {
         "date": "2026-10-30",
         "title": "Decyzja BoJ (E4); indeks PCE za wrzesień (E3)",
