@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "note": "Odbudowane 2026-10-06 z odczytów w data/latest.json (pierwszy zapis pliku stanu).",
   "series": {
     "A4": [
@@ -125,13 +125,13 @@
     ],
     "G4": [
       {
-        "as_of": "2026-10-04",
-        "value": 19.6,
+        "as_of": "2026-10-31",
+        "value": 45.8,
         "unit": "%",
-        "gap_points": 11.3,
-        "index_version": "v4.3.2",
-        "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "note": "Sprawdzenie 2026-10-26: v4.3.2, lider bez zmian (58); brak nowego odczytu luki."
+        "index_version": "v5.0",
+        "best_closed": "Gemini 4 Carbon (high) 59",
+        "best_open": "DeepSeek V4.1 Flash 1017 (max) / GLM-5.3 (max) 32",
+        "source": "https://artificialanalysis.ai/models/open-source"
       }
     ],
     "D6": [
