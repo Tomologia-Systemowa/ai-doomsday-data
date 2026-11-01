@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "note": "Odbudowane 2026-10-06 z odczytów w data/latest.json (pierwszy zapis pliku stanu).",
   "series": {
     "A4": [
@@ -141,6 +141,13 @@
         "value": 322,
         "unit": "% r/r na dzień roboczy",
         "source": "https://www.koreatimes.co.kr/economy/20261001/koreas-monthly-exports-hit-1209-bil-in-sept-on-record-chip-sales (60,3 mld USD, +263% r/r; 21,5 vs 25 dni roboczych – wyliczenie własne)"
+      },
+      {
+        "period": "2026-10",
+        "as_of": "2026-11-01",
+        "value": 227,
+        "unit": "% r/r na dzień roboczy",
+        "source": "https://www.koreatimes.co.kr/economy/20261101/koreas-monthly-exports-hit-1153-bil-in-oct-on-record-chip-sales (56,44 mld USD, +259,4% r/r; ok. 22,0 vs 20,0 dni roboczych – wyliczenie własne z danych MOTIE za Newspim)"
       }
     ]
   }
