@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-11-06T08:00:20+01:00",
+  "updated_at": "2026-11-06T10:40:50+01:00",
   "files": [
     {
       "date": "2026-10-04",
@@ -237,7 +237,7 @@
       "date": "2026-11-06",
       "file": "history-06-11-2026.json",
       "kind": "full",
-      "score": 462,
+      "score": 516,
       "band": "Pęknięcia"
     }
   ]

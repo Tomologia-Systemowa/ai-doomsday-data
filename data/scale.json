@@ -69,5 +69,10 @@
       "budget": 100
     }
   },
-  "total": 1000
+  "total": 1000,
+  "overflow_band": {
+    "min": 1001,
+    "band": "Krach – poza skalą",
+    "band_en": "Crash – off the scale"
+  }
 }
