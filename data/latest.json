@@ -1,16 +1,16 @@
 {
   "schema_version": "1.2",
-  "date": "2026-11-09",
-  "report_type": "full",
+  "date": "2026-11-10",
+  "report_type": "short",
   "score": 556,
   "band": "Pęknięcia",
   "band_en": "Cracks",
-  "change_vs_previous": 30,
-  "headline": "Barometr rośnie do 556/1000: dług największego neoclouda kosztuje ok. 10 punktów procentowych więcej niż dług solidnych firm.",
-  "headline_en": "The barometer rises to 556/1000: the largest neocloud's debt costs about 10 percentage points more than that of solid companies.",
-  "summary": "Wynik jest o 30 punktów wyższy niż w poprzednim raporcie (8.11) i o 19 wyższy niż rano. Wieczorem skorygowaliśmy ocenę kosztu długu neocloudów, czyli firm wynajmujących moc obliczeniową AI: obligacje CoreWeave dają ok. 15–16% rocznie, o ok. 10 punktów procentowych więcej niż obligacje firm o ratingu inwestycyjnym. Taki poziom mieści się w nowej, wyższej strefie skali, której wcześniejsze raporty nie zastosowały. Według Semafora część kredytodawców wyprzedaje kredyty na centra danych z dużym dyskontem, a Ares rezygnuje z finansowania zakupu chipów. Akcje Nvidii straciły ok. 4–5% po wszczęciu przez zarząd dochodzenia w sprawie prezesa. Jutro inflacja CPI i wyniki CoreWeave. Tego samego dnia, gdy Ares mówi, że nie umie wycenić spadku wartości chipów, Goldman Sachs i Apollo oferują inwestorom największe w historii finansowanie chipów – 40 mld USD.",
-  "summary_en": "The score is 30 points higher than in the previous report (8 Nov) and 19 higher than this morning. In the evening we corrected the assessment of neocloud debt costs (neoclouds are firms renting out AI computing power): CoreWeave bonds yield about 15–16% a year, about 10 percentage points more than investment-grade company bonds. That level falls in a new, higher zone of the scale that earlier reports did not apply. According to Semafor, some lenders are selling data-center loans at steep discounts, and Ares is passing on chip-purchase financing. Nvidia shares lost about 4–5% after the board opened an investigation concerning the CEO. Tomorrow: CPI inflation and CoreWeave's results. On the same day that Ares says it cannot price the loss in value of chips, Goldman Sachs and Apollo are marketing the largest chip financing ever – USD 40bn.",
-  "report_file": "history/history-09-11-2026.json",
+  "change_vs_previous": 0,
+  "headline": "556/1000 bez zmian we wtorek rano: noc nie przyniosła nowych zdarzeń kredytowych; dziś inflacja w USA i wyniki CoreWeave.",
+  "headline_en": "556/1000, unchanged on Tuesday morning: the night brought no new credit events; US inflation and CoreWeave's results are due today.",
+  "summary": "Wynik 556/1000 – bez zmian od wczorajszego wieczornego raportu. Nocny przegląd wiadomości nie przyniósł nowych zdarzeń kredytowych, obniżek ratingów ani stanowych wstrzymań budowy centrów danych. Giełdy w Azji odbiły (Nikkei prawie +3% na spółkach AI), co nie zmienia odczytów. Dziś po południu inflacja CPI w USA, od której zależy wycena grudniowej podwyżki stóp Fed, a wieczorem wyniki CoreWeave – najbardziej zadłużonego wynajmującego moc obliczeniową AI.",
+  "summary_en": "The score is 556/1000 – unchanged since yesterday evening's report. The overnight news sweep brought no new credit events, rating downgrades or state pauses on data-center construction. Asian stock markets rebounded (the Nikkei up almost 3% on AI stocks), which does not change the readings. This afternoon brings US CPI inflation, on which the pricing of a December Fed rate hike depends, and in the evening the results of CoreWeave – the most indebted renter of AI computing power.",
+  "report_file": "history/history-10-11-2026.json",
   "triggers": [
     "Łączny FCF Wielkiej Czwórki ujemny (B3 🔴)"
   ],
@@ -725,11 +725,6 @@
   ],
   "calendar": [
     {
-      "date": "2026-11-09",
-      "title": "Senat USA wraca; pierwsze głosowanie nad ponadpartyjną ustawą o pozwoleniach (C5)",
-      "title_en": "US Senate returns; first vote on the bipartisan permitting bill (C5)"
-    },
-    {
       "date": "2026-11-10",
       "title": "Inflacja CPI w USA za październik (E3); wyniki CoreWeave za III kw. po sesji (A5, A7, A8)",
       "title_en": "US October CPI (E3); CoreWeave Q3 results after the close (A5, A7, A8)"
@@ -743,11 +738,6 @@
       "date": "2026-11-12",
       "title": "Wyniki Nebius, Cisco i Applied Materials (C3, D5)",
       "title_en": "Nebius, Cisco and Applied Materials results (C3, D5)"
-    },
-    {
-      "date": "2026-11-16",
-      "title": "Możliwy debiut Anthropic na Nasdaq (doniesienia, niepotwierdzone; potencjalny konflikt interesów)",
-      "title_en": "Possible Anthropic Nasdaq debut (reports, unconfirmed; potential conflict of interest)"
     },
     {
       "date": "2026-11-17",
