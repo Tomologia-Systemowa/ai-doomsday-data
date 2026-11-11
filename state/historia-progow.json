@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-11",
   "note": "Odbudowane 2026-10-06 z odczytów w data/latest.json (pierwszy zapis pliku stanu).",
   "series": {
     "A4": [
@@ -13,13 +13,6 @@
     ],
     "C1": [
       {
-        "period": "2026-06",
-        "as_of": "2026-09-09",
-        "value": 10.92,
-        "unit": "USD/pracownik/mies.",
-        "source": "https://ramp.com/data/ai-index-sept-2026"
-      },
-      {
         "period": "2026-07",
         "as_of": "2026-09-09",
         "value": 11.88,
@@ -32,6 +25,13 @@
         "value": 12.5,
         "unit": "USD/pracownik/mies.",
         "source": "https://ramp.com/data/ai-index-sept-2026"
+      },
+      {
+        "period": "2026-09",
+        "as_of": "2026-11-11",
+        "value": 15.7,
+        "unit": "USD/pracownik/mies.",
+        "source": "https://ramp.com/data/ai-index"
       }
     ],
     "C2": [
@@ -59,14 +59,6 @@
     ],
     "D1": [
       {
-        "period": "30d do 2026-11-02",
-        "as_of": "2026-11-02",
-        "measure": "spot_30d",
-        "change_pct": 37.4,
-        "direction": "up",
-        "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"
-      },
-      {
         "period": "30d do 2026-11-03",
         "as_of": "2026-11-03",
         "measure": "spot_30d",
@@ -79,6 +71,14 @@
         "as_of": "2026-11-05",
         "measure": "spot_30d",
         "change_pct": 10.2,
+        "direction": "up",
+        "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"
+      },
+      {
+        "period": "30d do 2026-11-10",
+        "as_of": "2026-11-10",
+        "measure": "spot_30d",
+        "change_pct": 16.1,
         "direction": "up",
         "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"
       }
