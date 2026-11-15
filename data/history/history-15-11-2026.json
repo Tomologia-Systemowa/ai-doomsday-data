@@ -1,7 +1,7 @@
 {
   "schema_version": "1.2",
   "date": "2026-11-15",
-  "updated_at": "2026-11-15T07:55:54+01:00",
+  "updated_at": "2026-11-15T21:55:40+01:00",
   "entry": {
     "kind": "short",
     "score": 556,
@@ -16,13 +16,13 @@
       "F": 75.0,
       "G": 27.5
     },
-    "headline": "556/1000 bez zmian: weekend bez nowych odczytów, przed tygodniem wyników Nvidii i wyceny IPO Anthropic.",
-    "headline_en": "556/1000 unchanged: a weekend with no new readings, ahead of a week of Nvidia results and the Anthropic IPO pricing."
+    "headline": "556/1000 bez zmian: wieczorny przegląd niedzieli bez nowych odczytów; we wtorek wyniki Nvidii.",
+    "headline_en": "556/1000 unchanged: Sunday evening sweep with no new readings; Nvidia results on Tuesday."
   },
   "events": [],
   "report": {
-    "summary": "Wynik 556/1000 – bez zmian od soboty. W weekend nie pojawiły się nowe odczyty ani zdarzenia kredytowe. Rząd USA zapowiada, że kontrola eksportu chipów do Chin nie będzie przedmiotem rozmów na spotkaniu Trump–Xi 18–19.11. W tym tygodniu: we wtorek wyniki Nvidii (pierwsze pod tymczasową prezes Colette Kress; oczekiwane ok. 109 mld USD przychodów) i sprzedaż detaliczna w USA, w środę protokół Fed i wycena IPO Anthropic (przedział 70–78 USD; potencjalny konflikt interesów), w czwartek początek notowań.",
-    "summary_en": "Score 556/1000 – unchanged since Saturday. No new readings or credit events appeared over the weekend. The US government says chip export controls on China will not be negotiated at the Trump–Xi meeting on 18–19 Nov. This week: Tuesday brings Nvidia's results (the first under interim CEO Colette Kress; about USD 109bn of revenue expected) and US retail sales, Wednesday the Fed minutes and the Anthropic IPO pricing (range USD 70–78; potential conflict of interest), Thursday the start of trading.",
+    "summary": "Wynik 556/1000 – bez zmian od soboty i od porannego raportu. Wieczorny przegląd niedzieli nie przyniósł nowych odczytów, zdarzeń kredytowych ani decyzji w sprawie centrów danych; niepotwierdzony odczyt premii AI w spreadach obligacji (A2) nadal bez drugiego źródła i wygasa 19.11. Najbliższe dni: we wtorek po sesji wyniki Nvidii (rynek opcji wycenia ruch kursu ok. ±10,6%) i sprzedaż detaliczna w USA, w środę protokół Fed i wycena IPO Anthropic (potencjalny konflikt interesów), w czwartek początek notowań.",
+    "summary_en": "Score 556/1000 – unchanged since Saturday and since this morning's report. The Sunday evening sweep brought no new readings, credit events or data-center decisions; the unconfirmed reading of an AI premium in bond spreads (A2) still has no second source and expires on 19 Nov. Coming days: on Tuesday after the close Nvidia results (the options market prices a share move of about ±10.6%) and US retail sales, on Wednesday the Fed minutes and the Anthropic IPO pricing (potential conflict of interest), on Thursday the start of trading.",
     "curve_comment": null,
     "curve_comment_en": null,
     "category_comments": null,
