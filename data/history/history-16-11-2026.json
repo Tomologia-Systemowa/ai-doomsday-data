@@ -1,10 +1,10 @@
 {
   "schema_version": "1.2",
   "date": "2026-11-16",
-  "updated_at": "2026-11-16T08:02:20+01:00",
+  "updated_at": "2026-11-16T21:57:05+01:00",
   "entry": {
     "kind": "full",
-    "score": 556,
+    "score": 566,
     "band": "Pęknięcia",
     "band_en": "Cracks",
     "categories": {
@@ -12,19 +12,30 @@
       "B": 105.0,
       "C": 55.0,
       "D": 20.0,
-      "E": 60.0,
+      "E": 70.0,
       "F": 75.0,
       "G": 27.5
     },
-    "headline": "556/1000 bez zmian: banki zaostrzają kredyty na centra danych, Azja wyprzedaje spółki chipowe przed wynikami Nvidii.",
-    "headline_en": "556/1000 unchanged: banks tighten data-center lending, Asia sells off chip stocks ahead of Nvidia results."
+    "headline": "566/1000: krzywa rentowności sygnalizuje zaostrzanie, spółki chipowe tracą przed wynikami Nvidii i po nowych regułach eksportu chipów.",
+    "headline_en": "566/1000: the yield curve signals tightening, chip stocks fall ahead of Nvidia results and after new chip-export rules."
   },
-  "events": [],
+  "events": [
+    {
+      "date": "2026-11-16",
+      "type": "threshold_cross",
+      "signal": "E2",
+      "severity": "medium",
+      "title": "E2 Krzywa 10Y–2Y: zmiana statusu 🟡 → 🔴",
+      "title_en": "E2 10Y–2Y yield curve: status change 🟡 → 🔴",
+      "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
+      "duration": "transient"
+    }
+  ],
   "report": {
-    "summary": "Wynik 556/1000 – bez zmian od poprzedniego raportu i od początku poprzedniego tygodnia; to wciąż pasmo Pęknięć. Najwięcej ważą trzy rzeczy: łączny wolny przepływ gotówki (FCF, czyli gotówka po inwestycjach) czterech największych hiperskalerów jest ujemny, koszt długu neocloudów (firm wynajmujących moc GPU) przekracza rentowność obligacji inwestycyjnych o ok. 1000 pb, a stanowe pauzy dla centrów danych obowiązują w Teksasie, Nowym Jorku i Oregonie. Nowe dane są mieszane: wydatki firm na AI w Ramp rosną piąty miesiąc z rzędu, ale odsetek firm używających AI w badaniu Census po raz pierwszy spadł (24,2% wobec 24,6%), przy zmienionej definicji pytania. W tym tygodniu: wyniki Nvidii (wtorek), wycena IPO Anthropic (środa; potencjalny konflikt interesów), aukcja kredytów ING (czwartek). Spread obligacji zabezpieczonych centrami danych z ratingiem A wzrósł w tym roku z 1,95 do 2,57 pp, a Amazon zapowiada na 2027 r. capex „znacząco wyższy” niż 220 mld USD.",
-    "summary_en": "Score 556/1000 – unchanged from the previous report and from the start of last week; still in the Cracks band. Three things weigh most: the combined free cash flow (FCF, cash left after investment) of the four largest hyperscalers is negative, the cost of neocloud debt (firms renting out GPU capacity) exceeds investment-grade bond yields by about 1,000 bp, and state pauses on data centers are in force in Texas, New York and Oregon. New data are mixed: business AI spending in Ramp has risen for a fifth month in a row, but the share of firms using AI in the Census survey fell for the first time (24.2% vs 24.6%), with the question's wording changed. This week: Nvidia results (Tuesday), Anthropic IPO pricing (Wednesday; potential conflict of interest), the ING loan auction (Thursday). The spread on A-rated data-center-backed bonds has risen this year from 1.95 to 2.57 pp, while Amazon promises 2027 capex \"meaningfully higher\" than USD 220bn.",
-    "curve_comment": "Krzywa 10Y–2Y 0,27 pp (13.11). W tygodniu 2Y wzrosła o 37 pb, a 10Y o 29 pb – spłaszczenie przez wzrost krótkiego końca, czyli wycena zaostrzenia polityki Fed (podwyżka w grudniu ok. 85–92%). W skali miesiąca 10Y spadła o 6 pb przy wzroście 2Y o 9 pb, co wskazuje raczej na oczekiwania spowolnienia; obraz mieszany, 🟡 blisko progu 🔴.",
-    "curve_comment_en": "The 10Y–2Y curve at 0.27 pp (13 Nov). Over the week the 2Y rose 37 bp and the 10Y 29 bp – flattening via the short end, i.e. pricing of tighter Fed policy (a December hike at about 85–92%). Over the month the 10Y fell 6 bp while the 2Y rose 9 bp, which points rather to slowdown expectations; a mixed picture, 🟡 near the 🔴 threshold.",
+    "summary": "Wynik 566/1000 – o 10 punktów wyżej niż w porannym raporcie (556); to wciąż pasmo Pęknięć. Zmieniła się jedna rzecz: krzywa rentowności (różnica między oprocentowaniem 10-letnich i 2-letnich obligacji USA) spłaszcza się, bo szybciej rosną stopy krótkie – rynek w pełni wycenia grudniową podwyżkę stóp Fed. W poniedziałek S&P 500 spadł o ok. 2%, a indeks spółek półprzewodnikowych o 4%; Nvidia przed wtorkowymi wynikami straciła ok. 4% (blisko 13% w pięć dni). Departament Handlu USA wprowadził licencje na eksport zaawansowanych chipów AI do centrów danych, które mogą udostępniać moc obliczeniową firmom z Chin. Rynek kredytowy jest spokojniejszy niż akcje: spread obligacji śmieciowych (dodatkowe oprocentowanie najsłabszych firm) wynosi 3,23%. W tym tygodniu: wyniki Nvidii (wtorek), protokół Fed i wycena IPO Anthropic (środa; potencjalny konflikt interesów), aukcja kredytów ING (czwartek).",
+    "summary_en": "Score 566/1000 – 10 points higher than in the morning report (556); still in the Cracks band. One thing changed: the yield curve (the gap between US 10-year and 2-year bond yields) is flattening because short-term rates are rising faster – the market fully prices a December Fed rate hike. On Monday the S&P 500 fell about 2% and the semiconductor index 4%; Nvidia lost about 4% ahead of Tuesday's results (nearly 13% over five days). The US Commerce Department introduced licences for exports of advanced AI chips to data centers that may provide compute to Chinese companies. The credit market is calmer than stocks: the junk-bond spread (the extra yield paid by the weakest companies) is 3.23%. This week: Nvidia results (Tuesday), Fed minutes and Anthropic IPO pricing (Wednesday; potential conflict of interest), the ING loan auction (Thursday).",
+    "curve_comment": "Krzywa 10Y–2Y 0,29 pp (16.11). W tygodniu 2Y wzrosła o 27 pb, a 10Y o 24 pb, w miesiącu (16.10→16.11) 2Y o 9 pb, a 10Y o 3 pb – w obu horyzontach spłaszczenie przez wzrost krótkiego końca, czyli wycena zaostrzenia polityki Fed (podwyżka w grudniu wyceniona w pełni). Stąd 🔴 zamiast 🟡; ruchy miesięczne są jednak małe, a zmiana wynika głównie z przesunięcia okna porównania.",
+    "curve_comment_en": "10Y–2Y curve at 0.29 pp (16 Nov). Over the week 2Y rose 27 bp and 10Y 24 bp, over the month (16 Oct→16 Nov) 2Y 9 bp and 10Y 3 bp – on both horizons flattening via a rising short end, i.e. pricing of Fed tightening (a December hike fully priced). Hence 🔴 instead of 🟡; the monthly moves are small, though, and the change comes mainly from the shifted comparison window.",
     "category_comments": {
       "A": {
         "comment": "Dług: premia neocloudów ⚫ (ok. 1000 pb), trzy rekordy CDS w miesiącu i poszerzone spready CMBS centrów danych przy niskim spreadzie śmieciowym – stres sektorowy, nie systemowy.",
@@ -39,12 +50,12 @@
         "comment_en": "Demand and adoption: Ramp spend rising, Census adoption slightly down with a definition change; points come mainly from political backlash (C5, lasting tax-break pauses in Ohio and Illinois)."
       },
       "D": {
-        "comment": "Sprzęt: niedobory pamięci i HBM trwają, ceny DRAM rosną; jedynie stawki wynajmu H100 słabną w skali tygodnia (🟡).",
-        "comment_en": "Hardware: memory and HBM shortages persist, DRAM prices rising; only H100 rental rates are weakening week on week (🟡)."
+        "comment": "Sprzęt: niedobory pamięci i HBM trwają, ceny DRAM rosną; stawki wynajmu H100 słabną w skali tygodnia (🟡); nowe amerykańskie licencje eksportowe na chipy AI – na razie bez wpływu na prognozy producentów.",
+        "comment_en": "Hardware: memory and HBM shortages persist, DRAM prices rising; H100 rental rates weakening week on week (🟡); new US export licences for AI chips – so far with no effect on vendors' guidance."
       },
       "E": {
-        "comment": "Makro: rynek wycenia grudniową podwyżkę Fed, 10Y 5,15% blisko progu 🔴, BoJ prawdopodobnie podniesie stopy w grudniu mimo spadku PKB Japonii.",
-        "comment_en": "Macro: the market prices a December Fed hike, 10Y at 5.15% near the 🔴 threshold, the BoJ likely to hike in December despite Japan's GDP contraction."
+        "comment": "Makro: rynek w pełni wycenia grudniową podwyżkę Fed, krzywa spłaszcza się przez wzrost 2Y (🔴), 10Y 5,12% blisko progu 🔴, BoJ prawdopodobnie podniesie stopy w grudniu.",
+        "comment_en": "Macro: the market fully prices a December Fed hike, the curve flattens via a rising 2Y (🔴), 10Y at 5.12% near the 🔴 threshold, the BoJ likely to hike in December."
       },
       "F": {
         "comment": "Energia i infrastruktura: stanowe pauzy w Teksasie, Nowym Jorku i Oregonie obowiązują – q150, kategoria ponad budżetem (75/50).",
@@ -154,16 +165,16 @@
         "category": "A",
         "name": "Rentowność 10Y USA",
         "name_en": "US 10Y Treasury yield",
-        "value": 5.15,
+        "value": 5.12,
         "unit": "%",
-        "as_of": "2026-11-13",
+        "as_of": "2026-11-16",
         "status": "yellow",
         "points": 27.78,
         "max_points": 55.56,
         "preliminary": false,
         "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
-        "note": "Treasury 13.11 (ostatnie zamknięcie przed raportem; 14–15.11 weekend): 10Y 5,15% (6.11: 4,86%; 13.10: 5,21%). W przedziale 4,5–5,25% → 🟡 bez zmian, 10 pb poniżej progu 🔴 (blisko progu). Wzrost w tygodniu po wyższej od oczekiwań inflacji CPI za październik i wycenie grudniowej podwyżki Fed.",
-        "note_en": "Treasury 13 Nov (last close before the report; 14–15 Nov weekend): 10Y 5.15% (6 Nov: 4.86%; 13 Oct: 5.21%). Within 4.5–5.25% → 🟡 unchanged, 10 bp below the 🔴 threshold (near threshold). The weekly rise followed a hotter-than-expected October CPI and the pricing of a December Fed hike.",
+        "note": "Treasury 16.11 (zamknięcie): 10Y 5,12% (13.11: 5,15%; 9.11: 4,88%; 16.10: 5,09%). W przedziale 4,5–5,25% → 🟡 bez zmian, 13 pb poniżej progu 🔴 (blisko progu). Lekki spadek w dniu wyprzedaży akcji technologicznych.",
+        "note_en": "Treasury 16 Nov (close): 10Y 5.12% (13 Nov: 5.15%; 9 Nov: 4.88%; 16 Oct: 5.09%). Within 4.5–5.25% → 🟡 unchanged, 13 bp below the 🔴 threshold (near threshold). A slight dip on a day of tech-stock selling.",
         "status_since": "2026-10-08",
         "status_prev": "red"
       },
@@ -200,14 +211,14 @@
         "name_en": "High-yield spread",
         "value": null,
         "unit": "%",
-        "as_of": "2026-11-12",
+        "as_of": "2026-11-13",
         "status": "green",
         "points": 0.0,
         "max_points": 44.44,
         "preliminary": false,
         "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "note": "FRED BAMLH0A0HYM2 12.11: 3,20% (11.11: 3,30%; 6.11: 3,42%) – zawężenie, poniżej 3,5% → 🟢 bez zmian. Niski spread śmieciowy przy podwyższonej premii AI (A2) to obraz stresu sektorowego, nie systemowego.",
-        "note_en": "FRED BAMLH0A0HYM2 12 Nov: 3.20% (11 Nov: 3.30%; 6 Nov: 3.42%) – tightening, below 3.5% → 🟢 unchanged. A low junk spread alongside an elevated AI premium (A2) points to sector stress, not systemic stress.",
+        "note": "FRED BAMLH0A0HYM2 13.11: 3,23% (12.11: 3,20%; 9.11: 3,34%) – poniżej 3,5% → 🟢 bez zmian. Niski spread śmieciowy przy podwyższonej premii AI (A2) to obraz stresu sektorowego, nie systemowego. Odczyt za 16.11 (dzień spadku S&P 500 o ok. 2%) FRED opublikuje 17.11.",
+        "note_en": "FRED BAMLH0A0HYM2 13 Nov: 3.23% (12 Nov: 3.20%; 9 Nov: 3.34%) – below 3.5% → 🟢 unchanged. A low junk spread alongside an elevated AI premium (A2) points to sector stress, not systemic stress. FRED will publish the 16 Nov reading (a day the S&P 500 fell about 2%) on 17 Nov.",
         "status_since": "2026-10-06",
         "status_prev": "green"
       },
@@ -336,8 +347,8 @@
         "max_points": 25.0,
         "preliminary": false,
         "source": "https://finance.yahoo.com/quote/MAGS/history/",
-        "note": "Ostatnie pełne zestawienie (2.11): MAGS +3,4% YTD vs S&P 500 ok. +11,2% → ok. −7,8 pp (🟡, blisko progu 🔴); Korea (SK hynix, Samsung vs KOSPI) i Japonia (Advantest, Tokyo Electron vs TOPIX) wyraźnie przed rynkiem → 🟢. Wybrana bardziej ryzykowna miara → 🟡. Od tego czasu: Nvidia −4,3% 12.11 i ok. −2% 13.11 (AP), AMD −8,8% 13.11; 16.11 w Azji (AP, w trakcie sesji) KOSPI −2,8%, SK hynix −5,5%, Samsung −3,2%, Tokyo Electron −5,2%, Nikkei −1,6%. Brak nowego zamknięcia trzech miar od początku roku.",
-        "note_en": "Last full comparison (2 Nov): MAGS +3.4% YTD vs S&P 500 about +11.2% → about −7.8 pp (🟡, near the 🔴 threshold); Korea (SK hynix, Samsung vs KOSPI) and Japan (Advantest, Tokyo Electron vs TOPIX) well ahead of their markets → 🟢. The higher-risk measure is used → 🟡. Since then: Nvidia −4.3% on 12 Nov and about −2% on 13 Nov (AP), AMD −8.8% on 13 Nov; on 16 Nov in Asia (AP, intraday) KOSPI −2.8%, SK hynix −5.5%, Samsung −3.2%, Tokyo Electron −5.2%, Nikkei −1.6%. No new close for the three YTD measures.",
+        "note": "Ostatnie pełne zestawienie (2.11): MAGS +3,4% YTD vs S&P 500 ok. +11,2% → ok. −7,8 pp (🟡, blisko progu 🔴); Korea (SK hynix, Samsung vs KOSPI) i Japonia (Advantest, Tokyo Electron vs TOPIX) wyraźnie przed rynkiem → 🟢. Wybrana bardziej ryzykowna miara → 🟡. Od tego czasu: Nvidia −4,3% 12.11 i ok. −2% 13.11 (AP), AMD −8,8% 13.11; 16.11 w Azji (AP, w trakcie sesji) KOSPI −2,8%, SK hynix −5,5%, Samsung −3,2%, Tokyo Electron −5,2%, Nikkei −1,6%. Brak nowego zamknięcia trzech miar od początku roku. 16.11 (Reuters, Yahoo Finance; dane śróddzienne, nie zamknięcie): S&P 500 ok. −2%, Nasdaq ok. −2,5%, indeks półprzewodników SOX −4%; Nvidia ok. −4,4% (−12,8% w 5 dni), Alphabet ponad −3%, Amazon ok. −3%; CoreWeave −5,2%, Nebius −6,4%. Status 🟡 bez zmian do nowego pełnego zestawienia YTD.",
+        "note_en": "Last full comparison (2 Nov): MAGS +3.4% YTD vs S&P 500 about +11.2% → about −7.8 pp (🟡, near the 🔴 threshold); Korea (SK hynix, Samsung vs KOSPI) and Japan (Advantest, Tokyo Electron vs TOPIX) well ahead of their markets → 🟢. The higher-risk measure is used → 🟡. Since then: Nvidia −4.3% on 12 Nov and about −2% on 13 Nov (AP), AMD −8.8% on 13 Nov; on 16 Nov in Asia (AP, intraday) KOSPI −2.8%, SK hynix −5.5%, Samsung −3.2%, Tokyo Electron −5.2%, Nikkei −1.6%. No new close for the three YTD measures. 16 Nov (Reuters, Yahoo Finance; intraday, not a close): S&P 500 about −2%, Nasdaq about −2.5%, SOX semiconductor index −4%; Nvidia about −4.4% (−12.8% over 5 days), Alphabet over −3%, Amazon about −3%; CoreWeave −5.2%, Nebius −6.4%. Status 🟡 unchanged until a new full YTD comparison.",
         "status_since": "2026-10-06",
         "status_prev": "yellow"
       },
@@ -575,8 +586,8 @@
         "max_points": 20.0,
         "preliminary": false,
         "source": "https://news.skhynix.com/en/q3-2026-business-results/",
-        "note": "Wąskie gardła trwają: SK hynix (28.10) – HBM wyprzedane na 2027 r.; TSMC – CoWoS nadal ograniczony. Handel chipami AI (nota): USA nie włączą kontroli eksportu chipów do negocjacji z Chinami (Seoul Economic Daily, 14.11); Reuters (12–13.11) – chińskie projekty obliczeniowe za ponad 23 mld CNY oparte na objętych ograniczeniami chipach Nvidii; spotkanie Trump–Xi w tym tygodniu. Brak odpisów zapasów ani cięcia prognoz z tego powodu → 🟢 bez zmian.",
-        "note_en": "Bottlenecks persist: SK hynix (28 Oct) – HBM sold out for 2027; TSMC – CoWoS still constrained. AI-chip trade (note): the US will not include chip export controls in negotiations with China (Seoul Economic Daily, 14 Nov); Reuters (12–13 Nov) – Chinese compute projects worth over CNY 23bn built on restricted Nvidia chips; Trump–Xi meeting this week. No inventory write-downs or guidance cuts for this reason → 🟢 unchanged.",
+        "note": "Wąskie gardła trwają: SK hynix (28.10) – HBM wyprzedane na 2027 r.; TSMC – CoWoS nadal ograniczony. Handel chipami AI (nota): USA nie włączą kontroli eksportu chipów do negocjacji z Chinami (Seoul Economic Daily, 14.11); Reuters (12–13.11) – chińskie projekty obliczeniowe za ponad 23 mld CNY oparte na objętych ograniczeniami chipach Nvidii; spotkanie Trump–Xi w tym tygodniu. Brak odpisów zapasów ani cięcia prognoz z tego powodu → 🟢 bez zmian. 16.11: BIS (Departament Handlu USA) wydał tymczasową regułę końcową – licencje na eksport zaawansowanych chipów AI i serwerów do Singapuru, Malezji, Tajlandii, Indonezji i Brazylii oraz do centrów danych na świecie, które mogą udostępniać moc obliczeniową firmom z Chin; reguła formalnie uchyla zasadę dyfuzji AI z czasów Bidena (TechCrunch, CBS News, Bloomberg, Reuters). Nota – bez odpisów ani cięcia prognoz → status bez zmian.",
+        "note_en": "Bottlenecks persist: SK hynix (28 Oct) – HBM sold out for 2027; TSMC – CoWoS still constrained. AI-chip trade (note): the US will not include chip export controls in negotiations with China (Seoul Economic Daily, 14 Nov); Reuters (12–13 Nov) – Chinese compute projects worth over CNY 23bn built on restricted Nvidia chips; Trump–Xi meeting this week. No inventory write-downs or guidance cuts for this reason → 🟢 unchanged. 16 Nov: BIS (US Commerce Department) issued an interim final rule – licences for exports of advanced AI chips and servers to Singapore, Malaysia, Thailand, Indonesia and Brazil, and to data centers anywhere that may provide compute to Chinese companies; the rule formally rescinds the Biden-era AI diffusion rule (TechCrunch, CBS News, Bloomberg, Reuters). Note only – no write-downs or guidance cuts → status unchanged.",
         "status_since": "2026-10-06",
         "status_prev": "green"
       },
@@ -620,18 +631,18 @@
         "category": "E",
         "name": "Krzywa 10Y–2Y",
         "name_en": "10Y–2Y yield curve",
-        "value": 0.27,
+        "value": 0.29,
         "unit": "pp",
-        "as_of": "2026-11-13",
-        "status": "yellow",
-        "points": 10.0,
+        "as_of": "2026-11-16",
+        "status": "red",
+        "points": 20.0,
         "max_points": 20.0,
         "preliminary": false,
         "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
-        "note": "Treasury 13.11: 10Y 5,15%, 2Y 4,88% → 0,27 pp. Tydzień (6.11→13.11): 2Y +37 pb, 10Y +29 pb – spłaszczenie przez wzrost 2Y (zaostrzanie polityki pieniężnej). Miesiąc (13.10→13.11): 2Y +9 pb, 10Y −6 pb – spłaszczenie przy spadku 10Y (oczekiwania spowolnienia). Obraz mieszany → 🟡 bez zmian, blisko progu 🔴.",
-        "note_en": "Treasury 13 Nov: 10Y 5.15%, 2Y 4.88% → 0.27 pp. Week (6→13 Nov): 2Y +37 bp, 10Y +29 bp – flattening via a rising 2Y (tightening monetary policy). Month (13 Oct→13 Nov): 2Y +9 bp, 10Y −6 bp – flattening with a falling 10Y (slowdown expectations). Mixed picture → 🟡 unchanged, near the 🔴 threshold.",
-        "status_since": "2026-10-15",
-        "status_prev": "red"
+        "note": "Treasury 16.11: 10Y 5,12%, 2Y 4,83% → 0,29 pp. Tydzień (9.11→16.11): 2Y +27 pb, 10Y +24 pb – spłaszczenie przez wzrost 2Y (zaostrzanie polityki pieniężnej). Miesiąc (16.10→16.11): 2Y +9 pb, 10Y +3 pb, krzywa z 0,35 do 0,29 pp – również spłaszczenie przez wzrost 2Y. Oba horyzonty wskazują zaostrzanie → 🔴 (wcześniej 🟡: poranny raport liczył miesiąc od 13.10, gdy 10Y wynosiła 5,21%, więc 10Y w miesiąc spadała). Zmiana wynika głównie z przesunięcia okna porównania; ruchy miesięczne są małe.",
+        "note_en": "Treasury 16 Nov: 10Y 5.12%, 2Y 4.83% → 0.29 pp. Week (9→16 Nov): 2Y +27 bp, 10Y +24 bp – flattening via a rising 2Y (tightening monetary policy). Month (16 Oct→16 Nov): 2Y +9 bp, 10Y +3 bp, curve from 0.35 to 0.29 pp – also flattening via a rising 2Y. Both horizons point to tightening → 🔴 (previously 🟡: the morning report measured the month from 13 Oct, when 10Y was 5.21%, so 10Y had fallen over the month). The change comes mainly from the shifted comparison window; the monthly moves are small.",
+        "status_since": "2026-11-16",
+        "status_prev": "yellow"
       },
       {
         "id": "E3",
@@ -640,14 +651,14 @@
         "name_en": "Fed policy",
         "value": "3,75–4,00",
         "unit": "%",
-        "as_of": "2026-11-10",
+        "as_of": "2026-11-16",
         "status": "red",
         "points": 40.0,
         "max_points": 40.0,
         "preliminary": false,
-        "source": "https://www.cbsnews.com/news/october-cpi-report-elevated-inflation/",
-        "note": "Stopa Fed 3,75–4,00%. CME FedWatch: podwyżka 25 pb 8–9.12 wyceniana na ok. 85–89% po CPI (CBS News, CNBC, Investing.com, 10.11); raport z 16.11 (KuCoin – jedno źródło wtórne) podaje 92%. PPI za październik +0,3% m/m (13.11). Rynek wycenia podwyżkę > 50% → 🔴 bez zmian. Protokół FOMC 18.11.",
-        "note_en": "Fed rate 3.75–4.00%. CME FedWatch: a 25 bp hike on 8–9 Dec priced at about 85–89% after CPI (CBS News, CNBC, Investing.com, 10 Nov); a 16 Nov report (KuCoin – a single secondary source) gives 92%. October PPI +0.3% m/m (13 Nov). The market prices a hike at > 50% → 🔴 unchanged. FOMC minutes on 18 Nov.",
+        "source": "https://www.marketscreener.com/news/s-p-500-nasdaq-futures-slide-as-nvidia-earnings-anthropic-debut-loom-ce785eded080f124",
+        "note": "Stopa Fed 3,75–4,00%. Reuters 16.11 (za CME FedWatch): rynek w pełni wycenia podwyżkę w grudniu (8–9.12), z ok. 9% szansą na 50 pb; wcześniej 85–89% po CPI (CBS News, CNBC, 10.11). Rynek wycenia podwyżkę > 50% → 🔴 bez zmian. Protokół FOMC 18.11.",
+        "note_en": "Fed rate 3.75–4.00%. Reuters 16 Nov (citing CME FedWatch): the market fully prices a December hike (8–9 Dec), with about a 9% chance of 50 bp; earlier 85–89% after CPI (CBS News, CNBC, 10 Nov). The market prices a hike at > 50% → 🔴 unchanged. FOMC minutes on 18 Nov.",
         "status_since": "2026-10-06",
         "status_prev": "red"
       },
