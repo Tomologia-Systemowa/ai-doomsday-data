@@ -1,23 +1,23 @@
 {
   "schema_version": "1.2",
-  "date": "2026-11-17",
-  "report_type": "short",
-  "score": 566,
+  "date": "2026-11-18",
+  "report_type": "full",
+  "score": 589,
   "band": "Pęknięcia",
   "band_en": "Cracks",
-  "change_vs_previous": 0,
-  "headline": "566/1000 bez zmian: Reuters i Goldman opisują zamknięty rynek długu dla neocloudów, a obligacje CoreWeave dają prawie 15%.",
-  "headline_en": "566/1000 unchanged: Reuters and Goldman describe a closed debt market for neoclouds, while CoreWeave bonds yield nearly 15%.",
-  "summary": "Wynik 566/1000 – bez zmian wobec porannego raportu; pasmo Pęknięć. Reuters opisał, że po odejściu Jensena Huanga z Nvidii inwestorzy obligacyjni wątpią w dalsze wsparcie Nvidii dla neocloudów (firm wynajmujących moc GPU), a Goldman Sachs – że od miesiąca nie było żadnej nowej emisji obligacji śmieciowych spółek AI. Wyniki Nvidii, ogłaszane po wtorkowej sesji, wejdą do jutrzejszego raportu. CoreWeave zapewnia, że sfinansuje się m.in. pożyczkami pod zastaw chipów; jego czerwcowe obligacje rynek wycenia na prawie 15%.",
-  "summary_en": "Score 566/1000 – unchanged from the morning report; Cracks band. Reuters reported that after Jensen Huang's departure from Nvidia, bond investors doubt Nvidia's continued support for neoclouds (companies renting out GPU capacity), and Goldman Sachs that there has not been a single new AI junk-bond issue for a month. Nvidia's results, released after Tuesday's session, will go into tomorrow's report. CoreWeave says it will fund itself, among other ways, with loans secured on its chips; the market prices its June bonds at nearly 15%.",
-  "report_file": "history/history-17-11-2026.json",
+  "change_vs_previous": 23,
+  "headline": "589/1000 (+23): S&P obniżył rating Akamai do poziomu śmieciowego za dług na chmurę AI – pierwsze ciężkie zdarzenie kredytowe od początku nowej skali.",
+  "headline_en": "589/1000 (+23): S&P cut Akamai to junk over debt for its AI cloud – the first heavy credit event since the new scale began.",
+  "summary": "Wynik 589/1000 – o 23 punkty więcej niż we wtorek; pasmo Pęknięć, blisko granicy Korekty. Główna zmiana: 9 listopada agencja S&P obniżyła ocenę wiarygodności kredytowej Akamai do BB+, czyli poziomu spekulacyjnego („śmieciowego”), bo firma buduje chmurę GPU dla AI w całości za pożyczone pieniądze; jej największym nowym klientem jest Anthropic (potencjalny konflikt interesów). Moody's i Fitch trzymają ją jeszcze tuż nad tą granicą. Rentowność 10-letnich obligacji USA pozostaje na 5,10%, a rynek niemal w pełni wycenia grudniową podwyżkę stóp Fed. W najbliższych dniach barometr mogą poruszyć wycena IPO Anthropic, protokół Fed i dane o eksporcie chipów z Korei 21 listopada. Nvidia prognozuje na ten kwartał rekordowe 130 mld USD przychodu ze sprzedaży chipów AI, a firma, która te chipy kupuje na kredyt, by wynajmować ich moc, właśnie spadła do poziomu śmieciowego.",
+  "summary_en": "Score 589/1000 – 23 points higher than on Tuesday; Cracks band, close to the Correction boundary. Main change: on 9 November S&P cut Akamai's credit rating to BB+, i.e. speculative (\"junk\") grade, because the company is building a GPU cloud for AI entirely with borrowed money; its largest new customer is Anthropic (potential conflict of interest). Moody's and Fitch still keep it just above that line. The US 10-year yield stays at 5.10%, and the market almost fully prices a Fed rate hike in December. In the coming days the barometer may be moved by the Anthropic IPO pricing, the Fed minutes and Korea's chip export data on 21 November. Nvidia forecasts a record USD 130bn of revenue from AI chips this quarter, while a company that buys those chips on credit to rent out their capacity has just fallen to junk.",
+  "report_file": "history/history-18-11-2026.json",
   "triggers": [
     "Łączny FCF Wielkiej Czwórki ujemny (B3 🔴)"
   ],
   "triggers_en": [
     "Big Four combined FCF negative (B3 🔴)"
   ],
-  "heavy_credit_event": false,
+  "heavy_credit_event": true,
   "skipped_signals": [
     "A4"
   ],
@@ -103,6 +103,19 @@
       "ends_when_en": "DEQ resumes issuing permits (by 1 Jul 2027 at the latest) or the directive is withdrawn.",
       "source": "https://www.opb.org/article/2026/10/13/oregon-data-centers-technology-amazon-tina-kotek/",
       "status_floor": "q75"
+    },
+    {
+      "id": "L-2026-11-09-akamai-sp-bb-plus",
+      "date": "2026-11-09",
+      "signal": "A8",
+      "title": "S&P obniża rating Akamai do BB+ (poziom spekulacyjny) z powodu długu na chmurę GPU dla AI",
+      "title_en": "S&P cuts Akamai to BB+ (speculative grade) over debt for its AI GPU cloud",
+      "effect": "Droższe finansowanie dłużne rozbudowy mocy AI Akamai i część inwestorów z mandatem inwestycyjnym nie może kupować jego długu.",
+      "effect_en": "Costlier debt funding for Akamai's AI capacity build-out, and some investment-grade-mandated investors cannot buy its debt.",
+      "ends_when": "S&P przywraca Akamai rating inwestycyjny (BBB- lub wyżej).",
+      "ends_when_en": "S&P restores an investment-grade rating (BBB- or higher) to Akamai.",
+      "source": "https://www.investing.com/news/stock-market-news/moodys-and-sp-downgrade-akamai-on-debtfueled-ai-infrastructure-buildout-5012804",
+      "status_floor": "red"
     }
   ],
   "lasting_events_ended": [],
@@ -158,14 +171,14 @@
       "name_en": "High-yield spread",
       "value": null,
       "unit": "%",
-      "as_of": "2026-11-13",
+      "as_of": "2026-11-16",
       "status": "green",
       "points": 0.0,
       "max_points": 44.44,
       "preliminary": false,
       "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-      "note": "FRED BAMLH0A0HYM2 13.11: 3,23% (12.11: 3,20%; 9.11: 3,34%) – poniżej 3,5% → 🟢 bez zmian. Niski spread śmieciowy przy podwyższonej premii AI (A2) to obraz stresu sektorowego, nie systemowego. Odczyt za 16.11 (dzień spadku S&P 500 o ok. 2%) FRED opublikuje 17.11.",
-      "note_en": "FRED BAMLH0A0HYM2 13 Nov: 3.23% (12 Nov: 3.20%; 9 Nov: 3.34%) – below 3.5% → 🟢 unchanged. A low junk spread alongside an elevated AI premium (A2) points to sector stress, not systemic stress. FRED will publish the 16 Nov reading (a day the S&P 500 fell about 2%) on 17 Nov.",
+      "note": "FRED BAMLH0A0HYM2 16.11: 3,34% (13.11: 3,23%; 12.11: 3,20%; 10.11: 3,30%) – poniżej 3,5% → 🟢 bez zmian; wzrost o 11 pb w dniu spadku S&P 500 o ok. 2%. Niski spread śmieciowy przy podwyższonej premii AI (A2) to obraz stresu sektorowego, nie systemowego.",
+      "note_en": "FRED BAMLH0A0HYM2 16 Nov: 3.34% (13 Nov: 3.23%; 12 Nov: 3.20%; 10 Nov: 3.30%) – below 3.5% → 🟢 unchanged; up 11 bp on the day the S&P 500 fell about 2%. A low junk spread alongside an elevated AI premium (A2) points to sector stress, not systemic stress.",
       "status_since": "2026-10-06",
       "status_prev": "green"
     },
@@ -238,8 +251,8 @@
       "max_points": 38.89,
       "preliminary": false,
       "source": "https://investing.com/news/stock-market-news/analysisnvidia-turmoil-marks-the-end-of-easy-money-for-the-ai-trade-5032324",
-      "note": "Nowy odczyt (Reuters, analiza 17.11): obligacje CoreWeave wyemitowane w czerwcu z kuponem 9,625% – rentowność prawie 15%; obligacje zamienne Nebius (sierpień, 4,5%) w piątek 13.11 po 70 centów za dolara, rentowność powyżej 12%. Wobec rentowności IG 6,00% (10Y 5,10% z 17.11 + spread IG 0,90% z FRED BAMLC0A0CM, 16.11) premia CoreWeave ok. 900 pb > 800 pb → ⚫ bez zmian (wcześniej 1006 pb, Reuters 15.10). Goldman Sachs (Miriam Wheeler, za Reuters): od końca września podaż obligacji high-yield spółek AI wyschła – w ostatnim miesiącu brak nowych emisji, wobec oczekiwanych ok. 60 mld USD jesienią. Inwestorzy obligacyjni (Reuters) wątpią, czy Nvidia po odejściu Jensena Huanga utrzyma finansowanie dostawcy i gwarancje dla neocloudów (m.in. zamówienie 6,3 mld USD na niesprzedaną moc CoreWeave do kwietnia 2032 r.). CoreWeave zapewnił na konferencji wynikowej, że nadal sfinansuje działalność, m.in. pożyczając pod zastaw chipów; jego akcje straciły 45%, a Nebius 57% od rekordu Nasdaqa z 6.10 (Reuters). CoreWeave ma umowy z Anthropic – potencjalny konflikt interesów.",
-      "note_en": "New reading (Reuters analysis, 17 Nov): CoreWeave bonds issued in June with a 9.625% coupon yield nearly 15%; Nebius convertible bonds (August, 4.5%) traded at 70 cents on the dollar on Friday 13 Nov, yielding above 12%. Against an IG yield of 6.00% (10Y 5.10% on 17 Nov + IG spread 0.90% from FRED BAMLC0A0CM, 16 Nov) CoreWeave's premium is about 900 bp > 800 bp → ⚫ unchanged (previously 1,006 bp, Reuters 15 Oct). Goldman Sachs (Miriam Wheeler, via Reuters): since late September supply of AI high-yield bonds has dried up – no new deals in the past month, against about USD 60bn expected this fall. Bond investors (Reuters) doubt whether Nvidia, after Jensen Huang's departure, will keep vendor financing and guarantees for neoclouds (including a USD 6.3bn order for CoreWeave's unsold capacity through April 2032). CoreWeave said on its earnings call that it can keep financing operations, including by borrowing against its chips; its shares are down 45% and Nebius's 57% since the Nasdaq record of 6 Oct (Reuters). CoreWeave has contracts with Anthropic – potential conflict of interest.",
+      "note": "Nowy odczyt (Reuters, analiza 17.11): obligacje CoreWeave wyemitowane w czerwcu z kuponem 9,625% – rentowność prawie 15%; obligacje zamienne Nebius (sierpień, 4,5%) w piątek 13.11 po 70 centów za dolara, rentowność powyżej 12%. Wobec rentowności IG 6,00% (10Y 5,10% z 17.11 + spread IG 0,90% z FRED BAMLC0A0CM, 16.11) premia CoreWeave ok. 900 pb > 800 pb → ⚫ bez zmian (wcześniej 1006 pb, Reuters 15.10). Goldman Sachs (Miriam Wheeler, za Reuters): od końca września podaż obligacji high-yield spółek AI wyschła – w ostatnim miesiącu brak nowych emisji, wobec oczekiwanych ok. 60 mld USD jesienią. Inwestorzy obligacyjni (Reuters) wątpią, czy Nvidia po odejściu Jensena Huanga utrzyma finansowanie dostawcy i gwarancje dla neocloudów (m.in. zamówienie 6,3 mld USD na niesprzedaną moc CoreWeave do kwietnia 2032 r.). CoreWeave zapewnił na konferencji wynikowej, że nadal sfinansuje działalność, m.in. pożyczając pod zastaw chipów; jego akcje straciły 45%, a Nebius 57% od rekordu Nasdaqa z 6.10 (Reuters). CoreWeave ma umowy z Anthropic – potencjalny konflikt interesów. 18.11: obniżka Akamai (A8) – nota; spółka nie jest neocloudem w definicji A7.",
+      "note_en": "New reading (Reuters analysis, 17 Nov): CoreWeave bonds issued in June with a 9.625% coupon yield nearly 15%; Nebius convertible bonds (August, 4.5%) traded at 70 cents on the dollar on Friday 13 Nov, yielding above 12%. Against an IG yield of 6.00% (10Y 5.10% on 17 Nov + IG spread 0.90% from FRED BAMLC0A0CM, 16 Nov) CoreWeave's premium is about 900 bp > 800 bp → ⚫ unchanged (previously 1,006 bp, Reuters 15 Oct). Goldman Sachs (Miriam Wheeler, via Reuters): since late September supply of AI high-yield bonds has dried up – no new deals in the past month, against about USD 60bn expected this fall. Bond investors (Reuters) doubt whether Nvidia, after Jensen Huang's departure, will keep vendor financing and guarantees for neoclouds (including a USD 6.3bn order for CoreWeave's unsold capacity through April 2032). CoreWeave said on its earnings call that it can keep financing operations, including by borrowing against its chips; its shares are down 45% and Nebius's 57% since the Nasdaq record of 6 Oct (Reuters). CoreWeave has contracts with Anthropic – potential conflict of interest. 18 Nov: the Akamai downgrade (A8) – note; the company is not a neocloud under A7's definition.",
       "conflict_of_interest": true,
       "status_since": "2026-11-09",
       "status_prev": "red"
@@ -249,19 +262,22 @@
       "category": "A",
       "name": "Zdarzenia kredytowe",
       "name_en": "Credit events",
-      "value": "1 lekkie (Solidigm)",
+      "value": "1 ciężkie (Akamai – BB+ w S&P), 1 lekkie (Solidigm)",
       "unit": null,
-      "as_of": "2026-10-23",
-      "status": "yellow",
-      "points": 22.22,
+      "as_of": "2026-11-09",
+      "status": "red",
+      "points": 44.44,
       "max_points": 44.44,
       "preliminary": false,
-      "source": "https://www.sec.gov/Archives/edgar/data/0002120882/000119312526429184/d159239d6k.htm",
-      "note": "Aktywne zdarzenie lekkie: Solidigm (SK hynix) zrezygnował 23.10 z rundy przed IPO i IPO w USA (6-K SK hynix) – okno 30 dni do 22.11 → 🟡; zdarzenia przejściowe, brak trwałych. Przegląd 14–16.11 (downgrade, refinancing, GPU-backed loan, margin call, limity wypłat w private credit, force majeure, Reuters) bez nowych zdarzeń z listy A8. IPO Anthropic: przedział 70–78 USD, wycena ok. 1,33 bln USD w środku przedziału (CNBC, Fortune 10.11), wycena oferty spodziewana 18.11 – powyżej majowej rundy (965 mld USD), więc nie jest to IPO po niższej wycenie. Bez nowych zdarzeń status spadnie 22.11 do 🟢. Dotyczy Anthropic – potencjalny konflikt interesów; tylko źródła zewnętrzne. Nowe 17.11 (nota, blisko progu): Bloomberg 16.11 (za MarketScreener, Investing.com – jedno źródło, osoby zaznajomione ze sprawą) – HSBC sprzedał ok. 300 mln USD z ok. 18 mld USD kredytu budowlanego na kampus centrów danych w hrabstwie Doña Ana (Nowy Meksyk, Project Jupiter/Miner, deweloper z grupy Blue Owl, najemca Oracle) po cenach ok. 85 centów za dolara, „kilka tygodni temu”, wkrótce po zawiadomieniu Oracle o sile wyższej (24.09). Data transakcji nieznana i najpewniej poza 30-dniowym oknem, a doniesienie ma jedno źródło (wyszukiwania: „HSBC Project Miner loan mid-80s”, „HSBC Oracle New Mexico loan discount”, „Bloomberg HSBC data center loan” – tylko przedruki Bloomberga) – nie liczy się nawet jako odczyt niepotwierdzony; potwierdzeniem byłoby drugie niezależne źródło z datą lub wyniki aukcji ING (19.11). Bloomberg 16.11: syndykacja kredytu ok. 488 mln USD na centrum danych Actis w Malezji opóźniona – jedno źródło, nie jest zdarzeniem z listy A8 (nota). Status 🟡 bez zmian.",
-      "note_en": "Active light event: Solidigm (SK hynix) dropped its pre-IPO round and US IPO on 23 Oct (SK hynix 6-K) – 30-day window to 22 Nov → 🟡; transient events, none lasting. The 14–16 Nov sweep (downgrade, refinancing, GPU-backed loan, margin call, private-credit redemption limits, force majeure, Reuters) found no new A8 events. Anthropic IPO: range USD 70–78, valuation about USD 1.33tn at the midpoint (CNBC, Fortune 10 Nov), pricing expected on 18 Nov – above the May round (USD 965bn), so not an IPO at a lower valuation. Without new events the status falls to 🟢 on 22 Nov. Concerns Anthropic – potential conflict of interest; external sources only. New 17 Nov (note, near threshold): Bloomberg 16 Nov (via MarketScreener, Investing.com – single source, people familiar with the matter) – HSBC sold about USD 300m of the roughly USD 18bn construction loan for the data-center campus in Doña Ana County (New Mexico, Project Jupiter/Miner, developer a Blue Owl unit, tenant Oracle) at about 85 cents on the dollar, 'several weeks ago', shortly after Oracle's force majeure notice (24 Sep). The trade date is unknown and most likely outside the 30-day window, and the report has a single source (searches: 'HSBC Project Miner loan mid-80s', 'HSBC Oracle New Mexico loan discount', 'Bloomberg HSBC data center loan' – only Bloomberg reprints) – it does not count even as an unconfirmed reading; confirmation would be a second independent dated source or the ING auction results (19 Nov). Bloomberg 16 Nov: syndication of a loan of about USD 488m for an Actis data center in Malaysia delayed – single source, not an A8-list event (note). Status 🟡 unchanged.",
+      "source": "https://www.investing.com/news/stock-market-news/moodys-and-sp-downgrade-akamai-on-debtfueled-ai-infrastructure-buildout-5012804",
+      "note": "Zdarzenie ciężkie (nowe w przeglądzie 18.11, wcześniej przeoczone): 9.11 S&P obniżył rating Akamai Technologies do BB+ z BBB- (poziom spekulacyjny, perspektywa stabilna), a Moody's o jeden stopień do Baa3 (najniższy inwestycyjny); Fitch tydzień wcześniej nadał BBB-. Powód: budowa chmury GPU dla AI finansowana w całości długiem (m.in. obligacje zamienne 2,5 mld USD z 9.11; łącznie 10,14 mld USD obligacji zamiennych), umowa z Anthropic do 11,6 mld USD na 7 lat (ok. ćwierć przychodów Akamai ok. 2028 r.), dźwignia wg S&P nieco powyżej 4x w 2027 r., wg Moody's brutto ponad 7x. Źródła: Investing.com (9.11) i IFR (nr 2659) – dwa niezależne źródła wtórne z własnymi relacjami; komunikatu S&P nie udało się pobrać. Akamai to dostawca infrastruktury AI (chmura GPU), a obniżka wynika wprost z długu na AI, dlatego liczona jako obniżka spółki AI do poziomu spekulacyjnego (ocena; rating dzielony – Moody's i Fitch nadal inwestycyjne) → 🔴, zdarzenie ciężkie i trwałe do przywrócenia ratingu inwestycyjnego w S&P. Lekkie zdarzenie Solidigm (23.10) aktywne do 22.11. HSBC – sprzedaż części kredytu na kampus Oracle w Nowym Meksyku ok. 85 centów (Bloomberg 16.11, jedno źródło, data nieznana) – nadal nota. IPO Anthropic: przedział 70–78 USD, wycena spodziewana 18.11 – powyżej majowej rundy. Dotyczy Anthropic (najemca Akamai, IPO) – potencjalny konflikt interesów; tylko źródła zewnętrzne.",
+      "note_en": "Heavy event (new in the 18 Nov review, missed earlier): on 9 Nov S&P cut Akamai Technologies to BB+ from BBB- (speculative grade, stable outlook), and Moody's by one notch to Baa3 (lowest investment grade); Fitch assigned BBB- a week earlier. Reason: a GPU cloud build-out for AI funded entirely with debt (incl. USD 2.5bn of convertible bonds on 9 Nov; USD 10.14bn of convertibles in total), an Anthropic contract worth up to USD 11.6bn over 7 years (about a quarter of Akamai's revenue around 2028), leverage slightly above 4x in 2027 per S&P and gross above 7x per Moody's. Sources: Investing.com (9 Nov) and IFR (issue 2659) – two independent secondary sources with their own reporting; the S&P release could not be retrieved. Akamai is an AI infrastructure provider (GPU cloud) and the cut stems directly from AI debt, so it counts as a downgrade of an AI company to speculative grade (a judgment; split rating – Moody's and Fitch still investment grade) → 🔴, a heavy event that lasts until S&P restores an investment-grade rating. The light Solidigm event (23 Oct) stays active until 22 Nov. HSBC – sale of part of the loan for Oracle's New Mexico campus at about 85 cents (Bloomberg 16 Nov, single source, date unknown) – still a note. Anthropic IPO: range USD 70–78, pricing expected 18 Nov – above the May round. Concerns Anthropic (Akamai's tenant, IPO) – potential conflict of interest; external sources only.",
       "conflict_of_interest": true,
-      "status_since": "2026-10-06",
-      "status_prev": "yellow"
+      "status_since": "2026-11-09",
+      "status_prev": "yellow",
+      "lasting": [
+        "L-2026-11-09-akamai-sp-bb-plus"
+      ]
     },
     {
       "id": "B1",
@@ -347,8 +363,8 @@
       "max_points": 15.0,
       "preliminary": false,
       "source": "https://www.useluminix.com/reports/industry-analysis/data-center-moratoriums-after-the-midterms",
-      "note": "Cleanview: 158,6 GW, czyli 41% planowanego rurociągu centrów danych w USA (ok. 385 GW), w stanach z pauzą wprowadzoną lub zapowiedzianą przez gubernatora lub gubernatora-elekta (za Luminix, MPC Markets, CNN 5.11). Obowiązujące: Teksas (TCEQ), Nowy Jork (rozporządzenie nr 62), Oregon (DEQ); zapowiedziane: Teksas, Georgia, Ohio (nowi gubernatorzy od stycznia 2027 r.); oczekujące: Loudoun County (głosowanie nad pauzą 17.11). Cleanview nie podaje osobno GW dla grup. > 30% → 🔴 bez zmian.",
-      "note_en": "Cleanview: 158.6 GW, or 41% of the planned US data-center pipeline (about 385 GW), sits in states where a governor or governor-elect has imposed or pledged a pause (via Luminix, MPC Markets, CNN 5 Nov). In force: Texas (TCEQ), New York (Executive Order 62), Oregon (DEQ); pledged: Texas, Georgia, Ohio (new governors from January 2027); pending: Loudoun County (vote on a pause on 17 Nov). Cleanview does not split GW by group. > 30% → 🔴 unchanged.",
+      "note": "Cleanview: 158,6 GW, czyli 41% planowanego rurociągu centrów danych w USA (ok. 385 GW), w stanach z pauzą wprowadzoną lub zapowiedzianą przez gubernatora lub gubernatora-elekta (za Luminix, MPC Markets, CNN 5.11). Obowiązujące: Teksas (TCEQ), Nowy Jork (rozporządzenie nr 62), Oregon (DEQ); zapowiedziane: Teksas, Georgia, Ohio (nowi gubernatorzy od stycznia 2027 r.); oczekujące: Loudoun County (głosowanie nad pauzą 17.11). Cleanview nie podaje osobno GW dla grup. > 30% → 🔴 bez zmian. 17.11: Loudoun County – pauza 10-miesięczna (Fox 5 DC, jedno źródło); Cleanview nie zaktualizował udziału.",
+      "note_en": "Cleanview: 158.6 GW, or 41% of the planned US data-center pipeline (about 385 GW), sits in states where a governor or governor-elect has imposed or pledged a pause (via Luminix, MPC Markets, CNN 5 Nov). In force: Texas (TCEQ), New York (Executive Order 62), Oregon (DEQ); pledged: Texas, Georgia, Ohio (new governors from January 2027); pending: Loudoun County (vote on a pause on 17 Nov). Cleanview does not split GW by group. > 30% → 🔴 unchanged. 17 Nov: Loudoun County – 10-month pause (Fox 5 DC, single source); Cleanview has not updated the share.",
       "status_since": "2026-11-06"
     },
     {
@@ -533,8 +549,8 @@
       "max_points": 20.0,
       "preliminary": false,
       "source": "https://news.skhynix.com/en/q3-2026-business-results/",
-      "note": "Wąskie gardła trwają: SK hynix (28.10) – HBM wyprzedane na 2027 r.; TSMC – CoWoS nadal ograniczony. Handel chipami AI (nota): USA nie włączą kontroli eksportu chipów do negocjacji z Chinami (Seoul Economic Daily, 14.11); Reuters (12–13.11) – chińskie projekty obliczeniowe za ponad 23 mld CNY oparte na objętych ograniczeniami chipach Nvidii; spotkanie Trump–Xi w tym tygodniu. Brak odpisów zapasów ani cięcia prognoz z tego powodu → 🟢 bez zmian. 16.11: BIS (Departament Handlu USA) wydał tymczasową regułę końcową – licencje na eksport zaawansowanych chipów AI i serwerów do Singapuru, Malezji, Tajlandii, Indonezji i Brazylii oraz do centrów danych na świecie, które mogą udostępniać moc obliczeniową firmom z Chin; reguła formalnie uchyla zasadę dyfuzji AI z czasów Bidena (TechCrunch, CBS News, Bloomberg, Reuters). Nota – bez odpisów ani cięcia prognoz → status bez zmian. 17.11: Bloomberg (za Crypto Briefing) – pięć banków wstrzymało rozmowy o pakiecie 480 mln USD na zakup chipów Nvidii przez singapurską Aolani Cloud dla centrum danych w Malezji obsługującego ByteDance, z obawy przed naruszeniem nowej reguły BIS; nota – bez odpisów ani cięcia prognoz.",
-      "note_en": "Bottlenecks persist: SK hynix (28 Oct) – HBM sold out for 2027; TSMC – CoWoS still constrained. AI-chip trade (note): the US will not include chip export controls in negotiations with China (Seoul Economic Daily, 14 Nov); Reuters (12–13 Nov) – Chinese compute projects worth over CNY 23bn built on restricted Nvidia chips; Trump–Xi meeting this week. No inventory write-downs or guidance cuts for this reason → 🟢 unchanged. 16 Nov: BIS (US Commerce Department) issued an interim final rule – licences for exports of advanced AI chips and servers to Singapore, Malaysia, Thailand, Indonesia and Brazil, and to data centers anywhere that may provide compute to Chinese companies; the rule formally rescinds the Biden-era AI diffusion rule (TechCrunch, CBS News, Bloomberg, Reuters). Note only – no write-downs or guidance cuts → status unchanged. 17 Nov: Bloomberg (via Crypto Briefing) – five banks paused talks on a USD 480m package for Singapore-based Aolani Cloud to buy Nvidia chips for a Malaysian data center serving ByteDance, fearing a breach of the new BIS rule; note only – no write-downs or guidance cuts.",
+      "note": "Wąskie gardła trwają: SK hynix (28.10) – HBM wyprzedane na 2027 r.; TSMC – CoWoS nadal ograniczony. Handel chipami AI (nota): USA nie włączą kontroli eksportu chipów do negocjacji z Chinami (Seoul Economic Daily, 14.11); Reuters (12–13.11) – chińskie projekty obliczeniowe za ponad 23 mld CNY oparte na objętych ograniczeniami chipach Nvidii; spotkanie Trump–Xi w tym tygodniu. Brak odpisów zapasów ani cięcia prognoz z tego powodu → 🟢 bez zmian. 16.11: BIS (Departament Handlu USA) wydał tymczasową regułę końcową – licencje na eksport zaawansowanych chipów AI i serwerów do Singapuru, Malezji, Tajlandii, Indonezji i Brazylii oraz do centrów danych na świecie, które mogą udostępniać moc obliczeniową firmom z Chin; reguła formalnie uchyla zasadę dyfuzji AI z czasów Bidena (TechCrunch, CBS News, Bloomberg, Reuters). Nota – bez odpisów ani cięcia prognoz → status bez zmian. 17.11: Bloomberg (za Crypto Briefing) – pięć banków wstrzymało rozmowy o pakiecie 480 mln USD na zakup chipów Nvidii przez singapurską Aolani Cloud dla centrum danych w Malezji obsługującego ByteDance, z obawy przed naruszeniem nowej reguły BIS; nota – bez odpisów ani cięcia prognoz. 17.11 Nvidia (III kw. roku obrotowego 2027): przychody 115,8 mld USD, centra danych 107,6 mld USD; prognoza IV kw. 130 mld USD ±3% (kwartał z dodatkowym tygodniem, bez przychodów z Chin), marża brutto spada z 74,9% do 71–72% (Fortune, Yahoo Finance) – brak informacji o odpisie zapasów; popyt nie słabnie → 🟢 bez zmian.",
+      "note_en": "Bottlenecks persist: SK hynix (28 Oct) – HBM sold out for 2027; TSMC – CoWoS still constrained. AI-chip trade (note): the US will not include chip export controls in negotiations with China (Seoul Economic Daily, 14 Nov); Reuters (12–13 Nov) – Chinese compute projects worth over CNY 23bn built on restricted Nvidia chips; Trump–Xi meeting this week. No inventory write-downs or guidance cuts for this reason → 🟢 unchanged. 16 Nov: BIS (US Commerce Department) issued an interim final rule – licences for exports of advanced AI chips and servers to Singapore, Malaysia, Thailand, Indonesia and Brazil, and to data centers anywhere that may provide compute to Chinese companies; the rule formally rescinds the Biden-era AI diffusion rule (TechCrunch, CBS News, Bloomberg, Reuters). Note only – no write-downs or guidance cuts → status unchanged. 17 Nov: Bloomberg (via Crypto Briefing) – five banks paused talks on a USD 480m package for Singapore-based Aolani Cloud to buy Nvidia chips for a Malaysian data center serving ByteDance, fearing a breach of the new BIS rule; note only – no write-downs or guidance cuts. 17 Nov Nvidia (fiscal 2027 Q3): revenue USD 115.8bn, data center USD 107.6bn; Q4 guidance USD 130bn ±3% (a quarter with an extra week, no China revenue), gross margin falling from 74.9% to 71–72% (Fortune, Yahoo Finance) – no inventory write-down reported; demand not weakening → 🟢 unchanged.",
       "status_since": "2026-10-06",
       "status_prev": "green"
     },
@@ -639,8 +655,8 @@
       "max_points": 50.0,
       "preliminary": false,
       "source": "https://www.houstonpublicmedia.org/articles/news/energy-environment/2026/09/21/562389/gov-abbott-orders-tceq-to-pause-environmental-permits-for-ai-crytocurrency-data-centers-until-audit-is-complete/",
-      "note": "Trwałe zdarzenia – kontrola 16.11: Teksas (TCEQ nie wznowił pozwoleń; audyt ERCOT spodziewany w grudniu), Nowy Jork (rozporządzenie nr 62 obowiązuje), Oregon (polecenie DEQ do 1.07.2027; Umatilla ogłosiła stan nadzwyczajny z powodu utraty dochodów) – warunki końca niespełnione. Moratoria w trzech stanach obejmują ponad 10% planowanych mocy (Teksas sam ok. 27%) → q150 bez zmian. Lokalnie: Loudoun County głosuje 17.11 nad pauzą wniosków (prawnik hrabstwa uznał moratorium za niezgodne z prawem), gubernator Spanberger przeciw zakazowi stanowemu.",
-      "note_en": "Lasting events – check on 16 Nov: Texas (TCEQ has not resumed permits; ERCOT audit expected in December), New York (Executive Order 62 in force), Oregon (DEQ directive until 1 Jul 2027; Umatilla declared an emergency over lost revenue) – end conditions not met. Moratoria in three states cover over 10% of planned capacity (Texas alone about 27%) → q150 unchanged. Locally: Loudoun County votes on 17 Nov on a pause of applications (the county attorney deemed a moratorium unlawful), Governor Spanberger opposes a statewide ban.",
+      "note": "Trwałe zdarzenia – kontrola 16.11: Teksas (TCEQ nie wznowił pozwoleń; audyt ERCOT spodziewany w grudniu), Nowy Jork (rozporządzenie nr 62 obowiązuje), Oregon (polecenie DEQ do 1.07.2027; Umatilla ogłosiła stan nadzwyczajny z powodu utraty dochodów) – warunki końca niespełnione. Moratoria w trzech stanach obejmują ponad 10% planowanych mocy (Teksas sam ok. 27%) → q150 bez zmian. Lokalnie: Loudoun County głosuje 17.11 nad pauzą wniosków (prawnik hrabstwa uznał moratorium za niezgodne z prawem), gubernator Spanberger przeciw zakazowi stanowemu. 17.11: Fox 5 DC – rada Loudoun County (Wirginia) przegłosowała 10-miesięczną pauzę wniosków o centra danych wymagających zgody legislacyjnej (projekty w toku mogą być rozpatrywane indywidualnie); jedno źródło, oficjalnej uchwały nie znaleziono – pauza lokalna, q150 bez zmian.",
+      "note_en": "Lasting events – check on 16 Nov: Texas (TCEQ has not resumed permits; ERCOT audit expected in December), New York (Executive Order 62 in force), Oregon (DEQ directive until 1 Jul 2027; Umatilla declared an emergency over lost revenue) – end conditions not met. Moratoria in three states cover over 10% of planned capacity (Texas alone about 27%) → q150 unchanged. Locally: Loudoun County votes on 17 Nov on a pause of applications (the county attorney deemed a moratorium unlawful), Governor Spanberger opposes a statewide ban. 17 Nov: Fox 5 DC – the Loudoun County (Virginia) board voted a 10-month pause on data-center applications needing legislative approval (pending projects may proceed case by case); single source, official resolution not found – a local pause, q150 unchanged.",
       "status_since": "2026-11-06",
       "status_prev": "q75",
       "lasting": [
@@ -726,19 +742,14 @@
   ],
   "calendar": [
     {
-      "date": "2026-11-17",
-      "title": "Wyniki Nvidii za III kw. roku obrotowego 2027 po sesji (C3, D5); sprzedaż detaliczna w USA; głosowanie Loudoun County nad pauzą wniosków (B5, F1); Senat Illinois 17–19.11 (C5)",
-      "title_en": "Nvidia fiscal 2027 Q3 results after the close (C3, D5); US retail sales; Loudoun County vote on a pause of applications (B5, F1); Illinois Senate 17–19 Nov (C5)"
-    },
-    {
       "date": "2026-11-18",
       "title": "Spodziewana wycena IPO Anthropic, przedział 70–78 USD (A8, C3; konflikt interesów); protokół FOMC (E3)",
       "title_en": "Expected Anthropic IPO pricing, range USD 70–78 (A8, C3; conflict of interest); FOMC minutes (E3)"
     },
     {
       "date": "2026-11-19",
-      "title": "Termin ofert w aukcji ok. 500 mln USD kredytów ING na centra danych (A6, A8); planowany początek notowań Anthropic; spotkanie Trump–Xi; A2: wygasa niepotwierdzony odczyt premii AI; A5: rekord CDS Oracle z 19.10 wypada z okna",
-      "title_en": "Bid deadline in the auction of about USD 500m of ING data-center loans (A6, A8); planned start of Anthropic trading; Trump–Xi meeting; A2: the unconfirmed AI-premium reading expires; A5: Oracle's CDS record of 19 Oct leaves the window"
+      "title": "Termin ofert w aukcji ok. 500 mln USD kredytów ING na centra danych (A6, A8); planowany początek notowań Anthropic; spotkanie Trump–Xi; A2: wygasa niepotwierdzony odczyt premii AI; A5: rekord CDS Oracle z 19.10 wypada z okna; Senat Illinois do 19.11 (C5)",
+      "title_en": "Bid deadline in the auction of about USD 500m of ING data-center loans (A6, A8); planned start of Anthropic trading; Trump–Xi meeting; A2: the unconfirmed AI-premium reading expires; A5: Oracle's CDS record of 19 Oct leaves the window; Illinois Senate until 19 Nov (C5)"
     },
     {
       "date": "2026-11-21",
@@ -747,8 +758,8 @@
     },
     {
       "date": "2026-11-22",
-      "title": "A8: wygasa okno zdarzenia lekkiego Solidigm; A5: rekord CDS Mety z 22.10 wypada z okna",
-      "title_en": "A8: the window of the light Solidigm event expires; A5: Meta's CDS record of 22 Oct leaves the window"
+      "title": "A8: wygasa okno zdarzenia lekkiego Solidigm (status 🔴 trzyma trwałe zdarzenie Akamai); A5: rekord CDS Mety z 22.10 wypada z okna",
+      "title_en": "A8: the window of the light Solidigm event expires (🔴 is held by the lasting Akamai event); A5: Meta's CDS record of 22 Oct leaves the window"
     },
     {
       "date": "2026-11-26",
