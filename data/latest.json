@@ -1,35 +1,23 @@
 {
   "schema_version": "1.2",
-  "date": "2026-11-18",
-  "report_type": "full",
-  "score": 589,
+  "date": "2026-11-19",
+  "report_type": "short",
+  "score": 562,
   "band": "Pęknięcia",
   "band_en": "Cracks",
-  "change_vs_previous": 23,
-  "headline": "589/1000 bez zmian: protokół Fed ostrzega przed nieprzejrzystym długiem AI, a Nvidia zapowiada ostrożniejsze finansowanie swoich klientów.",
-  "headline_en": "589/1000 unchanged: the Fed minutes warn about opaque AI debt, and Nvidia signals more cautious financing of its customers.",
-  "summary": "Wynik 589/1000 – bez zmian wobec porannego raportu; pasmo Pęknięć, blisko granicy Korekty. Opublikowany w środę protokół Fed pokazuje, że prawie wszyscy członkowie komitetu oczekują dalszych podwyżek stóp, a sztab Fed ostrzegł, że pozabilansowe umowy najmu i finansowanie okrężne w branży AI (firmy finansujące własnych klientów) mogą powiększyć straty, jeśli zyski rozczarują. Nvidia zapowiedziała, że będzie ostrożniej wybierać firmy, którym pomaga w finansowaniu. Wieczorem spodziewana jest wycena IPO Anthropic (potencjalny konflikt interesów), w czwartek – aukcja kredytów ING na centra danych. Sztab Fed opisuje ryzyko finansowania okrężnego w AI, a największy dostawca chipów w tym samym tygodniu prognozuje rekordowy kwartał, finansowany częściowo przez tych samych klientów.",
-  "summary_en": "Score 589/1000 – unchanged from the morning report; Cracks band, close to the Correction boundary. The Fed minutes published on Wednesday show that almost all committee members expect further rate hikes, and Fed staff warned that off-balance-sheet leases and circular financing in the AI industry (companies financing their own customers) could magnify losses if profits disappoint. Nvidia said it will be more selective about the companies it helps finance. Anthropic's IPO pricing is expected this evening (potential conflict of interest), and on Thursday the auction of ING's data-center loans. Fed staff describe the risk of circular financing in AI, while in the same week the biggest chip supplier forecasts a record quarter funded partly by those same customers.",
-  "report_file": "history/history-18-11-2026.json",
-  "triggers": [
-    "Łączny FCF Wielkiej Czwórki ujemny (B3 🔴)"
-  ],
-  "triggers_en": [
-    "Big Four combined FCF negative (B3 🔴)"
-  ],
+  "change_vs_previous": -27,
+  "headline": "562/1000, o 27 punktów niżej: z 30-dniowego okna wypadł rekord kosztu ubezpieczenia długu Oracle przed niewypłacalnością (CDS), a nowych rekordów brak.",
+  "headline_en": "562/1000, 27 points lower: Oracle's record cost of insuring its debt against default (CDS) has dropped out of the 30-day window, and there are no new records.",
+  "summary": "Wynik 562/1000 – o 27 punktów niżej niż wczoraj; pasmo Pęknięć. Spadek jest techniczny: rekord ceny ubezpieczenia długu Oracle przed niewypłacalnością (CDS) z 19 października wypadł z miesięcznego okna, a od tamtej pory rekordy ustanowiły tylko Meta i CoreWeave. Spread obligacji śmieciowych wzrósł do 3,43%. Anthropic wycenił IPO na 83 USD za akcję, powyżej przedziału (potencjalny konflikt interesów). Dziś debiut Anthropic i aukcja kredytów ING na centra danych; wygasa też niepotwierdzony odczyt premii AI.",
+  "summary_en": "Score 562/1000 – 27 points lower than yesterday; Cracks band. The drop is technical: Oracle's record price of insuring its debt against default (CDS) of 19 October has left the one-month window, and since then only Meta and CoreWeave have set records. The junk-bond spread rose to 3.43%. Anthropic priced its IPO at USD 83 per share, above the range (potential conflict of interest). Today come Anthropic's debut and the auction of ING's data-center loans; the unconfirmed AI-premium reading also expires.",
+  "report_file": "history/history-19-11-2026.json",
+  "triggers": [],
+  "triggers_en": [],
   "heavy_credit_event": true,
   "skipped_signals": [
     "A4"
   ],
-  "adjustments": [
-    {
-      "category": "B",
-      "points": 7.5,
-      "floor": 105.0,
-      "reason": "wyzwalacz: Łączny FCF Wielkiej Czwórki ujemny (B3 🔴)",
-      "reason_en": "trigger: Big Four combined FCF negative (B3 🔴)"
-    }
-  ],
+  "adjustments": [],
   "correlated_moves": [],
   "overflow": {
     "categories": [
@@ -125,16 +113,16 @@
       "category": "A",
       "name": "Rentowność 10Y USA",
       "name_en": "US 10Y Treasury yield",
-      "value": 5.1,
+      "value": 5.07,
       "unit": "%",
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "status": "yellow",
       "points": 27.78,
       "max_points": 55.56,
       "preliminary": false,
       "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
-      "note": "Treasury 17.11 (zamknięcie): 10Y 5,10% (16.11: 5,12%; 10.11: 4,98%; 16.10: 5,09%). W przedziale 4,5–5,25% → 🟡 bez zmian, 15 pb poniżej progu 🔴 (blisko progu).",
-      "note_en": "Treasury 17 Nov (close): 10Y 5.10% (16 Nov: 5.12%; 10 Nov: 4.98%; 16 Oct: 5.09%). Within 4.5–5.25% → 🟡 unchanged, 15 bp below the 🔴 threshold (near threshold).",
+      "note": "Treasury 18.11 (zamknięcie): 10Y 5,07% (17.11: 5,10%; 10.11: 4,98%). W przedziale 4,5–5,25% → 🟡 bez zmian, 18 pb poniżej progu 🔴.",
+      "note_en": "Treasury 18 Nov (close): 10Y 5.07% (17 Nov: 5.10%; 10 Nov: 4.98%). Within 4.5–5.25% → 🟡 unchanged, 18 bp below the 🔴 threshold.",
       "status_since": "2026-10-08",
       "status_prev": "red"
     },
@@ -171,14 +159,14 @@
       "name_en": "High-yield spread",
       "value": null,
       "unit": "%",
-      "as_of": "2026-11-16",
+      "as_of": "2026-11-17",
       "status": "green",
       "points": 0.0,
       "max_points": 44.44,
       "preliminary": false,
       "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-      "note": "FRED BAMLH0A0HYM2 16.11: 3,34% (13.11: 3,23%; 12.11: 3,20%; 10.11: 3,30%) – poniżej 3,5% → 🟢 bez zmian; wzrost o 11 pb w dniu spadku S&P 500 o ok. 2%. Niski spread śmieciowy przy podwyższonej premii AI (A2) to obraz stresu sektorowego, nie systemowego.",
-      "note_en": "FRED BAMLH0A0HYM2 16 Nov: 3.34% (13 Nov: 3.23%; 12 Nov: 3.20%; 10 Nov: 3.30%) – below 3.5% → 🟢 unchanged; up 11 bp on the day the S&P 500 fell about 2%. A low junk spread alongside an elevated AI premium (A2) points to sector stress, not systemic stress.",
+      "note": "FRED BAMLH0A0HYM2 17.11: 3,43% (16.11: 3,34%; 13.11: 3,23%) – poniżej 3,5% → 🟢 bez zmian, 7 pb poniżej progu 🟡 (blisko progu). Wzrost o 20 pb w dwie sesje spadków akcji AI. Niski spread śmieciowy przy podwyższonej premii AI (A2) to nadal obraz stresu sektorowego, nie systemowego.",
+      "note_en": "FRED BAMLH0A0HYM2 17 Nov: 3.43% (16 Nov: 3.34%; 13 Nov: 3.23%) – below 3.5% → 🟢 unchanged, 7 bp below the 🟡 threshold (near threshold). Up 20 bp over two sessions of falling AI stocks. A low junk spread alongside an elevated AI premium (A2) still points to sector, not systemic, stress.",
       "status_since": "2026-10-06",
       "status_prev": "green"
     },
@@ -205,19 +193,19 @@
       "category": "A",
       "name": "CDS sektora AI",
       "name_en": "AI sector CDS",
-      "value": "3 emitentów z rekordem",
+      "value": "2 emitentów z rekordem",
       "unit": null,
       "as_of": "2026-11-05",
-      "status": "red",
-      "points": 38.89,
+      "status": "yellow",
+      "points": 19.45,
       "max_points": 38.89,
       "preliminary": false,
       "source": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-      "note": "Emitenci z rekordem 5-letniego CDS w ostatnim miesiącu (16.10–16.11): Oracle (322 pb, 19.10, FT), Meta (114,79 pb, 22.10, Reuters/Markit), CoreWeave (1267,9 pb wg S&P Global MI i ponad 1289 pb wg Deutsche Banku, 5.11; Reuters, CNBC) – trzech → 🔴 bez zmian. SoftBank Group: 5-letni CDS do 466 pb 6.11 (Markit, za The Star/Reuters) – najwyżej od października 2022 r., ale nie rekord. Przegląd 16.11 („CDS record”, „SoftBank CDS” – listopad 2026) bez nowych rekordów. Rekord Oracle wypada z okna 19.11, Mety 22.11 – bez nowych rekordów status spadnie do 🟡. CoreWeave ma umowy z Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne.",
-      "note_en": "Issuers with a record 5-year CDS in the last month (16 Oct–16 Nov): Oracle (322 bp, 19 Oct, FT), Meta (114.79 bp, 22 Oct, Reuters/Markit), CoreWeave (1,267.9 bp per S&P Global MI and over 1,289 bp per Deutsche Bank, 5 Nov; Reuters, CNBC) – three → 🔴 unchanged. SoftBank Group: 5-year CDS up to 466 bp on 6 Nov (Markit, via The Star/Reuters) – the widest since October 2022, but not a record. The 16 Nov sweep (\"CDS record\", \"SoftBank CDS\" – November 2026) found no new records. Oracle's record leaves the window on 19 Nov and Meta's on 22 Nov – without new records the status falls to 🟡. CoreWeave has contracts with Anthropic – potential conflict of interest, external sources only.",
+      "note": "Emitenci z rekordem 5-letniego CDS w ostatnim miesiącu (19.10–19.11): Meta (114,79 pb, 22.10, Reuters/Markit), CoreWeave (1267,9 pb wg S&P Global MI i ponad 1289 pb wg Deutsche Banku, 5.11; Reuters, CNBC) – dwóch → 🟡 (wcześniej 🔴). Rekord Oracle (322 pb, 19.10, FT) wypadł z 30-dniowego okna. Rekord Oracle 325,45 pb „w zeszłym miesiącu” (TradingView za Reuters) bez daty – wyszukiwania „Oracle 325.45 basis points” i „Reuters Oracle five-year CDS record October 2026” nie podały dnia, więc nie liczony. SoftBank: 466 pb 6.11 (najwyżej od X 2022, nie rekord). Przegląd 19.11 („CDS record”, „SoftBank CDS”, „credit default swaps AI” – listopad 2026) bez nowych rekordów. Fortune (18.11) za Reuters: CDS CoreWeave implikuje ok. 63% prawdopodobieństwa niewypłacalności w 5 lat (bez daty odczytu). Rekord Mety wypada z okna 22.11 – bez nowych rekordów status spadnie dalej. CoreWeave ma umowy z Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne.",
+      "note_en": "Issuers with a record 5-year CDS in the last month (19 Oct–19 Nov): Meta (114.79 bp, 22 Oct, Reuters/Markit), CoreWeave (1267.9 bp per S&P Global MI and over 1289 bp per Deutsche Bank, 5 Nov; Reuters, CNBC) – two → 🟡 (previously 🔴). Oracle's record (322 bp, 19 Oct, FT) has left the 30-day window. An Oracle record of 325.45 bp 'last month' (TradingView citing Reuters) has no date – searches for 'Oracle 325.45 basis points' and 'Reuters Oracle five-year CDS record October 2026' gave no day, so it is not counted. SoftBank: 466 bp on 6 Nov (highest since Oct 2022, not a record). Review on 19 Nov ('CDS record', 'SoftBank CDS', 'credit default swaps AI' – November 2026) found no new records. Fortune (18 Nov) citing Reuters: CoreWeave's CDS implies about a 63% probability of default within 5 years (reading undated). Meta's record leaves the window on 22 Nov – without new records the status will fall further. CoreWeave has contracts with Anthropic – potential conflict of interest, external sources only.",
       "conflict_of_interest": true,
-      "status_since": "2026-10-13",
-      "status_prev": "yellow"
+      "status_since": "2026-11-19",
+      "status_prev": "red"
     },
     {
       "id": "A6",
@@ -469,16 +457,16 @@
       "category": "D",
       "name": "Stawki wynajmu GPU",
       "name_en": "GPU rental rates",
-      "value": 12.9,
+      "value": null,
       "unit": "% (30 dni, H100)",
-      "as_of": "2026-11-16",
+      "as_of": "2026-11-18",
       "status": "yellow",
       "points": 20.0,
       "max_points": 40.0,
       "preliminary": false,
       "source": "https://data.ornn.com/markets/h100-sxm",
-      "note": "Ornn OCPI H100 (rozliczenie 16.11): +3,3% d/d, −4,2% w 7 dni, +12,9% w 30 dni (15.11: −4,1% d/d, −9,2% w 7 dni, +9,3% w 30 dni). Zmiana 30-dniowa dodatnia; spadek tygodniowy nie spełnia warunku wczesnego ostrzeżenia (spot −15% w miesiąc przy stabilnych kontraktach); brak publicznych stawek kontraktowych (krzywe terminowe Ornn płatne). 🟡 utrzymane do potwierdzenia kierunku w danych miesięcznych i kontraktowych. Indeks licencjonowany – publikujemy tylko zmiany procentowe.",
-      "note_en": "Ornn OCPI H100 (settlement 16 Nov): +3.3% d/d, −4.2% over 7 days, +12.9% over 30 days (15 Nov: −4.1% d/d, −9.2% over 7 days, +9.3% over 30 days). The 30-day change is positive; the weekly fall does not meet the early-warning condition (spot −15% in a month with stable contracts); no public contract rates (Ornn forward curves are paid). 🟡 kept until the direction is confirmed in monthly and contract data. Licensed index – only percentage changes are published.",
+      "note": "Ornn OCPI H100 (rozliczenie 18.11): +0,3% d/d, −9,8% w 7 dni, −2,0% w 30 dni (16.11: +12,9% w 30 dni). Zmiana 30-dniowa po raz pierwszy od października ujemna, ale daleko od warunku wczesnego ostrzeżenia (spot −15% w miesiąc przy stabilnych kontraktach); brak publicznych stawek kontraktowych (krzywe terminowe Ornn płatne), więc warunek 🔴 (spot i kontrakty spadają razem) nie jest sprawdzalny. 🟡 bez zmian. Indeks licencjonowany – publikujemy tylko zmiany procentowe.",
+      "note_en": "Ornn OCPI H100 (18 Nov settlement): +0.3% d/d, −9.8% over 7 days, −2.0% over 30 days (16 Nov: +12.9% over 30 days). The 30-day change is negative for the first time since October, but far from the early-warning condition (spot −15% in a month with stable contracts); no public contract rates (Ornn forward curves are paid), so the 🔴 condition (spot and contracts falling together) cannot be checked. 🟡 unchanged. Licensed index – only percentage changes are published.",
       "status_since": "2026-10-06",
       "status_prev": "yellow"
     },
@@ -594,16 +582,16 @@
       "category": "E",
       "name": "Krzywa 10Y–2Y",
       "name_en": "10Y–2Y yield curve",
-      "value": 0.3,
+      "value": 0.27,
       "unit": "pp",
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "status": "red",
       "points": 20.0,
       "max_points": 20.0,
       "preliminary": false,
       "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
-      "note": "Treasury 17.11: 10Y 5,10%, 2Y 4,80% → 0,30 pp. Tydzień (10.11→17.11): 2Y +7 pb, 10Y +12 pb – stromienie przez wzrost 10Y (zaostrzanie warunków finansowych). Miesiąc (16.10→17.11): 2Y +6 pb, 10Y +1 pb, krzywa z 0,35 do 0,30 pp – spłaszczenie przez wzrost 2Y (zaostrzanie polityki pieniężnej). Oba horyzonty wskazują zaostrzanie → 🔴 bez zmian; ruchy miesięczne są małe.",
-      "note_en": "Treasury 17 Nov: 10Y 5.10%, 2Y 4.80% → 0.30 pp. Week (10 Nov→17 Nov): 2Y +7 bp, 10Y +12 bp – steepening via rising 10Y (tightening financial conditions). Month (16 Oct→17 Nov): 2Y +6 bp, 10Y +1 bp, curve from 0.35 to 0.30 pp – flattening via rising 2Y (tightening monetary policy). Both horizons point to tightening → 🔴 unchanged; monthly moves are small.",
+      "note": "Treasury 18.11: 10Y 5,07%, 2Y 4,80% → 0,27 pp. Tydzień (10.11→18.11): 2Y +7 pb, 10Y +9 pb – stromienie przez wzrost 10Y (zaostrzanie warunków finansowych). Miesiąc (16.10→18.11): 2Y +6 pb, 10Y −2 pb, krzywa z 0,35 do 0,27 pp – spłaszczenie przez wzrost 2Y (zaostrzanie polityki pieniężnej). Oba horyzonty wskazują zaostrzanie → 🔴 bez zmian.",
+      "note_en": "Treasury 18 Nov: 10Y 5.07%, 2Y 4.80% → 0.27 pp. Week (10 Nov→18 Nov): 2Y +7 bp, 10Y +9 bp – steepening via a rising 10Y (tightening financial conditions). Month (16 Oct→18 Nov): 2Y +6 bp, 10Y −2 bp, curve from 0.35 to 0.27 pp – flattening via a rising 2Y (tightening monetary policy). Both horizons point to tightening → 🔴 unchanged.",
       "status_since": "2026-11-16",
       "status_prev": "yellow"
     },
@@ -742,14 +730,9 @@
   ],
   "calendar": [
     {
-      "date": "2026-11-18",
-      "title": "Spodziewana wycena IPO Anthropic, przedział 70–78 USD (A8, C3; konflikt interesów); protokół FOMC (E3)",
-      "title_en": "Expected Anthropic IPO pricing, range USD 70–78 (A8, C3; conflict of interest); FOMC minutes (E3)"
-    },
-    {
       "date": "2026-11-19",
-      "title": "Termin ofert w aukcji ok. 500 mln USD kredytów ING na centra danych (A6, A8); planowany początek notowań Anthropic; spotkanie Trump–Xi; A2: wygasa niepotwierdzony odczyt premii AI; A5: rekord CDS Oracle z 19.10 wypada z okna; Senat Illinois do 19.11 (C5)",
-      "title_en": "Bid deadline in the auction of about USD 500m of ING data-center loans (A6, A8); planned start of Anthropic trading; Trump–Xi meeting; A2: the unconfirmed AI-premium reading expires; A5: Oracle's CDS record of 19 Oct leaves the window; Illinois Senate until 19 Nov (C5)"
+      "title": "Debiut Anthropic na Nasdaq (ANT; konflikt interesów); termin ofert w aukcji ok. 500 mln USD kredytów ING na centra danych (A6, A8); szczyt APEC w Shenzhen i spotkanie Trump–Xi (D5); Senat Illinois do 19.11 (C5); reguła BIS o zdalnym dostępie do chipów AI (D5)",
+      "title_en": "Anthropic's Nasdaq debut (ANT; conflict of interest); bid deadline in the auction of about USD 500m of ING data-center loans (A6, A8); APEC summit in Shenzhen and Trump–Xi meeting (D5); Illinois Senate until 19 Nov (C5); BIS rule on remote access to AI chips (D5)"
     },
     {
       "date": "2026-11-21",
@@ -758,7 +741,7 @@
     },
     {
       "date": "2026-11-22",
-      "title": "A8: wygasa okno zdarzenia lekkiego Solidigm (status 🔴 trzyma trwałe zdarzenie Akamai); A5: rekord CDS Mety z 22.10 wypada z okna",
+      "title": "A8: wygasa okno zdarzenia lekkiego Solidigm (🔴 trzyma trwałe zdarzenie Akamai); A5: rekord CDS Mety z 22.10 wypada z okna",
       "title_en": "A8: the window of the light Solidigm event expires (🔴 is held by the lasting Akamai event); A5: Meta's CDS record of 22 Oct leaves the window"
     },
     {
