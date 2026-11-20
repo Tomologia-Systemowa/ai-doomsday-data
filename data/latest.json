@@ -1,23 +1,31 @@
 {
   "schema_version": "1.2",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "report_type": "short",
-  "score": 552,
+  "score": 545,
   "band": "Pęknięcia",
   "band_en": "Cracks",
-  "change_vs_previous": -37,
-  "headline": "552/1000, o 10 punktów niżej niż rano: krzywa rentowności obligacji USA przestała wskazywać na zaostrzanie warunków finansowych, a debiut Anthropic nie zatrzymał popołudniowych spadków spółek AI.",
-  "headline_en": "552/1000, 10 points lower than this morning: the US Treasury yield curve no longer points to tightening financial conditions, and Anthropic's debut did not stop the afternoon fall in AI stocks.",
-  "summary": "Wynik 552/1000 – o 10 punktów niżej niż w porannym raporcie i o 37 niżej niż 18.11; pasmo Pęknięć. Krzywa rentowności przestała wskazywać na zaostrzanie warunków: w tydzień rentowność 2-letnich obligacji USA spadła o 10 pb, a 10-letnich o 6 pb, do 5,04%. Anthropic zadebiutował na Nasdaq po 111,50 USD wobec 83 USD w ofercie, po południu ok. 95 USD (potencjalny konflikt interesów); Nvidia traciła 4,4%, Nasdaq 1,7%. Wyników aukcji kredytów ING na centra danych nie podano.",
-  "summary_en": "Score 552/1000 – 10 points lower than in the morning report and 37 lower than on 18 Nov; Cracks band. The yield curve no longer points to tightening conditions: over the week the 2-year US Treasury yield fell 10 bp and the 10-year 6 bp, to 5.04%. Anthropic debuted on Nasdaq at USD 111.50 against USD 83 in the offering and traded at about USD 95 in the afternoon (potential conflict of interest); Nvidia was down 4.4% and Nasdaq 1.7%. No results of the auction of ING's data-center loans have been reported.",
-  "report_file": "history/history-19-11-2026.json",
+  "change_vs_previous": -7,
+  "headline": "545/1000, o 7 punktów niżej niż w czwartek: po rekordowym debiucie Anthropic na Nasdaq akcje spółek AI w USA i Azji spadały, a rynek kredytowy pozostał spokojny.",
+  "headline_en": "545/1000, 7 points lower than on Thursday: after Anthropic's record Nasdaq debut, AI stocks in the US and Asia fell, while the credit market stayed calm.",
+  "summary": "Wynik 545/1000 – o 7 punktów niżej niż w czwartek; pasmo Pęknięć. Spadek to wygaśnięcie niepotwierdzonego odczytu premii za ryzyko obligacji spółek AI, nie poprawa danych. W czwartek Nasdaq stracił 2,25%, w piątek KOSPI ok. 5,1%, a SoftBank do 16,6%; Anthropic zamknął debiut 17% powyżej ceny z oferty (możliwy konflikt interesów). Koreański eksport chipów w październiku był na dzień roboczy o 227% wyższy niż rok wcześniej, a SK hynix i Samsung traciły w piątek ponad 6%.",
+  "summary_en": "Score 545/1000 – 7 points lower than on Thursday; Cracks band. The fall reflects an expired unconfirmed reading of the risk premium on AI companies' bonds, not better data. On Thursday Nasdaq lost 2.25%, on Friday KOSPI about 5.1% and SoftBank as much as 16.6%; Anthropic closed its debut 17% above the offering price (potential conflict of interest). Korea's chip exports in October were 227% higher per working day than a year earlier, and SK hynix and Samsung were down more than 6% on Friday.",
+  "report_file": "history/history-20-11-2026.json",
   "triggers": [],
   "triggers_en": [],
   "heavy_credit_event": true,
   "skipped_signals": [
     "A4"
   ],
-  "adjustments": [],
+  "adjustments": [
+    {
+      "category": "A",
+      "points": 4.44,
+      "floor": 210,
+      "reason": "ciężkie zdarzenie kredytowe",
+      "reason_en": "heavy credit event"
+    }
+  ],
   "correlated_moves": [],
   "overflow": {
     "categories": [
@@ -135,20 +143,12 @@
       "unit": "pb",
       "as_of": "2026-10-21",
       "status": "yellow",
-      "points": 33.33,
+      "points": 22.22,
       "max_points": 44.44,
       "preliminary": false,
       "source": "https://www.lseg.com/en/insights/ftse-russell/ais-borrowing-boom-what-it-means-for-bond-indices",
-      "note": "Ostatni potwierdzony odczyt: premia AI 33 pb (FTSE Russell/LSEG, dane do 21.10) → 🟡. Odczyt niepotwierdzony (🟡→🔴): MarketWatch 5.11 za BofA – obligacje IG spółek AI ok. 148 pb nad obligacjami skarbowymi wobec 77 pb dla reszty rynku (ok. 71 pb; wobec całego indeksu ok. 55 pb). Ponowne wyszukiwania 16.11 („AI bonds spread investment-grade November 2026 BofA Barclays”, „115 basis points AI bonds Reuters”) nie dały drugiego niezależnego źródła: liczba 115 vs 78 pb (Reuters za Goldmanem, ok. 37 pb) pochodzi z 22.09, a BofA (za Korea Daily, 14.11) podaje tylko wzrost spreadów 10-letnich obligacji spółek AI o ok. 0,5 pp w tym roku wobec 0,2 pp dla przemysłu – zmianę, nie poziom. Odczyt niepotwierdzony wygasa 19.11; potwierdziłaby go nota BofA lub odczyt ICE/LSEG/Barclays.",
-      "note_en": "Last confirmed reading: AI premium 33 bp (FTSE Russell/LSEG, data to 21 Oct) → 🟡. Unconfirmed reading (🟡→🔴): MarketWatch on 5 Nov citing BofA – AI companies' IG bonds about 148 bp over Treasuries vs 77 bp for the rest of the market (about 71 bp; about 55 bp vs the whole index). Repeat searches on 16 Nov (\"AI bonds spread investment-grade November 2026 BofA Barclays\", \"115 basis points AI bonds Reuters\") found no second independent source: the 115 vs 78 bp figure (Reuters citing Goldman, about 37 bp) dates from 22 Sep, and BofA (via Korea Daily, 14 Nov) gives only a rise of about 0.5 pp this year in AI companies' 10-year bond spreads vs 0.2 pp for industrials – a change, not a level. The unconfirmed reading expires on 19 Nov; a BofA note or an ICE/LSEG/Barclays reading would confirm it.",
-      "unconfirmed": {
-        "status": "red",
-        "as_of": "2026-11-05",
-        "source": "https://fourweekmba.com/ai-weekly-roundup-8-nov-2026-builders-own-power-debt-296b",
-        "note": "Premia AI ok. 71 pb wobec reszty rynku (148 vs 77 pb) i ok. 55 pb wobec całego indeksu IG – MarketWatch za danymi BofA, jedno źródło wtórne.",
-        "note_en": "AI premium about 71 bp vs the rest of the market (148 vs 77 bp) and about 55 bp vs the whole IG index – MarketWatch citing BofA data, a single secondary source.",
-        "added_points": 11.11
-      },
+      "note": "Ostatni potwierdzony odczyt: premia AI 33 pb (FTSE Russell/LSEG, dane do 21.10) → 🟡. Niepotwierdzony odczyt MarketWatch/BofA z 5.11 (ok. 71 pb) wygasł 19.11 bez drugiego niezależnego źródła; ponowne wyszukiwania 20.11 („AI companies investment-grade bond spreads November 2026”, „AI bonds spread BofA”) nie dały poziomu premii. Nowe dane pośrednie (nota): Pimco (Bloomberg, 17.11) – obligacje IG zabezpieczone centrami danych wynajmowanymi hiperskalerom ok. 146 pb szerzej niż dług najemców (10.11) wobec ok. 180 pb pod koniec września; Fitch (18.11, za Bloombergiem) – obligacje Mety z terminem 2056 ok. 2,2 pp nad obligacjami skarbowymi, ok. 0,9 pp więcej niż analogiczna emisja z kwietnia. To inne miary niż premia AI wobec całego rynku IG → 🟡 bez zmian.",
+      "note_en": "Last confirmed reading: AI premium 33 bp (FTSE Russell/LSEG, data to 21 Oct) → 🟡. The unconfirmed MarketWatch/BofA reading of 5 Nov (about 71 bp) expired on 19 Nov without a second independent source; repeat searches on 20 Nov (\"AI companies investment-grade bond spreads November 2026\", \"AI bonds spread BofA\") gave no level of the premium. New indirect data (note): Pimco (Bloomberg, 17 Nov) – IG bonds backed by data centers leased to hyperscalers about 146 bp wider than the tenants' debt (10 Nov) vs about 180 bp in late September; Fitch (18 Nov, citing Bloomberg) – Meta's 2056 notes about 2.2 pp over Treasuries, about 0.9 pp more than an equivalent April issue. These are different measures from the AI premium over the whole IG market → 🟡 unchanged.",
       "status_since": "2026-10-31",
       "status_prev": "skipped"
     },
@@ -220,8 +220,8 @@
       "max_points": 33.33,
       "preliminary": false,
       "source": "https://wrenews.com/trepp-data-center-cmbs-spreads-widen-october-2026-ai-credit/",
-      "note": "Status 🔴 opiera się na mierzonym poszerzeniu spreadów CMBS centrów danych (Trepp: AAA o stałej stopie 182 pb, 27.10). Potwierdzenie z innej miary: CREFC (raport listopadowy, za Korea Daily 14.11) – spread 5-letnich obligacji zabezpieczonych centrami danych z ratingiem A wzrósł ze średnio 1,95 pp w I kw. do 2,57 pp w ostatnich trzech miesiącach; koszt finansowania ABS centrów danych +1 pp od początku roku; emisje ABS/CMBS centrów danych w USA 21,9 mld USD do 6.11 (+1,2% r/r), w ostatnich trzech miesiącach −19,9% r/r. Reuters (za Korea Daily): banki zaostrzyły standardy kredytów na centra danych AI; Barclays stosuje ubezpieczenie kredytowe. Aukcja ok. 500 mln USD kredytów ING na centra danych (m.in. transza 25 mln USD powiązana ze Stargate w Nowym Meksyku) – oferty do 19.11, cen brak. → 🔴 bez zmian. Część finansowania dotyczy obiektów dla Anthropic – potencjalny konflikt interesów. 19.11 (wieczór): termin ofert w aukcji kredytów ING minął; wyników ani cen nie podano. Nagłówek GlobalCapital „ING Shops $350 Mln Portfolio As Auction Proves Tough” – bez daty i treści, nie wiadomo, czy dotyczy centrów danych; nie liczony.",
-      "note_en": "The 🔴 status rests on measured widening of data-center CMBS spreads (Trepp: fixed-rate AAA 182 bp, 27 Oct). Confirmation from another measure: CREFC (November report, via Korea Daily on 14 Nov) – the spread on 5-year A-rated data-center-backed bonds rose from an average of 1.95 pp in Q1 to 2.57 pp over the last three months; the funding cost of data-center ABS is up 1 pp since the start of the year; US data-center ABS/CMBS issuance USD 21.9bn through 6 Nov (+1.2% y/y), down 19.9% y/y over the last three months. Reuters (via Korea Daily): banks have tightened underwriting of AI data-center loans; Barclays uses credit insurance. Auction of about USD 500m of ING data-center loans (including a USD 25m slice tied to Stargate in New Mexico) – bids due 19 Nov, no prices yet. → 🔴 unchanged. Part of the financing concerns facilities for Anthropic – potential conflict of interest. 19 Nov (evening): the bid deadline in the ING loan auction has passed; no results or prices reported. A GlobalCapital headline \"ING Shops $350 Mln Portfolio As Auction Proves Tough\" – no date or text, unclear whether it concerns data centers; not counted.",
+      "note": "Status 🔴 opiera się na mierzonym poszerzeniu spreadów CMBS centrów danych (Trepp: AAA o stałej stopie 182 pb, 27.10). Potwierdzenie z innej miary: CREFC (raport listopadowy, za Korea Daily 14.11) – spread 5-letnich obligacji zabezpieczonych centrami danych z ratingiem A wzrósł ze średnio 1,95 pp w I kw. do 2,57 pp w ostatnich trzech miesiącach; koszt finansowania ABS centrów danych +1 pp od początku roku; emisje ABS/CMBS centrów danych w USA 21,9 mld USD do 6.11 (+1,2% r/r), w ostatnich trzech miesiącach −19,9% r/r. Reuters (za Korea Daily): banki zaostrzyły standardy kredytów na centra danych AI; Barclays stosuje ubezpieczenie kredytowe. Aukcja ok. 500 mln USD kredytów ING na centra danych (m.in. transza 25 mln USD powiązana ze Stargate w Nowym Meksyku) – oferty do 19.11, cen brak. → 🔴 bez zmian. Część finansowania dotyczy obiektów dla Anthropic – potencjalny konflikt interesów. 19.11 (wieczór): termin ofert w aukcji kredytów ING minął; wyników ani cen nie podano. Nagłówek GlobalCapital „ING Shops $350 Mln Portfolio As Auction Proves Tough” – bez daty i treści, nie wiadomo, czy dotyczy centrów danych; nie liczony. 20.11 (nota): Pimco (Bloomberg, 17.11) – obligacje IG zabezpieczone centrami danych wynajmowanymi hiperskalerom ok. 146 pb szerzej niż dług najemców (10.11), wobec ok. 180 pb pod koniec września; Pimco spodziewa się dalszego zawężenia. To odczyt w przeciwną stronę niż Trepp i CREFC; przy kilku miarach o różnych statusach przyjęto bardziej ryzykowną → 🔴 bez zmian. Wyników aukcji kredytów ING (oferty do 19.11) nadal nie podano.",
+      "note_en": "The 🔴 status rests on measured widening of data-center CMBS spreads (Trepp: fixed-rate AAA 182 bp, 27 Oct). Confirmation from another measure: CREFC (November report, via Korea Daily on 14 Nov) – the spread on 5-year A-rated data-center-backed bonds rose from an average of 1.95 pp in Q1 to 2.57 pp over the last three months; the funding cost of data-center ABS is up 1 pp since the start of the year; US data-center ABS/CMBS issuance USD 21.9bn through 6 Nov (+1.2% y/y), down 19.9% y/y over the last three months. Reuters (via Korea Daily): banks have tightened underwriting of AI data-center loans; Barclays uses credit insurance. Auction of about USD 500m of ING data-center loans (including a USD 25m slice tied to Stargate in New Mexico) – bids due 19 Nov, no prices yet. → 🔴 unchanged. Part of the financing concerns facilities for Anthropic – potential conflict of interest. 19 Nov (evening): the bid deadline in the ING loan auction has passed; no results or prices reported. A GlobalCapital headline \"ING Shops $350 Mln Portfolio As Auction Proves Tough\" – no date or text, unclear whether it concerns data centers; not counted. 20 Nov (note): Pimco (Bloomberg, 17 Nov) – IG bonds backed by data centers leased to hyperscalers about 146 bp wider than the tenants' debt (10 Nov), vs about 180 bp in late September; Pimco expects further narrowing. This reading points the other way from Trepp and CREFC; with several measures at different statuses the higher-risk one is used → 🔴 unchanged. Results of the ING loan auction (bids due 19 Nov) have still not been reported.",
       "conflict_of_interest": true,
       "status_since": "2026-10-29",
       "status_prev": "yellow"
@@ -290,16 +290,16 @@
       "category": "B",
       "name": "Spółki AI vs rynek (USA, Korea, Japonia)",
       "name_en": "AI stocks vs home market (US, Korea, Japan)",
-      "value": -7.8,
+      "value": -5.2,
       "unit": "pp",
-      "as_of": "2026-11-02",
+      "as_of": "2026-11-18",
       "status": "yellow",
       "points": 12.5,
       "max_points": 25.0,
       "preliminary": false,
-      "source": "https://finance.yahoo.com/quote/MAGS/history/",
-      "note": "Ostatnie pełne zestawienie (2.11): MAGS +3,4% YTD vs S&P 500 ok. +11,2% → ok. −7,8 pp (🟡, blisko progu 🔴); Korea (SK hynix, Samsung vs KOSPI) i Japonia (Advantest, Tokyo Electron vs TOPIX) wyraźnie przed rynkiem → 🟢. Wybrana bardziej ryzykowna miara → 🟡. Od tego czasu: Nvidia −4,3% 12.11 i ok. −2% 13.11 (AP), AMD −8,8% 13.11; 16.11 w Azji (AP, w trakcie sesji) KOSPI −2,8%, SK hynix −5,5%, Samsung −3,2%, Tokyo Electron −5,2%, Nikkei −1,6%. Brak nowego zamknięcia trzech miar od początku roku. 16.11 (Reuters, Yahoo Finance; dane śróddzienne, nie zamknięcie): S&P 500 ok. −2%, Nasdaq ok. −2,5%, indeks półprzewodników SOX −4%; Nvidia ok. −4,4% (−12,8% w 5 dni), Alphabet ponad −3%, Amazon ok. −3%; CoreWeave −5,2%, Nebius −6,4%. Status 🟡 bez zmian do nowego pełnego zestawienia YTD. Nowe 17.11 (nota): MAGS +4,4% od początku roku wobec S&P 500 +10,9% do 12.11 (Yahoo Finance) → ok. −6,5 pp (🟡). 17.11 w Azji (FXStreet, BigGo; w trakcie sesji): KOSPI ok. −1,8% (poniżej 5000 pkt), Nikkei ok. −1%; 16.11 indeks półprzewodników SOX −5,3%, Micron −7,6%. Status 🟡 bez zmian. 19.11 (śróddzienne, nie zamknięcie): Nasdaq −1,7%, S&P 500 −1,5% (NBC News, 14:56 ET) po porannych wzrostach; Nvidia −4,4% do 155,70 USD (Benzinga, 14:40 ET); 19 największych spółek technologicznych straciło łącznie ok. 960 mld USD wartości. Status 🟡 bez zmian.",
-      "note_en": "Last full comparison (2 Nov): MAGS +3.4% YTD vs S&P 500 about +11.2% → about −7.8 pp (🟡, near the 🔴 threshold); Korea (SK hynix, Samsung vs KOSPI) and Japan (Advantest, Tokyo Electron vs TOPIX) well ahead of their markets → 🟢. The higher-risk measure is used → 🟡. Since then: Nvidia −4.3% on 12 Nov and about −2% on 13 Nov (AP), AMD −8.8% on 13 Nov; on 16 Nov in Asia (AP, intraday) KOSPI −2.8%, SK hynix −5.5%, Samsung −3.2%, Tokyo Electron −5.2%, Nikkei −1.6%. No new close for the three YTD measures. 16 Nov (Reuters, Yahoo Finance; intraday, not a close): S&P 500 about −2%, Nasdaq about −2.5%, SOX semiconductor index −4%; Nvidia about −4.4% (−12.8% over 5 days), Alphabet over −3%, Amazon about −3%; CoreWeave −5.2%, Nebius −6.4%. Status 🟡 unchanged until a new full YTD comparison. New 17 Nov (note): MAGS +4.4% year to date vs S&P 500 +10.9% through 12 Nov (Yahoo Finance) → about −6.5 pp (🟡). 17 Nov in Asia (FXStreet, BigGo; intraday): KOSPI about −1.8% (below 5,000), Nikkei about −1%; on 16 Nov the SOX semiconductor index −5.3%, Micron −7.6%. Status 🟡 unchanged. 19 Nov (intraday, not a close): Nasdaq −1.7%, S&P 500 −1.5% (NBC News, 14:56 ET) after morning gains; Nvidia −4.4% to USD 155.70 (Benzinga, 14:40 ET); the 19 largest tech stocks lost about USD 960bn of combined value. Status 🟡 unchanged.",
+      "source": "https://finance.yahoo.com/quote/MAGS/performance/",
+      "note": "Nowe zestawienie USA (18.11): MAGS +1,32% od początku roku (Yahoo Finance) wobec S&P 500 ok. +6,5% (zamknięcie 18.11 ok. 7324 pkt, wyliczone z zamknięcia 19.11 7175,83 pkt i spadku o 2,02% – CNBC; poziom z końca 2025 r. ok. 6875 pkt wg AP 17.11) → ok. −5,2 pp (🟡). Korea (SK hynix, Samsung vs KOSPI) i Japonia (Advantest, Tokyo Electron vs TOPIX) – bez nowego pełnego zestawienia od początku roku; od 2.11 wyraźnie przed rynkiem (🟢). Bardziej ryzykowna miara → 🟡 bez zmian. 19.11 zamknięcie: Nasdaq −2,25% do 23 879,20 pkt, S&P 500 −2,02% (CNBC); Nasdaq −5% w tygodniu i −13,5% od szczytu z początku października; Nvidia −28% od początku listopada (CNN). 20.11 w Azji (w trakcie sesji): Nikkei ok. −4,7%, KOSPI ok. −5,1%, SK hynix i Samsung ponad −6%, SoftBank Group do −16,6%, Advantest ponad −9%, Tokyo Electron −7,2%, Taiex −5,6% (CNBC, investingLive). Spadki obejmują spółki AI i ich rynki macierzyste jednocześnie, więc nie przesądzają o mierze względnej.",
+      "note_en": "New US comparison (18 Nov): MAGS +1.32% year to date (Yahoo Finance) vs S&P 500 about +6.5% (18 Nov close about 7,324, derived from the 19 Nov close of 7,175.83 and the 2.02% fall – CNBC; end-2025 level about 6,875 per AP on 17 Nov) → about −5.2 pp (🟡). Korea (SK hynix, Samsung vs KOSPI) and Japan (Advantest, Tokyo Electron vs TOPIX) – no new full year-to-date comparison; well ahead of their markets as of 2 Nov (🟢). The higher-risk measure is used → 🟡 unchanged. 19 Nov close: Nasdaq −2.25% to 23,879.20, S&P 500 −2.02% (CNBC); Nasdaq −5% on the week and −13.5% from its early-October peak; Nvidia −28% since the start of November (CNN). 20 Nov in Asia (intraday): Nikkei about −4.7%, KOSPI about −5.1%, SK hynix and Samsung down more than 6%, SoftBank Group down as much as 16.6%, Advantest down more than 9%, Tokyo Electron −7.2%, Taiex −5.6% (CNBC, investingLive). The falls hit AI stocks and their home markets at the same time, so they do not settle the relative measure.",
       "status_since": "2026-10-06",
       "status_prev": "yellow"
     },
@@ -326,16 +326,16 @@
       "category": "B",
       "name": "Chińskie spółki AI (STAR 50, Hang Seng Tech)",
       "name_en": "Chinese AI stocks (STAR 50, Hang Seng Tech)",
-      "value": 38.1,
+      "value": 39.0,
       "unit": "%",
-      "as_of": "2026-11-13",
+      "as_of": "2026-11-17",
       "status": "red",
       "points": 15.0,
       "max_points": 15.0,
       "preliminary": false,
-      "source": "https://www.businesstoday.com.my/2026/11/14/hong-kong-stocks-tumble-370-95-points-as-tech-selloff-drags-hang-seng-below-24000/",
-      "note": "Hang Seng Tech 13.11 zamknięcie 3813,19 pkt (BusinessToday, The Standard) → ok. −38,1% od 52-tygodniowego szczytu 6162,47 pkt; STAR 50 bez nowego potwierdzonego zamknięcia (30.10: ok. −48,5%). Oba > 30%, Hang Seng Tech < 45% → 🔴 bez zmian. 16.11 (AP, w trakcie sesji) Hang Seng +0,9%, Shanghai Composite −0,4%; chińska sprzedaż detaliczna i produkcja przemysłowa za październik poniżej oczekiwań. Przyczyny mieszane: zamieszanie wokół Nvidii, kontrola eksportu chipów (AI i napięcia USA–Chiny) oraz słabsze dane makro. Spadek to odczyt wycen i nastrojów, nie zdarzenie kredytowe.",
-      "note_en": "Hang Seng Tech closed at 3,813.19 on 13 Nov (BusinessToday, The Standard) → about −38.1% from its 52-week high of 6,162.47; STAR 50 has no new confirmed close (30 Oct: about −48.5%). Both > 30%, Hang Seng Tech < 45% → 🔴 unchanged. On 16 Nov (AP, intraday) Hang Seng +0.9%, Shanghai Composite −0.4%; China's October retail sales and industrial output missed forecasts. Mixed causes: the Nvidia turmoil, chip export controls (AI and US–China tensions) and weaker macro data. The fall is a valuation and sentiment reading, not a credit event.",
+      "source": "https://www.ad-hoc-news.de/boerse/news/marktberichte/hang-seng-ends-1-03-lower-as-tech-shares-weigh/70528285",
+      "note": "Hang Seng Tech 17.11 zamknięcie 3758,17 pkt (−1,14%; Xinhua za AD HOC NEWS) → ok. −39,0% od 52-tygodniowego szczytu 6162,47 pkt; STAR 50 bez nowego potwierdzonego zamknięcia (30.10: ok. −48,5%). Oba > 30%, Hang Seng Tech < 45% → 🔴 bez zmian. Przyczyna spadku 17.11: zaostrzenie kontroli USA nad eksportem zaawansowanych chipów AI i obawy o popyt zagraniczny. 20.11 (w trakcie sesji, investingLive): Hang Seng ok. −2,1%, Shanghai Composite ok. −1,6%; Alibaba +2,4% po wzroście zysku operacyjnego o 443% do 29,12 mld CNY (CNBC). Spadek to odczyt wycen i nastrojów, nie zdarzenie kredytowe.",
+      "note_en": "Hang Seng Tech closed at 3,758.17 on 17 Nov (−1.14%; Xinhua via AD HOC NEWS) → about −39.0% from its 52-week high of 6,162.47; STAR 50 has no new confirmed close (30 Oct: about −48.5%). Both > 30%, Hang Seng Tech < 45% → 🔴 unchanged. Cause of the 17 Nov fall: tighter US controls on exports of advanced AI chips and worries about overseas demand. 20 Nov (intraday, investingLive): Hang Seng about −2.1%, Shanghai Composite about −1.6%; Alibaba +2.4% after operating income rose 443% to CNY 29.12bn (CNBC). The fall is a valuation and sentiment reading, not a credit event.",
       "status_since": "2026-10-28"
     },
     {
@@ -404,8 +404,8 @@
       "max_points": 30.0,
       "preliminary": false,
       "source": "https://www.investing.com/news/stock-market-news/openais-annualized-revenue-20-billion-less-than-previously-signaled-ft-reports-4939854",
-      "note": "Przychody laboratoriów i chmury dalej rosną: Google Cloud +103% r/r (III kw.), AWS +39%; CoreWeave – przychody III kw. 3,66 mld USD (+168% r/r), portfel 132,5 mld USD, prognoza 2026 podniesiona; Nebius +571% r/r. OpenAI: run-rate blisko 50 mld USD na koniec IX (korekta definicyjna z 8.10). Anthropic (prospekt S-1): przychody 16,3 mld USD w I poł. 2026, ok. 20–25% od dwóch klientów. q25 – za nieaudytowany charakter run-rate i koncentrację klientów. Dotyczy Anthropic – potencjalny konflikt interesów; tylko źródła zewnętrzne. 18.11 (nota): IPO Anthropic – Bloomberg (17.11) podał, że cena ma być na górnej granicy przedziału 70–78 USD lub wyżej, a doniesienia za WSJ mówią o ponad 80 USD; ostateczna wycena spodziewana wieczorem 18.11, notowania na Nasdaq od 19.11. Dotyczy Anthropic – potencjalny konflikt interesów; status bez zmian. 19.11 (nota): IPO Anthropic wyceniono na 83 USD za akcję (980 mln akcji, ok. 81,3 mld USD – Yahoo Finance, TradingKey); otwarcie na Nasdaq 111,50 USD (+34%), po południu ok. 95 USD (NBC News, 14:56 ET). To wycena akcji, nie przychody – status bez zmian. Dotyczy Anthropic – potencjalny konflikt interesów; tylko źródła zewnętrzne.",
-      "note_en": "Lab and cloud revenue keeps growing: Google Cloud +103% y/y (Q3), AWS +39%; CoreWeave – Q3 revenue USD 3.66bn (+168% y/y), backlog USD 132.5bn, 2026 guidance raised; Nebius +571% y/y. OpenAI: run-rate close to USD 50bn at end-September (definitional correction of 8 Oct). Anthropic (S-1 prospectus): H1 2026 revenue USD 16.3bn, about 20–25% from two customers. q25 – for the unaudited nature of run-rates and customer concentration. Concerns Anthropic – potential conflict of interest; external sources only. 18 Nov (note): Anthropic IPO – Bloomberg (17 Nov) reported pricing at the top of the USD 70–78 range or above, and WSJ-based reports mention more than USD 80; final pricing expected on the evening of 18 Nov, Nasdaq trading from 19 Nov. Concerns Anthropic – potential conflict of interest; status unchanged. 19 Nov (note): the Anthropic IPO priced at USD 83 per share (980m shares, about USD 81.3bn – Yahoo Finance, TradingKey); it opened on Nasdaq at USD 111.50 (+34%) and traded at about USD 95 in the afternoon (NBC News, 14:56 ET). This is a share valuation, not revenue – status unchanged. Concerns Anthropic – potential conflict of interest; external sources only.",
+      "note": "Przychody laboratoriów i chmury dalej rosną: Google Cloud +103% r/r (III kw.), AWS +39%; CoreWeave – przychody III kw. 3,66 mld USD (+168% r/r), portfel 132,5 mld USD, prognoza 2026 podniesiona; Nebius +571% r/r. OpenAI: run-rate blisko 50 mld USD na koniec IX (korekta definicyjna z 8.10). Anthropic (prospekt S-1): przychody 16,3 mld USD w I poł. 2026, ok. 20–25% od dwóch klientów. q25 – za nieaudytowany charakter run-rate i koncentrację klientów. Dotyczy Anthropic – potencjalny konflikt interesów; tylko źródła zewnętrzne. 18.11 (nota): IPO Anthropic – Bloomberg (17.11) podał, że cena ma być na górnej granicy przedziału 70–78 USD lub wyżej, a doniesienia za WSJ mówią o ponad 80 USD; ostateczna wycena spodziewana wieczorem 18.11, notowania na Nasdaq od 19.11. Dotyczy Anthropic – potencjalny konflikt interesów; status bez zmian. 19.11 (nota): IPO Anthropic wyceniono na 83 USD za akcję (980 mln akcji, ok. 81,3 mld USD – Yahoo Finance, TradingKey); otwarcie na Nasdaq 111,50 USD (+34%), po południu ok. 95 USD (NBC News, 14:56 ET). To wycena akcji, nie przychody – status bez zmian. Dotyczy Anthropic – potencjalny konflikt interesów; tylko źródła zewnętrzne. 20.11 (nota): Anthropic zamknął pierwszy dzień notowań 19.11 na 97,17 USD (+17% wobec 83 USD w ofercie; Forbes, The National), po sesji 92,60 USD; łącznie z prywatną emisją 26 mld USD pozyskał 107,3 mld USD, wycena ok. 1,75 bln USD w pełni rozwodniona (The National). 20.11 SoftBank Group (największy udziałowiec OpenAI) tracił do 16,6% w Tokio (Investing.com, Yahoo Finance). To wyceny akcji, nie przychody – status bez zmian. Dotyczy Anthropic – potencjalny konflikt interesów; tylko źródła zewnętrzne.",
+      "note_en": "Lab and cloud revenue keeps growing: Google Cloud +103% y/y (Q3), AWS +39%; CoreWeave – Q3 revenue USD 3.66bn (+168% y/y), backlog USD 132.5bn, 2026 guidance raised; Nebius +571% y/y. OpenAI: run-rate close to USD 50bn at end-September (definitional correction of 8 Oct). Anthropic (S-1 prospectus): H1 2026 revenue USD 16.3bn, about 20–25% from two customers. q25 – for the unaudited nature of run-rates and customer concentration. Concerns Anthropic – potential conflict of interest; external sources only. 18 Nov (note): Anthropic IPO – Bloomberg (17 Nov) reported pricing at the top of the USD 70–78 range or above, and WSJ-based reports mention more than USD 80; final pricing expected on the evening of 18 Nov, Nasdaq trading from 19 Nov. Concerns Anthropic – potential conflict of interest; status unchanged. 19 Nov (note): the Anthropic IPO priced at USD 83 per share (980m shares, about USD 81.3bn – Yahoo Finance, TradingKey); it opened on Nasdaq at USD 111.50 (+34%) and traded at about USD 95 in the afternoon (NBC News, 14:56 ET). This is a share valuation, not revenue – status unchanged. Concerns Anthropic – potential conflict of interest; external sources only. 20 Nov (note): Anthropic closed its first trading day on 19 Nov at USD 97.17 (+17% vs USD 83 in the offering; Forbes, The National), USD 92.60 after hours; including a USD 26bn private placement it raised USD 107.3bn, a valuation of about USD 1.75tn fully diluted (The National). On 20 Nov SoftBank Group (OpenAI's largest shareholder) was down as much as 16.6% in Tokyo (Investing.com, Yahoo Finance). These are share valuations, not revenue – status unchanged. Concerns Anthropic – potential conflict of interest; external sources only.",
       "conflict_of_interest": true,
       "status_since": "2026-10-06",
       "status_prev": "q25"
@@ -618,16 +618,16 @@
       "category": "E",
       "name": "Bank Japonii i carry trade na jenie",
       "name_en": "Bank of Japan and the yen carry trade",
-      "value": 159.64,
+      "value": 159.2,
       "unit": "JPY/USD",
-      "as_of": "2026-11-16",
+      "as_of": "2026-11-20",
       "status": "yellow",
       "points": 10.0,
       "max_points": 20.0,
       "preliminary": false,
-      "source": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
-      "note": "USD/JPY 159,64 16.11 w trakcie sesji (AP – wtórne, nie zamknięcie; 13.11 ok. 159,9) wobec ok. 157,4 na początku października – jen słabszy o ok. 1,4%, zmiana w miesiąc w przedziale ±3%. PKB Japonii za III kw. −0,1% w ujęciu rocznym wobec oczekiwanych +0,3% (CNBC, 16.11); rynek (LSEG) wycenia grudniową podwyżkę BoJ o 25 pb na 75,6% → > 50% → 🟡 bez zmian. Posiedzenie BoJ w grudniu poza 30-dniowym horyzontem prognoz.",
-      "note_en": "USD/JPY 159.64 on 16 Nov intraday (AP – secondary, not a close; 13 Nov about 159.9) vs about 157.4 in early October – the yen about 1.4% weaker, monthly change within ±3%. Japan's Q3 GDP −0.1% annualised vs +0.3% expected (CNBC, 16 Nov); the market (LSEG) prices a 25 bp BoJ hike in December at 75.6% → > 50% → 🟡 unchanged. The December BoJ meeting lies beyond the 30-day outlook horizon.",
+      "source": "https://investinglive.com/news/investinglive-asia-pacific-market-news-red-friday-as-asia-s-ai-trade-unravels/",
+      "note": "USD/JPY ok. 159,20 20.11 w trakcie sesji (investingLive – wtórne, nie zamknięcie; 16.11 159,64) wobec ok. 157,4 na początku października – jen słabszy o ok. 1,1%, zmiana w miesiąc w przedziale ±3%. Inflacja bazowa w Japonii za październik 2,2% wobec oczekiwanych 2,3%; rentowność 10-letnich JGB spadła o ok. 4 pb do ok. 2,80%. Rynek wycenia grudniową podwyżkę BoJ do 1,50% na ok. 72% (CNBC, 20.11) → > 50% → 🟡 bez zmian. Grudniowa podwyżka utrzymałaby 🟡 (podwyżka w ostatnich 3 miesiącach), więc bez prognozy w punktach.",
+      "note_en": "USD/JPY about 159.20 on 20 Nov intraday (investingLive – secondary, not a close; 16 Nov 159.64) vs about 157.4 in early October – the yen about 1.1% weaker, monthly change within ±3%. Japan's October core inflation 2.2% vs 2.3% expected; the 10-year JGB yield fell about 4 bp to about 2.80%. The market prices a December BoJ hike to 1.50% at about 72% (CNBC, 20 Nov) → > 50% → 🟡 unchanged. A December hike would keep 🟡 (a hike in the last 3 months), so no outlook in points.",
       "status_since": "2026-10-16"
     },
     {
@@ -740,14 +740,29 @@
       "title_en": "A8: the window of the light Solidigm event expires (🔴 is held by the lasting Akamai event); A5: Meta's CDS record of 22 Oct leaves the window"
     },
     {
+      "date": "2026-11-23",
+      "title": "Japonia – rynki zamknięte (Święto Pracy)",
+      "title_en": "Japan – markets closed (Labour Thanksgiving Day)"
+    },
+    {
       "date": "2026-11-26",
       "title": "Święto Dziękczynienia – rynki w USA zamknięte",
       "title_en": "Thanksgiving – US markets closed"
     },
     {
       "date": "2026-12-01",
-      "title": "ISM Manufacturing za listopad (E1); eksport Korei za listopad (D6); Senat Illinois 1–3.12 (C5)",
-      "title_en": "ISM Manufacturing for November (E1); Korea November exports (D6); Illinois Senate 1–3 Dec (C5)"
+      "title": "ISM Manufacturing za listopad (E1); eksport Korei za listopad (D6); Senat Illinois 1–3.12 – ostatnia szansa na ustawę POWER Act w sesji weta (C5)",
+      "title_en": "ISM Manufacturing for November (E1); Korea November exports (D6); Illinois Senate 1–3 Dec – last chance for the POWER Act in the veto session (C5)"
+    },
+    {
+      "date": "2026-12-05",
+      "title": "A5: rekord CDS CoreWeave z 5.11 wypada z okna",
+      "title_en": "A5: CoreWeave's CDS record of 5 Nov leaves the window"
+    },
+    {
+      "date": "2026-12-09",
+      "title": "Decyzja Fed (E3; rynek wycenia podwyżkę o 25 pb)",
+      "title_en": "Fed decision (E3; the market prices a 25 bp hike)"
     }
   ],
   "disclaimer": "To nie jest porada inwestycyjna.",
