@@ -1,31 +1,23 @@
 {
   "schema_version": "1.2",
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "report_type": "short",
-  "score": 520,
+  "score": 538,
   "band": "Pęknięcia",
   "band_en": "Cracks",
-  "change_vs_previous": -32,
-  "headline": "520/1000, o 32 punkty niżej niż w czwartek: Teksas wznowił pozwolenia dla centrów danych, a akcje spółek AI w USA spadały dalej po doniesieniu o dochodzeniu SEC wobec Nvidii.",
-  "headline_en": "520/1000, 32 points lower than on Thursday: Texas resumed permits for data centers, while AI stocks in the US kept falling after a report of an SEC probe into Nvidia.",
-  "summary": "Wynik 520/1000 – o 32 punkty niżej niż w czwartek i o 25 niżej niż w porannym raporcie; pasmo Pęknięć. Spadek wynika z polityki, nie z rynku: teksański regulator środowiskowy TCEQ wznowił 17.11 wydawanie pozwoleń dla centrów danych, choć gubernator-elekt zapowiada od stycznia nowe moratorium. Rynek akcji w piątek pogłębił spadki: Nasdaq tracił w trakcie sesji ok. 3,7%, a Nvidia ponad 10% po doniesieniu Reutersa o dochodzeniu SEC w sprawie jej księgowości.",
-  "summary_en": "Score 520/1000 – 32 points lower than on Thursday and 25 lower than in the morning report; Cracks band. The fall comes from politics, not the market: Texas's environmental regulator TCEQ resumed issuing permits for data centers on 17 Nov, although the governor-elect pledges a new moratorium from January. Equities extended their losses on Friday: Nasdaq was down about 3.7% intraday and Nvidia more than 10% after a Reuters report of an SEC probe into its accounting.",
-  "report_file": "history/history-20-11-2026.json",
+  "change_vs_previous": 18,
+  "headline": "538/1000, o 18 punktów wyżej niż w piątek: wyprzedaż akcji AI zaczęła podnosić koszt pożyczania dla całego rynku obligacji o niższej wiarygodności.",
+  "headline_en": "538/1000, 18 points higher than on Friday: the AI equity sell-off has started to raise borrowing costs across the whole market for lower-rated bonds.",
+  "summary": "Wynik 538/1000 – o 18 punktów wyżej niż w piątkowej aktualizacji; pasmo Pęknięć. Jedyna zmiana statusu: spread obligacji śmieciowych (dodatkowe oprocentowanie, którego inwestorzy żądają od firm o niskim ratingu) wzrósł w tydzień o 29 pb do 3,52% i przekroczył próg ostrzegawczy. W piątek S&P 500 spadł o 3,7% i wszedł w korektę, Nasdaq stracił 5,3%, a Nvidia 14% po doniesieniu Reutersa o dochodzeniu SEC. W poniedziałek: spread za piątek i eksport Korei z 20 dni listopada.",
+  "summary_en": "Score 538/1000 – 18 points higher than in Friday's update; Cracks band. The only status change: the junk bond spread (the extra interest investors demand from low-rated companies) rose 29 bp in a week to 3.52% and crossed the warning threshold. On Friday the S&P 500 fell 3.7% and entered a correction, the Nasdaq lost 5.3% and Nvidia 14% after a Reuters report of an SEC probe. On Monday: the spread for Friday and Korea's exports for the first 20 days of November.",
+  "report_file": "history/history-21-11-2026.json",
   "triggers": [],
   "triggers_en": [],
   "heavy_credit_event": true,
   "skipped_signals": [
     "A4"
   ],
-  "adjustments": [
-    {
-      "category": "A",
-      "points": 4.44,
-      "floor": 210,
-      "reason": "ciężkie zdarzenie kredytowe",
-      "reason_en": "heavy credit event"
-    }
-  ],
+  "adjustments": [],
   "correlated_moves": [],
   "overflow": {
     "categories": [],
@@ -99,34 +91,23 @@
       "status_floor": "red"
     }
   ],
-  "lasting_events_ended": [
-    {
-      "id": "L-2026-09-21-texas-tceq-pause",
-      "date": "2026-11-17",
-      "source": "https://www.texastribune.org/2026/11/17/tceq-environmental-data-center-permits-resume/",
-      "note": "TCEQ wznowił normalne rozpatrywanie wniosków o pozwolenia dla centrów danych; wydał pozwolenie dla centrum danych SpaceX w Starbase.",
-      "note_en": "TCEQ resumed its normal review of data-center permit applications; it issued a permit for the SpaceX data center at Starbase.",
-      "signal": "F1",
-      "title": "Teksas wstrzymuje wszystkie pozwolenia środowiskowe TCEQ dla centrów danych do zakończenia audytu ERCOT",
-      "title_en": "Texas halts all TCEQ environmental permits for data centers until the ERCOT audit is complete"
-    }
-  ],
+  "lasting_events_ended": [],
   "signals": [
     {
       "id": "A1",
       "category": "A",
       "name": "Rentowność 10Y USA",
       "name_en": "US 10Y Treasury yield",
-      "value": 5.04,
+      "value": 4.92,
       "unit": "%",
-      "as_of": "2026-11-19",
+      "as_of": "2026-11-20",
       "status": "yellow",
       "points": 27.78,
       "max_points": 55.56,
       "preliminary": false,
       "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
-      "note": "Treasury 19.11 (zamknięcie): 10Y 5,04% (18.11: 5,07%; 12.11: 5,10%). W przedziale 4,5–5,25% → 🟡 bez zmian, 21 pb poniżej progu 🔴.",
-      "note_en": "Treasury 19 Nov (close): 10Y 5.04% (18 Nov: 5.07%; 12 Nov: 5.10%). Within 4.5–5.25% → 🟡 unchanged, 21 bp below the 🔴 threshold.",
+      "note": "Treasury 20.11 (zamknięcie): 10Y 4,92% (19.11: 5,04%; 13.11: 5,15%) – spadek o 12 pb w ucieczce do bezpiecznych aktywów podczas wyprzedaży akcji AI. W przedziale 4,5–5,25% → 🟡 bez zmian.",
+      "note_en": "Treasury 20 Nov (close): 10Y 4.92% (19 Nov: 5.04%; 13 Nov: 5.15%) – down 12 bp in a flight to safety during the AI equity sell-off. Within 4.5–5.25% → 🟡 unchanged.",
       "status_since": "2026-10-08",
       "status_prev": "red"
     },
@@ -155,15 +136,15 @@
       "name_en": "High-yield spread",
       "value": null,
       "unit": "%",
-      "as_of": "2026-11-18",
-      "status": "green",
-      "points": 0.0,
+      "as_of": "2026-11-19",
+      "status": "yellow",
+      "points": 22.22,
       "max_points": 44.44,
       "preliminary": false,
       "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-      "note": "FRED BAMLH0A0HYM2 18.11: 3,47% (17.11: 3,43%; 13.11: 3,23%) – poniżej 3,5% → 🟢 bez zmian, 3 pb poniżej progu 🟡 (blisko progu). Spread całego rynku IG (BAMLC0A0CM) 0,93%. Niski spread śmieciowy przy podwyższonej premii AI (A2) to nadal obraz stresu sektorowego, nie systemowego.",
-      "note_en": "FRED BAMLH0A0HYM2 18 Nov: 3.47% (17 Nov: 3.43%; 13 Nov: 3.23%) – below 3.5% → 🟢 unchanged, 3 bp below the 🟡 threshold (near threshold). Whole IG market spread (BAMLC0A0CM) 0.93%. A low junk spread alongside an elevated AI premium (A2) still points to sector, not systemic, stress.",
-      "status_since": "2026-10-06",
+      "note": "FRED BAMLH0A0HYM2 19.11: 3,52% (18.11: 3,47%; 13.11: 3,23%) – powyżej 3,5% → 🟡 (wcześniej 🟢), 2 pb nad progiem (blisko progu). Wzrost o 29 pb w tydzień w czasie wyprzedaży akcji AI; odczyt za 20.11 (S&P 500 −3,7%) FRED opublikuje 23.11. Spread całego rynku IG (BAMLC0A0CM) 0,94%. Premia AI (A2) i spread śmieciowy (A3) są teraz oba podwyższone – obraz przesuwa się od stresu sektorowego w stronę systemowego. Ruch nie jest deklarowany jako wspólny z A7 (A7 – finansowanie neocloudów, ⚫ od 9.11; A3 – cały rynek obligacji śmieciowych).",
+      "note_en": "FRED BAMLH0A0HYM2 19 Nov: 3.52% (18 Nov: 3.47%; 13 Nov: 3.23%) – above 3.5% → 🟡 (previously 🟢), 2 bp above the threshold (near threshold). Up 29 bp in a week during the AI equity sell-off; FRED publishes the 20 Nov reading (S&P 500 −3.7%) on 23 Nov. Whole IG market spread (BAMLC0A0CM) 0.94%. The AI premium (A2) and the junk spread (A3) are now both elevated – the picture is shifting from sector stress towards systemic stress. Not declared as a joint move with A7 (A7 – neocloud financing, ⚫ since 9 Nov; A3 – the whole junk bond market).",
+      "status_since": "2026-11-21",
       "status_prev": "green"
     },
     {
@@ -197,8 +178,8 @@
       "max_points": 38.89,
       "preliminary": false,
       "source": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-      "note": "Emitenci z rekordem 5-letniego CDS w ostatnim miesiącu (19.10–19.11): Meta (114,79 pb, 22.10, Reuters/Markit), CoreWeave (1267,9 pb wg S&P Global MI i ponad 1289 pb wg Deutsche Banku, 5.11; Reuters, CNBC) – dwóch → 🟡 (wcześniej 🔴). Rekord Oracle (322 pb, 19.10, FT) wypadł z 30-dniowego okna. Rekord Oracle 325,45 pb „w zeszłym miesiącu” (TradingView za Reuters) bez daty – wyszukiwania „Oracle 325.45 basis points” i „Reuters Oracle five-year CDS record October 2026” nie podały dnia, więc nie liczony. SoftBank: 466 pb 6.11 (najwyżej od X 2022, nie rekord). Przegląd 19.11 („CDS record”, „SoftBank CDS”, „credit default swaps AI” – listopad 2026) bez nowych rekordów. Fortune (18.11) za Reuters: CDS CoreWeave implikuje ok. 63% prawdopodobieństwa niewypłacalności w 5 lat (bez daty odczytu). Rekord Mety wypada z okna 22.11 – bez nowych rekordów status spadnie dalej. CoreWeave ma umowy z Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne.",
-      "note_en": "Issuers with a record 5-year CDS in the last month (19 Oct–19 Nov): Meta (114.79 bp, 22 Oct, Reuters/Markit), CoreWeave (1267.9 bp per S&P Global MI and over 1289 bp per Deutsche Bank, 5 Nov; Reuters, CNBC) – two → 🟡 (previously 🔴). Oracle's record (322 bp, 19 Oct, FT) has left the 30-day window. An Oracle record of 325.45 bp 'last month' (TradingView citing Reuters) has no date – searches for 'Oracle 325.45 basis points' and 'Reuters Oracle five-year CDS record October 2026' gave no day, so it is not counted. SoftBank: 466 bp on 6 Nov (highest since Oct 2022, not a record). Review on 19 Nov ('CDS record', 'SoftBank CDS', 'credit default swaps AI' – November 2026) found no new records. Fortune (18 Nov) citing Reuters: CoreWeave's CDS implies about a 63% probability of default within 5 years (reading undated). Meta's record leaves the window on 22 Nov – without new records the status will fall further. CoreWeave has contracts with Anthropic – potential conflict of interest, external sources only.",
+      "note": "Emitenci z rekordem 5-letniego CDS w ostatnim miesiącu (19.10–19.11): Meta (114,79 pb, 22.10, Reuters/Markit), CoreWeave (1267,9 pb wg S&P Global MI i ponad 1289 pb wg Deutsche Banku, 5.11; Reuters, CNBC) – dwóch → 🟡 (wcześniej 🔴). Rekord Oracle (322 pb, 19.10, FT) wypadł z 30-dniowego okna. Rekord Oracle 325,45 pb „w zeszłym miesiącu” (TradingView za Reuters) bez daty – wyszukiwania „Oracle 325.45 basis points” i „Reuters Oracle five-year CDS record October 2026” nie podały dnia, więc nie liczony. SoftBank: 466 pb 6.11 (najwyżej od X 2022, nie rekord). Przegląd 19.11 („CDS record”, „SoftBank CDS”, „credit default swaps AI” – listopad 2026) bez nowych rekordów. Fortune (18.11) za Reuters: CDS CoreWeave implikuje ok. 63% prawdopodobieństwa niewypłacalności w 5 lat (bez daty odczytu). Rekord Mety wypada z okna 22.11 – bez nowych rekordów status spadnie dalej. CoreWeave ma umowy z Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne. 21.11 (nota): Bloomberg (20.11, za ICE Data Services; relacja The Private Banker) – CDS CoreWeave do 1232,6 pb (+76,2 pb), Oracle do 327,9 pb (najwyżej od 20.10, nie rekord); dane Deutsche Banku 19.11 – CoreWeave ponad 1289 pb, szerzej niż w szczycie z października (CoreWeave już liczony w oknie). Liczba emitentów bez zmian (2) → 🟡 bez zmian.",
+      "note_en": "Issuers with a record 5-year CDS in the last month (19 Oct–19 Nov): Meta (114.79 bp, 22 Oct, Reuters/Markit), CoreWeave (1267.9 bp per S&P Global MI and over 1289 bp per Deutsche Bank, 5 Nov; Reuters, CNBC) – two → 🟡 (previously 🔴). Oracle's record (322 bp, 19 Oct, FT) has left the 30-day window. An Oracle record of 325.45 bp 'last month' (TradingView citing Reuters) has no date – searches for 'Oracle 325.45 basis points' and 'Reuters Oracle five-year CDS record October 2026' gave no day, so it is not counted. SoftBank: 466 bp on 6 Nov (highest since Oct 2022, not a record). Review on 19 Nov ('CDS record', 'SoftBank CDS', 'credit default swaps AI' – November 2026) found no new records. Fortune (18 Nov) citing Reuters: CoreWeave's CDS implies about a 63% probability of default within 5 years (reading undated). Meta's record leaves the window on 22 Nov – without new records the status will fall further. CoreWeave has contracts with Anthropic – potential conflict of interest, external sources only. 21 Nov (note): Bloomberg (20 Nov, citing ICE Data Services; via The Private Banker) – CoreWeave CDS up to 1,232.6 bp (+76.2 bp), Oracle up to 327.9 bp (highest since 20 Oct, not a record); Deutsche Bank data on 19 Nov – CoreWeave above 1,289 bp, wider than its October peak (CoreWeave already counted in the window). Number of issuers unchanged (2) → 🟡 unchanged.",
       "conflict_of_interest": true,
       "status_since": "2026-11-19",
       "status_prev": "red"
@@ -276,8 +257,8 @@
       "max_points": 40.0,
       "preliminary": false,
       "source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
-      "note": "Bez zmian prognoz capeksu od wyników z 29–30.10: Amazon ok. 220 mld USD w 2026 r. i „znacząco więcej” w 2027 r.; pozostali hiperskalerzy podnieśli lub utrzymali plany. Goldman Sachs: emisje długu hiperskalerów 296 mld USD w 2026 r. (prognoza 250 mld), w 2027 r. 440 mld. Chińskie platformy: wyniki Alibaby i Baidu w tym tygodniu. → 🟢 bez zmian.",
-      "note_en": "No capex guidance changes since the 29–30 Oct results: Amazon about USD 220bn in 2026 and \"meaningfully more\" in 2027; the other hyperscalers raised or kept their plans. Goldman Sachs: hyperscaler debt issuance USD 296bn in 2026 (forecast 250bn), USD 440bn in 2027. Chinese platforms: Alibaba and Baidu report this week. → 🟢 unchanged.",
+      "note": "Bez zmian prognoz capeksu od wyników z 29–30.10: Amazon ok. 220 mld USD w 2026 r. i „znacząco więcej” w 2027 r.; pozostali hiperskalerzy podnieśli lub utrzymali plany. Goldman Sachs: emisje długu hiperskalerów 296 mld USD w 2026 r. (prognoza 250 mld), w 2027 r. 440 mld. Chińskie platformy: wyniki Alibaby i Baidu w tym tygodniu. → 🟢 bez zmian. 21.11 (nota): Ming-Chi Kuo (TF International Securities, ankieta branżowa, 20.11) – Google miał obniżyć plan dostaw chipów TPU 8i projektowanych przez Broadcom na 2027 r. o ok. 1 mln sztuk (ok. 20%), przesuwając część zamówień do MediaTek; Google i Broadcom nie potwierdziły (Investing.com, StockAnalysis). To szacunek analityka dotyczący dostaw chipów, nie zmiana prognozy capeksu → 🟢 bez zmian; wyniki Broadcomu 9.12.",
+      "note_en": "No capex guidance changes since the 29–30 Oct results: Amazon about USD 220bn in 2026 and \"meaningfully more\" in 2027; the other hyperscalers raised or kept their plans. Goldman Sachs: hyperscaler debt issuance USD 296bn in 2026 (forecast 250bn), USD 440bn in 2027. Chinese platforms: Alibaba and Baidu report this week. → 🟢 unchanged. 21 Nov (note): Ming-Chi Kuo (TF International Securities, industry survey, 20 Nov) – Google has reportedly cut its 2027 plan for Broadcom-designed TPU 8i chips by about 1 million units (about 20%), shifting part of the orders to MediaTek; Google and Broadcom have not confirmed (Investing.com, StockAnalysis). This is an analyst estimate of chip shipments, not a capex guidance change → 🟢 unchanged; Broadcom reports on 9 Dec.",
       "status_since": "2026-10-06",
       "status_prev": "green"
     },
@@ -286,16 +267,16 @@
       "category": "B",
       "name": "Spółki AI vs rynek (USA, Korea, Japonia)",
       "name_en": "AI stocks vs home market (US, Korea, Japan)",
-      "value": -5.2,
+      "value": -7.0,
       "unit": "pp",
-      "as_of": "2026-11-18",
+      "as_of": "2026-11-20",
       "status": "yellow",
       "points": 12.5,
       "max_points": 25.0,
       "preliminary": false,
-      "source": "https://finance.yahoo.com/quote/MAGS/performance/",
-      "note": "Nowe zestawienie USA (18.11): MAGS +1,32% od początku roku (Yahoo Finance) wobec S&P 500 ok. +6,5% (zamknięcie 18.11 ok. 7324 pkt, wyliczone z zamknięcia 19.11 7175,83 pkt i spadku o 2,02% – CNBC; poziom z końca 2025 r. ok. 6875 pkt wg AP 17.11) → ok. −5,2 pp (🟡). Korea (SK hynix, Samsung vs KOSPI) i Japonia (Advantest, Tokyo Electron vs TOPIX) – bez nowego pełnego zestawienia od początku roku; od 2.11 wyraźnie przed rynkiem (🟢). Bardziej ryzykowna miara → 🟡 bez zmian. 19.11 zamknięcie: Nasdaq −2,25% do 23 879,20 pkt, S&P 500 −2,02% (CNBC); Nasdaq −5% w tygodniu i −13,5% od szczytu z początku października; Nvidia −28% od początku listopada (CNN). 20.11 w Azji (w trakcie sesji): Nikkei ok. −4,7%, KOSPI ok. −5,1%, SK hynix i Samsung ponad −6%, SoftBank Group do −16,6%, Advantest ponad −9%, Tokyo Electron −7,2%, Taiex −5,6% (CNBC, investingLive). Spadki obejmują spółki AI i ich rynki macierzyste jednocześnie, więc nie przesądzają o mierze względnej. 20.11 w USA (w trakcie sesji, przed zamknięciem): Nasdaq ok. −3,7% do 23 000,82 pkt, S&P 500 ok. −2,3% do 7013,79 pkt (południe czasu nowojorskiego); Nvidia −10–11,5% po doniesieniu Reutersa o dochodzeniu SEC w sprawie jej księgowości (Investing.com, Yahoo Finance). Zestawienie od początku roku do zaktualizowania po zamknięciu – 🟡 bez zmian.",
-      "note_en": "New US comparison (18 Nov): MAGS +1.32% year to date (Yahoo Finance) vs S&P 500 about +6.5% (18 Nov close about 7,324, derived from the 19 Nov close of 7,175.83 and the 2.02% fall – CNBC; end-2025 level about 6,875 per AP on 17 Nov) → about −5.2 pp (🟡). Korea (SK hynix, Samsung vs KOSPI) and Japan (Advantest, Tokyo Electron vs TOPIX) – no new full year-to-date comparison; well ahead of their markets as of 2 Nov (🟢). The higher-risk measure is used → 🟡 unchanged. 19 Nov close: Nasdaq −2.25% to 23,879.20, S&P 500 −2.02% (CNBC); Nasdaq −5% on the week and −13.5% from its early-October peak; Nvidia −28% since the start of November (CNN). 20 Nov in Asia (intraday): Nikkei about −4.7%, KOSPI about −5.1%, SK hynix and Samsung down more than 6%, SoftBank Group down as much as 16.6%, Advantest down more than 9%, Tokyo Electron −7.2%, Taiex −5.6% (CNBC, investingLive). The falls hit AI stocks and their home markets at the same time, so they do not settle the relative measure. 20 Nov in the US (intraday, before the close): Nasdaq about −3.7% to 23,000.82, S&P 500 about −2.3% to 7,013.79 (New York midday); Nvidia −10–11.5% after a Reuters report of an SEC probe into its accounting (Investing.com, Yahoo Finance). Year-to-date comparison to be updated after the close – 🟡 unchanged.",
+      "source": "https://stockanalysis.com/etf/mags/history/",
+      "note": "USA (zamknięcie 20.11): MAGS 61,66 USD (18.11: 66,83 USD, wtedy +1,32% od początku roku wg Yahoo Finance → poziom bazowy ok. 65,96 USD – wyliczenie własne) → ok. −6,5% od początku roku; S&P 500 6910,39 pkt (−3,70% w sesji; Motley Fool) wobec ok. 6875 pkt na koniec 2025 r. (AP) → ok. +0,5% → różnica ok. −7,0 pp (🟡, 3 pp od progu 🔴). 20.11: Nasdaq −5,28% do 22 617,73 pkt (zniósł tegoroczne wzrosty), S&P 500 w technicznej korekcie (−10% od rekordu); Nvidia −14,01% do 125,53 USD po doniesieniu Reutersa o dochodzeniu SEC w sprawie jej księgowości; Broadcom ok. −12%, Micron −13,9%, AMD −13,3%. Korea i Japonia – bez nowego pełnego zestawienia od początku roku (ostatnio wyraźnie przed rynkiem, 🟢). Bardziej ryzykowna miara → 🟡 bez zmian.",
+      "note_en": "US (20 Nov close): MAGS USD 61.66 (18 Nov: USD 66.83, then +1.32% year to date per Yahoo Finance → base level about USD 65.96 – own calculation) → about −6.5% year to date; S&P 500 6,910.39 (−3.70% on the day; Motley Fool) vs about 6,875 at the end of 2025 (AP) → about +0.5% → gap about −7.0 pp (🟡, 3 pp from the 🔴 threshold). 20 Nov: Nasdaq −5.28% to 22,617.73 (erasing its gains for the year), S&P 500 in a technical correction (−10% from its record); Nvidia −14.01% to USD 125.53 after a Reuters report of an SEC probe into its accounting; Broadcom about −12%, Micron −13.9%, AMD −13.3%. Korea and Japan – no new full year-to-date comparison (last well ahead of their markets, 🟢). The higher-risk measure is used → 🟡 unchanged.",
       "status_since": "2026-10-06",
       "status_prev": "yellow"
     },
@@ -455,14 +436,14 @@
       "name_en": "GPU rental rates",
       "value": null,
       "unit": "% (30 dni, H100)",
-      "as_of": "2026-11-18",
+      "as_of": "2026-11-20",
       "status": "yellow",
       "points": 20.0,
       "max_points": 40.0,
       "preliminary": false,
       "source": "https://data.ornn.com/markets/h100-sxm",
-      "note": "Ornn OCPI H100 (rozliczenie 18.11): +0,3% d/d, −9,8% w 7 dni, −2,0% w 30 dni (16.11: +12,9% w 30 dni). Zmiana 30-dniowa po raz pierwszy od października ujemna, ale daleko od warunku wczesnego ostrzeżenia (spot −15% w miesiąc przy stabilnych kontraktach); brak publicznych stawek kontraktowych (krzywe terminowe Ornn płatne), więc warunek 🔴 (spot i kontrakty spadają razem) nie jest sprawdzalny. 🟡 bez zmian. Indeks licencjonowany – publikujemy tylko zmiany procentowe.",
-      "note_en": "Ornn OCPI H100 (18 Nov settlement): +0.3% d/d, −9.8% over 7 days, −2.0% over 30 days (16 Nov: +12.9% over 30 days). The 30-day change is negative for the first time since October, but far from the early-warning condition (spot −15% in a month with stable contracts); no public contract rates (Ornn forward curves are paid), so the 🔴 condition (spot and contracts falling together) cannot be checked. 🟡 unchanged. Licensed index – only percentage changes are published.",
+      "note": "Ornn OCPI H100 (rozliczenie 20.11): +4,3% d/d, −11,9% w 7 dni, −6,5% w 30 dni (18.11: −2,0%). Spadek 30-dniowy się pogłębia, ale nie osiąga warunku wczesnego ostrzeżenia (spot −15% w miesiąc); stawki kontraktowe niepubliczne, więc warunek 🔴 nie jest sprawdzalny. 🟡 bez zmian. Indeks licencjonowany – publikujemy tylko zmiany procentowe.",
+      "note_en": "Ornn OCPI H100 (20 Nov settlement): +4.3% d/d, −11.9% over 7 days, −6.5% over 30 days (18 Nov: −2.0%). The 30-day fall is deepening but does not reach the early-warning condition (spot −15% in a month); contract rates are not public, so the 🔴 condition cannot be checked. 🟡 unchanged. Licensed index – only percentage changes are published.",
       "status_since": "2026-10-06",
       "status_prev": "yellow"
     },
@@ -578,16 +559,16 @@
       "category": "E",
       "name": "Krzywa 10Y–2Y",
       "name_en": "10Y–2Y yield curve",
-      "value": 0.28,
+      "value": 0.29,
       "unit": "pp",
-      "as_of": "2026-11-19",
+      "as_of": "2026-11-20",
       "status": "yellow",
       "points": 10.0,
       "max_points": 20.0,
       "preliminary": false,
       "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
-      "note": "Treasury 19.11: 10Y 5,04%, 2Y 4,76% → 0,28 pp. Tydzień (12.11→19.11): 2Y −10 pb, 10Y −6 pb, krzywa z 0,24 do 0,28 pp – stromienie przez spadek 2Y (łagodzenie). Miesiąc (19.10→19.11): 2Y −1 pb, 10Y −11 pb, krzywa z 0,38 do 0,28 pp – spłaszczenie przez spadek 10Y (oczekiwania spowolnienia). Żaden horyzont nie wskazuje już zaostrzania, ale obraz jest mieszany → 🟡 (wcześniej 🔴). Rynek nadal w pełni wycenia grudniową podwyżkę Fed (E3), więc tygodniowy spadek 2Y może się odwrócić.",
-      "note_en": "Treasury 19 Nov: 10Y 5.04%, 2Y 4.76% → 0.28 pp. Week (12 Nov→19 Nov): 2Y −10 bp, 10Y −6 bp, curve from 0.24 to 0.28 pp – steepening via a falling 2Y (easing). Month (19 Oct→19 Nov): 2Y −1 bp, 10Y −11 bp, curve from 0.38 to 0.28 pp – flattening via a falling 10Y (slowdown expectations). Neither horizon points to tightening any more, but the picture is mixed → 🟡 (previously 🔴). The market still fully prices a December Fed hike (E3), so the weekly fall in the 2Y may reverse.",
+      "note": "Treasury 20.11: 10Y 4,92%, 2Y 4,63% → 0,29 pp. Tydzień (13.11→20.11): 2Y −25 pb, 10Y −23 pb, krzywa z 0,27 do 0,29 pp – lekkie stromienie przez spadek 2Y (łagodzenie). Miesiąc (20.10→20.11): 2Y −16 pb, 10Y −20 pb, krzywa z 0,33 do 0,29 pp – spłaszczenie przez spadek 10Y (oczekiwania spowolnienia). Obraz mieszany, bez zaostrzania → 🟡 bez zmian.",
+      "note_en": "Treasury 20 Nov: 10Y 4.92%, 2Y 4.63% → 0.29 pp. Week (13 Nov→20 Nov): 2Y −25 bp, 10Y −23 bp, curve from 0.27 to 0.29 pp – slight steepening via a falling 2Y (easing). Month (20 Oct→20 Nov): 2Y −16 bp, 10Y −20 bp, curve from 0.33 to 0.29 pp – flattening via a falling 10Y (slowdown expectations). Mixed picture, no tightening → 🟡 unchanged.",
       "status_since": "2026-11-19",
       "status_prev": "red"
     },
@@ -725,19 +706,14 @@
   ],
   "calendar": [
     {
-      "date": "2026-11-21",
-      "title": "Eksport Korei 1–20.11 (D6)",
-      "title_en": "Korea exports 1–20 Nov (D6)"
-    },
-    {
       "date": "2026-11-22",
       "title": "A8: wygasa okno zdarzenia lekkiego Solidigm (🔴 trzyma trwałe zdarzenie Akamai); A5: rekord CDS Mety z 22.10 wypada z okna",
       "title_en": "A8: the window of the light Solidigm event expires (🔴 is held by the lasting Akamai event); A5: Meta's CDS record of 22 Oct leaves the window"
     },
     {
       "date": "2026-11-23",
-      "title": "Japonia – rynki zamknięte (Święto Pracy)",
-      "title_en": "Japan – markets closed (Labour Thanksgiving Day)"
+      "title": "Eksport Korei 1–20.11 (D6; 21.11 wypada w sobotę); FRED – spread HY za 20.11 (A3); Japonia – rynki zamknięte",
+      "title_en": "Korea exports 1–20 Nov (D6; 21 Nov falls on a Saturday); FRED – HY spread for 20 Nov (A3); Japan – markets closed"
     },
     {
       "date": "2026-11-26",
@@ -756,8 +732,8 @@
     },
     {
       "date": "2026-12-09",
-      "title": "Decyzja Fed (E3; rynek wycenia podwyżkę o 25 pb)",
-      "title_en": "Fed decision (E3; the market prices a 25 bp hike)"
+      "title": "Decyzja Fed (E3; rynek wycenia podwyżkę o 25 pb); wyniki Broadcomu",
+      "title_en": "Fed decision (E3; the market prices a 25 bp hike); Broadcom results"
     }
   ],
   "disclaimer": "To nie jest porada inwestycyjna.",
