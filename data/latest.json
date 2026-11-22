@@ -6,10 +6,10 @@
   "band": "Pęknięcia",
   "band_en": "Cracks",
   "change_vs_previous": 0,
-  "headline": "538/1000 bez zmian od soboty: weekend nie przyniósł nowych odczytów, a z okien czasowych wypadły dwa starsze zdarzenia bez wpływu na wynik.",
-  "headline_en": "538/1000, unchanged since Saturday: the weekend brought no new readings, and two older events left their time windows without affecting the score.",
-  "summary": "Wynik 538/1000 – bez zmian od soboty, pasmo Pęknięć. Niedzielny przegląd wiadomości nie przyniósł nowych potwierdzonych odczytów ani zdarzeń. Z 30-dniowych okien wypadły dwa starsze zdarzenia: rekord ceny ubezpieczenia długu Mety od niewypłacalności (CDS) z 22.10 i lekkie zdarzenie kredytowe Solidigm z 23.10. Statusy się nie zmieniły: rekord CDS ma nadal CoreWeave, a obniżka ratingu Akamai do poziomu spekulacyjnego pozostaje w mocy. W poniedziałek: spread obligacji śmieciowych za piątkową wyprzedaż i eksport Korei z 20 dni listopada.",
-  "summary_en": "Score 538/1000 – unchanged since Saturday, Cracks band. The Sunday news sweep brought no new confirmed readings or events. Two older events left their 30-day windows: Meta's record price of insurance against default on its debt (CDS) of 22 Oct and Solidigm's light credit event of 23 Oct. Statuses did not change: CoreWeave still has a record CDS, and Akamai's downgrade to speculative grade remains in force. On Monday: the junk bond spread for Friday's sell-off and Korea's exports for the first 20 days of November.",
+  "headline": "538/1000 bez zmian: niedzielny wieczorny przegląd wiadomości nie przyniósł nowych potwierdzonych odczytów ani zdarzeń.",
+  "headline_en": "538/1000, unchanged: the Sunday evening news sweep brought no new confirmed readings or events.",
+  "summary": "Wynik 538/1000 – bez zmian od porannego raportu i od soboty, pasmo Pęknięć. Wieczorny przegląd wiadomości (kredyt, centra danych, regulacje, Chiny, Japonia, Korea) nie przyniósł nowych potwierdzonych odczytów ani zdarzeń z weekendu; statusy wszystkich sygnałów bez zmian. W poniedziałek: spread obligacji śmieciowych za piątkową wyprzedaż (FRED) i eksport Korei z 20 dni listopada; rynki w Japonii zamknięte.",
+  "summary_en": "Score 538/1000 – unchanged since the morning report and since Saturday, Cracks band. The evening news sweep (credit, data centers, regulation, China, Japan, Korea) brought no new confirmed readings or events from the weekend; the statuses of all signals are unchanged. On Monday: the junk bond spread for Friday's sell-off (FRED) and Korea's exports for the first 20 days of November; Japanese markets closed.",
   "report_file": "history/history-22-11-2026.json",
   "triggers": [],
   "triggers_en": [],
@@ -704,33 +704,7 @@
       "status_prev": "yellow"
     }
   ],
-  "calendar": [
-    {
-      "date": "2026-11-23",
-      "title": "Eksport Korei 1–20.11 (D6; 21.11 wypada w sobotę); FRED – spread HY za 20.11 (A3); Japonia – rynki zamknięte",
-      "title_en": "Korea exports 1–20 Nov (D6; 21 Nov falls on a Saturday); FRED – HY spread for 20 Nov (A3); Japan – markets closed"
-    },
-    {
-      "date": "2026-11-26",
-      "title": "Święto Dziękczynienia – rynki w USA zamknięte",
-      "title_en": "Thanksgiving – US markets closed"
-    },
-    {
-      "date": "2026-12-01",
-      "title": "ISM Manufacturing za listopad (E1); eksport Korei za listopad (D6); Senat Illinois 1–3.12 – ostatnia szansa na ustawę POWER Act w sesji weta (C5)",
-      "title_en": "ISM Manufacturing for November (E1); Korea November exports (D6); Illinois Senate 1–3 Dec – last chance for the POWER Act in the veto session (C5)"
-    },
-    {
-      "date": "2026-12-05",
-      "title": "A5: rekord CDS CoreWeave z 5.11 wypada z okna",
-      "title_en": "A5: CoreWeave's CDS record of 5 Nov leaves the window"
-    },
-    {
-      "date": "2026-12-09",
-      "title": "Decyzja Fed (E3; rynek wycenia podwyżkę o 25 pb); wyniki Broadcomu",
-      "title_en": "Fed decision (E3; the market prices a 25 bp hike); Broadcom results"
-    }
-  ],
+  "calendar": [],
   "disclaimer": "To nie jest porada inwestycyjna.",
   "disclaimer_en": "This is not investment advice."
 }
