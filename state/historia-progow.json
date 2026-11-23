@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-23",
   "note": "Odbudowane 2026-10-06 z odczytów w data/latest.json (pierwszy zapis pliku stanu).",
   "series": {
     "A4": [
@@ -69,6 +69,13 @@
         "value": 24.2,
         "unit": "%",
         "source": "https://www.census.gov/hfp/btos/downloads/National.xlsx (cykl 202622; nowe brzmienie pytania: Super Intelligence/SI)"
+      },
+      {
+        "period": "2026-10-19/2026-11-01",
+        "as_of": "2026-11-19",
+        "value": 25.0,
+        "unit": "%",
+        "source": "https://www.census.gov/hfp/btos/downloads/National.xlsx (cykl 202623; pobrany 23.11)"
       }
     ],
     "D1": [
@@ -119,6 +126,14 @@
         "change_pct": -6.5,
         "direction": "down",
         "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"
+      },
+      {
+        "period": "30d do 2026-11-22",
+        "as_of": "2026-11-22",
+        "measure": "spot_30d",
+        "change_pct": -7.6,
+        "direction": "down",
+        "source": "Ornn OCPI H100 (https://data.ornn.com/markets/h100-sxm)"
       }
     ],
     "D3": [
@@ -151,7 +166,15 @@
         "source": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm"
       }
     ],
-    "D4": [],
+    "D4": [
+      {
+        "period": "2026Q4 (X)",
+        "as_of": "2026-10-16",
+        "value": "25–40 tys. USD",
+        "unit": "USD/GPU (H100, rynek wtórny)",
+        "source": "https://cryptobriefing.com/nvidia-h100-gpu-value-rises-30-percent/ (CloudZero 5.10: 25–35 tys. USD)"
+      }
+    ],
     "G3": [
       {
         "period": "2026-08",
