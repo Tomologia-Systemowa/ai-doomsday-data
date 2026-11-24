@@ -1,16 +1,16 @@
 {
   "schema_version": "1.2",
-  "date": "2026-11-23",
-  "report_type": "full",
+  "date": "2026-11-24",
+  "report_type": "short",
   "score": 548,
   "band": "Pęknięcia",
   "band_en": "Cracks",
-  "change_vs_previous": 10,
-  "headline": "548/1000 bez zmian: powrót Jensena Huanga do Nvidii podbił jej akcje o 31%, ale żaden sygnał nie zmienił statusu, a rynek jeszcze mocniej wycenia grudniową podwyżkę stóp Fed.",
-  "headline_en": "548/1000, unchanged: Jensen Huang's return to Nvidia lifted its shares 31%, but no signal changed status, and the market is pricing a December Fed rate hike even more firmly.",
-  "summary": "Wynik 548/1000 – bez zmian wobec porannego raportu i o 10 pkt wyżej niż w niedzielę (538); nadal pasmo Pęknięć. Wieczorem żaden sygnał nie zmienił statusu. Dzień zdominował powrót Jensena Huanga na stanowisko prezesa Nvidii: jej akcje wzrosły o 31%, Nasdaq o 6,5%, a akcje neocloudów (firm wynajmujących moc obliczeniową GPU) o 20–30%. Kredyt pozostaje głównym źródłem napięcia – po sesji nie pojawił się nowy odczyt rentowności obligacji CoreWeave ani jego CDS (ceny ubezpieczenia od niewypłacalności). Chińskie indeksy spółek AI są ok. 43–44% poniżej szczytu, blisko kolejnego progu. W tym tygodniu: spread obligacji śmieciowych za piątkową wyprzedaż, inflacja PCE (25.11) i krótszy tydzień w USA. Akcje odrobiły ponad połowę tygodniowych strat w jeden dzień po decyzji kadrowej, a tego samego dnia rynek podniósł szanse grudniowej podwyżki stóp Fed – czyli droższego długu na budowę centrów danych – do ok. 93–98%.",
-  "summary_en": "The score is 548/1000 – unchanged from the morning report and 10 points higher than on Sunday (538); still the Cracks band. In the evening no signal changed status. The day was dominated by Jensen Huang's return as Nvidia's CEO: its shares rose 31%, the Nasdaq 6.5%, and shares of neoclouds (companies renting out GPU computing power) 20–30%. Credit remains the main source of stress – after the session there was no new reading of CoreWeave's bond yield or its CDS (the price of insurance against default). Chinese AI stock indices are about 43–44% below their peak, close to the next threshold. This week: the junk-bond spread for Friday's sell-off, PCE inflation (25 Nov) and a shorter week in the US. Stocks recovered more than half of a week's losses in one day after a personnel decision, while on the same day the market raised the odds of a December Fed rate hike – that is, of costlier debt for building data centers – to about 93–98%.",
-  "report_file": "history/history-23-11-2026.json",
+  "change_vs_previous": 0,
+  "headline": "548/1000 bez zmian: spread obligacji śmieciowych wzrósł do 3,76% po piątkowej wyprzedaży, a azjatyckie spółki chipowe odrabiają straty po powrocie Jensena Huanga do Nvidii.",
+  "headline_en": "548/1000, unchanged: the junk-bond spread rose to 3.76% after Friday's sell-off, while Asian chip stocks are recovering losses after Jensen Huang's return to Nvidia.",
+  "summary": "Wynik 548/1000 – bez zmian wobec wczorajszego raportu; nadal pasmo Pęknięć. Żaden sygnał nie zmienił statusu. Spread obligacji śmieciowych (dodatkowe oprocentowanie, którego inwestorzy żądają od firm o słabszym ratingu) wzrósł 20.11 do 3,76%. Stawki najmu GPU H100 przestały spadać. W środę inflacja PCE, w czwartek Święto Dziękczynienia w USA. Kontrakty terminowe wyceniają grudniową podwyżkę stóp Fed jako pewną, a azjatyckie akcje (MSCI Asia ex-Japan) zanotowały tego samego dnia największy jednodniowy wzrost od 31 lipca.",
+  "summary_en": "The score is 548/1000 – unchanged from yesterday's report; still the Cracks band. No signal changed status. The junk-bond spread (the extra interest investors demand from lower-rated companies) rose to 3.76% on 20 Nov. H100 GPU rental rates stopped falling. PCE inflation is due on Wednesday, and Thursday is Thanksgiving in the US. Futures price a December Fed rate hike as certain, while on the same day Asian stocks (MSCI Asia ex-Japan) posted their biggest one-day gain since 31 July.",
+  "report_file": "history/history-24-11-2026.json",
   "triggers": [],
   "triggers_en": [],
   "heavy_credit_event": true,
@@ -175,14 +175,14 @@
       "name_en": "High-yield spread",
       "value": null,
       "unit": "%",
-      "as_of": "2026-11-19",
+      "as_of": "2026-11-20",
       "status": "yellow",
       "points": 22.22,
       "max_points": 44.44,
       "preliminary": false,
       "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-      "note": "FRED BAMLH0A0HYM2 19.11: 3,52% (18.11: 3,47%; 13.11: 3,23%) – powyżej 3,5% → 🟡, 2 pb nad progiem (blisko progu). Odczyt za 20.11 (S&P 500 −3,7%, VIX 35,89) FRED jeszcze nie opublikował (stan 23.11 rano). Spread całego rynku IG (BAMLC0A0CM) 0,94%. Premia AI (A2) i spread śmieciowy (A3) są oba podwyższone – obraz przesuwa się od stresu sektorowego w stronę systemowego. Ruch nie jest deklarowany jako wspólny z A7 (różne przyczyny: finansowanie neocloudów vs cały rynek).",
-      "note_en": "FRED BAMLH0A0HYM2 19 Nov: 3.52% (18 Nov: 3.47%; 13 Nov: 3.23%) – above 3.5% → 🟡, 2 bp over the threshold (near threshold). FRED has not yet published 20 Nov (S&P 500 −3.7%, VIX 35.89) as of the morning of 23 Nov. Whole IG market spread (BAMLC0A0CM) 0.94%. The AI premium (A2) and the junk spread (A3) are both elevated – the picture is shifting from sector stress towards systemic stress. Not declared a joint move with A7 (different causes: neocloud financing vs the whole market).",
+      "note": "FRED BAMLH0A0HYM2 20.11: 3,76% (19.11: 3,52%; 18.11: 3,47%) – wzrost o 24 pb w dniu wyprzedaży (S&P 500 −3,7%). W przedziale 3,5–5% → 🟡 bez zmian, 1,24 pp poniżej progu 🔴. Spread całego rynku IG (BAMLC0A0CM) 20.11: 0,98% (19.11: 0,94%). Premia AI (A2) i spread śmieciowy (A3) są oba podwyższone – obraz przesuwa się od stresu sektorowego w stronę systemowego. Ruch nie jest deklarowany jako wspólny z A7 (różne przyczyny). Odczyt za 23.11 (odbicie rynku) FRED jeszcze nie opublikował.",
+      "note_en": "FRED BAMLH0A0HYM2 20 Nov: 3.76% (19 Nov: 3.52%; 18 Nov: 3.47%) – up 24 bp on the sell-off day (S&P 500 −3.7%). Within 3.5–5% → 🟡 unchanged, 1.24 pp below the 🔴 threshold. Whole IG market spread (BAMLC0A0CM) 20 Nov: 0.98% (19 Nov: 0.94%). The AI premium (A2) and the junk spread (A3) are both elevated – the picture is shifting from sector stress towards systemic stress. The move is not declared joint with A7 (different causes). FRED has not yet published the 23 Nov reading (market rebound).",
       "status_since": "2026-11-21",
       "status_prev": "green"
     },
@@ -247,7 +247,7 @@
       "category": "A",
       "name": "Premia neocloudów",
       "name_en": "Neocloud funding premium",
-      "value": 900,
+      "value": 910,
       "unit": "pb",
       "as_of": "2026-11-17",
       "status": "black",
@@ -255,9 +255,8 @@
       "max_points": 38.89,
       "preliminary": false,
       "source": "https://investing.com/news/stock-market-news/analysisnvidia-turmoil-marks-the-end-of-easy-money-for-the-ai-trade-5032324",
-      "note": "Ostatni odczyt (Reuters, analiza 17.11): obligacje CoreWeave z kuponem 9,625% – rentowność prawie 15%; obligacje zamienne Nebius po 70 centów (rentowność > 12%). Wobec rentowności IG 6,00% (10Y 5,10% + spread IG 0,90%, 16–17.11) premia CoreWeave ok. 900 pb > 800 pb → ⚫ bez zmian. Przy 10Y 4,92% (20.11) i spreadzie IG 0,94% (19.11) premia byłaby jeszcze wyższa (ok. 1100 pb przy tej samej rentowności 15%) – bez nowego odczytu rentowności obligacji z 20.11 status bez zmian. Nota 23.11: Korea JoongAng Daily (23.11) – UBS szacuje, że ograniczenie finansowania przez Nvidię może szybko wycofać z rynku ponad 50 mld USD; CoreWeave i Nebius najbardziej narażone; konsorcjum 500 mld USD (sierpień 2026) nie uruchomiło dotąd środków. Goldman Sachs (za Reuters): podaż obligacji high-yield spółek AI wyschła od końca września. CoreWeave ma umowy z Anthropic – potencjalny konflikt interesów. Wieczór 23.11: akcje CoreWeave +22,6%, Nebius i IREN +20–30% po powrocie Jensena Huanga do Nvidii – rynek uznał to za zmniejszenie niepewności co do wsparcia Nvidii dla neocloudów (Yahoo Finance, GuruFocus); brak nowego odczytu rentowności obligacji ani CDS po sesji – status bez zmian.",
-      "note_en": "Last reading (Reuters analysis, 17 Nov): CoreWeave's 9.625% notes yield almost 15%; Nebius convertibles at 70 cents (yield > 12%). Against an IG yield of 6.00% (10Y 5.10% + IG spread 0.90%, 16–17 Nov) CoreWeave's premium is about 900 bp > 800 bp → ⚫ unchanged. With the 10Y at 4.92% (20 Nov) and the IG spread at 0.94% (19 Nov) the premium would be higher still (about 1,100 bp at the same 15% yield) – without a new bond-yield reading for 20 Nov the status is unchanged. Note 23 Nov: Korea JoongAng Daily (23 Nov) – UBS estimates that reduced Nvidia financing could quickly pull more than USD 50bn out of the market; CoreWeave and Nebius are the most exposed; the USD 500bn consortium (August 2026) has deployed no funds so far. Goldman Sachs (via Reuters): AI high-yield bond supply has dried up since end-September. CoreWeave has contracts with Anthropic – potential conflict of interest. Evening 23 Nov: CoreWeave shares +22.6%, Nebius and IREN +20–30% after Jensen Huang's return to Nvidia – the market read it as less uncertainty about Nvidia's support for neoclouds (Yahoo Finance, GuruFocus); no new bond-yield or CDS reading after the session – status unchanged.",
-      "conflict_of_interest": true,
+      "note": "Ostatni potwierdzony odczyt (Reuters, analiza 17.11): obligacje CoreWeave z kuponem 9,625% – rentowność prawie 15%. Wobec rentowności IG 5,90% (10Y 4,92% z 23.11 + spread IG 0,98% z 20.11) premia ok. 910 pb > 800 pb → ⚫ bez zmian. AI Weekly (20.11, za Bloombergiem) podaje rentowność obligacji CoreWeave blisko 16% i CDS do 1232,6 pb – przy 16% premia ok. 1010 pb, nadal ⚫ (próg ⚫⚫ 1100 pb), więc bez odczytu niepotwierdzonego. 23.11 akcje CoreWeave +18–30% w trakcie sesji po powrocie Jensena Huanga do Nvidii (Yahoo Finance/GuruFocus, KuCoin) – brak nowego odczytu rentowności obligacji ani CDS z 23–24.11. Planowana pożyczka CoreWeave o ratingu inwestycyjnym (min. 4 mld USD, 7–7,5%) nie została jeszcze uruchomiona. CoreWeave ma umowy z Anthropic – potencjalny konflikt interesów; tylko źródła zewnętrzne.",
+      "note_en": "Last confirmed reading (Reuters analysis, 17 Nov): CoreWeave's 9.625% coupon bonds yield almost 15%. Against an IG yield of 5.90% (10Y 4.92% on 23 Nov + IG spread 0.98% on 20 Nov) the premium is about 910 bp > 800 bp → ⚫ unchanged. AI Weekly (20 Nov, citing Bloomberg) gives a CoreWeave bond yield near 16% and CDS up to 1,232.6 bp – at 16% the premium would be about 1,010 bp, still ⚫ (⚫⚫ threshold 1,100 bp), so no unconfirmed reading. On 23 Nov CoreWeave shares rose 18–30% intraday after Jensen Huang's return to Nvidia (Yahoo Finance/GuruFocus, KuCoin) – no new bond-yield or CDS reading for 23–24 Nov. CoreWeave's planned investment-grade loan (at least USD 4bn, 7–7.5%) has not launched yet. CoreWeave has contracts with Anthropic – potential conflict of interest; external sources only.",
       "status_since": "2026-11-09",
       "status_prev": "red"
     },
@@ -313,9 +312,9 @@
       "points": 12.5,
       "max_points": 25.0,
       "preliminary": false,
-      "source": "https://stockanalysis.com/etf/mags/",
-      "note": "USA 23.11 (ok. 15:55 ET, tuż przed zamknięciem): MAGS 66,29 USD (+7,5% w sesji) → ok. +0,5% od początku roku; S&P 500 7239,10 pkt (+4,76%) → ok. +5,3% → różnica ok. −4,8 pp (🟡; 20.11: −7,0 pp). Nvidia +31% po przywróceniu Jensena Huanga na stanowisko prezesa (Reuters, Yahoo Finance). Korea 23.11: KOSPI −3,3–4,4%, SK hynix i Samsung Electronics spadki zbliżone do indeksu, przed ogłoszeniem w sprawie Nvidii; od początku roku nadal przed KOSPI (🟢, bez nowego pełnego zestawienia). Japonia 23.11 zamknięta (święto). Bardziej ryzykowna miara → 🟡 bez zmian.",
-      "note_en": "US 23 Nov (about 15:55 ET, just before the close): MAGS USD 66.29 (+7.5% on the day) → about +0.5% year to date; S&P 500 7,239.10 (+4.76%) → about +5.3% → gap about −4.8 pp (🟡; 20 Nov: −7.0 pp). Nvidia +31% after Jensen Huang was reinstated as CEO (Reuters, Yahoo Finance). Korea 23 Nov: KOSPI −3.3–4.4%, SK hynix and Samsung Electronics fell about as much as the index, before the Nvidia announcement; year to date still ahead of KOSPI (🟢, no new full comparison). Japan closed on 23 Nov (holiday). Higher-risk measure → 🟡 unchanged.",
+      "source": "https://aol.com/articles/asian-stocks-rally-huangs-nvidia-012932000.html",
+      "note": "USA 23.11: MAGS ok. +0,5% od początku roku wobec S&P 500 ok. +5,3% → ok. −4,8 pp (🟡). Azja 24.11 (Reuters): Tajwan +9%, TSMC i Foxconn blisko limitu dziennego +10%, MSCI Asia ex-Japan +4% – największy jednodniowy wzrost od 31.07; KOSPI +6,5% do 5014,41 pkt (Korea Times; Yonhap: Samsung +7,7%, SK hynix +8,5% w trakcie sesji) po zamknięciu 23.11 na 4708,54 pkt (−3,31%, najniżej od 13.01; Korea JoongAng Daily). Japonia 24.11: Nikkei +3,9%, Tokyo Electron +10,5%, Advantest +14,1% (AP). Brak nowego zestawienia od początku roku dla miar koreańskiej i japońskiej. Bardziej ryzykowna miara (USA) → 🟡 bez zmian.",
+      "note_en": "US 23 Nov: MAGS about +0.5% year to date vs the S&P 500 about +5.3% → about −4.8 pp (🟡). Asia 24 Nov (Reuters): Taiwan +9%, TSMC and Foxconn near the +10% daily limit, MSCI Asia ex-Japan +4% – its biggest one-day gain since 31 July; KOSPI +6.5% to 5,014.41 (Korea Times; Yonhap: Samsung +7.7%, SK hynix +8.5% intraday) after closing at 4,708.54 on 23 Nov (−3.31%, lowest since 13 Jan; Korea JoongAng Daily). Japan 24 Nov: Nikkei +3.9%, Tokyo Electron +10.5%, Advantest +14.1% (AP). No new year-to-date comparison for the Korean and Japanese measures. Higher-risk measure (US) → 🟡 unchanged.",
       "status_since": "2026-10-06",
       "status_prev": "yellow"
     },
@@ -477,14 +476,14 @@
       "name_en": "GPU rental rates",
       "value": null,
       "unit": "% (30 dni, H100)",
-      "as_of": "2026-11-22",
+      "as_of": "2026-11-23",
       "status": "yellow",
       "points": 20.0,
       "max_points": 40.0,
       "preliminary": false,
       "source": "https://data.ornn.com/markets/h100-sxm",
-      "note": "Ornn OCPI H100 (rozliczenie 22.11): +0,7% d/d, −4,9% w 7 dni, −7,6% w 30 dni (20.11: −6,5%; 18.11: −2,0%). Spadek 30-dniowy pogłębia się trzeci odczyt z rzędu, ale nie osiąga warunku wczesnego ostrzeżenia (spot −15% w miesiąc); stawki kontraktowe niepubliczne, więc warunek 🔴 nie jest sprawdzalny. 🟡 bez zmian. Indeks licencjonowany – publikujemy tylko zmiany procentowe.",
-      "note_en": "Ornn OCPI H100 (settlement 22 Nov): +0.7% d/d, −4.9% over 7 days, −7.6% over 30 days (20 Nov: −6.5%; 18 Nov: −2.0%). The 30-day decline deepens for the third reading in a row but does not reach the early-warning condition (spot −15% in a month); contract rates are not public, so the 🔴 condition cannot be checked. 🟡 unchanged. Licensed index – only percentage changes are published.",
+      "note": "Ornn OCPI H100 (rozliczenie 23.11): +4,1% d/d, −4,1% w 7 dni, −3,2% w 30 dni (22.11: −7,6%). Listopad do 23.11: +1,0% wobec końca października. Spadek 30-dniowy wyhamował; warunek wczesnego ostrzeżenia (spot −15% w miesiąc) niespełniony, stawki kontraktowe niepubliczne → 🟡 bez zmian. Indeks licencjonowany – publikujemy tylko zmiany procentowe.",
+      "note_en": "Ornn OCPI H100 (23 Nov settle): +4.1% d/d, −4.1% over 7 days, −3.2% over 30 days (22 Nov: −7.6%). November to 23 Nov: +1.0% vs end of October. The 30-day decline has eased; the early-warning condition (spot −15% in a month) is not met and contract rates are not public → 🟡 unchanged. Licensed index – only percentage changes are published.",
       "status_since": "2026-10-06",
       "status_prev": "yellow"
     },
@@ -620,14 +619,14 @@
       "name_en": "Fed policy",
       "value": "3,75–4,00",
       "unit": "%",
-      "as_of": "2026-11-23",
+      "as_of": "2026-11-24",
       "status": "red",
       "points": 40.0,
       "max_points": 40.0,
       "preliminary": false,
-      "source": "https://cnbc.com/2026/11/23/treasury-yields-bonds-fed.html",
-      "note": "Stopa Fed 3,75–4,00%. 23.11 CME FedWatch wycenia podwyżkę o 25 pb 8–9.12 na ok. 91–98% zależnie od godziny odczytu (CNBC: ok. 98% rano wobec ok. 88% w piątek; później 93,2%); podwyżka o 50 pb – 0%; kolejna podwyżka w styczniu ok. 60%. Protokół FOMC (18.11): „prawie wszyscy uczestnicy” uznali dalsze podwyżki za prawdopodobnie właściwe. Wycena podwyżki > 50% → 🔴 bez zmian.",
-      "note_en": "Fed rate 3.75–4.00%. On 23 Nov CME FedWatch priced a 25 bp hike on 8–9 Dec at about 91–98% depending on the time of reading (CNBC: about 98% in the morning vs about 88% on Friday; later 93.2%); a 50 bp hike – 0%; another hike in January about 60%. FOMC minutes (18 Nov): 'nearly all participants' saw further hikes as likely appropriate. Hike priced > 50% → 🔴 unchanged.",
+      "source": "https://aol.com/articles/asian-stocks-rally-huangs-nvidia-012932000.html",
+      "note": "Stopa Fed 3,75–4,00%. Reuters (24.11): kontrakty na stopę funduszy federalnych wyceniają grudniową podwyżkę (8–9.12) jako pewną (89% w piątek 20.11); CME FedWatch 23.11: 91,4% za podwyżką o 25 pb (Gate za CME). Westpac (za ABC, 24.11): rynki odbudowały oczekiwania grudniowej podwyżki. Wycena podwyżki > 50% → 🔴 bez zmian. 25.11 inflacja PCE za październik (konsensus 3,8% r/r, bazowa 3,2%).",
+      "note_en": "Fed rate 3.75–4.00%. Reuters (24 Nov): fed funds futures price a December hike (8–9 Dec) as certain (89% on Friday 20 Nov); CME FedWatch 23 Nov: 91.4% for a 25 bp hike (Gate citing CME). Westpac (via ABC, 24 Nov): markets rebuilt expectations of a December hike. Hike priced > 50% → 🔴 unchanged. 25 Nov: October PCE inflation (consensus 3.8% y/y, core 3.2%).",
       "status_since": "2026-10-06",
       "status_prev": "red"
     },
@@ -636,16 +635,16 @@
       "category": "E",
       "name": "Bank Japonii i carry trade na jenie",
       "name_en": "Bank of Japan and the yen carry trade",
-      "value": 159.2,
+      "value": 158.92,
       "unit": "JPY/USD",
-      "as_of": "2026-11-20",
+      "as_of": "2026-11-24",
       "status": "yellow",
       "points": 10.0,
       "max_points": 20.0,
       "preliminary": false,
-      "source": "https://investinglive.com/news/investinglive-asia-pacific-market-news-red-friday-as-asia-s-ai-trade-unravels/",
-      "note": "USD/JPY ok. 159,20 20.11 w trakcie sesji (investingLive – wtórne, nie zamknięcie; 16.11 159,64) wobec ok. 157,4 na początku października – jen słabszy o ok. 1,1%, zmiana w miesiąc w przedziale ±3%. Inflacja bazowa w Japonii za październik 2,2% wobec oczekiwanych 2,3%; rentowność 10-letnich JGB spadła o ok. 4 pb do ok. 2,80%. Rynek wycenia grudniową podwyżkę BoJ do 1,50% na ok. 72% (CNBC, 20.11) → > 50% → 🟡 bez zmian. Grudniowa podwyżka utrzymałaby 🟡 (podwyżka w ostatnich 3 miesiącach), więc bez prognozy w punktach.",
-      "note_en": "USD/JPY about 159.20 on 20 Nov intraday (investingLive – secondary, not a close; 16 Nov 159.64) vs about 157.4 in early October – the yen about 1.1% weaker, monthly change within ±3%. Japan's October core inflation 2.2% vs 2.3% expected; the 10-year JGB yield fell about 4 bp to about 2.80%. The market prices a December BoJ hike to 1.50% at about 72% (CNBC, 20 Nov) → > 50% → 🟡 unchanged. A December hike would keep 🟡 (a hike in the last 3 months), so no outlook in points.",
+      "source": "https://www.aol.com/articles/asian-stocks-rally-wall-street-033125000.html",
+      "note": "USD/JPY 158,92 24.11 w trakcie sesji azjatyckiej (AP; wtórne, nie zamknięcie; 20.11 ok. 159,2) – zmiana w ostatnim miesiącu w przedziale ±3%. Rynek wycenia podwyżkę BoJ 17–18.12 do 1,50% na ok. 78% (rateprobability.com, 23.11); w ankiecie Reuters (11–18.11) 86% ekonomistów oczekuje podwyżki → > 50% → 🟡 bez zmian. Grudniowa podwyżka utrzymałaby 🟡, więc bez prognozy w punktach.",
+      "note_en": "USD/JPY 158.92 on 24 Nov during the Asian session (AP; secondary, not a close; 20 Nov about 159.2) – change over the last month within ±3%. The market prices a BoJ hike on 17–18 Dec to 1.50% at about 78% (rateprobability.com, 23 Nov); in a Reuters poll (11–18 Nov) 86% of economists expect a hike → > 50% → 🟡 unchanged. A December hike would keep 🟡, so no outlook in points.",
       "status_since": "2026-10-16"
     },
     {
@@ -747,14 +746,9 @@
   ],
   "calendar": [
     {
-      "date": "2026-11-24",
-      "title": "FRED: spread obligacji śmieciowych za 20.11 (A3) i spread IG (A7)",
-      "title_en": "FRED: junk-bond spread for 20 Nov (A3) and IG spread (A7)"
-    },
-    {
       "date": "2026-11-25",
-      "title": "USA: inflacja PCE za październik, rewizja PKB za III kw., zamówienia na dobra trwałe (E3)",
-      "title_en": "US: October PCE inflation, revised Q3 GDP, durable goods orders (E3)"
+      "title": "USA: inflacja PCE za październik, rewizja PKB za III kw. (E3); formalna publikacja wpisu Megaspeed na listę podmiotów objętych ograniczeniami (D5 – nota)",
+      "title_en": "US: October PCE inflation, revised Q3 GDP (E3); formal publication of Megaspeed's Entity List addition (D5 – note)"
     },
     {
       "date": "2026-11-26",
@@ -763,8 +757,8 @@
     },
     {
       "date": "2026-11-27",
-      "title": "Ok. 27.11: termin ok. 10 dni, który sekretarz skarbu Bessent dał zarządowi Nvidii na wyjaśnienia (A7, D5 – nota)",
-      "title_en": "Around 27 Nov: the roughly 10-day deadline Treasury Secretary Bessent set for Nvidia's board to give answers (A7, D5 – note)"
+      "title": "Ok. 25–27.11: termin, który sekretarz skarbu Bessent dał zarządowi Nvidii (A7, D5 – nota)",
+      "title_en": "Around 25–27 Nov: the deadline Treasury Secretary Bessent set for Nvidia's board (A7, D5 – note)"
     },
     {
       "date": "2026-11-30",
@@ -778,13 +772,18 @@
     },
     {
       "date": "2026-12-03",
-      "title": "Illinois: koniec sesji weta (1–3.12) – ustawa POWER Act o centrach danych (C5); kolejny odczyt Census BTOS (C2)",
-      "title_en": "Illinois: end of the veto session (1–3 Dec) – POWER Act on data centers (C5); next Census BTOS reading (C2)"
+      "title": "Illinois: koniec sesji weta – ustawa POWER Act (C5); zeznania Jensena Huanga przed senacką komisją bankową; Census BTOS (C2)",
+      "title_en": "Illinois: end of the veto session – POWER Act (C5); Jensen Huang testifies before the Senate Banking Committee; Census BTOS (C2)"
     },
     {
       "date": "2026-12-05",
       "title": "Rekord CDS CoreWeave (5.11) wypada z okna A5",
       "title_en": "CoreWeave's CDS record (5 Nov) leaves the A5 window"
+    },
+    {
+      "date": "2026-12-08",
+      "title": "Hollis (Maine): głosowanie nad ograniczeniem centrów danych (F1 – nota)",
+      "title_en": "Hollis (Maine): vote on restricting data centers (F1 – note)"
     },
     {
       "date": "2026-12-09",
