@@ -6,10 +6,10 @@
   "band": "Pęknięcia",
   "band_en": "Cracks",
   "change_vs_previous": 0,
-  "headline": "548/1000 bez zmian: spread obligacji śmieciowych wzrósł do 3,76% po piątkowej wyprzedaży, a azjatyckie spółki chipowe odrabiają straty po powrocie Jensena Huanga do Nvidii.",
-  "headline_en": "548/1000, unchanged: the junk-bond spread rose to 3.76% after Friday's sell-off, while Asian chip stocks are recovering losses after Jensen Huang's return to Nvidia.",
-  "summary": "Wynik 548/1000 – bez zmian wobec wczorajszego raportu; nadal pasmo Pęknięć. Żaden sygnał nie zmienił statusu. Spread obligacji śmieciowych (dodatkowe oprocentowanie, którego inwestorzy żądają od firm o słabszym ratingu) wzrósł 20.11 do 3,76%. Stawki najmu GPU H100 przestały spadać. W środę inflacja PCE, w czwartek Święto Dziękczynienia w USA. Kontrakty terminowe wyceniają grudniową podwyżkę stóp Fed jako pewną, a azjatyckie akcje (MSCI Asia ex-Japan) zanotowały tego samego dnia największy jednodniowy wzrost od 31 lipca.",
-  "summary_en": "The score is 548/1000 – unchanged from yesterday's report; still the Cracks band. No signal changed status. The junk-bond spread (the extra interest investors demand from lower-rated companies) rose to 3.76% on 20 Nov. H100 GPU rental rates stopped falling. PCE inflation is due on Wednesday, and Thursday is Thanksgiving in the US. Futures price a December Fed rate hike as certain, while on the same day Asian stocks (MSCI Asia ex-Japan) posted their biggest one-day gain since 31 July.",
+  "headline": "548/1000 bez zmian: obligacje CoreWeave spadły do rekordowo niskich cen, a Nvidia oddała część poniedziałkowego wzrostu.",
+  "headline_en": "548/1000, unchanged: CoreWeave's bonds fell to record-low prices, while Nvidia gave back part of Monday's gain.",
+  "summary": "Wynik 548/1000 – bez zmian wobec porannego raportu; nadal pasmo Pęknięć. Żaden sygnał nie zmienił statusu. Rentowność 10-letnich obligacji USA spadła do 4,91%. Obligacje CoreWeave (wynajmuje moc obliczeniową GPU) potaniały do 74,9 centa za dolara – najniżej od emisji – a Nvidia traciła w trakcie sesji ok. 6% po poniedziałkowym wzroście o 31,5%. W środę inflacja PCE. Dzień po największym jednodniowym przyroście wartości spółki w historii rynku wierzyciele CoreWeave wyceniają jej dług najniżej od emisji.",
+  "summary_en": "The score is 548/1000 – unchanged from this morning's report; still the Cracks band. No signal changed status. The US 10-year Treasury yield fell to 4.91%. CoreWeave's bonds (CoreWeave rents out GPU computing power) fell to 74.9 cents on the dollar – the lowest since issue – while Nvidia was down about 6% intraday after Monday's 31.5% jump. PCE inflation is due on Wednesday. A day after the biggest one-day gain in a company's value in market history, CoreWeave's creditors price its debt at the lowest since issue.",
   "report_file": "history/history-24-11-2026.json",
   "triggers": [],
   "triggers_en": [],
@@ -137,16 +137,16 @@
       "category": "A",
       "name": "Rentowność 10Y USA",
       "name_en": "US 10Y Treasury yield",
-      "value": 4.92,
+      "value": 4.91,
       "unit": "%",
-      "as_of": "2026-11-23",
+      "as_of": "2026-11-24",
       "status": "yellow",
       "points": 27.78,
       "max_points": 55.56,
       "preliminary": false,
       "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
-      "note": "Treasury 23.11 (zamknięcie): 10Y 4,92% – bez zmian wobec 20.11 (19.11: 5,04%; 16.11: 5,12%). W trakcie sesji rentowność rosła do ok. 4,96% przy odbiciu akcji po powrocie Jensena Huanga do Nvidii, ale wzrost wygasł (AP, Reuters). FRED DGS10 – odczyt za 23.11 jeszcze nieopublikowany. W przedziale 4,5–5,25% → 🟡 bez zmian.",
-      "note_en": "Treasury 23 Nov (close): 10Y 4.92% – unchanged from 20 Nov (19 Nov: 5.04%; 16 Nov: 5.12%). Intraday the yield rose to about 4.96% as equities rebounded after Jensen Huang's return to Nvidia, but the rise faded (AP, Reuters). FRED DGS10 for 23 Nov not yet published. Within 4.5–5.25% → 🟡 unchanged.",
+      "note": "Treasury 24.11 (zamknięcie): 10Y 4,91% (23.11: 4,92%; 20.11: 4,92%). FRED DGS10 – potwierdzenie z opóźnieniem. W przedziale 4,5–5,25% → 🟡 bez zmian.",
+      "note_en": "Treasury 24 Nov (close): 10Y 4.91% (23 Nov: 4.92%; 20 Nov: 4.92%). FRED DGS10 confirms with a lag. Within 4.5–5.25% → 🟡 unchanged.",
       "status_since": "2026-10-08",
       "status_prev": "red"
     },
@@ -255,8 +255,9 @@
       "max_points": 38.89,
       "preliminary": false,
       "source": "https://investing.com/news/stock-market-news/analysisnvidia-turmoil-marks-the-end-of-easy-money-for-the-ai-trade-5032324",
-      "note": "Ostatni potwierdzony odczyt (Reuters, analiza 17.11): obligacje CoreWeave z kuponem 9,625% – rentowność prawie 15%. Wobec rentowności IG 5,90% (10Y 4,92% z 23.11 + spread IG 0,98% z 20.11) premia ok. 910 pb > 800 pb → ⚫ bez zmian. AI Weekly (20.11, za Bloombergiem) podaje rentowność obligacji CoreWeave blisko 16% i CDS do 1232,6 pb – przy 16% premia ok. 1010 pb, nadal ⚫ (próg ⚫⚫ 1100 pb), więc bez odczytu niepotwierdzonego. 23.11 akcje CoreWeave +18–30% w trakcie sesji po powrocie Jensena Huanga do Nvidii (Yahoo Finance/GuruFocus, KuCoin) – brak nowego odczytu rentowności obligacji ani CDS z 23–24.11. Planowana pożyczka CoreWeave o ratingu inwestycyjnym (min. 4 mld USD, 7–7,5%) nie została jeszcze uruchomiona. CoreWeave ma umowy z Anthropic – potencjalny konflikt interesów; tylko źródła zewnętrzne.",
-      "note_en": "Last confirmed reading (Reuters analysis, 17 Nov): CoreWeave's 9.625% coupon bonds yield almost 15%. Against an IG yield of 5.90% (10Y 4.92% on 23 Nov + IG spread 0.98% on 20 Nov) the premium is about 910 bp > 800 bp → ⚫ unchanged. AI Weekly (20 Nov, citing Bloomberg) gives a CoreWeave bond yield near 16% and CDS up to 1,232.6 bp – at 16% the premium would be about 1,010 bp, still ⚫ (⚫⚫ threshold 1,100 bp), so no unconfirmed reading. On 23 Nov CoreWeave shares rose 18–30% intraday after Jensen Huang's return to Nvidia (Yahoo Finance/GuruFocus, KuCoin) – no new bond-yield or CDS reading for 23–24 Nov. CoreWeave's planned investment-grade loan (at least USD 4bn, 7–7.5%) has not launched yet. CoreWeave has contracts with Anthropic – potential conflict of interest; external sources only.",
+      "note": "Ostatni potwierdzony odczyt (Reuters, analiza 17.11): obligacje CoreWeave 9,625% – rentowność prawie 15%, premia wobec IG ok. 910 pb > 800 pb → ⚫. Nowe 24.11 (Bloomberg za Startup Fortune i Seeking Alpha – jedno źródło): obligacje 9,625% z terminem 2032 spadły o 4,6 pkt do 74,9 centa za dolara, 9% z terminem 2031 do 76,6 centa – najniżej od emisji, co odwraca poniedziałkowe odbicie po powrocie Huanga, gdy akcje Nvidii wzrosły 23.11 o 31,5% (ok. 950 mld USD – największy jednodniowy przyrost wartości spółki w historii rynku; NBC News, Yahoo Finance), a 24.11 traciły w trakcie sesji ok. 6% (Yahoo Finance). Wyliczona z ceny rentowność ok. 16,8% daje premię ok. 1090 pb wobec IG 5,89% (10Y 4,91% + spread IG 0,98%) – blisko progu ⚫⚫ (1100 pb), ale poniżej, więc ⚫ bez zmian i bez odczytu niepotwierdzonego. CoreWeave ma umowy z Anthropic – potencjalny konflikt interesów; tylko źródła zewnętrzne.",
+      "note_en": "Last confirmed reading (Reuters analysis, 17 Nov): CoreWeave's 9.625% bonds yield almost 15%, a premium over IG of about 910 bp > 800 bp → ⚫. New on 24 Nov (Bloomberg via Startup Fortune and Seeking Alpha – one source): the 9.625% notes due 2032 fell 4.6 points to 74.9 cents on the dollar and the 9% notes due 2031 to 76.6 cents – the lowest since issue, reversing Monday's rebound after Huang's return, when Nvidia shares rose 31.5% on 23 Nov (about USD 950bn – the biggest one-day gain in a company's value in market history; NBC News, Yahoo Finance), before falling about 6% intraday on 24 Nov (Yahoo Finance). The yield implied by the price, about 16.8%, gives a premium of about 1,090 bp over an IG yield of 5.89% (10Y 4.91% + IG spread 0.98%) – near the ⚫⚫ threshold (1,100 bp) but below it, so ⚫ unchanged and no unconfirmed reading. CoreWeave has contracts with Anthropic – potential conflict of interest; external sources only.",
+      "conflict_of_interest": true,
       "status_since": "2026-11-09",
       "status_prev": "red"
     },
@@ -599,16 +600,16 @@
       "category": "E",
       "name": "Krzywa 10Y–2Y",
       "name_en": "10Y–2Y yield curve",
-      "value": 0.29,
+      "value": 0.28,
       "unit": "pp",
-      "as_of": "2026-11-23",
+      "as_of": "2026-11-24",
       "status": "yellow",
       "points": 10.0,
       "max_points": 20.0,
       "preliminary": false,
       "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
-      "note": "Treasury 23.11: 2Y 4,63%, 10Y 4,92% → 0,29 pp. Tydzień (16.11→23.11): 2Y −20 pb, 10Y −20 pb, krzywa bez zmian (0,29 pp) – równoległy spadek. Miesiąc (23.10→23.11): 2Y −6 pb, 10Y −8 pb, krzywa z 0,31 do 0,29 pp – lekkie spłaszczenie przez spadek 10Y (oczekiwania spowolnienia), przy wycenianej grudniowej podwyżce Fed. Obraz mieszany, bez zaostrzania → 🟡 bez zmian.",
-      "note_en": "Treasury 23 Nov: 2Y 4.63%, 10Y 4.92% → 0.29 pp. Week (16 Nov→23 Nov): 2Y −20 bp, 10Y −20 bp, curve unchanged (0.29 pp) – a parallel decline. Month (23 Oct→23 Nov): 2Y −6 bp, 10Y −8 bp, curve from 0.31 to 0.29 pp – slight flattening via a falling 10Y (slowdown expectations), with a December Fed hike priced. Mixed picture, no tightening → 🟡 unchanged.",
+      "note": "Treasury 24.11: 2Y 4,63%, 10Y 4,91% → 0,28 pp (23.11: 0,29 pp). Lekkie spłaszczenie przez spadek 10Y przy wycenianej na ok. 95% grudniowej podwyżce Fed (Yahoo Finance, 24.11). Obraz mieszany, bez zaostrzania → 🟡 bez zmian.",
+      "note_en": "Treasury 24 Nov: 2Y 4.63%, 10Y 4.91% → 0.28 pp (23 Nov: 0.29 pp). Slight flattening via a lower 10Y, with a December Fed hike priced at about 95% (Yahoo Finance, 24 Nov). Mixed picture, no tightening → 🟡 unchanged.",
       "status_since": "2026-11-19",
       "status_prev": "red"
     },
@@ -747,8 +748,8 @@
   "calendar": [
     {
       "date": "2026-11-25",
-      "title": "USA: inflacja PCE za październik, rewizja PKB za III kw. (E3); formalna publikacja wpisu Megaspeed na listę podmiotów objętych ograniczeniami (D5 – nota)",
-      "title_en": "US: October PCE inflation, revised Q3 GDP (E3); formal publication of Megaspeed's Entity List addition (D5 – note)"
+      "title": "USA: inflacja PCE za październik, rewizja PKB za III kw. (E3)",
+      "title_en": "US: October PCE inflation, revised Q3 GDP (E3)"
     },
     {
       "date": "2026-11-26",
@@ -759,36 +760,6 @@
       "date": "2026-11-27",
       "title": "Ok. 25–27.11: termin, który sekretarz skarbu Bessent dał zarządowi Nvidii (A7, D5 – nota)",
       "title_en": "Around 25–27 Nov: the deadline Treasury Secretary Bessent set for Nvidia's board (A7, D5 – note)"
-    },
-    {
-      "date": "2026-11-30",
-      "title": "Chiny: obniżka minimalnego depozytu przy zakupie akcji na kredyt ze 100% do 80% (B4 – nota)",
-      "title_en": "China: minimum margin for stock purchases with borrowed funds cut from 100% to 80% (B4 – note)"
-    },
-    {
-      "date": "2026-12-01",
-      "title": "ISM Manufacturing PMI za listopad (E1); eksport Korei za listopad (D6)",
-      "title_en": "ISM Manufacturing PMI for November (E1); Korea's November exports (D6)"
-    },
-    {
-      "date": "2026-12-03",
-      "title": "Illinois: koniec sesji weta – ustawa POWER Act (C5); zeznania Jensena Huanga przed senacką komisją bankową; Census BTOS (C2)",
-      "title_en": "Illinois: end of the veto session – POWER Act (C5); Jensen Huang testifies before the Senate Banking Committee; Census BTOS (C2)"
-    },
-    {
-      "date": "2026-12-05",
-      "title": "Rekord CDS CoreWeave (5.11) wypada z okna A5",
-      "title_en": "CoreWeave's CDS record (5 Nov) leaves the A5 window"
-    },
-    {
-      "date": "2026-12-08",
-      "title": "Hollis (Maine): głosowanie nad ograniczeniem centrów danych (F1 – nota)",
-      "title_en": "Hollis (Maine): vote on restricting data centers (F1 – note)"
-    },
-    {
-      "date": "2026-12-09",
-      "title": "Decyzja Fed (8–9.12; rynek wycenia podwyżkę o 25 pb – E3); wyniki Broadcomu (B1 – nota)",
-      "title_en": "Fed decision (8–9 Dec; market prices a 25 bp hike – E3); Broadcom earnings (B1 – note)"
     }
   ],
   "disclaimer": "To nie jest porada inwestycyjna.",
