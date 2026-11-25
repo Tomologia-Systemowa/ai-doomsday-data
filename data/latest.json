@@ -6,10 +6,10 @@
   "band": "Pęknięcia",
   "band_en": "Cracks",
   "change_vs_previous": -3,
-  "headline": "545/1000 (−3): wynik spadł z powodu przedawnionej ankiety, nie rynku; obligacje CoreWeave potwierdzone na najniższym poziomie od emisji.",
-  "headline_en": "545/1000 (−3): the score fell because a survey went stale, not because of the market; CoreWeave's bonds confirmed at their lowest since issue.",
-  "summary": "Wynik 545/1000 – 3 punkty mniej niż we wtorek; nadal pasmo Pęknięć. Spadek jest techniczny: ankieta McKinsey o zysku firm z wdrożeń AI (sierpień) ma ponad 90 dni i przestała się liczyć, a nowszej nie ma. Drugie źródło potwierdziło, że obligacje CoreWeave (wynajmuje moc GPU) kosztują 74,9 centa za dolara – najmniej od emisji. Dziś inflacja PCE. Eksport chipów z Korei rośnie o 282% r/r na dzień roboczy, a akcje Samsunga i SK hynix tracą w środę po ponad 9%.",
-  "summary_en": "The score is 545/1000 – 3 points lower than on Tuesday; still the Cracks band. The drop is technical: the McKinsey survey on companies' profit from AI deployments (August) is more than 90 days old and no longer counts, and there is no newer one. A second source confirmed that CoreWeave's bonds (CoreWeave rents out GPU computing power) trade at 74.9 cents on the dollar – the lowest since issue. PCE inflation is due today. Korea's chip exports are growing 282% y/y per working day, while Samsung's and SK hynix's shares are each down more than 9% on Wednesday.",
+  "headline": "545/1000 (bez zmian): inflacja PCE 3,8% przypieczętowała grudniową podwyżkę Fed; S&P może obniżyć rating Nvidii z powodu ładu korporacyjnego.",
+  "headline_en": "545/1000 (unchanged): 3.8% PCE inflation sealed a December Fed hike; S&P may cut Nvidia's rating over governance.",
+  "summary": "Wynik 545/1000 – bez zmian wobec porannego raportu; nadal pasmo Pęknięć, żaden sygnał nie zmienił statusu. Inflacja PCE za październik: 3,8% r/r, bazowa 3,3% – powyżej oczekiwań; rynek wycenia grudniową podwyżkę stóp Fed na 94–98%. S&P może obniżyć rating Nvidii (AA) z powodu ładu korporacyjnego – to jeszcze nie zdarzenie kredytowe. Dwa dni po wzroście akcji Nvidii o 31,5% na wieść o powrocie Huanga agencja ratingowa ostrzega przed obniżką z powodu sposobu, w jaki do tego powrotu doszło.",
+  "summary_en": "The score is 545/1000 – unchanged from this morning's report; still the Cracks band, no signal changed status. October PCE inflation: 3.8% y/y, core 3.3% – above expectations; the market prices a December Fed rate hike at 94–98%. S&P may cut Nvidia's rating (AA) over governance – not yet a credit event. Two days after Nvidia shares rose 31.5% on news of Huang's return, a rating agency warns of a downgrade because of the way that return came about.",
   "report_file": "history/history-25-11-2026.json",
   "triggers": [],
   "triggers_en": [],
@@ -176,14 +176,14 @@
       "name_en": "High-yield spread",
       "value": null,
       "unit": "%",
-      "as_of": "2026-11-23",
+      "as_of": "2026-11-24",
       "status": "yellow",
       "points": 22.22,
       "max_points": 44.44,
       "preliminary": false,
       "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-      "note": "FRED BAMLH0A0HYM2 23.11: 3,63% (20.11: 3,76%; 19.11: 3,52%) – spadek o 13 pb w dniu odbicia rynku po powrocie Huanga. W przedziale 3,5–5% → 🟡 bez zmian, 0,13 pp nad progiem 🟢. Spread całego rynku IG (BAMLC0A0CM) 23.11: 0,97% (20.11: 0,98%). Odczyt za 24.11 FRED jeszcze nie opublikował. Ruch nie jest deklarowany jako wspólny z A7 (różne przyczyny).",
-      "note_en": "FRED BAMLH0A0HYM2 on 23 Nov: 3.63% (20 Nov: 3.76%; 19 Nov: 3.52%) – down 13 bp on the day the market rebounded after Huang's return. Within 3.5–5% → 🟡 unchanged, 0.13 pp above the 🟢 threshold. Whole IG market spread (BAMLC0A0CM) on 23 Nov: 0.97% (20 Nov: 0.98%). FRED has not yet published the 24 Nov reading. The move is not declared joint with A7 (different causes).",
+      "note": "FRED BAMLH0A0HYM2 24.11: 3,72% (23.11: 3,63%; 20.11: 3,76%) – wzrost o 9 pb w dniu, w którym Nvidia oddawała część poniedziałkowego wzrostu. W przedziale 3,5–5% → 🟡 bez zmian. Odczyt za 25.11 FRED jeszcze nie opublikował. Ruch nie jest deklarowany jako wspólny z A7 (różne przyczyny).",
+      "note_en": "FRED BAMLH0A0HYM2 on 24 Nov: 3.72% (23 Nov: 3.63%; 20 Nov: 3.76%) – up 9 bp on a day Nvidia gave back part of Monday's gain. Within 3.5–5% → 🟡 unchanged. FRED has not yet published the 25 Nov reading. The move is not declared joint with A7 (different causes).",
       "status_since": "2026-11-21",
       "status_prev": "green"
     },
@@ -275,8 +275,8 @@
       "max_points": 44.44,
       "preliminary": false,
       "source": "https://www.investing.com/news/stock-market-news/moodys-and-sp-downgrade-akamai-on-debtfueled-ai-infrastructure-buildout-5012804",
-      "note": "Trwałe zdarzenie ciężkie: 9.11 S&P obniżył rating Akamai Technologies do BB+ z BBB- (poziom spekulacyjny), Moody's do Baa3; powód – budowa chmury GPU dla AI finansowana długiem (m.in. umowa z Anthropic do 11,6 mld USD na 7 lat). Kontrola 23.11: brak doniesień o przywróceniu ratingu inwestycyjnego w S&P (Capmad, Börse Global) – warunek końca niespełniony → 🔴, zdarzenie ciężkie trwa. Przegląd 20–23.11 („downgrade”, „refinancing”, „force majeure”, „private credit redemptions”) bez nowych zdarzeń kredytowych. Oracle (Reuters, 20.11): finansowanie kontraktu z OpenAI w pełni zabezpieczone po emisji ok. 20 mld USD (10 mld USD akcji i 10 mld USD obligacji, 2.11) – nota. Anthropic po IPO: zamknięcie 20.11 na 88,30 USD, 6,4% powyżej ceny emisyjnej 83 USD (TradingKey) – nie jest to runda ani IPO po niższej wycenie. Dotyczy Anthropic – potencjalny konflikt interesów; tylko źródła zewnętrzne. Przegląd wieczorny 23.11 bez nowych zdarzeń kredytowych; akcje Oracle +11–14% po oświadczeniu z 20.11, że finansowanie kontraktu z OpenAI jest pełne (AP).",
-      "note_en": "Lasting heavy event: on 9 Nov S&P cut Akamai Technologies to BB+ from BBB- (speculative grade), Moody's to Baa3; reason – an AI GPU cloud build-out financed with debt (incl. a contract with Anthropic worth up to USD 11.6bn over 7 years). Check 23 Nov: no reports of S&P restoring investment grade (Capmad, Börse Global) – end condition not met → 🔴, heavy event continues. Sweep 20–23 Nov ('downgrade', 'refinancing', 'force majeure', 'private credit redemptions') found no new credit events. Oracle (Reuters, 20 Nov): funding for its OpenAI contract fully secured after a ~USD 20bn raise (USD 10bn of stock and USD 10bn of notes, 2 Nov) – note. Anthropic after its IPO: closed 20 Nov at USD 88.30, 6.4% above the USD 83 offer price (TradingKey) – not a round or IPO at a lower valuation. Concerns Anthropic – potential conflict of interest; external sources only. Evening review 23 Nov found no new credit events; Oracle shares +11–14% after its 20 Nov statement that funding for the OpenAI contract is complete (AP).",
+      "note": "Trwałe zdarzenie ciężkie: 9.11 S&P obniżył rating Akamai Technologies do BB+ (poziom spekulacyjny); warunek końca (powrót do ratingu inwestycyjnego) niespełniony → 🔴. Nowe 25.11 (Reuters, Bloomberg): S&P umieścił rating Nvidii AA na liście CreditWatch z perspektywą negatywną z powodu ryzyk zarządczych i ładu korporacyjnego (niezależność rady, sukcesja, nadzór po odwołaniu i przywróceniu Huanga, pytania o kontrolę eksportu do Chin); ewentualna obniżka o jeden stopień do AA- w ciągu ok. 90 dni. To nie jest obniżka ani rating spekulacyjny – tylko nota, bez zmiany statusu. W poniedziałek 23.11 akcje Nvidii wzrosły o 31,48% po przywróceniu Huanga; 25.11 ok. 15:00 czasu nowojorskiego −4,76% (147,99 USD; StockTitan). Anthropic 25.11: w trakcie sesji do 79,65 USD, ok. 15:00 84,32 USD wobec ceny emisyjnej 83 USD (StockTitan) – notowania giełdowe, nie runda ani IPO po niższej wycenie. Dotyczy Anthropic – potencjalny konflikt interesów; tylko źródła zewnętrzne. Przegląd 24–25.11 („downgrade”, „refinancing”, „force majeure”, „private credit redemptions”) bez nowych zdarzeń kredytowych.",
+      "note_en": "Lasting heavy event: on 9 Nov S&P cut Akamai Technologies to BB+ (speculative grade); the end condition (back to investment grade) is not met → 🔴. New on 25 Nov (Reuters, Bloomberg): S&P placed Nvidia's AA rating on CreditWatch negative over management and governance risks (board independence, succession, oversight after Huang's removal and reinstatement, questions about export controls to China); a possible one-notch cut to AA- within about 90 days. This is neither a downgrade nor a speculative-grade rating – note only, no status change. On Monday 23 Nov Nvidia shares rose 31.48% after Huang was reinstated; on 25 Nov at about 3 p.m. New York time they were −4.76% (USD 147.99; StockTitan). Anthropic on 25 Nov: as low as USD 79.65 intraday, USD 84.32 at about 3 p.m. against the USD 83 offer price (StockTitan) – market trading, not a round or IPO at a lower valuation. Concerns Anthropic – potential conflict of interest; external sources only. Sweep 24–25 Nov ('downgrade', 'refinancing', 'force majeure', 'private credit redemptions') found no new credit events.",
       "conflict_of_interest": true,
       "status_since": "2026-11-09",
       "status_prev": "yellow",
@@ -621,14 +621,14 @@
       "name_en": "Fed policy",
       "value": "3,75–4,00",
       "unit": "%",
-      "as_of": "2026-11-24",
+      "as_of": "2026-11-25",
       "status": "red",
       "points": 40.0,
       "max_points": 40.0,
       "preliminary": false,
-      "source": "https://aol.com/articles/asian-stocks-rally-huangs-nvidia-012932000.html",
-      "note": "Stopa Fed 3,75–4,00%. Reuters (24.11): kontrakty na stopę funduszy federalnych wyceniają grudniową podwyżkę (8–9.12) jako pewną (89% w piątek 20.11); CME FedWatch 23.11: 91,4% za podwyżką o 25 pb (Gate za CME). Westpac (za ABC, 24.11): rynki odbudowały oczekiwania grudniowej podwyżki. Wycena podwyżki > 50% → 🔴 bez zmian. 25.11 inflacja PCE za październik (konsensus 3,8% r/r, bazowa 3,2%).",
-      "note_en": "Fed rate 3.75–4.00%. Reuters (24 Nov): fed funds futures price a December hike (8–9 Dec) as certain (89% on Friday 20 Nov); CME FedWatch 23 Nov: 91.4% for a 25 bp hike (Gate citing CME). Westpac (via ABC, 24 Nov): markets rebuilt expectations of a December hike. Hike priced > 50% → 🔴 unchanged. 25 Nov: October PCE inflation (consensus 3.8% y/y, core 3.2%).",
+      "source": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
+      "note": "Stopa Fed 3,75–4,00%. Inflacja PCE za październik (BEA, 25.11; CNBC): 3,8% r/r (wrzesień 3,6%), bazowa 3,3% wobec oczekiwanych 3,2%; PKB za III kw. zrewidowany do 4,3% z 3,4%. Po danych rynek wycenia grudniową podwyżkę (8–9.12) na ok. 94–98% (CME FedWatch za Invezz i BigGo). Wycena podwyżki > 50% → 🔴 bez zmian.",
+      "note_en": "Fed rate 3.75–4.00%. October PCE inflation (BEA, 25 Nov; CNBC): 3.8% y/y (September 3.6%), core 3.3% against an expected 3.2%; Q3 GDP revised to 4.3% from 3.4%. After the data the market prices a December hike (8–9 Dec) at about 94–98% (CME FedWatch via Invezz and BigGo). Hike priced > 50% → 🔴 unchanged.",
       "status_since": "2026-10-06",
       "status_prev": "red"
     },
@@ -748,19 +748,9 @@
   ],
   "calendar": [
     {
-      "date": "2026-11-25",
-      "title": "USA: inflacja PCE za październik, rewizja PKB za III kw. (E3)",
-      "title_en": "US: October PCE inflation, revised Q3 GDP (E3)"
-    },
-    {
       "date": "2026-11-26",
-      "title": "Święto Dziękczynienia – rynki w USA zamknięte (27.11 skrócona sesja)",
-      "title_en": "Thanksgiving – US markets closed (27 Nov half session)"
-    },
-    {
-      "date": "2026-11-27",
-      "title": "Ok. 25–27.11: termin, który sekretarz skarbu Bessent dał zarządowi Nvidii (A7, D5 – nota)",
-      "title_en": "Around 25–27 Nov: the deadline Treasury Secretary Bessent set for Nvidia's board (A7, D5 – note)"
+      "title": "Święto Dziękczynienia – rynki w USA zamknięte (27.11 skrócona sesja do 13:00 czasu nowojorskiego)",
+      "title_en": "Thanksgiving – US markets closed (27 Nov half session until 1 p.m. New York time)"
     },
     {
       "date": "2026-11-30",
@@ -771,6 +761,11 @@
       "date": "2026-12-01",
       "title": "ISM Manufacturing PMI za listopad (E1); eksport Korei za listopad (D6)",
       "title_en": "ISM Manufacturing PMI for November (E1); Korea's November exports (D6)"
+    },
+    {
+      "date": "2026-12-09",
+      "title": "Decyzja Fed (posiedzenie 8–9.12; E3)",
+      "title_en": "Fed decision (8–9 Dec meeting; E3)"
     }
   ],
   "disclaimer": "To nie jest porada inwestycyjna.",
