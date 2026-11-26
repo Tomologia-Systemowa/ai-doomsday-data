@@ -1,16 +1,16 @@
 {
   "schema_version": "1.2",
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "report_type": "short",
-  "score": 545,
+  "score": 554,
   "band": "Pęknięcia",
   "band_en": "Cracks",
-  "change_vs_previous": -3,
-  "headline": "545/1000 (bez zmian): inflacja PCE 3,8% przypieczętowała grudniową podwyżkę Fed; S&P może obniżyć rating Nvidii z powodu ładu korporacyjnego.",
-  "headline_en": "545/1000 (unchanged): 3.8% PCE inflation sealed a December Fed hike; S&P may cut Nvidia's rating over governance.",
-  "summary": "Wynik 545/1000 – bez zmian wobec porannego raportu; nadal pasmo Pęknięć, żaden sygnał nie zmienił statusu. Inflacja PCE za październik: 3,8% r/r, bazowa 3,3% – powyżej oczekiwań; rynek wycenia grudniową podwyżkę stóp Fed na 94–98%. S&P może obniżyć rating Nvidii (AA) z powodu ładu korporacyjnego – to jeszcze nie zdarzenie kredytowe. Dwa dni po wzroście akcji Nvidii o 31,5% na wieść o powrocie Huanga agencja ratingowa ostrzega przed obniżką z powodu sposobu, w jaki do tego powrotu doszło.",
-  "summary_en": "The score is 545/1000 – unchanged from this morning's report; still the Cracks band, no signal changed status. October PCE inflation: 3.8% y/y, core 3.3% – above expectations; the market prices a December Fed rate hike at 94–98%. S&P may cut Nvidia's rating (AA) over governance – not yet a credit event. Two days after Nvidia shares rose 31.5% on news of Huang's return, a rating agency warns of a downgrade because of the way that return came about.",
-  "report_file": "history/history-25-11-2026.json",
+  "change_vs_previous": 9,
+  "headline": "554/1000 (+9): ubezpieczenie długu Oracle, Alphabetu, SpaceX i CoreWeave najdroższe w historii.",
+  "headline_en": "554/1000 (+9): insurance on the debt of Oracle, Alphabet, SpaceX and CoreWeave is the most expensive on record.",
+  "summary": "Wynik 554/1000 – o 9 punktów wyżej niż wczoraj; nadal pasmo Pęknięć. Według Reutersa cena ubezpieczenia od niewypłacalności (CDS) Oracle, Alphabetu, SpaceX i CoreWeave osiągnęła rekord; dla CoreWeave rynek wycenia 68% szans na niewypłacalność w ciągu pięciu lat. Rentowność 10-letnich obligacji USA spadła do 4,85%. W najbliższych dniach: skrócona sesja w USA, 1.12 ISM i eksport Korei. Prognozy inwestycji hiperskalerów nadal nie spadają, a rynek wycenia ochronę przed niewypłacalnością Alphabetu najdrożej w historii.",
+  "summary_en": "The score is 554/1000 – 9 points higher than yesterday; still the Cracks band. According to Reuters, the price of insurance against default (CDS) for Oracle, Alphabet, SpaceX and CoreWeave hit a record; for CoreWeave the market prices a 68% chance of default within five years. The 10-year US Treasury yield fell to 4.85%. In the coming days: a US half session, then ISM and Korea's exports on 1 Dec. Hyperscalers' investment forecasts are still not falling, yet the market prices protection against an Alphabet default at its highest ever.",
+  "report_file": "history/history-26-11-2026.json",
   "triggers": [],
   "triggers_en": [],
   "heavy_credit_event": true,
@@ -19,7 +19,25 @@
     "C4"
   ],
   "adjustments": [],
-  "correlated_moves": [],
+  "correlated_moves": [
+    {
+      "group": "credit_spreads",
+      "signals": {
+        "A3": {
+          "status": "yellow",
+          "from": "green"
+        },
+        "A5": {
+          "status": "red",
+          "from": "yellow"
+        }
+      },
+      "since": "2026-11-26",
+      "reason": "Przecena ryzyka kredytowego finansowania AI w czasie wyprzedaży akcji AI w listopadzie (A3 🟡 od 21.11, A5 🔴 od 26.11).",
+      "reason_en": "Repricing of the credit risk of AI financing during the November AI equity sell-off (A3 🟡 since 21 Nov, A5 🔴 since 26 Nov).",
+      "discount_points": 9.72
+    }
+  ],
   "overflow": {
     "categories": [],
     "score": false
@@ -138,16 +156,16 @@
       "category": "A",
       "name": "Rentowność 10Y USA",
       "name_en": "US 10Y Treasury yield",
-      "value": 4.91,
+      "value": 4.85,
       "unit": "%",
-      "as_of": "2026-11-24",
+      "as_of": "2026-11-25",
       "status": "yellow",
       "points": 27.78,
       "max_points": 55.56,
       "preliminary": false,
       "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
-      "note": "Treasury 24.11 (zamknięcie): 10Y 4,91% (23.11: 4,92%; 20.11: 4,92%). FRED DGS10 – potwierdzenie z opóźnieniem. W przedziale 4,5–5,25% → 🟡 bez zmian.",
-      "note_en": "Treasury 24 Nov (close): 10Y 4.91% (23 Nov: 4.92%; 20 Nov: 4.92%). FRED DGS10 confirms with a lag. Within 4.5–5.25% → 🟡 unchanged.",
+      "note": "Treasury 25.11 (zamknięcie): 10Y 4,85% (24.11: 4,91%; 19.11: 5,04%). 26.11 rynek w USA zamknięty (Święto Dziękczynienia). FRED DGS10 – potwierdzenie z opóźnieniem. W przedziale 4,5–5,25% → 🟡 bez zmian.",
+      "note_en": "Treasury 25 Nov (close): 10Y 4.85% (24 Nov: 4.91%; 19 Nov: 5.04%). US market closed on 26 Nov (Thanksgiving). FRED DGS10 confirms with a lag. Within 4.5–5.25% → 🟡 unchanged.",
       "status_since": "2026-10-08",
       "status_prev": "red"
     },
@@ -185,7 +203,11 @@
       "note": "FRED BAMLH0A0HYM2 24.11: 3,72% (23.11: 3,63%; 20.11: 3,76%) – wzrost o 9 pb w dniu, w którym Nvidia oddawała część poniedziałkowego wzrostu. W przedziale 3,5–5% → 🟡 bez zmian. Odczyt za 25.11 FRED jeszcze nie opublikował. Ruch nie jest deklarowany jako wspólny z A7 (różne przyczyny).",
       "note_en": "FRED BAMLH0A0HYM2 on 24 Nov: 3.72% (23 Nov: 3.63%; 20 Nov: 3.76%) – up 9 bp on a day Nvidia gave back part of Monday's gain. Within 3.5–5% → 🟡 unchanged. FRED has not yet published the 25 Nov reading. The move is not declared joint with A7 (different causes).",
       "status_since": "2026-11-21",
-      "status_prev": "green"
+      "status_prev": "green",
+      "correlated": {
+        "group": "credit_spreads",
+        "discount_points": 0
+      }
     },
     {
       "id": "A4",
@@ -210,19 +232,23 @@
       "category": "A",
       "name": "CDS sektora AI",
       "name_en": "AI sector CDS",
-      "value": "1 emitent z rekordem",
+      "value": "4 emitentów z rekordem",
       "unit": null,
-      "as_of": "2026-11-05",
-      "status": "yellow",
-      "points": 19.45,
+      "as_of": "2026-11-25",
+      "status": "red",
+      "points": 29.17,
       "max_points": 38.89,
       "preliminary": false,
-      "source": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-      "note": "Emitenci z rekordem 5-letniego CDS w ostatnim miesiącu (23.10–23.11): CoreWeave (1267,9 pb wg S&P Global MI i ponad 1289 pb wg Deutsche Banku, 5.11; Reuters, CNBC) – potwierdzony. 20.11 CDS CoreWeave do 1232,6 pb (+76,2 pb; Bloomberg za Le Private Banker) – poniżej rekordu; Oracle 327,9 pb – najwyżej od 20.10, nie rekord. Nowe w przeglądzie 23.11: Alphabet – rekord ok. 91 pb 30.10 (Business Standard za Bloombergiem) i 93,7 pb 20.11 (AI Weekly) – po jednym źródle wtórnym; wyszukiwania „Alphabet credit default swaps record 93.7 basis points” i „credit default swaps record AI … November 20 2026” nie dały drugiego niezależnego źródła. Nawet po potwierdzeniu byłoby to 2 emitentów → 🟡 bez zmian, więc bez odczytu niepotwierdzonego. Rekord CoreWeave wypada z okna 5.12 (Alphabetu z 20.11 – 20.12, jeśli zostanie potwierdzony). CoreWeave ma umowy z Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne.",
-      "note_en": "Issuers with a record 5-year CDS in the last month (23 Oct–23 Nov): CoreWeave (1,267.9 bp per S&P Global MI and over 1,289 bp per Deutsche Bank, 5 Nov; Reuters, CNBC) – confirmed. On 20 Nov CoreWeave CDS rose to 1,232.6 bp (+76.2 bp; Bloomberg via Le Private Banker) – below the record; Oracle 327.9 bp – highest since 20 Oct, not a record. New in the 23 Nov sweep: Alphabet – record of about 91 bp on 30 Oct (Business Standard citing Bloomberg) and 93.7 bp on 20 Nov (AI Weekly) – one secondary source each; searches 'Alphabet credit default swaps record 93.7 basis points' and 'credit default swaps record AI … November 20 2026' found no second independent source. Even if confirmed it would be 2 issuers → 🟡 unchanged, so no unconfirmed reading. CoreWeave's record leaves the window on 5 Dec (Alphabet's of 20 Nov on 20 Dec, if confirmed). CoreWeave has contracts with Anthropic – potential conflict of interest; external sources only.",
+      "source": "https://www.investing.com/news/stock-market-news/ai-credit-default-swap-spreads-widen-on-unease-over-cash-flow-5049729",
+      "note": "Reuters (własny tekst, Singapur, 25.11; przedruk Investing.com) na podstawie danych S&P Global Market Intelligence: 5-letnie CDS Oracle, Alphabetu, SpaceX i CoreWeave osiągnęły w nocy 24/25.11 rekordowe poziomy; implikowane prawdopodobieństwo niewypłacalności CoreWeave w ciągu 5 lat 68%. Poziomy wg Disruption Banking (25.11, za Reutersem – wtórne): CoreWeave 1314 pb, Oracle 356 pb; Alphabet i SpaceX bez podanych poziomów. SoftBank 501 pb – najszerzej od października 2022 r. (Markit), nie rekord. Odczyt rynkowy z dostawcy danych w reportażu Reutersa – potwierdzony. Nawet bez SpaceX (spółka z działalnością AI po połączeniu z xAI, poza listą przykładową) to 3 emitentów → 🔴 (wcześniej 🟡); do ⚫ potrzeba 6+ emitentów lub CDS ×4 w 3 miesiące – niespełnione. Ruch deklarowany jako wspólny z A3 (grupa credit_spreads). Rekordy wypadają z okna 25.12. CoreWeave i SpaceX mają umowy z Anthropic – potencjalny konflikt interesów, tylko źródła zewnętrzne.",
+      "note_en": "Reuters (own reporting, Singapore, 25 Nov; Investing.com reprint) using S&P Global Market Intelligence data: 5-year CDS of Oracle, Alphabet, SpaceX and CoreWeave hit record levels overnight on 24/25 Nov; CoreWeave's implied 5-year default probability is 68%. Levels per Disruption Banking (25 Nov, citing Reuters – secondary): CoreWeave 1,314 bp, Oracle 356 bp; no levels given for Alphabet and SpaceX. SoftBank 501 bp – widest since October 2022 (Markit), not a record. A market reading from a data provider in Reuters' own reporting – confirmed. Even without SpaceX (an AI business since its merger with xAI, not on the example list) that is 3 issuers → 🔴 (previously 🟡); ⚫ needs 6+ issuers or CDS ×4 within 3 months – not met. Declared as a joint move with A3 (credit_spreads group). The records leave the window on 25 Dec. CoreWeave and SpaceX have contracts with Anthropic – potential conflict of interest; external sources only.",
       "conflict_of_interest": true,
-      "status_since": "2026-11-19",
-      "status_prev": "red"
+      "status_since": "2026-11-26",
+      "status_prev": "yellow",
+      "correlated": {
+        "group": "credit_spreads",
+        "discount_points": 9.72
+      }
     },
     {
       "id": "A6",
@@ -237,8 +263,8 @@
       "max_points": 33.33,
       "preliminary": false,
       "source": "https://wrenews.com/trepp-data-center-cmbs-spreads-widen-october-2026-ai-credit/",
-      "note": "Status 🔴 opiera się na mierzonym poszerzeniu spreadów CMBS centrów danych (Trepp: AAA o stałej stopie 182 pb, 27.10) potwierdzonym przez CREFC (spread 5-letnich obligacji zabezpieczonych centrami danych z ratingiem A: 1,95 pp w I kw. → 2,57 pp w ostatnich trzech miesiącach; za Korea Daily 14.11); emisje ABS/CMBS centrów danych w ostatnich trzech miesiącach −19,9% r/r. Pimco (Bloomberg 17.11) – zawężenie do ok. 146 pb wobec ok. 180 pb pod koniec września – odczyt w przeciwną stronę; przy różnych statusach przyjęto bardziej ryzykowny. Nowe (nota): Korea JoongAng Daily (20.11) – banki ograniczają ekspozycję na kredyty dla centrów danych transakcjami z ubezpieczycielami, a emisje ABS centrów danych spadają; BloombergNEF (19.11) – co najmniej 1,8 bln USD finansowania centrów danych od 2020 r. i co najmniej 1 bln USD długu z terminem w ciągu pięciu lat. Wyników aukcji kredytów ING (oferty do 19.11) nadal brak. → 🔴 bez zmian. Część finansowania dotyczy obiektów dla Anthropic – potencjalny konflikt interesów.",
-      "note_en": "The 🔴 status rests on the measured widening of data-center CMBS spreads (Trepp: fixed-rate AAA 182 bp, 27 Oct) confirmed by CREFC (5-year A-rated data-center-backed bonds: 1.95 pp in Q1 → 2.57 pp over the last three months; via Korea Daily 14 Nov); data-center ABS/CMBS issuance over the last three months −19.9% y/y. Pimco (Bloomberg 17 Nov) – tightening to about 146 bp from about 180 bp at end-September – a reading in the opposite direction; with differing statuses the higher-risk one is used. New (note): Korea JoongAng Daily (20 Nov) – banks are cutting exposure to data-center loans through deals with insurers while data-center ABS issuance falls; BloombergNEF (19 Nov) – at least USD 1.8tn of data-center financing since 2020 and at least USD 1tn of debt due within five years. Results of the ING loan auction (bids due 19 Nov) still not reported. → 🔴 unchanged. Part of the financing concerns facilities for Anthropic – potential conflict of interest.",
+      "note": "Status 🔴 opiera się na mierzonym poszerzeniu spreadów CMBS centrów danych (Trepp: AAA o stałej stopie 182 pb, 27.10) potwierdzonym przez CREFC (spread 5-letnich obligacji zabezpieczonych centrami danych z ratingiem A: 1,95 pp w I kw. → 2,57 pp w ostatnich trzech miesiącach; za Korea Daily 14.11); emisje ABS/CMBS centrów danych w ostatnich trzech miesiącach −19,9% r/r. Pimco (Bloomberg 17.11) – zawężenie do ok. 146 pb wobec ok. 180 pb pod koniec września – odczyt w przeciwną stronę; przy różnych statusach przyjęto bardziej ryzykowny. Nowe (nota): Korea JoongAng Daily (20.11) – banki ograniczają ekspozycję na kredyty dla centrów danych transakcjami z ubezpieczycielami, a emisje ABS centrów danych spadają; BloombergNEF (19.11) – co najmniej 1,8 bln USD finansowania centrów danych od 2020 r. i co najmniej 1 bln USD długu z terminem w ciągu pięciu lat. Wyników aukcji kredytów ING (oferty do 19.11) nadal brak. Nowe 25.11 (nota): Bloomberg – po regule BIS z 19.11 kredytodawcy wstrzymali lub ponownie oceniają kredyty na miliardy USD dla centrów danych w Azji powiązanych z ByteDance, Alibabą i Tencentem (kredyty dla firm centrów danych w Azji i Pacyfiku ponad 49 mld USD); ING, Société Générale i HSBC sprzedają kredyty na centra danych powiązane z projektami Oracle (wtórne, za Crypto Briefing). → 🔴 bez zmian. Część finansowania dotyczy obiektów dla Anthropic – potencjalny konflikt interesów.",
+      "note_en": "The 🔴 status rests on the measured widening of data-center CMBS spreads (Trepp: fixed-rate AAA 182 bp, 27 Oct) confirmed by CREFC (5-year A-rated data-center-backed bonds: 1.95 pp in Q1 → 2.57 pp over the last three months; via Korea Daily 14 Nov); data-center ABS/CMBS issuance over the last three months −19.9% y/y. Pimco (Bloomberg 17 Nov) – tightening to about 146 bp from about 180 bp at end-September – a reading in the opposite direction; with differing statuses the higher-risk one is used. New (note): Korea JoongAng Daily (20 Nov) – banks are cutting exposure to data-center loans through deals with insurers while data-center ABS issuance falls; BloombergNEF (19 Nov) – at least USD 1.8tn of data-center financing since 2020 and at least USD 1tn of debt due within five years. Results of the ING loan auction (bids due 19 Nov) still not reported. New 25 Nov (note): Bloomberg – after the BIS rule of 19 Nov lenders paused or are reassessing billions of dollars of data-center loans in Asia tied to ByteDance, Alibaba and Tencent (loans to Asia-Pacific data-center companies over USD 49bn); ING, Société Générale and HSBC are selling data-center loans tied to Oracle projects (secondary, via Crypto Briefing). → 🔴 unchanged. Part of the financing concerns facilities for Anthropic – potential conflict of interest.",
       "conflict_of_interest": true,
       "status_since": "2026-10-29",
       "status_prev": "yellow"
@@ -601,16 +627,16 @@
       "category": "E",
       "name": "Krzywa 10Y–2Y",
       "name_en": "10Y–2Y yield curve",
-      "value": 0.28,
+      "value": 0.24,
       "unit": "pp",
-      "as_of": "2026-11-24",
+      "as_of": "2026-11-25",
       "status": "yellow",
       "points": 10.0,
       "max_points": 20.0,
       "preliminary": false,
       "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
-      "note": "Treasury 24.11: 2Y 4,63%, 10Y 4,91% → 0,28 pp (23.11: 0,29 pp). Lekkie spłaszczenie przez spadek 10Y przy wycenianej na ok. 95% grudniowej podwyżce Fed (Yahoo Finance, 24.11). Obraz mieszany, bez zaostrzania → 🟡 bez zmian.",
-      "note_en": "Treasury 24 Nov: 2Y 4.63%, 10Y 4.91% → 0.28 pp (23 Nov: 0.29 pp). Slight flattening via a lower 10Y, with a December Fed hike priced at about 95% (Yahoo Finance, 24 Nov). Mixed picture, no tightening → 🟡 unchanged.",
+      "note": "Treasury 25.11: 2Y 4,61%, 10Y 4,85% → 0,24 pp (24.11: 0,28 pp; 19.11: 0,28 pp przy 2Y 4,76% i 10Y 5,04%). W tydzień 2Y −15 pb, 10Y −19 pb – spłaszczenie przez spadek 10Y (oczekiwania spowolnienia) przy wycenianej na ok. 94–98% grudniowej podwyżce Fed. Obraz mieszany, bez zaostrzania → 🟡 bez zmian.",
+      "note_en": "Treasury 25 Nov: 2Y 4.61%, 10Y 4.85% → 0.24 pp (24 Nov: 0.28 pp; 19 Nov: 0.28 pp with 2Y 4.76% and 10Y 5.04%). Over the week 2Y −15 bp, 10Y −19 bp – flattening via a lower 10Y (slowdown expectations) with a December Fed hike priced at about 94–98%. Mixed picture, no tightening → 🟡 unchanged.",
       "status_since": "2026-11-19",
       "status_prev": "red"
     },
@@ -637,16 +663,16 @@
       "category": "E",
       "name": "Bank Japonii i carry trade na jenie",
       "name_en": "Bank of Japan and the yen carry trade",
-      "value": 158.92,
+      "value": 159.1,
       "unit": "JPY/USD",
-      "as_of": "2026-11-24",
+      "as_of": "2026-11-26",
       "status": "yellow",
       "points": 10.0,
       "max_points": 20.0,
       "preliminary": false,
-      "source": "https://www.aol.com/articles/asian-stocks-rally-wall-street-033125000.html",
-      "note": "USD/JPY 158,92 24.11 w trakcie sesji azjatyckiej (AP; wtórne, nie zamknięcie; 20.11 ok. 159,2) – zmiana w ostatnim miesiącu w przedziale ±3%. Rynek wycenia podwyżkę BoJ 17–18.12 do 1,50% na ok. 78% (rateprobability.com, 23.11); w ankiecie Reuters (11–18.11) 86% ekonomistów oczekuje podwyżki → > 50% → 🟡 bez zmian. Grudniowa podwyżka utrzymałaby 🟡, więc bez prognozy w punktach.",
-      "note_en": "USD/JPY 158.92 on 24 Nov during the Asian session (AP; secondary, not a close; 20 Nov about 159.2) – change over the last month within ±3%. The market prices a BoJ hike on 17–18 Dec to 1.50% at about 78% (rateprobability.com, 23 Nov); in a Reuters poll (11–18 Nov) 86% of economists expect a hike → > 50% → 🟡 unchanged. A December hike would keep 🟡, so no outlook in points.",
+      "source": "https://investinglive.com/stock-market-update/nikkei-and-kospi-rebound-over-1-as-asia-follows-wall-street-s-comeback-bok-decision-next/",
+      "note": "USD/JPY ok. 159,10 26.11 w trakcie sesji azjatyckiej (investingLive; wtórne, nie zamknięcie; 24.11 158,92) – zmiana w ostatnim miesiącu w przedziale ±3%; analitycy wskazują ryzyko interwencji przy tym poziomie. Rynek wycenia podwyżkę BoJ 17–18.12 na ok. 78% (rateprobability.com, 23.11) → > 50% → 🟡 bez zmian. Grudniowa podwyżka utrzymałaby 🟡, więc bez prognozy w punktach.",
+      "note_en": "USD/JPY about 159.10 on 26 Nov during the Asian session (investingLive; secondary, not a close; 24 Nov 158.92) – change over the last month within ±3%; analysts flag intervention risk at this level. The market prices a BoJ hike on 17–18 Dec at about 78% (rateprobability.com, 23 Nov) → > 50% → 🟡 unchanged. A December hike would keep 🟡, so no outlook in points.",
       "status_since": "2026-10-16"
     },
     {
@@ -748,9 +774,9 @@
   ],
   "calendar": [
     {
-      "date": "2026-11-26",
-      "title": "Święto Dziękczynienia – rynki w USA zamknięte (27.11 skrócona sesja do 13:00 czasu nowojorskiego)",
-      "title_en": "Thanksgiving – US markets closed (27 Nov half session until 1 p.m. New York time)"
+      "date": "2026-11-27",
+      "title": "Skrócona sesja w USA (do 13:00 czasu nowojorskiego)",
+      "title_en": "US half session (until 1 p.m. New York time)"
     },
     {
       "date": "2026-11-30",
@@ -763,9 +789,19 @@
       "title_en": "ISM Manufacturing PMI for November (E1); Korea's November exports (D6)"
     },
     {
+      "date": "2026-12-05",
+      "title": "Rekord CDS CoreWeave z 5.11 wypada z okna A5 (rekordy z 25.11 liczą się do 25.12)",
+      "title_en": "CoreWeave's CDS record of 5 Nov leaves the A5 window (the 25 Nov records count until 25 Dec)"
+    },
+    {
       "date": "2026-12-09",
       "title": "Decyzja Fed (posiedzenie 8–9.12; E3)",
       "title_en": "Fed decision (8–9 Dec meeting; E3)"
+    },
+    {
+      "date": "2026-12-18",
+      "title": "Decyzja Banku Japonii (17–18.12; E4)",
+      "title_en": "Bank of Japan decision (17–18 Dec; E4)"
     }
   ],
   "disclaimer": "To nie jest porada inwestycyjna.",
